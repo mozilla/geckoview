@@ -1,0 +1,10 @@
+org.mozilla.gecko
+org.mozilla.gecko.annotation
+org.mozilla.gecko.gfx
+org.mozilla.gecko.media
+org.mozilla.gecko.mozglue
+org.mozilla.gecko.permissions
+org.mozilla.gecko.process
+org.mozilla.gecko.sqlite
+org.mozilla.gecko.util
+org.mozilla.gecko.util.publicsuffix
