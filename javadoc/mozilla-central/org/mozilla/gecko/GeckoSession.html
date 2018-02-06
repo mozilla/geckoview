@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":9,"i19":9,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":9,"i22":9,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -172,6 +172,13 @@ implements android.os.Parcelable</pre>
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.TrackingProtectionDelegate.html" title="interface in org.mozilla.gecko">GeckoSession.TrackingProtectionDelegate</a></span></code>
+<div class="block">GeckoSession applications implement this interface to handle tracking
+ protection events.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.Window.html" title="class in org.mozilla.gecko">GeckoSession.Window</a></span></code>&nbsp;</td>
 </tr>
@@ -271,97 +278,115 @@ implements android.os.Parcelable</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#disableTrackingProtection--">disableTrackingProtection</a></span>()</code>
+<div class="block">Disable tracking protection.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#enableTrackingProtection-int-">enableTrackingProtection</a></span>(int&nbsp;categories)</code>
+<div class="block">Enable tracking protection.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#exitFullScreen--">exitFullScreen</a></span>()</code>
 <div class="block">Exits fullscreen mode</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/gecko/GeckoSession.ContentListener.html" title="interface in org.mozilla.gecko">GeckoSession.ContentListener</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#getContentListener--">getContentListener</a></span>()</code>
 <div class="block">Get the content callback handler.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/gecko/EventDispatcher.html" title="class in org.mozilla.gecko">EventDispatcher</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#getEventDispatcher--">getEventDispatcher</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/gecko/GeckoSession.NavigationListener.html" title="interface in org.mozilla.gecko">GeckoSession.NavigationListener</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#getNavigationListener--">getNavigationListener</a></span>()</code>
 <div class="block">Get the navigation callback handler.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.html" title="interface in org.mozilla.gecko">GeckoSession.PermissionDelegate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#getPermissionDelegate--">getPermissionDelegate</a></span>()</code>
 <div class="block">Get the current prompt delegate for this GeckoSession.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/gecko/GeckoSession.ProgressListener.html" title="interface in org.mozilla.gecko">GeckoSession.ProgressListener</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#getProgressListener--">getProgressListener</a></span>()</code>
 <div class="block">Get the progress callback handler.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html" title="interface in org.mozilla.gecko">GeckoSession.PromptDelegate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#getPromptDelegate--">getPromptDelegate</a></span>()</code>
 <div class="block">Get the current prompt delegate for this GeckoSession.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/gecko/GeckoSessionSettings.html" title="class in org.mozilla.gecko">GeckoSessionSettings</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#getSettings--">getSettings</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/gecko/TextInputController.html" title="class in org.mozilla.gecko">TextInputController</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#getTextInputController--">getTextInputController</a></span>()</code>
 <div class="block">Get the TextInputController instance for this session.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/gecko/GeckoSession.TrackingProtectionDelegate.html" title="interface in org.mozilla.gecko">GeckoSession.TrackingProtectionDelegate</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#getTrackingProtectionDelegate--">getTrackingProtectionDelegate</a></span>()</code>
+<div class="block">Get the tracking protection callback handler.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#goBack--">goBack</a></span>()</code>
 <div class="block">Go back in history.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#goForward--">goForward</a></span>()</code>
 <div class="block">Go forward in history.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#importScript-java.lang.String-">importScript</a></span>(String&nbsp;url)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#isOpen--">isOpen</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#loadUri-java.lang.String-">loadUri</a></span>(String&nbsp;uri)</code>
 <div class="block">Load the given URI.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#loadUri-android.net.Uri-">loadUri</a></span>(android.net.Uri&nbsp;uri)</code>
 <div class="block">Load the given URI.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#openWindow-android.content.Context-">openWindow</a></span>(android.content.Context&nbsp;appContext)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#preload-android.content.Context-">preload</a></span>(android.content.Context&nbsp;context)</code>
 <div class="block">Preload GeckoSession by starting Gecko in the background, if Gecko is not already running.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#preload-android.content.Context-java.lang.String-boolean-">preload</a></span>(android.content.Context&nbsp;context,
        String&nbsp;geckoArgs,
@@ -370,65 +395,71 @@ implements android.os.Parcelable</pre>
  if Gecko is not already running.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#readFromParcel-android.os.Parcel-">readFromParcel</a></span>(android.os.Parcel&nbsp;source)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#reload--">reload</a></span>()</code>
 <div class="block">Reload the current URI.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#setActive-boolean-">setActive</a></span>(boolean&nbsp;active)</code>
 <div class="block">Set this GeckoSession as active or inactive.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#setContentListener-org.mozilla.gecko.GeckoSession.ContentListener-">setContentListener</a></span>(<a href="../../../org/mozilla/gecko/GeckoSession.ContentListener.html" title="interface in org.mozilla.gecko">GeckoSession.ContentListener</a>&nbsp;listener)</code>
 <div class="block">Set the content callback handler.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#setNavigationListener-org.mozilla.gecko.GeckoSession.NavigationListener-">setNavigationListener</a></span>(<a href="../../../org/mozilla/gecko/GeckoSession.NavigationListener.html" title="interface in org.mozilla.gecko">GeckoSession.NavigationListener</a>&nbsp;listener)</code>
 <div class="block">Set the navigation callback handler.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#setPermissionDelegate-org.mozilla.gecko.GeckoSession.PermissionDelegate-">setPermissionDelegate</a></span>(<a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.html" title="interface in org.mozilla.gecko">GeckoSession.PermissionDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the current permission delegate for this GeckoSession.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#setProgressListener-org.mozilla.gecko.GeckoSession.ProgressListener-">setProgressListener</a></span>(<a href="../../../org/mozilla/gecko/GeckoSession.ProgressListener.html" title="interface in org.mozilla.gecko">GeckoSession.ProgressListener</a>&nbsp;listener)</code>
 <div class="block">Set the progress callback handler.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#setPromptDelegate-org.mozilla.gecko.GeckoSession.PromptDelegate-">setPromptDelegate</a></span>(<a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html" title="interface in org.mozilla.gecko">GeckoSession.PromptDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the current prompt delegate for this GeckoSession.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#setScrollListener-org.mozilla.gecko.GeckoSession.ScrollListener-">setScrollListener</a></span>(<a href="../../../org/mozilla/gecko/GeckoSession.ScrollListener.html" title="interface in org.mozilla.gecko">GeckoSession.ScrollListener</a>&nbsp;listener)</code>
 <div class="block">Set the content scroll callback handler.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#setTrackingProtectionDelegate-org.mozilla.gecko.GeckoSession.TrackingProtectionDelegate-">setTrackingProtectionDelegate</a></span>(<a href="../../../org/mozilla/gecko/GeckoSession.TrackingProtectionDelegate.html" title="interface in org.mozilla.gecko">GeckoSession.TrackingProtectionDelegate</a>&nbsp;delegate)</code>
+<div class="block">Set the tracking protection callback handler.</div>
+</td>
+</tr>
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#stop--">stop</a></span>()</code>
 <div class="block">Stop loading.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.html#writeToParcel-android.os.Parcel-int-">writeToParcel</a></span>(android.os.Parcel&nbsp;out,
              int&nbsp;flags)</code>&nbsp;</td>
@@ -867,6 +898,35 @@ public&nbsp;<a href="../../../org/mozilla/gecko/TextInputController.html" title=
 </dl>
 </li>
 </ul>
+<a name="setTrackingProtectionDelegate-org.mozilla.gecko.GeckoSession.TrackingProtectionDelegate-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTrackingProtectionDelegate</h4>
+<pre>public&nbsp;void&nbsp;setTrackingProtectionDelegate(<a href="../../../org/mozilla/gecko/GeckoSession.TrackingProtectionDelegate.html" title="interface in org.mozilla.gecko">GeckoSession.TrackingProtectionDelegate</a>&nbsp;delegate)</pre>
+<div class="block">Set the tracking protection callback handler.
+ This will replace the current handler.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>listener</code> - An implementation of TrackingProtectionDelegate.</dd>
+</dl>
+</li>
+</ul>
+<a name="getTrackingProtectionDelegate--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTrackingProtectionDelegate</h4>
+<pre>public&nbsp;<a href="../../../org/mozilla/gecko/GeckoSession.TrackingProtectionDelegate.html" title="interface in org.mozilla.gecko">GeckoSession.TrackingProtectionDelegate</a>&nbsp;getTrackingProtectionDelegate()</pre>
+<div class="block">Get the tracking protection callback handler.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The current tracking protection callback handler.</dd>
+</dl>
+</li>
+</ul>
 <a name="setPromptDelegate-org.mozilla.gecko.GeckoSession.PromptDelegate-">
 <!--   -->
 </a>
@@ -898,10 +958,36 @@ public&nbsp;<a href="../../../org/mozilla/gecko/TextInputController.html" title=
 <a name="getEventDispatcher--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getEventDispatcher</h4>
 <pre>public&nbsp;<a href="../../../org/mozilla/gecko/EventDispatcher.html" title="class in org.mozilla.gecko">EventDispatcher</a>&nbsp;getEventDispatcher()</pre>
+</li>
+</ul>
+<a name="enableTrackingProtection-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>enableTrackingProtection</h4>
+<pre>public&nbsp;void&nbsp;enableTrackingProtection(int&nbsp;categories)</pre>
+<div class="block">Enable tracking protection.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>categories</code> - The categories of trackers that should be blocked.
+                   Use one or more of the <code>CATEGORY_*</code>
+                   flags.</dd>
+</dl>
+</li>
+</ul>
+<a name="disableTrackingProtection--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>disableTrackingProtection</h4>
+<pre>public&nbsp;void&nbsp;disableTrackingProtection()</pre>
+<div class="block">Disable tracking protection.</div>
 </li>
 </ul>
 </li>
