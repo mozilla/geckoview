@@ -661,8 +661,8 @@ extends Object</pre>
 <pre>@WorkerThread
 public&nbsp;String&nbsp;getClientId()
                                  throws java.io.IOException</pre>
-<div class="block">Retrieves the Gecko client ID from the filesystem. If the client ID does not exist, we attempt to migrate and
- persist it from FHR and, if that fails, we attempt to create a new one ourselves.
+<div class="block">Retrieves the Gecko client ID from the filesystem. If the client ID does not exist,
+ we attempt to create a new one ourselves.
 
  This method assumes the client ID is located in a file at a hard-coded path within the profile. The format of
  this file is a JSONObject which at the bottom level contains a String -&gt; String mapping containing the client ID.
