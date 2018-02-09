@@ -617,12 +617,13 @@ implements android.os.Parcelable</pre>
 <li class="blockList">
 <h4>containsKey</h4>
 <pre>public&nbsp;boolean&nbsp;containsKey(String&nbsp;key)</pre>
-<div class="block">Returns whether a mapping exists.</div>
+<div class="block">Returns whether a mapping exists. Null String, Bundle, or arrays are treated as
+ nonexistent.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - Key to look for.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>True if the specified key exists.</dd>
+<dd>True if the specified key exists and the value is not null.</dd>
 </dl>
 </li>
 </ul>
@@ -814,7 +815,7 @@ implements android.os.Parcelable</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - Key to look for.</dd>
-<dd><code>defaultValue</code> - Value to return if mapping does not exist.</dd>
+<dd><code>defaultValue</code> - Value to return if mapping value is null or mapping does not exist.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>String value</dd>
 </dl>
