@@ -224,9 +224,10 @@ extends Thread</pre>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoThread.html#initChildProcess-java.lang.String:A-int-int-">initChildProcess</a></span>(String[]&nbsp;args,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoThread.html#initChildProcess-java.lang.String:A-int-int-int-">initChildProcess</a></span>(String[]&nbsp;args,
                 int&nbsp;crashFd,
-                int&nbsp;ipcFd)</code>&nbsp;</td>
+                int&nbsp;ipcFd,
+                int&nbsp;crashAnnotationFd)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
@@ -426,7 +427,7 @@ extends Thread</pre>
                                       int&nbsp;flags)</pre>
 </li>
 </ul>
-<a name="initChildProcess-java.lang.String:A-int-int-">
+<a name="initChildProcess-java.lang.String:A-int-int-int-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -434,7 +435,8 @@ extends Thread</pre>
 <h4>initChildProcess</h4>
 <pre>public static&nbsp;boolean&nbsp;initChildProcess(String[]&nbsp;args,
                                        int&nbsp;crashFd,
-                                       int&nbsp;ipcFd)</pre>
+                                       int&nbsp;ipcFd,
+                                       int&nbsp;crashAnnotationFd)</pre>
 </li>
 </ul>
 <a name="canUseProfile-java.lang.String-java.io.File-">

@@ -154,10 +154,11 @@ extends android.os.IInterface</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/mozilla/gecko/process/IChildProcess.html#start-org.mozilla.gecko.process.IProcessManager-java.lang.String:A-android.os.ParcelFileDescriptor-android.os.ParcelFileDescriptor-">start</a></span>(<a href="../../../../org/mozilla/gecko/process/IProcessManager.html" title="interface in org.mozilla.gecko.process">IProcessManager</a>&nbsp;procMan,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/mozilla/gecko/process/IChildProcess.html#start-org.mozilla.gecko.process.IProcessManager-java.lang.String:A-android.os.ParcelFileDescriptor-android.os.ParcelFileDescriptor-android.os.ParcelFileDescriptor-">start</a></span>(<a href="../../../../org/mozilla/gecko/process/IProcessManager.html" title="interface in org.mozilla.gecko.process">IProcessManager</a>&nbsp;procMan,
      String[]&nbsp;args,
      android.os.ParcelFileDescriptor&nbsp;crashReporterPfd,
-     android.os.ParcelFileDescriptor&nbsp;ipcPfd)</code>&nbsp;</td>
+     android.os.ParcelFileDescriptor&nbsp;ipcPfd,
+     android.os.ParcelFileDescriptor&nbsp;crashAnnotationPfd)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -195,7 +196,7 @@ extends android.os.IInterface</pre>
 </dl>
 </li>
 </ul>
-<a name="start-org.mozilla.gecko.process.IProcessManager-java.lang.String:A-android.os.ParcelFileDescriptor-android.os.ParcelFileDescriptor-">
+<a name="start-org.mozilla.gecko.process.IProcessManager-java.lang.String:A-android.os.ParcelFileDescriptor-android.os.ParcelFileDescriptor-android.os.ParcelFileDescriptor-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -204,7 +205,8 @@ extends android.os.IInterface</pre>
 <pre>boolean&nbsp;start(<a href="../../../../org/mozilla/gecko/process/IProcessManager.html" title="interface in org.mozilla.gecko.process">IProcessManager</a>&nbsp;procMan,
               String[]&nbsp;args,
               android.os.ParcelFileDescriptor&nbsp;crashReporterPfd,
-              android.os.ParcelFileDescriptor&nbsp;ipcPfd)
+              android.os.ParcelFileDescriptor&nbsp;ipcPfd,
+              android.os.ParcelFileDescriptor&nbsp;crashAnnotationPfd)
        throws android.os.RemoteException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
