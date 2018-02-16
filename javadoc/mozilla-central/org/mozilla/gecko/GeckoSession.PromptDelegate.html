@@ -139,10 +139,18 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.AuthenticationOptions.html" title="class in org.mozilla.gecko">GeckoSession.PromptDelegate.AuthenticationOptions</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.ButtonCallback.html" title="interface in org.mozilla.gecko">GeckoSession.PromptDelegate.ButtonCallback</a></span></code>
 <div class="block">Callback interface for notifying the result of a button prompt.</div>
 </td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.Choice.html" title="class in org.mozilla.gecko">GeckoSession.PromptDelegate.Choice</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
@@ -180,54 +188,6 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#AUTH_FLAG_CROSS_ORIGIN_SUB_RESOURCE">AUTH_FLAG_CROSS_ORIGIN_SUB_RESOURCE</a></span></code>
-<div class="block">The auth prompt is for a cross-origin sub-resource.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#AUTH_FLAG_HOST">AUTH_FLAG_HOST</a></span></code>
-<div class="block">The auth prompt is for a network host.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#AUTH_FLAG_ONLY_PASSWORD">AUTH_FLAG_ONLY_PASSWORD</a></span></code>
-<div class="block">The auth prompt should only request a password.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#AUTH_FLAG_PREVIOUS_FAILED">AUTH_FLAG_PREVIOUS_FAILED</a></span></code>
-<div class="block">The auth prompt is the result of a previous failed login.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#AUTH_FLAG_PROXY">AUTH_FLAG_PROXY</a></span></code>
-<div class="block">The auth prompt is for a proxy.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#AUTH_LEVEL_NONE">AUTH_LEVEL_NONE</a></span></code>
-<div class="block">The auth request is unencrypted or the encryption status is unknown.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#AUTH_LEVEL_PW_ENCRYPTED">AUTH_LEVEL_PW_ENCRYPTED</a></span></code>
-<div class="block">The auth request only encrypts password but not data.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#AUTH_LEVEL_SECURE">AUTH_LEVEL_SECURE</a></span></code>
-<div class="block">The auth request encrypts both password and data.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#BUTTON_TYPE_NEGATIVE">BUTTON_TYPE_NEGATIVE</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -240,57 +200,39 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#CHOICE_TYPE_MENU">CHOICE_TYPE_MENU</a></span></code>
-<div class="block">Display choices in a menu that dismisses as soon as an item is chosen.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#CHOICE_TYPE_MULTIPLE">CHOICE_TYPE_MULTIPLE</a></span></code>
-<div class="block">Display choices in a list that allows multiple selections.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#CHOICE_TYPE_SINGLE">CHOICE_TYPE_SINGLE</a></span></code>
-<div class="block">Display choices in a list that allows a single selection.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#DATETIME_TYPE_DATE">DATETIME_TYPE_DATE</a></span></code>
 <div class="block">Prompt for year, month, and day.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#DATETIME_TYPE_DATETIME_LOCAL">DATETIME_TYPE_DATETIME_LOCAL</a></span></code>
 <div class="block">Prompt for year, month, day, hour, and minute, without timezone.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#DATETIME_TYPE_MONTH">DATETIME_TYPE_MONTH</a></span></code>
 <div class="block">Prompt for year and month.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#DATETIME_TYPE_TIME">DATETIME_TYPE_TIME</a></span></code>
 <div class="block">Prompt for hour and minute.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#DATETIME_TYPE_WEEK">DATETIME_TYPE_WEEK</a></span></code>
 <div class="block">Prompt for year and week.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#FILE_TYPE_MULTIPLE">FILE_TYPE_MULTIPLE</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#FILE_TYPE_SINGLE">FILE_TYPE_SINGLE</a></span></code>&nbsp;</td>
 </tr>
@@ -320,10 +262,10 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#promptForAuth-org.mozilla.gecko.GeckoSession-java.lang.String-java.lang.String-org.mozilla.gecko.util.GeckoBundle-org.mozilla.gecko.GeckoSession.PromptDelegate.AuthCallback-">promptForAuth</a></span>(<a href="../../../org/mozilla/gecko/GeckoSession.html" title="class in org.mozilla.gecko">GeckoSession</a>&nbsp;session,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#promptForAuth-org.mozilla.gecko.GeckoSession-java.lang.String-java.lang.String-org.mozilla.gecko.GeckoSession.PromptDelegate.AuthenticationOptions-org.mozilla.gecko.GeckoSession.PromptDelegate.AuthCallback-">promptForAuth</a></span>(<a href="../../../org/mozilla/gecko/GeckoSession.html" title="class in org.mozilla.gecko">GeckoSession</a>&nbsp;session,
              String&nbsp;title,
              String&nbsp;msg,
-             <a href="../../../org/mozilla/gecko/util/GeckoBundle.html" title="class in org.mozilla.gecko.util">GeckoBundle</a>&nbsp;options,
+             <a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.AuthenticationOptions.html" title="class in org.mozilla.gecko">GeckoSession.PromptDelegate.AuthenticationOptions</a>&nbsp;options,
              <a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.AuthCallback.html" title="interface in org.mozilla.gecko">GeckoSession.PromptDelegate.AuthCallback</a>&nbsp;callback)</code>
 <div class="block">Display a prompt for authentication credentials.</div>
 </td>
@@ -340,11 +282,11 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#promptForChoice-org.mozilla.gecko.GeckoSession-java.lang.String-java.lang.String-int-org.mozilla.gecko.util.GeckoBundle:A-org.mozilla.gecko.GeckoSession.PromptDelegate.ChoiceCallback-">promptForChoice</a></span>(<a href="../../../org/mozilla/gecko/GeckoSession.html" title="class in org.mozilla.gecko">GeckoSession</a>&nbsp;session,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html#promptForChoice-org.mozilla.gecko.GeckoSession-java.lang.String-java.lang.String-int-org.mozilla.gecko.GeckoSession.PromptDelegate.Choice:A-org.mozilla.gecko.GeckoSession.PromptDelegate.ChoiceCallback-">promptForChoice</a></span>(<a href="../../../org/mozilla/gecko/GeckoSession.html" title="class in org.mozilla.gecko">GeckoSession</a>&nbsp;session,
                String&nbsp;title,
                String&nbsp;msg,
                int&nbsp;type,
-               <a href="../../../org/mozilla/gecko/util/GeckoBundle.html" title="class in org.mozilla.gecko.util">GeckoBundle</a>[]&nbsp;choices,
+               <a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.Choice.html" title="class in org.mozilla.gecko">GeckoSession.PromptDelegate.Choice</a>[]&nbsp;choices,
                <a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.ChoiceCallback.html" title="interface in org.mozilla.gecko">GeckoSession.PromptDelegate.ChoiceCallback</a>&nbsp;callback)</code>
 <div class="block">Display a menu prompt or list prompt.</div>
 </td>
@@ -441,160 +383,6 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#org.mozilla.gecko.GeckoSession.PromptDelegate.BUTTON_TYPE_NEGATIVE">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="AUTH_FLAG_HOST">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>AUTH_FLAG_HOST</h4>
-<pre>static final&nbsp;int AUTH_FLAG_HOST</pre>
-<div class="block">The auth prompt is for a network host.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.gecko.GeckoSession.PromptDelegate.AUTH_FLAG_HOST">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="AUTH_FLAG_PROXY">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>AUTH_FLAG_PROXY</h4>
-<pre>static final&nbsp;int AUTH_FLAG_PROXY</pre>
-<div class="block">The auth prompt is for a proxy.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.gecko.GeckoSession.PromptDelegate.AUTH_FLAG_PROXY">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="AUTH_FLAG_ONLY_PASSWORD">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>AUTH_FLAG_ONLY_PASSWORD</h4>
-<pre>static final&nbsp;int AUTH_FLAG_ONLY_PASSWORD</pre>
-<div class="block">The auth prompt should only request a password.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.gecko.GeckoSession.PromptDelegate.AUTH_FLAG_ONLY_PASSWORD">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="AUTH_FLAG_PREVIOUS_FAILED">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>AUTH_FLAG_PREVIOUS_FAILED</h4>
-<pre>static final&nbsp;int AUTH_FLAG_PREVIOUS_FAILED</pre>
-<div class="block">The auth prompt is the result of a previous failed login.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.gecko.GeckoSession.PromptDelegate.AUTH_FLAG_PREVIOUS_FAILED">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="AUTH_FLAG_CROSS_ORIGIN_SUB_RESOURCE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>AUTH_FLAG_CROSS_ORIGIN_SUB_RESOURCE</h4>
-<pre>static final&nbsp;int AUTH_FLAG_CROSS_ORIGIN_SUB_RESOURCE</pre>
-<div class="block">The auth prompt is for a cross-origin sub-resource.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.gecko.GeckoSession.PromptDelegate.AUTH_FLAG_CROSS_ORIGIN_SUB_RESOURCE">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="AUTH_LEVEL_NONE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>AUTH_LEVEL_NONE</h4>
-<pre>static final&nbsp;int AUTH_LEVEL_NONE</pre>
-<div class="block">The auth request is unencrypted or the encryption status is unknown.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.gecko.GeckoSession.PromptDelegate.AUTH_LEVEL_NONE">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="AUTH_LEVEL_PW_ENCRYPTED">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>AUTH_LEVEL_PW_ENCRYPTED</h4>
-<pre>static final&nbsp;int AUTH_LEVEL_PW_ENCRYPTED</pre>
-<div class="block">The auth request only encrypts password but not data.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.gecko.GeckoSession.PromptDelegate.AUTH_LEVEL_PW_ENCRYPTED">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="AUTH_LEVEL_SECURE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>AUTH_LEVEL_SECURE</h4>
-<pre>static final&nbsp;int AUTH_LEVEL_SECURE</pre>
-<div class="block">The auth request encrypts both password and data.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.gecko.GeckoSession.PromptDelegate.AUTH_LEVEL_SECURE">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="CHOICE_TYPE_MENU">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>CHOICE_TYPE_MENU</h4>
-<pre>static final&nbsp;int CHOICE_TYPE_MENU</pre>
-<div class="block">Display choices in a menu that dismisses as soon as an item is chosen.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.gecko.GeckoSession.PromptDelegate.CHOICE_TYPE_MENU">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="CHOICE_TYPE_SINGLE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>CHOICE_TYPE_SINGLE</h4>
-<pre>static final&nbsp;int CHOICE_TYPE_SINGLE</pre>
-<div class="block">Display choices in a list that allows a single selection.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.gecko.GeckoSession.PromptDelegate.CHOICE_TYPE_SINGLE">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="CHOICE_TYPE_MULTIPLE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>CHOICE_TYPE_MULTIPLE</h4>
-<pre>static final&nbsp;int CHOICE_TYPE_MULTIPLE</pre>
-<div class="block">Display choices in a list that allows multiple selections.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.gecko.GeckoSession.PromptDelegate.CHOICE_TYPE_MULTIPLE">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -770,7 +558,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="promptForAuth-org.mozilla.gecko.GeckoSession-java.lang.String-java.lang.String-org.mozilla.gecko.util.GeckoBundle-org.mozilla.gecko.GeckoSession.PromptDelegate.AuthCallback-">
+<a name="promptForAuth-org.mozilla.gecko.GeckoSession-java.lang.String-java.lang.String-org.mozilla.gecko.GeckoSession.PromptDelegate.AuthenticationOptions-org.mozilla.gecko.GeckoSession.PromptDelegate.AuthCallback-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -779,7 +567,7 @@ var activeTableTab = "activeTableTab";
 <pre>void&nbsp;promptForAuth(<a href="../../../org/mozilla/gecko/GeckoSession.html" title="class in org.mozilla.gecko">GeckoSession</a>&nbsp;session,
                    String&nbsp;title,
                    String&nbsp;msg,
-                   <a href="../../../org/mozilla/gecko/util/GeckoBundle.html" title="class in org.mozilla.gecko.util">GeckoBundle</a>&nbsp;options,
+                   <a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.AuthenticationOptions.html" title="class in org.mozilla.gecko">GeckoSession.PromptDelegate.AuthenticationOptions</a>&nbsp;options,
                    <a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.AuthCallback.html" title="interface in org.mozilla.gecko">GeckoSession.PromptDelegate.AuthCallback</a>&nbsp;callback)</pre>
 <div class="block">Display a prompt for authentication credentials.</div>
 <dl>
@@ -797,7 +585,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="promptForChoice-org.mozilla.gecko.GeckoSession-java.lang.String-java.lang.String-int-org.mozilla.gecko.util.GeckoBundle:A-org.mozilla.gecko.GeckoSession.PromptDelegate.ChoiceCallback-">
+<a name="promptForChoice-org.mozilla.gecko.GeckoSession-java.lang.String-java.lang.String-int-org.mozilla.gecko.GeckoSession.PromptDelegate.Choice:A-org.mozilla.gecko.GeckoSession.PromptDelegate.ChoiceCallback-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -807,7 +595,7 @@ var activeTableTab = "activeTableTab";
                      String&nbsp;title,
                      String&nbsp;msg,
                      int&nbsp;type,
-                     <a href="../../../org/mozilla/gecko/util/GeckoBundle.html" title="class in org.mozilla.gecko.util">GeckoBundle</a>[]&nbsp;choices,
+                     <a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.Choice.html" title="class in org.mozilla.gecko">GeckoSession.PromptDelegate.Choice</a>[]&nbsp;choices,
                      <a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.ChoiceCallback.html" title="interface in org.mozilla.gecko">GeckoSession.PromptDelegate.ChoiceCallback</a>&nbsp;callback)</pre>
 <div class="block">Display a menu prompt or list prompt.</div>
 <dl>
@@ -821,7 +609,7 @@ var activeTableTab = "activeTableTab";
                 "icon": String, URI of the item icon or null if none
                         (only valid for menus);
                 "id": String, ID of the item or group;
-                "items": GeckoBundle[], array of sub-items in a group or null
+                "items": Choice[], array of sub-items in a group or null
                          if not a group.
                 "label": String, label for displaying the item or group;
                 "selected": boolean, true if the item should be pre-selected

@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/mozilla/gecko/GeckoSession.ProgressListener.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.gecko"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/gecko/GeckoSession.PermissionDelegate.MediaCallback.html" target="_top">Frames</a></li>
@@ -126,8 +126,8 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.MediaCallback.html#grant-org.mozilla.gecko.util.GeckoBundle-org.mozilla.gecko.util.GeckoBundle-">grant</a></span>(<a href="../../../org/mozilla/gecko/util/GeckoBundle.html" title="class in org.mozilla.gecko.util">GeckoBundle</a>&nbsp;video,
-     <a href="../../../org/mozilla/gecko/util/GeckoBundle.html" title="class in org.mozilla.gecko.util">GeckoBundle</a>&nbsp;audio)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.MediaCallback.html#grant-org.mozilla.gecko.GeckoSession.PermissionDelegate.MediaSource-org.mozilla.gecko.GeckoSession.PermissionDelegate.MediaSource-">grant</a></span>(<a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.gecko">GeckoSession.PermissionDelegate.MediaSource</a>&nbsp;video,
+     <a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.gecko">GeckoSession.PermissionDelegate.MediaSource</a>&nbsp;audio)</code>
 <div class="block">Called by the implementation after permissions are granted; the
  implementation must call one of grant() or reject() for every request.</div>
 </td>
@@ -181,23 +181,23 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="grant-org.mozilla.gecko.util.GeckoBundle-org.mozilla.gecko.util.GeckoBundle-">
+<a name="grant-org.mozilla.gecko.GeckoSession.PermissionDelegate.MediaSource-org.mozilla.gecko.GeckoSession.PermissionDelegate.MediaSource-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>grant</h4>
-<pre>void&nbsp;grant(<a href="../../../org/mozilla/gecko/util/GeckoBundle.html" title="class in org.mozilla.gecko.util">GeckoBundle</a>&nbsp;video,
-           <a href="../../../org/mozilla/gecko/util/GeckoBundle.html" title="class in org.mozilla.gecko.util">GeckoBundle</a>&nbsp;audio)</pre>
+<pre>void&nbsp;grant(<a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.gecko">GeckoSession.PermissionDelegate.MediaSource</a>&nbsp;video,
+           <a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.gecko">GeckoSession.PermissionDelegate.MediaSource</a>&nbsp;audio)</pre>
 <div class="block">Called by the implementation after permissions are granted; the
  implementation must call one of grant() or reject() for every request.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>video</code> - Bundle for the video source to use (must be an original
-              GeckoBundle object that was passed to the implementation);
+<dd><code>video</code> - MediaSource for the video source to use (must be an original
+              MediaSource object that was passed to the implementation);
               or null when video is not requested.</dd>
-<dd><code>audio</code> - Bundle for the audio source to use (must be an original
-              GeckoBundle object that was passed to the implementation);
+<dd><code>audio</code> - MediaSource for the audio source to use (must be an original
+              MediaSource object that was passed to the implementation);
               or null when audio is not requested.</dd>
 </dl>
 </li>
@@ -241,7 +241,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/mozilla/gecko/GeckoSession.ProgressListener.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.gecko"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/gecko/GeckoSession.PermissionDelegate.MediaCallback.html" target="_top">Frames</a></li>
