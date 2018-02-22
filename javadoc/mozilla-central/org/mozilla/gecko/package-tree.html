@@ -80,10 +80,19 @@
 <li type="circle">Object
 <ul>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/AndroidGamepadManager.html" title="class in org.mozilla.gecko"><span class="typeNameLink">AndroidGamepadManager</span></a></li>
+<li type="circle">android.view.inputmethod.BaseInputConnection (implements android.view.inputmethod.InputConnection)
+<ul>
+<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoInputConnection.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoInputConnection</span></a> (implements org.mozilla.geckoview.<a href="../../../org/mozilla/geckoview/TextInputController.Delegate.html" title="interface in org.mozilla.geckoview">TextInputController.Delegate</a>, org.mozilla.geckoview.<a href="../../../org/mozilla/geckoview/TextInputController.EditableListener.html" title="interface in org.mozilla.geckoview">TextInputController.EditableListener</a>)</li>
+</ul>
+</li>
 <li type="circle">android.os.Binder (implements android.os.IBinder)
 <ul>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/IGeckoEditableChild.Stub.html" title="class in org.mozilla.gecko"><span class="typeNameLink">IGeckoEditableChild.Stub</span></a> (implements org.mozilla.gecko.<a href="../../../org/mozilla/gecko/IGeckoEditableChild.html" title="interface in org.mozilla.gecko">IGeckoEditableChild</a>)</li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/IGeckoEditableParent.Stub.html" title="class in org.mozilla.gecko"><span class="typeNameLink">IGeckoEditableParent.Stub</span></a> (implements org.mozilla.gecko.<a href="../../../org/mozilla/gecko/IGeckoEditableParent.html" title="interface in org.mozilla.gecko">IGeckoEditableParent</a>)</li>
+<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/IGeckoEditableParent.Stub.html" title="class in org.mozilla.gecko"><span class="typeNameLink">IGeckoEditableParent.Stub</span></a> (implements org.mozilla.gecko.<a href="../../../org/mozilla/gecko/IGeckoEditableParent.html" title="interface in org.mozilla.gecko">IGeckoEditableParent</a>)
+<ul>
+<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoEditable.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoEditable</span></a> (implements android.text.Editable, java.lang.reflect.InvocationHandler, org.mozilla.geckoview.<a href="../../../org/mozilla/geckoview/TextInputController.EditableClient.html" title="interface in org.mozilla.geckoview">TextInputController.EditableClient</a>)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li type="circle">android.content.BroadcastReceiver
@@ -99,23 +108,13 @@
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoProfile.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoProfile</span></a></li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoProfileDirectories.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoProfileDirectories</span></a></li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoScreenOrientation.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoScreenOrientation</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PermissionDelegate.MediaSource</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.ProgressListener.SecurityInformation.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.ProgressListener.SecurityInformation</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.AuthenticationOptions.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PromptDelegate.AuthenticationOptions</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.Choice.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PromptDelegate.Choice</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSessionSettings.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoSessionSettings</span></a> (implements android.os.Parcelable)</li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSharedPrefs.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoSharedPrefs</span></a></li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoVRManager.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoVRManager</span></a></li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/InputMethods.html" title="class in org.mozilla.gecko"><span class="typeNameLink">InputMethods</span></a></li>
 <li type="circle">org.mozilla.gecko.mozglue.<a href="../../../org/mozilla/gecko/mozglue/JNIObject.html" title="class in org.mozilla.gecko.mozglue"><span class="typeNameLink">JNIObject</span></a>
 <ul>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/EventDispatcher.html" title="class in org.mozilla.gecko"><span class="typeNameLink">EventDispatcher</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.Window.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.Window</span></a> (implements android.os.IInterface)</li>
-</ul>
-</li>
-<li type="circle">org.mozilla.gecko.gfx.<a href="../../../org/mozilla/gecko/gfx/LayerSession.html" title="class in org.mozilla.gecko.gfx"><span class="typeNameLink">LayerSession</span></a>
-<ul>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoSession</span></a> (implements android.os.Parcelable)</li>
+<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoEditableChild.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoEditableChild</span></a> (implements org.mozilla.gecko.<a href="../../../org/mozilla/gecko/IGeckoEditableChild.html" title="interface in org.mozilla.gecko">IGeckoEditableChild</a>)</li>
 </ul>
 </li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/NativeQueue.html" title="class in org.mozilla.gecko"><span class="typeNameLink">NativeQueue</span></a></li>
@@ -123,7 +122,6 @@
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/PrefsHelper.html" title="class in org.mozilla.gecko"><span class="typeNameLink">PrefsHelper</span></a></li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/PrefsHelper.PrefHandlerBase.html" title="class in org.mozilla.gecko"><span class="typeNameLink">PrefsHelper.PrefHandlerBase</span></a> (implements org.mozilla.gecko.<a href="../../../org/mozilla/gecko/PrefsHelper.PrefHandler.html" title="interface in org.mozilla.gecko">PrefsHelper.PrefHandler</a>)</li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/SysInfo.html" title="class in org.mozilla.gecko"><span class="typeNameLink">SysInfo</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/TextInputController.html" title="class in org.mozilla.gecko"><span class="typeNameLink">TextInputController</span></a></li>
 <li type="circle">Thread (implements Runnable)
 <ul>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoThread.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoThread</span></a></li>
@@ -139,43 +137,12 @@
 </li>
 </ul>
 </li>
-<li type="circle">android.view.View (implements android.view.accessibility.AccessibilityEventSource, android.graphics.drawable.Drawable.Callback, android.view.KeyEvent.Callback)
-<ul>
-<li type="circle">android.view.ViewGroup (implements android.view.ViewManager, android.view.ViewParent)
-<ul>
-<li type="circle">android.widget.FrameLayout
-<ul>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoView.html" title="class in org.mozilla.gecko"><span class="typeNameLink">GeckoView</span></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoAppShell.GeckoInterface.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoAppShell.GeckoInterface</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.ContentListener.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.ContentListener</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.NavigationListener.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.NavigationListener</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PermissionDelegate</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PermissionDelegate.Callback</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PermissionDelegate.MediaCallback.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PermissionDelegate.MediaCallback</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.ProgressListener.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.ProgressListener</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PromptDelegate</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.AlertCallback.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PromptDelegate.AlertCallback</span></a>
-<ul>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.AuthCallback.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PromptDelegate.AuthCallback</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.ButtonCallback.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PromptDelegate.ButtonCallback</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.ChoiceCallback.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PromptDelegate.ChoiceCallback</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.FileCallback.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PromptDelegate.FileCallback</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.PromptDelegate.TextCallback</span></a></li>
-</ul>
-</li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.ScrollListener.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.ScrollListener</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.TrackingProtectionDelegate.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.TrackingProtectionDelegate</span></a></li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoVRManager.GVRDelegate.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">GeckoVRManager.GVRDelegate</span></a></li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/HapticFeedbackDelegate.html" title="interface in org.mozilla.gecko"><span class="typeNameLink">HapticFeedbackDelegate</span></a></li>
 <li type="circle">android.os.IInterface
@@ -204,8 +171,6 @@
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoNetworkManager.ManagerEvent.html" title="enum in org.mozilla.gecko"><span class="typeNameLink">GeckoNetworkManager.ManagerEvent</span></a></li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoNetworkManager.ManagerState.html" title="enum in org.mozilla.gecko"><span class="typeNameLink">GeckoNetworkManager.ManagerState</span></a></li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoScreenOrientation.ScreenOrientation.html" title="enum in org.mozilla.gecko"><span class="typeNameLink">GeckoScreenOrientation.ScreenOrientation</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.NavigationListener.LoadUriResult.html" title="enum in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.NavigationListener.LoadUriResult</span></a></li>
-<li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSession.NavigationListener.TargetWindow.html" title="enum in org.mozilla.gecko"><span class="typeNameLink">GeckoSession.NavigationListener.TargetWindow</span></a></li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoSharedPrefs.Flags.html" title="enum in org.mozilla.gecko"><span class="typeNameLink">GeckoSharedPrefs.Flags</span></a></li>
 <li type="circle">org.mozilla.gecko.<a href="../../../org/mozilla/gecko/GeckoThread.State.html" title="enum in org.mozilla.gecko"><span class="typeNameLink">GeckoThread.State</span></a> (implements org.mozilla.gecko.<a href="../../../org/mozilla/gecko/NativeQueue.State.html" title="interface in org.mozilla.gecko">NativeQueue.State</a>)</li>
 </ul>

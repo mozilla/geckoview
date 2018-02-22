@@ -7,3 +7,4 @@ org.mozilla.gecko.permissions
 org.mozilla.gecko.process
 org.mozilla.gecko.sqlite
 org.mozilla.gecko.util
+org.mozilla.geckoview
