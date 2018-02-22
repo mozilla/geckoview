@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -174,6 +174,14 @@ var activeTableTab = "activeTableTab";
 <div class="block">A view has started loading content from the network.</div>
 </td>
 </tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationListener.html#onNewSession-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoSession.Response-">onNewSession</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+            String&nbsp;uri,
+            <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&gt;&nbsp;response)</code>
+<div class="block">A request has been made to open a new session.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -240,7 +248,7 @@ var activeTableTab = "activeTableTab";
 <a name="onLoadUri-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoSession.NavigationListener.TargetWindow-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>onLoadUri</h4>
 <pre>boolean&nbsp;onLoadUri(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
@@ -253,8 +261,28 @@ var activeTableTab = "activeTableTab";
 <dd><code>uri</code> - The URI to be loaded.</dd>
 <dd><code>where</code> - The target window.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>True if the URI loading has been handled, false if Gecko
-         should handle the loading.</dd>
+<dd>Whether or not the load was handled. Returning false will allow Gecko
+         to continue the load as normal.</dd>
+</dl>
+</li>
+</ul>
+<a name="onNewSession-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoSession.Response-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onNewSession</h4>
+<pre>void&nbsp;onNewSession(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                  String&nbsp;uri,
+                  <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&gt;&nbsp;response)</pre>
+<div class="block">A request has been made to open a new session. The URI is provided only for
+ informational purposes. Do not call GeckoSession.loadUri() here. Additionally, the
+ returned GeckoSession must be a newly-created one.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>session</code> - The GeckoSession that initiated the callback.</dd>
+<dd><code>uri</code> - The URI to be loaded.</dd>
+<dd><code>response</code> - A Response which will hold the returned GeckoSession</dd>
 </dl>
 </li>
 </ul>

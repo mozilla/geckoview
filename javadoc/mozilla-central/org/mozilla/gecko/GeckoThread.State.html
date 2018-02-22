@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -197,12 +197,16 @@ implements <a href="../../../org/mozilla/gecko/NativeQueue.State.html" title="in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoThread.State.html#isAtLeast-org.mozilla.gecko.NativeQueue.State-">isAtLeast</a></span>(<a href="../../../org/mozilla/gecko/NativeQueue.State.html" title="interface in org.mozilla.gecko">NativeQueue.State</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoThread.State.html#toString--">toString</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../org/mozilla/gecko/GeckoThread.State.html" title="enum in org.mozilla.gecko">GeckoThread.State</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoThread.State.html#valueOf-java.lang.String-">valueOf</a></span>(String&nbsp;name)</code>
 <div class="block">Returns the enum constant of this type with the specified name.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../../org/mozilla/gecko/GeckoThread.State.html" title="enum in org.mozilla.gecko">GeckoThread.State</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/gecko/GeckoThread.State.html#values--">values</a></span>()</code>
 <div class="block">Returns an array containing the constants of this enum type, in
@@ -215,7 +219,7 @@ the order they are declared.</div>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;Enum</h3>
-<code>clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf</code></li>
+<code>clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, valueOf</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.Object">
@@ -403,13 +407,26 @@ not permitted.)</div>
 <a name="isAtLeast-org.mozilla.gecko.NativeQueue.State-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>isAtLeast</h4>
 <pre>public&nbsp;boolean&nbsp;isAtLeast(<a href="../../../org/mozilla/gecko/NativeQueue.State.html" title="interface in org.mozilla.gecko">NativeQueue.State</a>&nbsp;other)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mozilla/gecko/NativeQueue.State.html#isAtLeast-org.mozilla.gecko.NativeQueue.State-">isAtLeast</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mozilla/gecko/NativeQueue.State.html" title="interface in org.mozilla.gecko">NativeQueue.State</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="toString--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;String&nbsp;toString()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>Enum&lt;<a href="../../../org/mozilla/gecko/GeckoThread.State.html" title="enum in org.mozilla.gecko">GeckoThread.State</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

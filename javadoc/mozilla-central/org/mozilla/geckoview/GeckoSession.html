@@ -166,19 +166,25 @@ implements android.os.Parcelable</pre>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="type parameter in GeckoSession.Response">T</a>&gt;</span></code>
+<div class="block">This is used to send responses in delegate methods that have asynchronous responses.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ScrollListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollListener</a></span></code>
 <div class="block">GeckoSession applications implement this interface to handle content scroll
  events.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.TrackingProtectionDelegate</a></span></code>
 <div class="block">GeckoSession applications implement this interface to handle tracking
  protection events.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.Window.html" title="class in org.mozilla.geckoview">GeckoSession.Window</a></span></code>&nbsp;</td>
 </tr>
@@ -909,7 +915,7 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/TextInputController.html" ti
  This will replace the current handler.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>listener</code> - An implementation of TrackingProtectionDelegate.</dd>
+<dd><code>delegate</code> - An implementation of TrackingProtectionDelegate.</dd>
 </dl>
 </li>
 </ul>
@@ -975,7 +981,7 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/TextInputController.html" ti
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>categories</code> - The categories of trackers that should be blocked.
-                   Use one or more of the <code>CATEGORY_*</code>
+                   Use one or more of the <a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_AD"><code>GeckoSession.TrackingProtectionDelegate.CATEGORY_AD</code></a>
                    flags.</dd>
 </dl>
 </li>
