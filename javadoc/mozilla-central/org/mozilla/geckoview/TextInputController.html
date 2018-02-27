@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -36,8 +36,7 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <ul class="navList" title="Navigation">
-<li><a href="../../../overview-summary.html">Overview</a></li>
-<li><a href="package-summary.html">Package</a></li>
+<li><a href="../../../org/mozilla/geckoview/package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 <li><a href="package-tree.html">Tree</a></li>
 <li><a href="../../../deprecated-list.html">Deprecated</a></li>
@@ -95,7 +94,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li>Object</li>
+<li><a href="https://d.android.com/reference/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></li>
 <li>
 <ul class="inheritance">
 <li>org.mozilla.geckoview.TextInputController</li>
@@ -108,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public final class <span class="typeNameLabel">TextInputController</span>
-extends Object</pre>
+extends <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block">TextInputController handles text input for GeckoSession through key events or input
  methods. It is typically used to implement certain methods in View such as <code>onCreateInputConnection()</code>, by forwarding such calls to corresponding methods in
  TextInputController.</div>
@@ -158,7 +157,7 @@ extends Object</pre>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#TextInputController-org.mozilla.geckoview.GeckoSession-org.mozilla.gecko.NativeQueue-">TextInputController</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                   <a href="../../../org/mozilla/gecko/NativeQueue.html" title="class in org.mozilla.gecko">NativeQueue</a>&nbsp;queue)</code>&nbsp;</td>
+                   org.mozilla.gecko.NativeQueue&nbsp;queue)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -176,13 +175,13 @@ extends Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>android.os.Handler</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#getHandler-android.os.Handler-">getHandler</a></span>(android.os.Handler&nbsp;defHandler)</code>
+<td class="colFirst"><code><a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os">Handler</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#getHandler-android.os.Handler-">getHandler</a></span>(<a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os">Handler</a>&nbsp;defHandler)</code>
 <div class="block">Get a Handler for the background input method thread.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>android.view.View</code></td>
+<td class="colFirst"><code><a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#getView--">getView</a></span>()</code>
 <div class="block">Get the current View for text input.</div>
 </td>
@@ -195,22 +194,22 @@ extends Object</pre>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>android.view.inputmethod.InputConnection</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#onCreateInputConnection-android.view.inputmethod.EditorInfo-">onCreateInputConnection</a></span>(android.view.inputmethod.EditorInfo&nbsp;attrs)</code>
+<td class="colFirst"><code><a href="https://d.android.com/reference/android/view/inputmethod/InputConnection.html?is-external=true" title="class or interface in android.view.inputmethod">InputConnection</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#onCreateInputConnection-android.view.inputmethod.EditorInfo-">onCreateInputConnection</a></span>(<a href="https://d.android.com/reference/android/view/inputmethod/EditorInfo.html?is-external=true" title="class or interface in android.view.inputmethod">EditorInfo</a>&nbsp;attrs)</code>
 <div class="block">Get an InputConnection instance.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#onKeyDown-int-android.view.KeyEvent-">onKeyDown</a></span>(int&nbsp;keyCode,
-         android.view.KeyEvent&nbsp;event)</code>
+         <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Process a KeyEvent as a key-down event.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#onKeyLongPress-int-android.view.KeyEvent-">onKeyLongPress</a></span>(int&nbsp;keyCode,
-              android.view.KeyEvent&nbsp;event)</code>
+              <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Process a KeyEvent as a long-press event.</div>
 </td>
 </tr>
@@ -218,31 +217,27 @@ extends Object</pre>
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#onKeyMultiple-int-int-android.view.KeyEvent-">onKeyMultiple</a></span>(int&nbsp;keyCode,
              int&nbsp;repeatCount,
-             android.view.KeyEvent&nbsp;event)</code>
+             <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Process a KeyEvent as a multiple-press event.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#onKeyPreIme-int-android.view.KeyEvent-">onKeyPreIme</a></span>(int&nbsp;keyCode,
-           android.view.KeyEvent&nbsp;event)</code>
+           <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Process a KeyEvent as a pre-IME event.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#onKeyUp-int-android.view.KeyEvent-">onKeyUp</a></span>(int&nbsp;keyCode,
-       android.view.KeyEvent&nbsp;event)</code>
+       <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Process a KeyEvent as a key-up event.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#onWindowChanged-org.mozilla.geckoview.GeckoSession.Window-">onWindowChanged</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.Window.html" title="class in org.mozilla.geckoview">GeckoSession.Window</a>&nbsp;window)</code>&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#setView-android.view.View-">setView</a></span>(android.view.View&nbsp;view)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/TextInputController.html#setView-android.view.View-">setView</a></span>(<a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view)</code>
 <div class="block">Set the View for text input.</div>
 </td>
 </tr>
@@ -251,8 +246,8 @@ extends Object</pre>
 <li class="blockList"><a name="methods.inherited.from.class.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<h3>Methods inherited from class&nbsp;<a href="https://d.android.com/reference/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://d.android.com/reference/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -274,10 +269,10 @@ extends Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>TextInputController</h4>
-<pre>public&nbsp;TextInputController(@NonNull
+<pre>public&nbsp;TextInputController(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
                            <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                           @NonNull
-                           <a href="../../../org/mozilla/gecko/NativeQueue.html" title="class in org.mozilla.gecko">NativeQueue</a>&nbsp;queue)</pre>
+                           <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                           org.mozilla.gecko.NativeQueue&nbsp;queue)</pre>
 </li>
 </ul>
 </li>
@@ -288,24 +283,15 @@ extends Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="onWindowChanged-org.mozilla.geckoview.GeckoSession.Window-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>onWindowChanged</h4>
-<pre>public&nbsp;void&nbsp;onWindowChanged(<a href="../../../org/mozilla/geckoview/GeckoSession.Window.html" title="class in org.mozilla.geckoview">GeckoSession.Window</a>&nbsp;window)</pre>
-</li>
-</ul>
 <a name="getHandler-android.os.Handler-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getHandler</h4>
-<pre>@NonNull
-public&nbsp;android.os.Handler&nbsp;getHandler(@NonNull
-                                              android.os.Handler&nbsp;defHandler)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os">Handler</a>&nbsp;getHandler(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                   <a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os">Handler</a>&nbsp;defHandler)</pre>
 <div class="block">Get a Handler for the background input method thread. In order to use a background
  thread for input method operations on systems prior to Nougat, first override
  <code>View.getHandler()</code> for the View returning the InputConnection instance, and
@@ -333,8 +319,8 @@ public&nbsp;android.os.Handler&nbsp;getHandler(@NonNull
 <ul class="blockList">
 <li class="blockList">
 <h4>getView</h4>
-<pre>@Nullable
-public&nbsp;android.view.View&nbsp;getView()</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+public&nbsp;<a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;getView()</pre>
 <div class="block">Get the current View for text input.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -350,8 +336,8 @@ public&nbsp;android.view.View&nbsp;getView()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setView</h4>
-<pre>public&nbsp;void&nbsp;setView(@Nullable
-                    android.view.View&nbsp;view)</pre>
+<pre>public&nbsp;void&nbsp;setView(<a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                    <a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view)</pre>
 <div class="block">Set the View for text input. The current View is used to interact with the system
  input method manager and to display certain text input UI elements.</div>
 <dl>
@@ -366,9 +352,9 @@ public&nbsp;android.view.View&nbsp;getView()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>onCreateInputConnection</h4>
-<pre>@Nullable
-public&nbsp;android.view.inputmethod.InputConnection&nbsp;onCreateInputConnection(@NonNull
-                                                                                  android.view.inputmethod.EditorInfo&nbsp;attrs)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+public&nbsp;<a href="https://d.android.com/reference/android/view/inputmethod/InputConnection.html?is-external=true" title="class or interface in android.view.inputmethod">InputConnection</a>&nbsp;onCreateInputConnection(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                                         <a href="https://d.android.com/reference/android/view/inputmethod/EditorInfo.html?is-external=true" title="class or interface in android.view.inputmethod">EditorInfo</a>&nbsp;attrs)</pre>
 <div class="block">Get an InputConnection instance. For full functionality, call <a href="../../../org/mozilla/geckoview/TextInputController.html#setView-android.view.View-"><code>setView(View)</code></a> first before calling this method.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -385,8 +371,8 @@ public&nbsp;android.view.inputmethod.InputConnection&nbsp;onCreateInputConnectio
 <li class="blockList">
 <h4>onKeyPreIme</h4>
 <pre>public&nbsp;boolean&nbsp;onKeyPreIme(int&nbsp;keyCode,
-                           @NonNull
-                           android.view.KeyEvent&nbsp;event)</pre>
+                           <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                           <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
 <div class="block">Process a KeyEvent as a pre-IME event.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -404,8 +390,8 @@ public&nbsp;android.view.inputmethod.InputConnection&nbsp;onCreateInputConnectio
 <li class="blockList">
 <h4>onKeyDown</h4>
 <pre>public&nbsp;boolean&nbsp;onKeyDown(int&nbsp;keyCode,
-                         @NonNull
-                         android.view.KeyEvent&nbsp;event)</pre>
+                         <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                         <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
 <div class="block">Process a KeyEvent as a key-down event.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -423,8 +409,8 @@ public&nbsp;android.view.inputmethod.InputConnection&nbsp;onCreateInputConnectio
 <li class="blockList">
 <h4>onKeyUp</h4>
 <pre>public&nbsp;boolean&nbsp;onKeyUp(int&nbsp;keyCode,
-                       @NonNull
-                       android.view.KeyEvent&nbsp;event)</pre>
+                       <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                       <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
 <div class="block">Process a KeyEvent as a key-up event.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -442,8 +428,8 @@ public&nbsp;android.view.inputmethod.InputConnection&nbsp;onCreateInputConnectio
 <li class="blockList">
 <h4>onKeyLongPress</h4>
 <pre>public&nbsp;boolean&nbsp;onKeyLongPress(int&nbsp;keyCode,
-                              @NonNull
-                              android.view.KeyEvent&nbsp;event)</pre>
+                              <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                              <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
 <div class="block">Process a KeyEvent as a long-press event.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -462,8 +448,8 @@ public&nbsp;android.view.inputmethod.InputConnection&nbsp;onCreateInputConnectio
 <h4>onKeyMultiple</h4>
 <pre>public&nbsp;boolean&nbsp;onKeyMultiple(int&nbsp;keyCode,
                              int&nbsp;repeatCount,
-                             @NonNull
-                             android.view.KeyEvent&nbsp;event)</pre>
+                             <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                             <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
 <div class="block">Process a KeyEvent as a multiple-press event.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -506,8 +492,7 @@ public&nbsp;android.view.inputmethod.InputConnection&nbsp;onCreateInputConnectio
 <!--   -->
 </a>
 <ul class="navList" title="Navigation">
-<li><a href="../../../overview-summary.html">Overview</a></li>
-<li><a href="package-summary.html">Package</a></li>
+<li><a href="../../../org/mozilla/geckoview/package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 <li><a href="package-tree.html">Tree</a></li>
 <li><a href="../../../deprecated-list.html">Deprecated</a></li>
