@@ -574,12 +574,7 @@ var activeTableTab = "activeTableTab";
 <dd><code>session</code> - GeckoSession that triggered the prompt</dd>
 <dd><code>title</code> - Title for the prompt dialog.</dd>
 <dd><code>msg</code> - Message for the prompt dialog.</dd>
-<dd><code>options</code> - Bundle containing options for the prompt with keys,
-                "flags": int, bit field of AUTH_FLAG_* flags;
-                "uri": String, URI for the auth request or null if unknown;
-                "level": int, one of AUTH_LEVEL_* indicating level of encryption;
-                "username": String, initial username or null if password-only;
-                "password": String, intiial password;</dd>
+<dd><code>options</code> - AuthenticationOptions containing options for the prompt</dd>
 <dd><code>callback</code> - Callback interface.</dd>
 </dl>
 </li>
@@ -603,18 +598,7 @@ var activeTableTab = "activeTableTab";
 <dd><code>title</code> - Title for the prompt dialog, or null for no title.</dd>
 <dd><code>msg</code> - Message for the prompt dialog, or null for no message.</dd>
 <dd><code>type</code> - One of CHOICE_TYPE_* indicating the type of prompt.</dd>
-<dd><code>choices</code> - Array of bundles each representing an item or group, with keys,
-                "disabled": boolean, true if the item should not be selectable;
-                "icon": String, URI of the item icon or null if none
-                        (only valid for menus);
-                "id": String, ID of the item or group;
-                "items": Choice[], array of sub-items in a group or null
-                         if not a group.
-                "label": String, label for displaying the item or group;
-                "selected": boolean, true if the item should be pre-selected
-                            (pre-checked for menu items);
-                "separator": boolean, true if the item should be a menu separator
-                             (only valid for menus);</dd>
+<dd><code>choices</code> - Array of Choices each representing an item or group.</dd>
 <dd><code>callback</code> - Callback interface.</dd>
 </dl>
 </li>

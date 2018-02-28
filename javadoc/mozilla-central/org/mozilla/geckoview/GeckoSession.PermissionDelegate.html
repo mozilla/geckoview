@@ -72,13 +72,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -148,6 +148,33 @@ var activeTableTab = "activeTableTab";
 </table>
 </li>
 </ul>
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#PERMISSION_DESKTOP_NOTIFICATION">PERMISSION_DESKTOP_NOTIFICATION</a></span></code>
+<div class="block">Permission for using the notifications API.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#PERMISSION_GEOLOCATION">PERMISSION_GEOLOCATION</a></span></code>
+<div class="block">Permission for using the geolocation API.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -170,9 +197,9 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#requestContentPermission-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PermissionDelegate.Callback-">requestContentPermission</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#requestContentPermission-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String-org.mozilla.geckoview.GeckoSession.PermissionDelegate.Callback-">requestContentPermission</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                         <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                        <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type,
+                        int&nbsp;type,
                         <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;access,
                         <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.Callback</a>&nbsp;callback)</code>
 <div class="block">Request content permission.</div>
@@ -198,6 +225,44 @@ var activeTableTab = "activeTableTab";
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="PERMISSION_GEOLOCATION">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PERMISSION_GEOLOCATION</h4>
+<pre>static final&nbsp;int PERMISSION_GEOLOCATION</pre>
+<div class="block">Permission for using the geolocation API.
+ See: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.PermissionDelegate.PERMISSION_GEOLOCATION">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="PERMISSION_DESKTOP_NOTIFICATION">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PERMISSION_DESKTOP_NOTIFICATION</h4>
+<pre>static final&nbsp;int PERMISSION_DESKTOP_NOTIFICATION</pre>
+<div class="block">Permission for using the notifications API.
+ See: https://developer.mozilla.org/en-US/docs/Web/API/notification</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.PermissionDelegate.PERMISSION_DESKTOP_NOTIFICATION">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
@@ -226,7 +291,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="requestContentPermission-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PermissionDelegate.Callback-">
+<a name="requestContentPermission-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String-org.mozilla.geckoview.GeckoSession.PermissionDelegate.Callback-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -234,7 +299,7 @@ var activeTableTab = "activeTableTab";
 <h4>requestContentPermission</h4>
 <pre>void&nbsp;requestContentPermission(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                               <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type,
+                              int&nbsp;type,
                               <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;access,
                               <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.Callback</a>&nbsp;callback)</pre>
 <div class="block">Request content permission.</div>
@@ -243,8 +308,8 @@ var activeTableTab = "activeTableTab";
 <dd><code>session</code> - GeckoSession instance requesting the permission.</dd>
 <dd><code>uri</code> - The URI of the content requesting the permission.</dd>
 <dd><code>type</code> - The type of the requested permission; possible values are,
-             "geolocation": permission for using the geolocation API
-             "desktop-notification": permission for using the notifications API</dd>
+             PERMISSION_GEOLOCATION
+             PERMISSION_DESKTOP_NOTIFICATION</dd>
 <dd><code>access</code> - Not used.</dd>
 <dd><code>callback</code> - Callback interface.</dd>
 </dl>
@@ -325,13 +390,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
