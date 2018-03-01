@@ -46,7 +46,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationListener.TargetWindow.html" title="enum in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.TargetWindow.html" title="enum in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -189,29 +189,29 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#requestAndroidPermissions-org.mozilla.geckoview.GeckoSession-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PermissionDelegate.Callback-">requestAndroidPermissions</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                         <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;permissions,
-                         <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.Callback</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#onAndroidPermissionsRequest-org.mozilla.geckoview.GeckoSession-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PermissionDelegate.Callback-">onAndroidPermissionsRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                           <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;permissions,
+                           <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.Callback</a>&nbsp;callback)</code>
 <div class="block">Request Android app permissions.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#requestContentPermission-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String-org.mozilla.geckoview.GeckoSession.PermissionDelegate.Callback-">requestContentPermission</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                        <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                        int&nbsp;type,
-                        <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;access,
-                        <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.Callback</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#onContentPermissionRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String-org.mozilla.geckoview.GeckoSession.PermissionDelegate.Callback-">onContentPermissionRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                          <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                          int&nbsp;type,
+                          <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;access,
+                          <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.Callback</a>&nbsp;callback)</code>
 <div class="block">Request content permission.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#requestMediaPermission-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoSession.PermissionDelegate.MediaSource:A-org.mozilla.geckoview.GeckoSession.PermissionDelegate.MediaSource:A-org.mozilla.geckoview.GeckoSession.PermissionDelegate.MediaCallback-">requestMediaPermission</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                      <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                      <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.geckoview">GeckoSession.PermissionDelegate.MediaSource</a>[]&nbsp;video,
-                      <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.geckoview">GeckoSession.PermissionDelegate.MediaSource</a>[]&nbsp;audio,
-                      <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.MediaCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.MediaCallback</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#onMediaPermissionRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoSession.PermissionDelegate.MediaSource:A-org.mozilla.geckoview.GeckoSession.PermissionDelegate.MediaSource:A-org.mozilla.geckoview.GeckoSession.PermissionDelegate.MediaCallback-">onMediaPermissionRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                        <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                        <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.geckoview">GeckoSession.PermissionDelegate.MediaSource</a>[]&nbsp;video,
+                        <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.geckoview">GeckoSession.PermissionDelegate.MediaSource</a>[]&nbsp;audio,
+                        <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.MediaCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.MediaCallback</a>&nbsp;callback)</code>
 <div class="block">Request content media permissions, including request for which video and/or
  audio source to use.</div>
 </td>
@@ -269,15 +269,15 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="requestAndroidPermissions-org.mozilla.geckoview.GeckoSession-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PermissionDelegate.Callback-">
+<a name="onAndroidPermissionsRequest-org.mozilla.geckoview.GeckoSession-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PermissionDelegate.Callback-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>requestAndroidPermissions</h4>
-<pre>void&nbsp;requestAndroidPermissions(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                               <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;permissions,
-                               <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.Callback</a>&nbsp;callback)</pre>
+<h4>onAndroidPermissionsRequest</h4>
+<pre>void&nbsp;onAndroidPermissionsRequest(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                                 <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;permissions,
+                                 <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.Callback</a>&nbsp;callback)</pre>
 <div class="block">Request Android app permissions.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -291,17 +291,17 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="requestContentPermission-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String-org.mozilla.geckoview.GeckoSession.PermissionDelegate.Callback-">
+<a name="onContentPermissionRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String-org.mozilla.geckoview.GeckoSession.PermissionDelegate.Callback-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>requestContentPermission</h4>
-<pre>void&nbsp;requestContentPermission(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                              int&nbsp;type,
-                              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;access,
-                              <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.Callback</a>&nbsp;callback)</pre>
+<h4>onContentPermissionRequest</h4>
+<pre>void&nbsp;onContentPermissionRequest(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                                <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                                int&nbsp;type,
+                                <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;access,
+                                <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.Callback</a>&nbsp;callback)</pre>
 <div class="block">Request content permission.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -315,17 +315,17 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="requestMediaPermission-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoSession.PermissionDelegate.MediaSource:A-org.mozilla.geckoview.GeckoSession.PermissionDelegate.MediaSource:A-org.mozilla.geckoview.GeckoSession.PermissionDelegate.MediaCallback-">
+<a name="onMediaPermissionRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoSession.PermissionDelegate.MediaSource:A-org.mozilla.geckoview.GeckoSession.PermissionDelegate.MediaSource:A-org.mozilla.geckoview.GeckoSession.PermissionDelegate.MediaCallback-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>requestMediaPermission</h4>
-<pre>void&nbsp;requestMediaPermission(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                            <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                            <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.geckoview">GeckoSession.PermissionDelegate.MediaSource</a>[]&nbsp;video,
-                            <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.geckoview">GeckoSession.PermissionDelegate.MediaSource</a>[]&nbsp;audio,
-                            <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.MediaCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.MediaCallback</a>&nbsp;callback)</pre>
+<h4>onMediaPermissionRequest</h4>
+<pre>void&nbsp;onMediaPermissionRequest(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                              <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.geckoview">GeckoSession.PermissionDelegate.MediaSource</a>[]&nbsp;video,
+                              <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.MediaSource.html" title="class in org.mozilla.geckoview">GeckoSession.PermissionDelegate.MediaSource</a>[]&nbsp;audio,
+                              <a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.MediaCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate.MediaCallback</a>&nbsp;callback)</pre>
 <div class="block">Request content media permissions, including request for which video and/or
  audio source to use.</div>
 <dl>
@@ -364,7 +364,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationListener.TargetWindow.html" title="enum in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.TargetWindow.html" title="enum in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Callback.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

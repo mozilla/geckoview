@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../org/mozilla/geckoview/GeckoSession.ContentListener.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/GeckoSession.html" target="_top">Frames</a></li>
@@ -138,11 +138,11 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentListener</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentDelegate</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationListener.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationListener</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationDelegate</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
@@ -153,7 +153,7 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ProgressListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressListener</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ProgressDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressDelegate</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
@@ -171,7 +171,7 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ScrollListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollListener</a></span></code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ScrollDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollDelegate</a></span></code>
 <div class="block">GeckoSession applications implement this interface to handle content scroll
  events.</div>
 </td>
@@ -296,8 +296,8 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.ContentListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentListener</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getContentListener--">getContentListener</a></span>()</code>
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentDelegate</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getContentDelegate--">getContentDelegate</a></span>()</code>
 <div class="block">Get the content callback handler.</div>
 </td>
 </tr>
@@ -306,8 +306,8 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getEventDispatcher--">getEventDispatcher</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationListener.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationListener</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getNavigationListener--">getNavigationListener</a></span>()</code>
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationDelegate</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getNavigationDelegate--">getNavigationDelegate</a></span>()</code>
 <div class="block">Get the navigation callback handler.</div>
 </td>
 </tr>
@@ -318,8 +318,8 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.ProgressListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressListener</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getProgressListener--">getProgressListener</a></span>()</code>
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.ProgressDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressDelegate</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getProgressDelegate--">getProgressDelegate</a></span>()</code>
 <div class="block">Get the progress callback handler.</div>
 </td>
 </tr>
@@ -330,8 +330,8 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.ScrollListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollListener</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getScrollListener--">getScrollListener</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.ScrollDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollDelegate</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getScrollDelegate--">getScrollDelegate</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSessionSettings.html" title="class in org.mozilla.geckoview">GeckoSessionSettings</a></code></td>
@@ -418,13 +418,13 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setContentListener-org.mozilla.geckoview.GeckoSession.ContentListener-">setContentListener</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.ContentListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentListener</a>&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setContentDelegate-org.mozilla.geckoview.GeckoSession.ContentDelegate-">setContentDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the content callback handler.</div>
 </td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setNavigationListener-org.mozilla.geckoview.GeckoSession.NavigationListener-">setNavigationListener</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.NavigationListener.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationListener</a>&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setNavigationDelegate-org.mozilla.geckoview.GeckoSession.NavigationDelegate-">setNavigationDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the navigation callback handler.</div>
 </td>
 </tr>
@@ -436,7 +436,7 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setProgressListener-org.mozilla.geckoview.GeckoSession.ProgressListener-">setProgressListener</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.ProgressListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressListener</a>&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setProgressDelegate-org.mozilla.geckoview.GeckoSession.ProgressDelegate-">setProgressDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.ProgressDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the progress callback handler.</div>
 </td>
 </tr>
@@ -448,7 +448,7 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setScrollListener-org.mozilla.geckoview.GeckoSession.ScrollListener-">setScrollListener</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.ScrollListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollListener</a>&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setScrollDelegate-org.mozilla.geckoview.GeckoSession.ScrollDelegate-">setScrollDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.ScrollDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the content scroll callback handler.</div>
 </td>
 </tr>
@@ -801,28 +801,28 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/TextInputController.html" ti
 <div class="block">Exits fullscreen mode</div>
 </li>
 </ul>
-<a name="setContentListener-org.mozilla.geckoview.GeckoSession.ContentListener-">
+<a name="setContentDelegate-org.mozilla.geckoview.GeckoSession.ContentDelegate-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setContentListener</h4>
-<pre>public&nbsp;void&nbsp;setContentListener(<a href="../../../org/mozilla/geckoview/GeckoSession.ContentListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentListener</a>&nbsp;listener)</pre>
+<h4>setContentDelegate</h4>
+<pre>public&nbsp;void&nbsp;setContentDelegate(<a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentDelegate</a>&nbsp;delegate)</pre>
 <div class="block">Set the content callback handler.
  This will replace the current handler.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>listener</code> - An implementation of ContentListener.</dd>
+<dd><code>delegate</code> - An implementation of ContentDelegate.</dd>
 </dl>
 </li>
 </ul>
-<a name="getContentListener--">
+<a name="getContentDelegate--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getContentListener</h4>
-<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.ContentListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentListener</a>&nbsp;getContentListener()</pre>
+<h4>getContentDelegate</h4>
+<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentDelegate</a>&nbsp;getContentDelegate()</pre>
 <div class="block">Get the content callback handler.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -830,28 +830,28 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/TextInputController.html" ti
 </dl>
 </li>
 </ul>
-<a name="setProgressListener-org.mozilla.geckoview.GeckoSession.ProgressListener-">
+<a name="setProgressDelegate-org.mozilla.geckoview.GeckoSession.ProgressDelegate-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setProgressListener</h4>
-<pre>public&nbsp;void&nbsp;setProgressListener(<a href="../../../org/mozilla/geckoview/GeckoSession.ProgressListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressListener</a>&nbsp;listener)</pre>
+<h4>setProgressDelegate</h4>
+<pre>public&nbsp;void&nbsp;setProgressDelegate(<a href="../../../org/mozilla/geckoview/GeckoSession.ProgressDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressDelegate</a>&nbsp;delegate)</pre>
 <div class="block">Set the progress callback handler.
  This will replace the current handler.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>listener</code> - An implementation of ProgressListener.</dd>
+<dd><code>delegate</code> - An implementation of ProgressDelegate.</dd>
 </dl>
 </li>
 </ul>
-<a name="getProgressListener--">
+<a name="getProgressDelegate--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getProgressListener</h4>
-<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.ProgressListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressListener</a>&nbsp;getProgressListener()</pre>
+<h4>getProgressDelegate</h4>
+<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.ProgressDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressDelegate</a>&nbsp;getProgressDelegate()</pre>
 <div class="block">Get the progress callback handler.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -859,28 +859,28 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/TextInputController.html" ti
 </dl>
 </li>
 </ul>
-<a name="setNavigationListener-org.mozilla.geckoview.GeckoSession.NavigationListener-">
+<a name="setNavigationDelegate-org.mozilla.geckoview.GeckoSession.NavigationDelegate-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setNavigationListener</h4>
-<pre>public&nbsp;void&nbsp;setNavigationListener(<a href="../../../org/mozilla/geckoview/GeckoSession.NavigationListener.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationListener</a>&nbsp;listener)</pre>
+<h4>setNavigationDelegate</h4>
+<pre>public&nbsp;void&nbsp;setNavigationDelegate(<a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationDelegate</a>&nbsp;delegate)</pre>
 <div class="block">Set the navigation callback handler.
  This will replace the current handler.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>listener</code> - An implementation of NavigationListener.</dd>
+<dd><code>delegate</code> - An implementation of NavigationDelegate.</dd>
 </dl>
 </li>
 </ul>
-<a name="getNavigationListener--">
+<a name="getNavigationDelegate--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getNavigationListener</h4>
-<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.NavigationListener.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationListener</a>&nbsp;getNavigationListener()</pre>
+<h4>getNavigationDelegate</h4>
+<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationDelegate</a>&nbsp;getNavigationDelegate()</pre>
 <div class="block">Get the navigation callback handler.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -888,28 +888,28 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/TextInputController.html" ti
 </dl>
 </li>
 </ul>
-<a name="setScrollListener-org.mozilla.geckoview.GeckoSession.ScrollListener-">
+<a name="setScrollDelegate-org.mozilla.geckoview.GeckoSession.ScrollDelegate-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setScrollListener</h4>
-<pre>public&nbsp;void&nbsp;setScrollListener(<a href="../../../org/mozilla/geckoview/GeckoSession.ScrollListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollListener</a>&nbsp;listener)</pre>
+<h4>setScrollDelegate</h4>
+<pre>public&nbsp;void&nbsp;setScrollDelegate(<a href="../../../org/mozilla/geckoview/GeckoSession.ScrollDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollDelegate</a>&nbsp;delegate)</pre>
 <div class="block">Set the content scroll callback handler.
  This will replace the current handler.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>listener</code> - An implementation of ScrollListener.</dd>
+<dd><code>delegate</code> - An implementation of ScrollDelegate.</dd>
 </dl>
 </li>
 </ul>
-<a name="getScrollListener--">
+<a name="getScrollDelegate--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getScrollListener</h4>
-<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.ScrollListener.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollListener</a>&nbsp;getScrollListener()</pre>
+<h4>getScrollDelegate</h4>
+<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.ScrollDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollDelegate</a>&nbsp;getScrollDelegate()</pre>
 </li>
 </ul>
 <a name="setTrackingProtectionDelegate-org.mozilla.geckoview.GeckoSession.TrackingProtectionDelegate-">
@@ -1031,7 +1031,7 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/TextInputController.html" ti
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../org/mozilla/geckoview/GeckoSession.ContentListener.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/GeckoSession.html" target="_top">Frames</a></li>

@@ -46,7 +46,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/mozilla/geckoview/GeckoSession.ProgressListener.SecurityInformation.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoSession.ProgressDelegate.SecurityInformation.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AlertCallback.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -139,7 +139,7 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AuthenticationOptions.html" title="class in org.mozilla.geckoview">GeckoSession.PromptDelegate.AuthenticationOptions</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AuthOptions.html" title="class in org.mozilla.geckoview">GeckoSession.PromptDelegate.AuthOptions</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
@@ -252,82 +252,82 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#alert-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.AlertCallback-">alert</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-     <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-     <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
-     <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AlertCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.AlertCallback</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#onAlert-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.AlertCallback-">onAlert</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+       <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+       <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
+       <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AlertCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.AlertCallback</a>&nbsp;callback)</code>
 <div class="block">Display a simple message prompt.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#promptForAuth-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.AuthenticationOptions-org.mozilla.geckoview.GeckoSession.PromptDelegate.AuthCallback-">promptForAuth</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
-             <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AuthenticationOptions.html" title="class in org.mozilla.geckoview">GeckoSession.PromptDelegate.AuthenticationOptions</a>&nbsp;options,
-             <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AuthCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.AuthCallback</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#onAuthPrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.AuthOptions-org.mozilla.geckoview.GeckoSession.PromptDelegate.AuthCallback-">onAuthPrompt</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+            <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+            <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
+            <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AuthOptions.html" title="class in org.mozilla.geckoview">GeckoSession.PromptDelegate.AuthOptions</a>&nbsp;options,
+            <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AuthCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.AuthCallback</a>&nbsp;callback)</code>
 <div class="block">Display a prompt for authentication credentials.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#promptForButton-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.ButtonCallback-">promptForButton</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-               <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-               <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
-               <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;btnMsg,
-               <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.ButtonCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.ButtonCallback</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#onButtonPrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.ButtonCallback-">onButtonPrompt</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
+              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;btnMsg,
+              <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.ButtonCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.ButtonCallback</a>&nbsp;callback)</code>
 <div class="block">Display a prompt with up to three buttons.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#promptForChoice-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-int-org.mozilla.geckoview.GeckoSession.PromptDelegate.Choice:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.ChoiceCallback-">promptForChoice</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-               <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-               <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
-               int&nbsp;type,
-               <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.Choice.html" title="class in org.mozilla.geckoview">GeckoSession.PromptDelegate.Choice</a>[]&nbsp;choices,
-               <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.ChoiceCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.ChoiceCallback</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#onChoicePrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-int-org.mozilla.geckoview.GeckoSession.PromptDelegate.Choice:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.ChoiceCallback-">onChoicePrompt</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
+              int&nbsp;type,
+              <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.Choice.html" title="class in org.mozilla.geckoview">GeckoSession.PromptDelegate.Choice</a>[]&nbsp;choices,
+              <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.ChoiceCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.ChoiceCallback</a>&nbsp;callback)</code>
 <div class="block">Display a menu prompt or list prompt.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#promptForColor-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">promptForColor</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
-              <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.TextCallback</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#onColorPrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">onColorPrompt</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
+             <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.TextCallback</a>&nbsp;callback)</code>
 <div class="block">Display a color prompt.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#promptForDateTime-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">promptForDateTime</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                 <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                 int&nbsp;type,
-                 <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
-                 <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;min,
-                 <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;max,
-                 <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.TextCallback</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#onDateTimePrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">onDateTimePrompt</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+                int&nbsp;type,
+                <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
+                <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;min,
+                <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;max,
+                <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.TextCallback</a>&nbsp;callback)</code>
 <div class="block">Display a date/time prompt.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#promptForFile-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.FileCallback-">promptForFile</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-             int&nbsp;type,
-             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;mimeTypes,
-             <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.FileCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.FileCallback</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#onFilePrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.FileCallback-">onFilePrompt</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+            <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+            int&nbsp;type,
+            <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;mimeTypes,
+            <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.FileCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.FileCallback</a>&nbsp;callback)</code>
 <div class="block">Display a file prompt.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#promptForText-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">promptForText</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
-             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
-             <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.TextCallback</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#onTextPrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">onTextPrompt</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+            <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+            <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
+            <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
+            <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.TextCallback</a>&nbsp;callback)</code>
 <div class="block">Display a prompt for inputting text.</div>
 </td>
 </tr>
@@ -489,16 +489,16 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="alert-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.AlertCallback-">
+<a name="onAlert-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.AlertCallback-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>alert</h4>
-<pre>void&nbsp;alert(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-           <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-           <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
-           <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AlertCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.AlertCallback</a>&nbsp;callback)</pre>
+<h4>onAlert</h4>
+<pre>void&nbsp;onAlert(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
+             <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AlertCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.AlertCallback</a>&nbsp;callback)</pre>
 <div class="block">Display a simple message prompt.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -509,17 +509,17 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="promptForButton-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.ButtonCallback-">
+<a name="onButtonPrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.ButtonCallback-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>promptForButton</h4>
-<pre>void&nbsp;promptForButton(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                     <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                     <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
-                     <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;btnMsg,
-                     <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.ButtonCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.ButtonCallback</a>&nbsp;callback)</pre>
+<h4>onButtonPrompt</h4>
+<pre>void&nbsp;onButtonPrompt(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
+                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;btnMsg,
+                    <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.ButtonCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.ButtonCallback</a>&nbsp;callback)</pre>
 <div class="block">Display a prompt with up to three buttons.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -535,17 +535,17 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="promptForText-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">
+<a name="onTextPrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>promptForText</h4>
-<pre>void&nbsp;promptForText(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
-                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
-                   <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.TextCallback</a>&nbsp;callback)</pre>
+<h4>onTextPrompt</h4>
+<pre>void&nbsp;onTextPrompt(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                  <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+                  <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
+                  <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
+                  <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.TextCallback</a>&nbsp;callback)</pre>
 <div class="block">Display a prompt for inputting text.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -557,40 +557,40 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="promptForAuth-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.AuthenticationOptions-org.mozilla.geckoview.GeckoSession.PromptDelegate.AuthCallback-">
+<a name="onAuthPrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.AuthOptions-org.mozilla.geckoview.GeckoSession.PromptDelegate.AuthCallback-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>promptForAuth</h4>
-<pre>void&nbsp;promptForAuth(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
-                   <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AuthenticationOptions.html" title="class in org.mozilla.geckoview">GeckoSession.PromptDelegate.AuthenticationOptions</a>&nbsp;options,
-                   <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AuthCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.AuthCallback</a>&nbsp;callback)</pre>
+<h4>onAuthPrompt</h4>
+<pre>void&nbsp;onAuthPrompt(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                  <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+                  <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
+                  <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AuthOptions.html" title="class in org.mozilla.geckoview">GeckoSession.PromptDelegate.AuthOptions</a>&nbsp;options,
+                  <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AuthCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.AuthCallback</a>&nbsp;callback)</pre>
 <div class="block">Display a prompt for authentication credentials.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>session</code> - GeckoSession that triggered the prompt</dd>
 <dd><code>title</code> - Title for the prompt dialog.</dd>
 <dd><code>msg</code> - Message for the prompt dialog.</dd>
-<dd><code>options</code> - AuthenticationOptions containing options for the prompt</dd>
+<dd><code>options</code> - AuthOptions containing options for the prompt</dd>
 <dd><code>callback</code> - Callback interface.</dd>
 </dl>
 </li>
 </ul>
-<a name="promptForChoice-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-int-org.mozilla.geckoview.GeckoSession.PromptDelegate.Choice:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.ChoiceCallback-">
+<a name="onChoicePrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-int-org.mozilla.geckoview.GeckoSession.PromptDelegate.Choice:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.ChoiceCallback-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>promptForChoice</h4>
-<pre>void&nbsp;promptForChoice(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                     <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                     <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
-                     int&nbsp;type,
-                     <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.Choice.html" title="class in org.mozilla.geckoview">GeckoSession.PromptDelegate.Choice</a>[]&nbsp;choices,
-                     <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.ChoiceCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.ChoiceCallback</a>&nbsp;callback)</pre>
+<h4>onChoicePrompt</h4>
+<pre>void&nbsp;onChoicePrompt(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
+                    int&nbsp;type,
+                    <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.Choice.html" title="class in org.mozilla.geckoview">GeckoSession.PromptDelegate.Choice</a>[]&nbsp;choices,
+                    <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.ChoiceCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.ChoiceCallback</a>&nbsp;callback)</pre>
 <div class="block">Display a menu prompt or list prompt.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -603,16 +603,16 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="promptForColor-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">
+<a name="onColorPrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>promptForColor</h4>
-<pre>void&nbsp;promptForColor(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
-                    <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.TextCallback</a>&nbsp;callback)</pre>
+<h4>onColorPrompt</h4>
+<pre>void&nbsp;onColorPrompt(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
+                   <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.TextCallback</a>&nbsp;callback)</pre>
 <div class="block">Display a color prompt.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -624,19 +624,19 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="promptForDateTime-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">
+<a name="onDateTimePrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>promptForDateTime</h4>
-<pre>void&nbsp;promptForDateTime(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                       <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                       int&nbsp;type,
-                       <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
-                       <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;min,
-                       <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;max,
-                       <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.TextCallback</a>&nbsp;callback)</pre>
+<h4>onDateTimePrompt</h4>
+<pre>void&nbsp;onDateTimePrompt(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                      <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+                      int&nbsp;type,
+                      <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
+                      <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;min,
+                      <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;max,
+                      <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.TextCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.TextCallback</a>&nbsp;callback)</pre>
 <div class="block">Display a date/time prompt.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -651,17 +651,17 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="promptForFile-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.FileCallback-">
+<a name="onFilePrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.FileCallback-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>promptForFile</h4>
-<pre>void&nbsp;promptForFile(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                   int&nbsp;type,
-                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;mimeTypes,
-                   <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.FileCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.FileCallback</a>&nbsp;callback)</pre>
+<h4>onFilePrompt</h4>
+<pre>void&nbsp;onFilePrompt(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                  <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+                  int&nbsp;type,
+                  <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;mimeTypes,
+                  <a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.FileCallback.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate.FileCallback</a>&nbsp;callback)</pre>
 <div class="block">Display a file prompt.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -701,7 +701,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/mozilla/geckoview/GeckoSession.ProgressListener.SecurityInformation.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoSession.ProgressDelegate.SecurityInformation.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.AlertCallback.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
