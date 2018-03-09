@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.TargetWindow.html" title="enum in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" target="_top">Frames</a></li>
@@ -71,14 +71,14 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -109,21 +109,29 @@ var activeTableTab = "activeTableTab";
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
+<!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
+<li class="blockList"><a name="field.summary">
 <!--   -->
 </a>
-<h3>Nested Class Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Interface and Description</th>
+<th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.TargetWindow.html" title="enum in org.mozilla.geckoview">GeckoSession.NavigationDelegate.TargetWindow</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#TARGET_WINDOW_CURRENT">TARGET_WINDOW_CURRENT</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#TARGET_WINDOW_NEW">TARGET_WINDOW_NEW</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#TARGET_WINDOW_NONE">TARGET_WINDOW_NONE</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -156,9 +164,9 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onLoadUri-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoSession.NavigationDelegate.TargetWindow-">onLoadUri</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-         <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-         <a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.TargetWindow.html" title="enum in org.mozilla.geckoview">GeckoSession.NavigationDelegate.TargetWindow</a>&nbsp;where)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onLoadRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-">onLoadRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+             int&nbsp;target)</code>
 <div class="block">A request to open an URI.</div>
 </td>
 </tr>
@@ -186,6 +194,53 @@ var activeTableTab = "activeTableTab";
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="TARGET_WINDOW_NONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TARGET_WINDOW_NONE</h4>
+<pre>static final&nbsp;int TARGET_WINDOW_NONE</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.NavigationDelegate.TARGET_WINDOW_NONE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="TARGET_WINDOW_CURRENT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TARGET_WINDOW_CURRENT</h4>
+<pre>static final&nbsp;int TARGET_WINDOW_CURRENT</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.NavigationDelegate.TARGET_WINDOW_CURRENT">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="TARGET_WINDOW_NEW">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>TARGET_WINDOW_NEW</h4>
+<pre>static final&nbsp;int TARGET_WINDOW_NEW</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.NavigationDelegate.TARGET_WINDOW_NEW">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
@@ -240,21 +295,22 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="onLoadUri-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoSession.NavigationDelegate.TargetWindow-">
+<a name="onLoadRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>onLoadUri</h4>
-<pre>boolean&nbsp;onLoadUri(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                  <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                  <a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.TargetWindow.html" title="enum in org.mozilla.geckoview">GeckoSession.NavigationDelegate.TargetWindow</a>&nbsp;where)</pre>
+<h4>onLoadRequest</h4>
+<pre>boolean&nbsp;onLoadRequest(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                      <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                      int&nbsp;target)</pre>
 <div class="block">A request to open an URI.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>session</code> - The GeckoSession that initiated the callback.</dd>
 <dd><code>uri</code> - The URI to be loaded.</dd>
-<dd><code>where</code> - The target window.</dd>
+<dd><code>target</code> - The target where the window has requested to open. One of
+               TARGET_WINDOW_*.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Whether or not the load was handled. Returning false will allow Gecko
          to continue the load as normal.</dd>
@@ -308,7 +364,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.TargetWindow.html" title="enum in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" target="_top">Frames</a></li>
@@ -332,14 +388,14 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

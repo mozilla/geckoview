@@ -271,7 +271,9 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#closeWindow--">closeWindow</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#close--">close</a></span>()</code>
+<div class="block">Closes the session.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
@@ -383,7 +385,9 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#openWindow-android.content.Context-">openWindow</a></span>(<a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;appContext)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#open-android.content.Context-">open</a></span>(<a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;appContext)</code>
+<div class="block">Opens the session.</div>
+</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>static void</code></td>
@@ -662,23 +666,41 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <pre>public&nbsp;boolean&nbsp;isOpen()</pre>
 </li>
 </ul>
-<a name="openWindow-android.content.Context-">
+<a name="open-android.content.Context-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>openWindow</h4>
-<pre>public&nbsp;void&nbsp;openWindow(<a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
-                       <a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;appContext)</pre>
+<h4>open</h4>
+<pre>public&nbsp;void&nbsp;open(<a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                 <a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;appContext)</pre>
+<div class="block">Opens the session.
+
+ The session is in a 'closed' state when first created. Opening it creates
+ the underlying Gecko objects necessary to load a page, etc. Most GeckoSession
+ methods only take affect on an open session, and are queued until the session
+ is opened here. Opening a session is an asynchronous operation. You can check
+ the current state via isOpen().
+
+ Call this when you are ready to use a GeckoSession instance.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>appContext</code> - An application context</dd>
+</dl>
 </li>
 </ul>
-<a name="closeWindow--">
+<a name="close--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>closeWindow</h4>
-<pre>public&nbsp;void&nbsp;closeWindow()</pre>
+<h4>close</h4>
+<pre>public&nbsp;void&nbsp;close()</pre>
+<div class="block">Closes the session.
+
+ This frees the underlying Gecko objects and unloads the current page. The session may be
+ reopened later, but page state is not restored. Call this when you are finished using
+ a GeckoSession instance.</div>
 </li>
 </ul>
 <a name="getTextInputController--">
