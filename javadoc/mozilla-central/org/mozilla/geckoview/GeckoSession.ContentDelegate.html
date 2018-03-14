@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.ElementType.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/GeckoSession.ContentDelegate.html" target="_top">Frames</a></li>
@@ -71,14 +71,14 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -109,6 +109,56 @@ var activeTableTab = "activeTableTab";
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Interface and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.ElementType.html" title="annotation in org.mozilla.geckoview">GeckoSession.ContentDelegate.ElementType</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#ELEMENT_TYPE_AUDIO">ELEMENT_TYPE_AUDIO</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#ELEMENT_TYPE_IMAGE">ELEMENT_TYPE_IMAGE</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#ELEMENT_TYPE_NONE">ELEMENT_TYPE_NONE</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#ELEMENT_TYPE_VIDEO">ELEMENT_TYPE_VIDEO</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -129,10 +179,11 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onContextMenu-org.mozilla.geckoview.GeckoSession-int-int-java.lang.String-java.lang.String-">onContextMenu</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onContextMenu-org.mozilla.geckoview.GeckoSession-int-int-java.lang.String-int-java.lang.String-">onContextMenu</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
              int&nbsp;screenX,
              int&nbsp;screenY,
              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+             int&nbsp;elementTypes,
              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;elementSrc)</code>
 <div class="block">A user has initiated the context menu via long-press.</div>
 </td>
@@ -167,6 +218,66 @@ var activeTableTab = "activeTableTab";
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="ELEMENT_TYPE_NONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ELEMENT_TYPE_NONE</h4>
+<pre>static final&nbsp;int ELEMENT_TYPE_NONE</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.ContentDelegate.ELEMENT_TYPE_NONE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="ELEMENT_TYPE_IMAGE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ELEMENT_TYPE_IMAGE</h4>
+<pre>static final&nbsp;int ELEMENT_TYPE_IMAGE</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.ContentDelegate.ELEMENT_TYPE_IMAGE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="ELEMENT_TYPE_VIDEO">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ELEMENT_TYPE_VIDEO</h4>
+<pre>static final&nbsp;int ELEMENT_TYPE_VIDEO</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.ContentDelegate.ELEMENT_TYPE_VIDEO">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="ELEMENT_TYPE_AUDIO">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ELEMENT_TYPE_AUDIO</h4>
+<pre>static final&nbsp;int ELEMENT_TYPE_AUDIO</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.ContentDelegate.ELEMENT_TYPE_AUDIO">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
@@ -237,7 +348,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="onContextMenu-org.mozilla.geckoview.GeckoSession-int-int-java.lang.String-java.lang.String-">
+<a name="onContextMenu-org.mozilla.geckoview.GeckoSession-int-int-java.lang.String-int-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -247,6 +358,7 @@ var activeTableTab = "activeTableTab";
                    int&nbsp;screenX,
                    int&nbsp;screenY,
                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                   int&nbsp;elementTypes,
                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;elementSrc)</pre>
 <div class="block">A user has initiated the context menu via long-press.
  This event is fired on links, (nested) images and (nested) media
@@ -258,6 +370,8 @@ var activeTableTab = "activeTableTab";
 <dd><code>screenY</code> - The screen coordinates of the press.</dd>
 <dd><code>uri</code> - The URI of the pressed link, set for links and
             image-links.</dd>
+<dd><code>elementType</code> - The type of the pressed element.
+                    One of the <code>ContentDelegate#ELEMENT_TYPE_LINK</code> flags.</dd>
 <dd><code>elementSrc</code> - The source URI of the pressed element, set for
                    (nested) images and media elements.</dd>
 </dl>
@@ -290,7 +404,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.ElementType.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/GeckoSession.ContentDelegate.html" target="_top">Frames</a></li>
@@ -314,14 +428,14 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
