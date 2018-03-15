@@ -183,7 +183,7 @@ var activeTableTab = "activeTableTab";
              int&nbsp;screenX,
              int&nbsp;screenY,
              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-             int&nbsp;elementTypes,
+             int&nbsp;elementType,
              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;elementSrc)</code>
 <div class="block">A user has initiated the context menu via long-press.</div>
 </td>
@@ -358,7 +358,7 @@ var activeTableTab = "activeTableTab";
                    int&nbsp;screenX,
                    int&nbsp;screenY,
                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                   int&nbsp;elementTypes,
+                   int&nbsp;elementType,
                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;elementSrc)</pre>
 <div class="block">A user has initiated the context menu via long-press.
  This event is fired on links, (nested) images and (nested) media
@@ -371,7 +371,7 @@ var activeTableTab = "activeTableTab";
 <dd><code>uri</code> - The URI of the pressed link, set for links and
             image-links.</dd>
 <dd><code>elementType</code> - The type of the pressed element.
-                    One of the <code>ContentDelegate#ELEMENT_TYPE_LINK</code> flags.</dd>
+                    One of the <a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#ELEMENT_TYPE_NONE"><code>ELEMENT_TYPE_NONE</code></a> flags.</dd>
 <dd><code>elementSrc</code> - The source URI of the pressed element, set for
                    (nested) images and media elements.</dd>
 </dl>
