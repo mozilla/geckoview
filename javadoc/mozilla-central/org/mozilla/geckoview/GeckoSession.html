@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":9,"i22":9,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10};
+var methods = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":9,"i31":9,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -142,20 +142,24 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationDelegate</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.LoadFlags.html" title="annotation in org.mozilla.geckoview">GeckoSession.LoadFlags</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationDelegate</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate</a></span></code>
 <div class="block">GeckoSession applications implement this interface to handle requests for permissions
  from content, such as geolocation and notifications.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ProgressDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressDelegate</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate</a></span></code>
 <div class="block">GeckoSession applications implement this interface to handle prompts triggered by
@@ -163,20 +167,20 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
  pickers.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="type parameter in GeckoSession.Response">T</a>&gt;</span></code>
 <div class="block">This is used to send responses in delegate methods that have asynchronous responses.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ScrollDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollDelegate</a></span></code>
 <div class="block">GeckoSession applications implement this interface to handle content scroll
  events.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.TrackingProtectionDelegate</a></span></code>
 <div class="block">GeckoSession applications implement this interface to handle tracking
@@ -217,6 +221,36 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#CREATOR">CREATOR</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#LOAD_FLAGS_ALLOW_POPUPS">LOAD_FLAGS_ALLOW_POPUPS</a></span></code>
+<div class="block">Popup blocking will be disabled for this load</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#LOAD_FLAGS_BYPASS_CACHE">LOAD_FLAGS_BYPASS_CACHE</a></span></code>
+<div class="block">Bypass the cache.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#LOAD_FLAGS_BYPASS_PROXY">LOAD_FLAGS_BYPASS_PROXY</a></span></code>
+<div class="block">Bypass the proxy, if one has been configured.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#LOAD_FLAGS_EXTERNAL">LOAD_FLAGS_EXTERNAL</a></span></code>
+<div class="block">The load is coming from an external app.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#LOAD_FLAGS_NONE">LOAD_FLAGS_NONE</a></span></code>
+<div class="block">Default load flag, no special considerations.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected org.mozilla.geckoview.GeckoSession.Window</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#mWindow">mWindow</a></span></code>&nbsp;</td>
 </tr>
@@ -276,122 +310,188 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#createDataUri-byte:A-java.lang.String-">createDataUri</a></span>(byte[]&nbsp;bytes,
+             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mimeType)</code>
+<div class="block">Creates a data URI of of the form "data:&lt;mime type&gt;,&lt;base64-encoded data&gt;"</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#createDataUri-java.lang.String-java.lang.String-">createDataUri</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;data,
+             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mimeType)</code>
+<div class="block">Creates a data URI of of the form "data:&lt;mime type&gt;,&lt;base64-encoded data&gt;"</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#describeContents--">describeContents</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#disableTrackingProtection--">disableTrackingProtection</a></span>()</code>
 <div class="block">Disable tracking protection.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#enableTrackingProtection-int-">enableTrackingProtection</a></span>(int&nbsp;categories)</code>
 <div class="block">Enable tracking protection.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#exitFullScreen--">exitFullScreen</a></span>()</code>
 <div class="block">Exits fullscreen mode</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentDelegate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getContentDelegate--">getContentDelegate</a></span>()</code>
 <div class="block">Get the content callback handler.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>org.mozilla.gecko.EventDispatcher</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getEventDispatcher--">getEventDispatcher</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationDelegate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getNavigationDelegate--">getNavigationDelegate</a></span>()</code>
 <div class="block">Get the navigation callback handler.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getPermissionDelegate--">getPermissionDelegate</a></span>()</code>
 <div class="block">Get the current prompt delegate for this GeckoSession.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.ProgressDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressDelegate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getProgressDelegate--">getProgressDelegate</a></span>()</code>
 <div class="block">Get the progress callback handler.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getPromptDelegate--">getPromptDelegate</a></span>()</code>
 <div class="block">Get the current prompt delegate for this GeckoSession.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.ScrollDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollDelegate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getScrollDelegate--">getScrollDelegate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSessionSettings.html" title="class in org.mozilla.geckoview">GeckoSessionSettings</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getSettings--">getSettings</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/TextInputController.html" title="class in org.mozilla.geckoview">TextInputController</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getTextInputController--">getTextInputController</a></span>()</code>
 <div class="block">Get the TextInputController instance for this session.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.TrackingProtectionDelegate</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getTrackingProtectionDelegate--">getTrackingProtectionDelegate</a></span>()</code>
 <div class="block">Get the tracking protection callback handler.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#goBack--">goBack</a></span>()</code>
 <div class="block">Go back in history.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#goForward--">goForward</a></span>()</code>
 <div class="block">Go forward in history.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#isOpen--">isOpen</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#loadData-byte:A-java.lang.String-">loadData</a></span>(byte[]&nbsp;bytes,
+        <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mimeType)</code>
+<div class="block">Load the specified bytes.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#loadData-byte:A-java.lang.String-java.lang.String-">loadData</a></span>(byte[]&nbsp;bytes,
+        <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mimeType,
+        <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseUri)</code>
+<div class="block">Load the specified bytes.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#loadString-java.lang.String-java.lang.String-">loadString</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;data,
+          <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mimeType)</code>
+<div class="block">Load the specified String data.</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#loadUri-java.lang.String-">loadUri</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>
 <div class="block">Load the given URI.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#loadUri-java.lang.String-int-">loadUri</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+       int&nbsp;flags)</code>
+<div class="block">Load the given URI with the specified referrer and load type.</div>
+</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#loadUri-java.lang.String-java.lang.String-int-">loadUri</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+       <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;referrer,
+       int&nbsp;flags)</code>
+<div class="block">Load the given URI with the specified referrer and load type.</div>
+</td>
+</tr>
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#loadUri-android.net.Uri-">loadUri</a></span>(<a href="https://d.android.com/reference/android/net/Uri.html?is-external=true" title="class or interface in android.net">Uri</a>&nbsp;uri)</code>
 <div class="block">Load the given URI.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#loadUri-android.net.Uri-int-">loadUri</a></span>(<a href="https://d.android.com/reference/android/net/Uri.html?is-external=true" title="class or interface in android.net">Uri</a>&nbsp;uri,
+       int&nbsp;flags)</code>
+<div class="block">Load the given URI with the specified referrer and load type.</div>
+</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#loadUri-android.net.Uri-android.net.Uri-int-">loadUri</a></span>(<a href="https://d.android.com/reference/android/net/Uri.html?is-external=true" title="class or interface in android.net">Uri</a>&nbsp;uri,
+       <a href="https://d.android.com/reference/android/net/Uri.html?is-external=true" title="class or interface in android.net">Uri</a>&nbsp;referrer,
+       int&nbsp;flags)</code>
+<div class="block">Load the given URI with the specified referrer and load type.</div>
+</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#open-android.content.Context-">open</a></span>(<a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;appContext)</code>
 <div class="block">Opens the session.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#preload-android.content.Context-">preload</a></span>(<a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context)</code>
 <div class="block">Preload GeckoSession by starting Gecko in the background, if Gecko is not already running.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#preload-android.content.Context-java.lang.String:A-android.os.Bundle-boolean-">preload</a></span>(<a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context,
        <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;geckoArgs,
@@ -401,71 +501,71 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
  if Gecko is not already running.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#readFromParcel-android.os.Parcel-">readFromParcel</a></span>(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;source)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#reload--">reload</a></span>()</code>
 <div class="block">Reload the current URI.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setActive-boolean-">setActive</a></span>(boolean&nbsp;active)</code>
 <div class="block">Set this GeckoSession as active or inactive.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setContentDelegate-org.mozilla.geckoview.GeckoSession.ContentDelegate-">setContentDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the content callback handler.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setNavigationDelegate-org.mozilla.geckoview.GeckoSession.NavigationDelegate-">setNavigationDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the navigation callback handler.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setPermissionDelegate-org.mozilla.geckoview.GeckoSession.PermissionDelegate-">setPermissionDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the current permission delegate for this GeckoSession.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setProgressDelegate-org.mozilla.geckoview.GeckoSession.ProgressDelegate-">setProgressDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.ProgressDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the progress callback handler.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setPromptDelegate-org.mozilla.geckoview.GeckoSession.PromptDelegate-">setPromptDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the current prompt delegate for this GeckoSession.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setScrollDelegate-org.mozilla.geckoview.GeckoSession.ScrollDelegate-">setScrollDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.ScrollDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the content scroll callback handler.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setTrackingProtectionDelegate-org.mozilla.geckoview.GeckoSession.TrackingProtectionDelegate-">setTrackingProtectionDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.TrackingProtectionDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the tracking protection callback handler.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#stop--">stop</a></span>()</code>
 <div class="block">Stop loading.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#writeToParcel-android.os.Parcel-int-">writeToParcel</a></span>(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;out,
              int&nbsp;flags)</code>&nbsp;</td>
@@ -511,10 +611,80 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <a name="CREATOR">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>CREATOR</h4>
 <pre>public static final&nbsp;<a href="https://d.android.com/reference/android/os/Parcelable.Creator.html?is-external=true" title="class or interface in android.os">Parcelable.Creator</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&gt; CREATOR</pre>
+</li>
+</ul>
+<a name="LOAD_FLAGS_NONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LOAD_FLAGS_NONE</h4>
+<pre>public static final&nbsp;int LOAD_FLAGS_NONE</pre>
+<div class="block">Default load flag, no special considerations.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.LOAD_FLAGS_NONE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="LOAD_FLAGS_BYPASS_CACHE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LOAD_FLAGS_BYPASS_CACHE</h4>
+<pre>public static final&nbsp;int LOAD_FLAGS_BYPASS_CACHE</pre>
+<div class="block">Bypass the cache.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.LOAD_FLAGS_BYPASS_CACHE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="LOAD_FLAGS_BYPASS_PROXY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LOAD_FLAGS_BYPASS_PROXY</h4>
+<pre>public static final&nbsp;int LOAD_FLAGS_BYPASS_PROXY</pre>
+<div class="block">Bypass the proxy, if one has been configured.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.LOAD_FLAGS_BYPASS_PROXY">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="LOAD_FLAGS_EXTERNAL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LOAD_FLAGS_EXTERNAL</h4>
+<pre>public static final&nbsp;int LOAD_FLAGS_EXTERNAL</pre>
+<div class="block">The load is coming from an external app. Perform additional checks.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.LOAD_FLAGS_EXTERNAL">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="LOAD_FLAGS_ALLOW_POPUPS">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>LOAD_FLAGS_ALLOW_POPUPS</h4>
+<pre>public static final&nbsp;int LOAD_FLAGS_ALLOW_POPUPS</pre>
+<div class="block">Popup blocking will be disabled for this load</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.LOAD_FLAGS_ALLOW_POPUPS">Constant Field Values</a></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -720,11 +890,49 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/TextInputController.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>loadUri</h4>
-<pre>public&nbsp;void&nbsp;loadUri(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</pre>
+<pre>public&nbsp;void&nbsp;loadUri(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</pre>
 <div class="block">Load the given URI.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uri</code> - The URI of the resource to load.</dd>
+</dl>
+</li>
+</ul>
+<a name="loadUri-java.lang.String-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>loadUri</h4>
+<pre>public&nbsp;void&nbsp;loadUri(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                    int&nbsp;flags)</pre>
+<div class="block">Load the given URI with the specified referrer and load type.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uri</code> - the URI to load</dd>
+<dd><code>flags</code> - the load flags to use, an OR-ed value of <a href="../../../org/mozilla/geckoview/GeckoSession.html#LOAD_FLAGS_NONE"><code>LOAD_FLAGS_*</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="loadUri-java.lang.String-java.lang.String-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>loadUri</h4>
+<pre>public&nbsp;void&nbsp;loadUri(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                    <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;referrer,
+                    int&nbsp;flags)</pre>
+<div class="block">Load the given URI with the specified referrer and load type.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uri</code> - the URI to load</dd>
+<dd><code>referrer</code> - the referrer, may be null</dd>
+<dd><code>flags</code> - the load flags to use, an OR-ed value of <a href="../../../org/mozilla/geckoview/GeckoSession.html#LOAD_FLAGS_NONE"><code>LOAD_FLAGS_*</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -734,11 +942,149 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/TextInputController.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>loadUri</h4>
-<pre>public&nbsp;void&nbsp;loadUri(<a href="https://d.android.com/reference/android/net/Uri.html?is-external=true" title="class or interface in android.net">Uri</a>&nbsp;uri)</pre>
+<pre>public&nbsp;void&nbsp;loadUri(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                    <a href="https://d.android.com/reference/android/net/Uri.html?is-external=true" title="class or interface in android.net">Uri</a>&nbsp;uri)</pre>
 <div class="block">Load the given URI.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uri</code> - The URI of the resource to load.</dd>
+</dl>
+</li>
+</ul>
+<a name="loadUri-android.net.Uri-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>loadUri</h4>
+<pre>public&nbsp;void&nbsp;loadUri(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                    <a href="https://d.android.com/reference/android/net/Uri.html?is-external=true" title="class or interface in android.net">Uri</a>&nbsp;uri,
+                    int&nbsp;flags)</pre>
+<div class="block">Load the given URI with the specified referrer and load type.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uri</code> - the URI to load</dd>
+<dd><code>flags</code> - the load flags to use, an OR-ed value of <a href="../../../org/mozilla/geckoview/GeckoSession.html#LOAD_FLAGS_NONE"><code>LOAD_FLAGS_*</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="loadUri-android.net.Uri-android.net.Uri-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>loadUri</h4>
+<pre>public&nbsp;void&nbsp;loadUri(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                    <a href="https://d.android.com/reference/android/net/Uri.html?is-external=true" title="class or interface in android.net">Uri</a>&nbsp;uri,
+                    <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                    <a href="https://d.android.com/reference/android/net/Uri.html?is-external=true" title="class or interface in android.net">Uri</a>&nbsp;referrer,
+                    int&nbsp;flags)</pre>
+<div class="block">Load the given URI with the specified referrer and load type.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uri</code> - the URI to load</dd>
+<dd><code>referrer</code> - the Uri to use as the referrer</dd>
+<dd><code>flags</code> - the load flags to use, an OR-ed value of <a href="../../../org/mozilla/geckoview/GeckoSession.html#LOAD_FLAGS_NONE"><code>LOAD_FLAGS_*</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="loadString-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>loadString</h4>
+<pre>public&nbsp;void&nbsp;loadString(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                       <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;data,
+                       <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                       <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mimeType)</pre>
+<div class="block">Load the specified String data. Internally this is converted to a data URI.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>data</code> - a String representing the data</dd>
+<dd><code>mimeType</code> - the mime type of the data, e.g. "text/plain". Maybe be null, in
+                 which case the type is guessed.</dd>
+</dl>
+</li>
+</ul>
+<a name="loadData-byte:A-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>loadData</h4>
+<pre>public&nbsp;void&nbsp;loadData(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                     byte[]&nbsp;bytes,
+                     <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                     <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mimeType)</pre>
+<div class="block">Load the specified bytes. Internally this is converted to a data URI.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>bytes</code> - the data to load</dd>
+<dd><code>mimeType</code> - the mime type of the data, e.g. video/mp4. May be null, in which
+                 case the type is guessed.</dd>
+</dl>
+</li>
+</ul>
+<a name="loadData-byte:A-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>loadData</h4>
+<pre>public&nbsp;void&nbsp;loadData(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                     byte[]&nbsp;bytes,
+                     <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                     <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mimeType,
+                     <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                     <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseUri)</pre>
+<div class="block">Load the specified bytes. Internally this is converted to a data URI.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>bytes</code> - the data to load</dd>
+<dd><code>mimeType</code> - the mime type of the data, e.g. video/mp4. May be null, in which
+                 case the type is guessed.</dd>
+<dd><code>baseUri</code> - the base URI of the document. Relative paths will be resolved from here.</dd>
+</dl>
+</li>
+</ul>
+<a name="createDataUri-byte:A-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createDataUri</h4>
+<pre>public static&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;createDataUri(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                   byte[]&nbsp;bytes,
+                                   <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mimeType)</pre>
+<div class="block">Creates a data URI of of the form "data:&lt;mime type&gt;,&lt;base64-encoded data&gt;"</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>bytes</code> - the bytes that should be contained in the URL</dd>
+<dd><code>mimeType</code> - optional mime type, e.g. text/plain</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a URI String</dd>
+</dl>
+</li>
+</ul>
+<a name="createDataUri-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createDataUri</h4>
+<pre>public static&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;createDataUri(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;data,
+                                   <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mimeType)</pre>
+<div class="block">Creates a data URI of of the form "data:&lt;mime type&gt;,&lt;base64-encoded data&gt;"</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>data</code> - the String data that should be contained in the URL</dd>
+<dd><code>mimeType</code> - optional mime type, e.g. text/plain</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a URI String</dd>
 </dl>
 </li>
 </ul>
