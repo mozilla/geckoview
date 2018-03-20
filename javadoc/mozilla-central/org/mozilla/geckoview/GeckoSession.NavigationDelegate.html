@@ -182,10 +182,11 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onLoadRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-">onLoadRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onLoadRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-org.mozilla.geckoview.GeckoSession.Response-">onLoadRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-             int&nbsp;target)</code>
+             int&nbsp;target,
+             <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="https://d.android.com/reference/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;response)</code>
 <div class="block">A request to open an URI.</div>
 </td>
 </tr>
@@ -314,15 +315,16 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="onLoadRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-">
+<a name="onLoadRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-org.mozilla.geckoview.GeckoSession.Response-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onLoadRequest</h4>
-<pre>boolean&nbsp;onLoadRequest(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                      <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                      int&nbsp;target)</pre>
+<pre>void&nbsp;onLoadRequest(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                   int&nbsp;target,
+                   <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="https://d.android.com/reference/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;response)</pre>
 <div class="block">A request to open an URI.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -330,9 +332,6 @@ var activeTableTab = "activeTableTab";
 <dd><code>uri</code> - The URI to be loaded.</dd>
 <dd><code>target</code> - The target where the window has requested to open. One of
                TARGET_WINDOW_*.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Whether or not the load was handled. Returning false will allow Gecko
-         to continue the load as normal.</dd>
 </dl>
 </li>
 </ul>
