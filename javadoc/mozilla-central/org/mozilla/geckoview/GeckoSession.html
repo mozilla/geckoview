@@ -388,9 +388,9 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getSettings--">getSettings</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/TextInputController.html" title="class in org.mozilla.geckoview">TextInputController</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getTextInputController--">getTextInputController</a></span>()</code>
-<div class="block">Get the TextInputController instance for this session.</div>
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/SessionTextInput.html" title="class in org.mozilla.geckoview">SessionTextInput</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#getTextInput--">getTextInput</a></span>()</code>
+<div class="block">Get the SessionTextInput instance for this session.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
@@ -877,18 +877,18 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
  a GeckoSession instance.</div>
 </li>
 </ul>
-<a name="getTextInputController--">
+<a name="getTextInput--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getTextInputController</h4>
+<h4>getTextInput</h4>
 <pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-public&nbsp;<a href="../../../org/mozilla/geckoview/TextInputController.html" title="class in org.mozilla.geckoview">TextInputController</a>&nbsp;getTextInputController()</pre>
-<div class="block">Get the TextInputController instance for this session.</div>
+public&nbsp;<a href="../../../org/mozilla/geckoview/SessionTextInput.html" title="class in org.mozilla.geckoview">SessionTextInput</a>&nbsp;getTextInput()</pre>
+<div class="block">Get the SessionTextInput instance for this session. May be called on any thread.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>TextInputController instance.</dd>
+<dd>SessionTextInput instance.</dd>
 </dl>
 </li>
 </ul>
