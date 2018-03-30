@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -190,18 +190,26 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onExternalResponse-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.WebResponseInfo-">onExternalResponse</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                  <a href="../../../org/mozilla/geckoview/GeckoSession.WebResponseInfo.html" title="class in org.mozilla.geckoview">GeckoSession.WebResponseInfo</a>&nbsp;response)</code>
+<div class="block">This is fired when there is a response that cannot be handled
+ by Gecko (e.g., a download).</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onFocusRequest-org.mozilla.geckoview.GeckoSession-">onFocusRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</code>
 <div class="block">A page has requested focus.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onFullScreen-org.mozilla.geckoview.GeckoSession-boolean-">onFullScreen</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
             boolean&nbsp;fullScreen)</code>
 <div class="block">A page has entered or exited full screen mode.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onTitleChange-org.mozilla.geckoview.GeckoSession-java.lang.String-">onTitleChange</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title)</code>
@@ -351,7 +359,7 @@ var activeTableTab = "activeTableTab";
 <a name="onContextMenu-org.mozilla.geckoview.GeckoSession-int-int-java.lang.String-int-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>onContextMenu</h4>
 <pre>void&nbsp;onContextMenu(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
@@ -374,6 +382,23 @@ var activeTableTab = "activeTableTab";
                     One of the <a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#ELEMENT_TYPE_NONE"><code>ELEMENT_TYPE_NONE</code></a> flags.</dd>
 <dd><code>elementSrc</code> - The source URI of the pressed element, set for
                    (nested) images and media elements.</dd>
+</dl>
+</li>
+</ul>
+<a name="onExternalResponse-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.WebResponseInfo-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onExternalResponse</h4>
+<pre>void&nbsp;onExternalResponse(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                        <a href="../../../org/mozilla/geckoview/GeckoSession.WebResponseInfo.html" title="class in org.mozilla.geckoview">GeckoSession.WebResponseInfo</a>&nbsp;response)</pre>
+<div class="block">This is fired when there is a response that cannot be handled
+ by Gecko (e.g., a download).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>session</code> - the GeckoSession that received the external response.</dd>
+<dd><code>response</code> - the WebResponseInfo for the external response</dd>
 </dl>
 </li>
 </ul>
