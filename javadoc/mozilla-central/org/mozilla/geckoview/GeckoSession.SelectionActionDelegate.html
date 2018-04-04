@@ -534,7 +534,8 @@ var activeTableTab = "activeTableTab";
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>session</code> - The GeckoSession that initiated the callback.</dd>
 <dd><code>selection</code> - Current selection attributes.</dd>
-<dd><code>actions</code> - List of built-in actions available.</dd>
+<dd><code>actions</code> - Array of built-in actions available; possible values
+ come from the <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#ACTION_CUT"><code>ACTION_*</code></a> constants.</dd>
 <dd><code>response</code> - Callback object for performing built-in actions. For example,
  <code>response.respond(actions[0])</code> performs the first action. May be used
  multiple times to perform multiple actions at once.</dd>

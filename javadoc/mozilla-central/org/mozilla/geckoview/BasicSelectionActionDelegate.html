@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -226,38 +226,42 @@ implements <a href="https://d.android.com/reference/android/view/ActionMode.Call
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#clearSelection--">clearSelection</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#getAllActions--">getAllActions</a></span>()</code>
 <div class="block">Return list of all actions in proper order, regardless of their availability at present.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#isActionAvailable-java.lang.String-">isActionAvailable</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</code>
 <div class="block">Return whether an action is presently available.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#onActionItemClicked-android.view.ActionMode-android.view.MenuItem-">onActionItemClicked</a></span>(<a href="https://d.android.com/reference/android/view/ActionMode.html?is-external=true" title="class or interface in android.view">ActionMode</a>&nbsp;actionMode,
                    <a href="https://d.android.com/reference/android/view/MenuItem.html?is-external=true" title="class or interface in android.view">MenuItem</a>&nbsp;menuItem)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#onCreateActionMode-android.view.ActionMode-android.view.Menu-">onCreateActionMode</a></span>(<a href="https://d.android.com/reference/android/view/ActionMode.html?is-external=true" title="class or interface in android.view">ActionMode</a>&nbsp;actionMode,
                   <a href="https://d.android.com/reference/android/view/Menu.html?is-external=true" title="class or interface in android.view">Menu</a>&nbsp;menu)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#onDestroyActionMode-android.view.ActionMode-">onDestroyActionMode</a></span>(<a href="https://d.android.com/reference/android/view/ActionMode.html?is-external=true" title="class or interface in android.view">ActionMode</a>&nbsp;actionMode)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#onGetContentRect-android.view.ActionMode-android.view.View-android.graphics.Rect-">onGetContentRect</a></span>(<a href="https://d.android.com/reference/android/view/ActionMode.html?is-external=true" title="class or interface in android.view">ActionMode</a>&nbsp;mode,
                 <a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view,
                 <a href="https://d.android.com/reference/android/graphics/Rect.html?is-external=true" title="class or interface in android.graphics">Rect</a>&nbsp;outRect)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#onHideAction-org.mozilla.geckoview.GeckoSession-int-">onHideAction</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
             int&nbsp;reason)</code>
@@ -265,12 +269,12 @@ implements <a href="https://d.android.com/reference/android/view/ActionMode.Call
  page.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#onPrepareActionMode-android.view.ActionMode-android.view.Menu-">onPrepareActionMode</a></span>(<a href="https://d.android.com/reference/android/view/ActionMode.html?is-external=true" title="class or interface in android.view">ActionMode</a>&nbsp;actionMode,
                    <a href="https://d.android.com/reference/android/view/Menu.html?is-external=true" title="class or interface in android.view">Menu</a>&nbsp;menu)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoSession.Response-">onShowActionRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                    <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.Selection.html" title="class in org.mozilla.geckoview">GeckoSession.SelectionActionDelegate.Selection</a>&nbsp;selection,
@@ -279,13 +283,13 @@ implements <a href="https://d.android.com/reference/android/view/ActionMode.Call
 <div class="block">Selection actions are available.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#performAction-java.lang.String-">performAction</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</code>
 <div class="block">Perform the specified action.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#prepareAction-java.lang.String-android.view.MenuItem-">prepareAction</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
              <a href="https://d.android.com/reference/android/view/MenuItem.html?is-external=true" title="class or interface in android.view">MenuItem</a>&nbsp;item)</code>
@@ -495,6 +499,15 @@ implements <a href="https://d.android.com/reference/android/view/ActionMode.Call
 </dl>
 </li>
 </ul>
+<a name="clearSelection--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearSelection</h4>
+<pre>protected&nbsp;void&nbsp;clearSelection()</pre>
+</li>
+</ul>
 <a name="onCreateActionMode-android.view.ActionMode-android.view.Menu-">
 <!--   -->
 </a>
@@ -590,7 +603,8 @@ implements <a href="https://d.android.com/reference/android/view/ActionMode.Call
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>session</code> - The GeckoSession that initiated the callback.</dd>
 <dd><code>selection</code> - Current selection attributes.</dd>
-<dd><code>actions</code> - List of built-in actions available.</dd>
+<dd><code>actions</code> - Array of built-in actions available; possible values
+ come from the <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#ACTION_CUT"><code>ACTION_*</code></a> constants.</dd>
 <dd><code>response</code> - Callback object for performing built-in actions. For example,
  <code>response.respond(actions[0])</code> performs the first action. May be used
  multiple times to perform multiple actions at once.</dd>
