@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -179,10 +179,14 @@ extends <a href="https://d.android.com/reference/android/widget/FrameLayout.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#mDisplay">mDisplay</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#mRuntime">mRuntime</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#mSession">mSession</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="https://d.android.com/reference/android/view/SurfaceView.html?is-external=true" title="class or interface in android.view">SurfaceView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#mSurfaceView">mSurfaceView</a></span></code>&nbsp;</td>
 </tr>
@@ -271,84 +275,89 @@ extends <a href="https://d.android.com/reference/android/widget/FrameLayout.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#getSession--">getSession</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSessionSettings.html" title="class in org.mozilla.geckoview">GeckoSessionSettings</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#getSettings--">getSettings</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#isAccessibilityEnabled-android.content.Context-">isAccessibilityEnabled</a></span>(<a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onAttachedToWindow--">onAttachedToWindow</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://d.android.com/reference/android/view/inputmethod/InputConnection.html?is-external=true" title="class or interface in android.view.inputmethod">InputConnection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onCreateInputConnection-android.view.inputmethod.EditorInfo-">onCreateInputConnection</a></span>(<a href="https://d.android.com/reference/android/view/inputmethod/EditorInfo.html?is-external=true" title="class or interface in android.view.inputmethod">EditorInfo</a>&nbsp;outAttrs)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onDetachedFromWindow--">onDetachedFromWindow</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onFocusChanged-boolean-int-android.graphics.Rect-">onFocusChanged</a></span>(boolean&nbsp;gainFocus,
               int&nbsp;direction,
               <a href="https://d.android.com/reference/android/graphics/Rect.html?is-external=true" title="class or interface in android.graphics">Rect</a>&nbsp;previouslyFocusedRect)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onGenericMotionEvent-android.view.MotionEvent-">onGenericMotionEvent</a></span>(<a href="https://d.android.com/reference/android/view/MotionEvent.html?is-external=true" title="class or interface in android.view">MotionEvent</a>&nbsp;event)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onHoverEvent-android.view.MotionEvent-">onHoverEvent</a></span>(<a href="https://d.android.com/reference/android/view/MotionEvent.html?is-external=true" title="class or interface in android.view">MotionEvent</a>&nbsp;event)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onKeyDown-int-android.view.KeyEvent-">onKeyDown</a></span>(int&nbsp;keyCode,
          <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onKeyLongPress-int-android.view.KeyEvent-">onKeyLongPress</a></span>(int&nbsp;keyCode,
               <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onKeyMultiple-int-int-android.view.KeyEvent-">onKeyMultiple</a></span>(int&nbsp;keyCode,
              int&nbsp;repeatCount,
              <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onKeyPreIme-int-android.view.KeyEvent-">onKeyPreIme</a></span>(int&nbsp;keyCode,
            <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onKeyUp-int-android.view.KeyEvent-">onKeyUp</a></span>(int&nbsp;keyCode,
        <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onRestoreInstanceState-android.os.Parcelable-">onRestoreInstanceState</a></span>(<a href="https://d.android.com/reference/android/os/Parcelable.html?is-external=true" title="class or interface in android.os">Parcelable</a>&nbsp;state)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>protected <a href="https://d.android.com/reference/android/os/Parcelable.html?is-external=true" title="class or interface in android.os">Parcelable</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onSaveInstanceState--">onSaveInstanceState</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#onTouchEvent-android.view.MotionEvent-">onTouchEvent</a></span>(<a href="https://d.android.com/reference/android/view/MotionEvent.html?is-external=true" title="class or interface in android.view">MotionEvent</a>&nbsp;event)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#releaseSession--">releaseSession</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#setSession-org.mozilla.geckoview.GeckoSession-">setSession</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</code>
+<div class="block">Attach a session to this view.</div>
+</td>
+</tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#setSession-org.mozilla.geckoview.GeckoSession-">setSession</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoView.html#setSession-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoRuntime-">setSession</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+          <a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&nbsp;runtime)</code>
+<div class="block">Attach a session to this view.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -416,6 +425,15 @@ extends <a href="https://d.android.com/reference/android/widget/FrameLayout.html
 <li class="blockList">
 <h4>mSession</h4>
 <pre>protected&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a> mSession</pre>
+</li>
+</ul>
+<a name="mRuntime">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mRuntime</h4>
+<pre>protected&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a> mRuntime</pre>
 </li>
 </ul>
 <a name="mSurfaceView">
@@ -493,7 +511,33 @@ extends <a href="https://d.android.com/reference/android/widget/FrameLayout.html
 <ul class="blockList">
 <li class="blockList">
 <h4>setSession</h4>
-<pre>public&nbsp;void&nbsp;setSession(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</pre>
+<pre>public&nbsp;void&nbsp;setSession(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                       <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</pre>
+<div class="block">Attach a session to this view. The session should be opened before
+ attaching.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>session</code> - The session to be attached.</dd>
+</dl>
+</li>
+</ul>
+<a name="setSession-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoRuntime-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSession</h4>
+<pre>public&nbsp;void&nbsp;setSession(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                       <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                       <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                       <a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&nbsp;runtime)</pre>
+<div class="block">Attach a session to this view. The session should be opened before
+ attaching or a runtime needs to be provided for automatic opening.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>session</code> - The session to be attached.</dd>
+<dd><code>runtime</code> - The runtime to be used for opening the session.</dd>
+</dl>
 </li>
 </ul>
 <a name="getSession--">
@@ -512,15 +556,6 @@ extends <a href="https://d.android.com/reference/android/widget/FrameLayout.html
 <li class="blockList">
 <h4>getEventDispatcher</h4>
 <pre>public&nbsp;org.mozilla.gecko.EventDispatcher&nbsp;getEventDispatcher()</pre>
-</li>
-</ul>
-<a name="getSettings--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getSettings</h4>
-<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSessionSettings.html" title="class in org.mozilla.geckoview">GeckoSessionSettings</a>&nbsp;getSettings()</pre>
 </li>
 </ul>
 <a name="getPanZoomController--">

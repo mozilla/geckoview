@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":9,"i33":9,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10};
+var methods = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -46,7 +46,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -505,97 +505,81 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#open-android.content.Context-">open</a></span>(<a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;appContext)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#open-org.mozilla.geckoview.GeckoRuntime-">open</a></span>(<a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&nbsp;runtime)</code>
 <div class="block">Opens the session.</div>
 </td>
 </tr>
 <tr id="i32" class="altColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#preload-android.content.Context-">preload</a></span>(<a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context)</code>
-<div class="block">Preload GeckoSession by starting Gecko in the background, if Gecko is not already running.</div>
-</td>
-</tr>
-<tr id="i33" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#preload-android.content.Context-java.lang.String:A-android.os.Bundle-boolean-">preload</a></span>(<a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context,
-       <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;geckoArgs,
-       <a href="https://d.android.com/reference/android/os/Bundle.html?is-external=true" title="class or interface in android.os">Bundle</a>&nbsp;extras,
-       boolean&nbsp;multiprocess)</code>
-<div class="block">Preload GeckoSession by starting Gecko with the specified arguments in the background,
- if Gecko is not already running.</div>
-</td>
-</tr>
-<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#readFromParcel-android.os.Parcel-">readFromParcel</a></span>(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;source)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#reload--">reload</a></span>()</code>
 <div class="block">Reload the current URI.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setActive-boolean-">setActive</a></span>(boolean&nbsp;active)</code>
 <div class="block">Set this GeckoSession as active or inactive.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setContentDelegate-org.mozilla.geckoview.GeckoSession.ContentDelegate-">setContentDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ContentDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the content callback handler.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setNavigationDelegate-org.mozilla.geckoview.GeckoSession.NavigationDelegate-">setNavigationDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.NavigationDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the navigation callback handler.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setPermissionDelegate-org.mozilla.geckoview.GeckoSession.PermissionDelegate-">setPermissionDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.PermissionDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the current permission delegate for this GeckoSession.</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setProgressDelegate-org.mozilla.geckoview.GeckoSession.ProgressDelegate-">setProgressDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.ProgressDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ProgressDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the progress callback handler.</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setPromptDelegate-org.mozilla.geckoview.GeckoSession.PromptDelegate-">setPromptDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.PromptDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the current prompt delegate for this GeckoSession.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setScrollDelegate-org.mozilla.geckoview.GeckoSession.ScrollDelegate-">setScrollDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.ScrollDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the content scroll callback handler.</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setSelectionActionDelegate-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate-">setSelectionActionDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.SelectionActionDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the current selection action delegate for this GeckoSession.</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#setTrackingProtectionDelegate-org.mozilla.geckoview.GeckoSession.TrackingProtectionDelegate-">setTrackingProtectionDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.TrackingProtectionDelegate</a>&nbsp;delegate)</code>
 <div class="block">Set the tracking protection callback handler.</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#stop--">stop</a></span>()</code>
 <div class="block">Stop loading.</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#writeToParcel-android.os.Parcel-int-">writeToParcel</a></span>(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;out,
              int&nbsp;flags)</code>&nbsp;</td>
@@ -740,7 +724,8 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <ul class="blockListLast">
 <li class="blockList">
 <h4>GeckoSession</h4>
-<pre>public&nbsp;GeckoSession(<a href="../../../org/mozilla/geckoview/GeckoSessionSettings.html" title="class in org.mozilla.geckoview">GeckoSessionSettings</a>&nbsp;settings)</pre>
+<pre>public&nbsp;GeckoSession(<a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                    <a href="../../../org/mozilla/geckoview/GeckoSessionSettings.html" title="class in org.mozilla.geckoview">GeckoSessionSettings</a>&nbsp;settings)</pre>
 </li>
 </ul>
 </li>
@@ -815,44 +800,6 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <pre>public&nbsp;void&nbsp;readFromParcel(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;source)</pre>
 </li>
 </ul>
-<a name="preload-android.content.Context-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>preload</h4>
-<pre>public static&nbsp;void&nbsp;preload(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                           <a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context)</pre>
-<div class="block">Preload GeckoSession by starting Gecko in the background, if Gecko is not already running.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>context</code> - Activity or Application Context for starting GeckoSession.</dd>
-</dl>
-</li>
-</ul>
-<a name="preload-android.content.Context-java.lang.String:A-android.os.Bundle-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>preload</h4>
-<pre>public static&nbsp;void&nbsp;preload(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                           <a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context,
-                           <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
-                           <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;geckoArgs,
-                           <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
-                           <a href="https://d.android.com/reference/android/os/Bundle.html?is-external=true" title="class or interface in android.os">Bundle</a>&nbsp;extras,
-                           boolean&nbsp;multiprocess)</pre>
-<div class="block">Preload GeckoSession by starting Gecko with the specified arguments in the background,
- if Gecko is not already running.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>context</code> - Activity or Application Context for starting GeckoSession.</dd>
-<dd><code>geckoArgs</code> - Arguments to be passed to Gecko, if Gecko is not already running.</dd>
-<dd><code>multiprocess</code> - True if child process in multiprocess mode should be preloaded.</dd>
-</dl>
-</li>
-</ul>
 <a name="isOpen--">
 <!--   -->
 </a>
@@ -862,14 +809,14 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <pre>public&nbsp;boolean&nbsp;isOpen()</pre>
 </li>
 </ul>
-<a name="open-android.content.Context-">
+<a name="open-org.mozilla.geckoview.GeckoRuntime-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>open</h4>
-<pre>public&nbsp;void&nbsp;open(<a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
-                 <a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;appContext)</pre>
+<pre>public&nbsp;void&nbsp;open(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                 <a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&nbsp;runtime)</pre>
 <div class="block">Opens the session.
 
  The session is in a 'closed' state when first created. Opening it creates
@@ -881,7 +828,7 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
  Call this when you are ready to use a GeckoSession instance.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>appContext</code> - An application context</dd>
+<dd><code>runtime</code> - The Gecko runtime to attach this session to.</dd>
 </dl>
 </li>
 </ul>
@@ -1474,7 +1421,7 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.SelectionAction
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
