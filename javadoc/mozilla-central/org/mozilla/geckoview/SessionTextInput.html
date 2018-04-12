@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -136,39 +136,45 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/SessionTextInput.html#getShowSoftInputOnFocus--">getShowSoftInputOnFocus</a></span>()</code>
+<div class="block">Return whether to show the soft keyboard when an input field gains focus.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/SessionTextInput.html#getView--">getView</a></span>()</code>
 <div class="block">Get the current View for text input.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/SessionTextInput.html#isInputActive--">isInputActive</a></span>()</code>
 <div class="block">Return whether there is an active input connection, usually as a result of a
  focused input field.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://d.android.com/reference/android/view/inputmethod/InputConnection.html?is-external=true" title="class or interface in android.view.inputmethod">InputConnection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/SessionTextInput.html#onCreateInputConnection-android.view.inputmethod.EditorInfo-">onCreateInputConnection</a></span>(<a href="https://d.android.com/reference/android/view/inputmethod/EditorInfo.html?is-external=true" title="class or interface in android.view.inputmethod">EditorInfo</a>&nbsp;attrs)</code>
 <div class="block">Get an InputConnection instance.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/SessionTextInput.html#onKeyDown-int-android.view.KeyEvent-">onKeyDown</a></span>(int&nbsp;keyCode,
          <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Process a KeyEvent as a key-down event.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/SessionTextInput.html#onKeyLongPress-int-android.view.KeyEvent-">onKeyLongPress</a></span>(int&nbsp;keyCode,
               <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Process a KeyEvent as a long-press event.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/SessionTextInput.html#onKeyMultiple-int-int-android.view.KeyEvent-">onKeyMultiple</a></span>(int&nbsp;keyCode,
              int&nbsp;repeatCount,
@@ -176,27 +182,27 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <div class="block">Process a KeyEvent as a multiple-press event.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/SessionTextInput.html#onKeyPreIme-int-android.view.KeyEvent-">onKeyPreIme</a></span>(int&nbsp;keyCode,
            <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Process a KeyEvent as a pre-IME event.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/SessionTextInput.html#onKeyUp-int-android.view.KeyEvent-">onKeyUp</a></span>(int&nbsp;keyCode,
        <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Process a KeyEvent as a key-up event.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/SessionTextInput.html#setShowSoftInputOnFocus-boolean-">setShowSoftInputOnFocus</a></span>(boolean&nbsp;showSoftInputOnFocus)</code>
-<div class="block">Prevent soft input when gaining focus</div>
+<div class="block">Set whether to show the soft keyboard when an input field gains focus.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/SessionTextInput.html#setView-android.view.View-">setView</a></span>(<a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view)</code>
 <div class="block">Set the View for text input.</div>
@@ -420,14 +426,28 @@ public&nbsp;<a href="https://d.android.com/reference/android/view/inputmethod/In
 <a name="setShowSoftInputOnFocus-boolean-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setShowSoftInputOnFocus</h4>
 <pre>public&nbsp;void&nbsp;setShowSoftInputOnFocus(boolean&nbsp;showSoftInputOnFocus)</pre>
-<div class="block">Prevent soft input when gaining focus</div>
+<div class="block">Set whether to show the soft keyboard when an input field gains focus.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>showSoftInputOnFocus</code> - Set whether soft input is shown when an input field gains focus.</dd>
+<dd><code>showSoftInputOnFocus</code> - True to show soft input on input focus.</dd>
+</dl>
+</li>
+</ul>
+<a name="getShowSoftInputOnFocus--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getShowSoftInputOnFocus</h4>
+<pre>public&nbsp;boolean&nbsp;getShowSoftInputOnFocus()</pre>
+<div class="block">Return whether to show the soft keyboard when an input field gains focus.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if soft input is shown on input focus.</dd>
 </dl>
 </li>
 </ul>
