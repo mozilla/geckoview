@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoRuntime.Delegate.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/GeckoRuntime.html" target="_top">Frames</a></li>
@@ -71,7 +71,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -125,6 +125,17 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <!--   -->
 </a>
 <h3>Nested Class Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.Delegate.html" title="interface in org.mozilla.geckoview">GeckoRuntime.Delegate</a></span></code>&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="nested.classes.inherited.from.class.android.os.Parcelable">
 <!--   -->
@@ -221,16 +232,28 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntime.Delegate.html" title="interface in org.mozilla.geckoview">GeckoRuntime.Delegate</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#getDelegate--">getDelegate</a></span>()</code>
+<div class="block">Returns the current delegate, if any.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#readFromParcel-android.os.Parcel-">readFromParcel</a></span>(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;source)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#setDelegate-org.mozilla.geckoview.GeckoRuntime.Delegate-">setDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoRuntime.Delegate.html" title="interface in org.mozilla.geckoview">GeckoRuntime.Delegate</a>&nbsp;delegate)</code>
+<div class="block">Set a delegate for receiving callbacks relevant to to this GeckoRuntime.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Shutdown the runtime.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#writeToParcel-android.os.Parcel-int-">writeToParcel</a></span>(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;out,
              int&nbsp;flags)</code>&nbsp;</td>
@@ -385,6 +408,35 @@ public static&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntime.html" ti
 <div class="block">Shutdown the runtime. This will invalidate all attached sessions.</div>
 </li>
 </ul>
+<a name="setDelegate-org.mozilla.geckoview.GeckoRuntime.Delegate-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDelegate</h4>
+<pre>public&nbsp;void&nbsp;setDelegate(<a href="../../../org/mozilla/geckoview/GeckoRuntime.Delegate.html" title="interface in org.mozilla.geckoview">GeckoRuntime.Delegate</a>&nbsp;delegate)</pre>
+<div class="block">Set a delegate for receiving callbacks relevant to to this GeckoRuntime.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>delegate</code> - an implementation of <a href="../../../org/mozilla/geckoview/GeckoRuntime.Delegate.html" title="interface in org.mozilla.geckoview"><code>GeckoRuntime.Delegate</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a name="getDelegate--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDelegate</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntime.Delegate.html" title="interface in org.mozilla.geckoview">GeckoRuntime.Delegate</a>&nbsp;getDelegate()</pre>
+<div class="block">Returns the current delegate, if any.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an instance of <a href="../../../org/mozilla/geckoview/GeckoRuntime.Delegate.html" title="interface in org.mozilla.geckoview"><code>GeckoRuntime.Delegate</code></a> or null if no delegate has been set.</dd>
+</dl>
+</li>
+</ul>
 <a name="describeContents--">
 <!--   -->
 </a>
@@ -448,7 +500,7 @@ public static&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntime.html" ti
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoRuntime.Delegate.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/GeckoRuntime.html" target="_top">Frames</a></li>
@@ -472,7 +524,7 @@ public static&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntime.html" ti
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
