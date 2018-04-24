@@ -169,35 +169,29 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="type parameter in GeckoSession.Response">T</a>&gt;</span></code>
-<div class="block">This is used to send responses in delegate methods that have asynchronous responses.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ScrollDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.ScrollDelegate</a></span></code>
 <div class="block">GeckoSession applications implement this interface to handle content scroll
  events.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.SelectionActionDelegate</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SessionState.html" title="class in org.mozilla.geckoview">GeckoSession.SessionState</a></span></code>
 <div class="block">Class representing a saved session state.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.TrackingProtectionDelegate</a></span></code>
 <div class="block">GeckoSession applications implement this interface to handle tracking
  protection events.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.WebResponseInfo.html" title="class in org.mozilla.geckoview">GeckoSession.WebResponseInfo</a></span></code>
 <div class="block">WebResponseInfo contains information about a single web response.</div>
@@ -540,7 +534,7 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#saveState-org.mozilla.geckoview.GeckoSession.Response-">saveState</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.SessionState.html" title="class in org.mozilla.geckoview">GeckoSession.SessionState</a>&gt;&nbsp;response)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#saveState-org.mozilla.geckoview.GeckoResponse-">saveState</a></span>(<a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.SessionState.html" title="class in org.mozilla.geckoview">GeckoSession.SessionState</a>&gt;&nbsp;response)</code>
 <div class="block">Save the current browsing session state of this GeckoSession.</div>
 </td>
 </tr>
@@ -1183,13 +1177,13 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/SessionAccessibility.html" t
 </dl>
 </li>
 </ul>
-<a name="saveState-org.mozilla.geckoview.GeckoSession.Response-">
+<a name="saveState-org.mozilla.geckoview.GeckoResponse-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>saveState</h4>
-<pre>public&nbsp;void&nbsp;saveState(<a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.SessionState.html" title="class in org.mozilla.geckoview">GeckoSession.SessionState</a>&gt;&nbsp;response)</pre>
+<pre>public&nbsp;void&nbsp;saveState(<a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.SessionState.html" title="class in org.mozilla.geckoview">GeckoSession.SessionState</a>&gt;&nbsp;response)</pre>
 <div class="block">Save the current browsing session state of this GeckoSession. This session state
  includes the history, scroll position, zoom, and any form data that has been entered,
  but does not include information pertaining to the GeckoSession itself (for example,

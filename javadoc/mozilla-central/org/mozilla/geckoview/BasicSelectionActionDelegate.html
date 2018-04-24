@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/BasicSelectionActionDelegate.html" target="_top">Frames</a></li>
@@ -180,7 +180,7 @@ implements <a href="https://d.android.com/reference/android/view/ActionMode.Call
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#mRepopulatedMenu">mRepopulatedMenu</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#mResponse">mResponse</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -311,10 +311,10 @@ implements <a href="https://d.android.com/reference/android/view/ActionMode.Call
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoSession.Response-">onShowActionRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/BasicSelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoResponse-">onShowActionRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                    <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.Selection.html" title="class in org.mozilla.geckoview">GeckoSession.SelectionActionDelegate.Selection</a>&nbsp;selection,
                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;actions,
-                   <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;response)</code>
+                   <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;response)</code>
 <div class="block">Selection actions are available.</div>
 </td>
 </tr>
@@ -445,7 +445,7 @@ implements <a href="https://d.android.com/reference/android/view/ActionMode.Call
 <ul class="blockList">
 <li class="blockList">
 <h4>mResponse</h4>
-<pre>protected&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; mResponse</pre>
+<pre>protected&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; mResponse</pre>
 </li>
 </ul>
 <a name="mRepopulatedMenu">
@@ -671,7 +671,7 @@ protected&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is
                              <a href="https://d.android.com/reference/android/graphics/Rect.html?is-external=true" title="class or interface in android.graphics">Rect</a>&nbsp;outRect)</pre>
 </li>
 </ul>
-<a name="onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoSession.Response-">
+<a name="onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoResponse-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -680,8 +680,8 @@ protected&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is
 <pre>public&nbsp;void&nbsp;onShowActionRequest(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                                 <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.Selection.html" title="class in org.mozilla.geckoview">GeckoSession.SelectionActionDelegate.Selection</a>&nbsp;selection,
                                 <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;actions,
-                                <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;response)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoSession.Response-">GeckoSession.SelectionActionDelegate</a></code></span></div>
+                                <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;response)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoResponse-">GeckoSession.SelectionActionDelegate</a></code></span></div>
 <div class="block">Selection actions are available. Selection actions become available when the
  user selects some content in the document or editor. Inside an editor,
  selection actions can also become available when the user explicitly requests
@@ -692,11 +692,11 @@ protected&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is
  object back through the response parameter, which may be used multiple times to
  perform multiple actions at once.
 
- Once a <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onHideAction-org.mozilla.geckoview.GeckoSession-int-"><code>GeckoSession.SelectionActionDelegate.onHideAction(org.mozilla.geckoview.GeckoSession, int)</code></a> call (with particular reasons) or another <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoSession.Response-"><code>GeckoSession.SelectionActionDelegate.onShowActionRequest(org.mozilla.geckoview.GeckoSession, org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection, java.lang.String[], org.mozilla.geckoview.GeckoSession.Response&lt;java.lang.String&gt;)</code></a> call is received, any previously received actions are no
+ Once a <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onHideAction-org.mozilla.geckoview.GeckoSession-int-"><code>GeckoSession.SelectionActionDelegate.onHideAction(org.mozilla.geckoview.GeckoSession, int)</code></a> call (with particular reasons) or another <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoResponse-"><code>GeckoSession.SelectionActionDelegate.onShowActionRequest(org.mozilla.geckoview.GeckoSession, org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection, java.lang.String[], org.mozilla.geckoview.GeckoResponse&lt;java.lang.String&gt;)</code></a> call is received, any previously received actions are no
  longer unavailable.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoSession.Response-">onShowActionRequest</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.SelectionActionDelegate</a></code></dd>
+<dd><code><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoResponse-">onShowActionRequest</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.SelectionActionDelegate</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>session</code> - The GeckoSession that initiated the callback.</dd>
 <dd><code>selection</code> - Current selection attributes.</dd>
@@ -756,7 +756,7 @@ protected&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/BasicSelectionActionDelegate.html" target="_top">Frames</a></li>

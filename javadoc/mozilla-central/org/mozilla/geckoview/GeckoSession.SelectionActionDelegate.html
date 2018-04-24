@@ -276,10 +276,10 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoSession.Response-">onShowActionRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoResponse-">onShowActionRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                    <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.Selection.html" title="class in org.mozilla.geckoview">GeckoSession.SelectionActionDelegate.Selection</a>&nbsp;selection,
                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;actions,
-                   <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;response)</code>
+                   <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;response)</code>
 <div class="block">Selection actions are available.</div>
 </td>
 </tr>
@@ -495,7 +495,7 @@ var activeTableTab = "activeTableTab";
 <h4>HIDE_REASON_ACTIVE_SELECTION</h4>
 <pre>static final&nbsp;int HIDE_REASON_ACTIVE_SELECTION</pre>
 <div class="block">Actions are no longer available due to the user actively changing the
- selection. <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoSession.Response-"><code>onShowActionRequest(org.mozilla.geckoview.GeckoSession, org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection, java.lang.String[], org.mozilla.geckoview.GeckoSession.Response&lt;java.lang.String&gt;)</code></a> may be called again once the user has
+ selection. <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoResponse-"><code>onShowActionRequest(org.mozilla.geckoview.GeckoSession, org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection, java.lang.String[], org.mozilla.geckoview.GeckoResponse&lt;java.lang.String&gt;)</code></a> may be called again once the user has
  set a selection, if the new selection has available actions.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -511,7 +511,7 @@ var activeTableTab = "activeTableTab";
 <h4>HIDE_REASON_ACTIVE_SCROLL</h4>
 <pre>static final&nbsp;int HIDE_REASON_ACTIVE_SCROLL</pre>
 <div class="block">Actions are no longer available due to the user actively scrolling the page.
- <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoSession.Response-"><code>onShowActionRequest(org.mozilla.geckoview.GeckoSession, org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection, java.lang.String[], org.mozilla.geckoview.GeckoSession.Response&lt;java.lang.String&gt;)</code></a> may be called again once the user has stopped
+ <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoResponse-"><code>onShowActionRequest(org.mozilla.geckoview.GeckoSession, org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection, java.lang.String[], org.mozilla.geckoview.GeckoResponse&lt;java.lang.String&gt;)</code></a> may be called again once the user has stopped
  scrolling the page, if the selection is still visible. Until then, previous
  actions are still available after a callback with this reason.</div>
 <dl>
@@ -528,7 +528,7 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoSession.Response-">
+<a name="onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoResponse-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -537,7 +537,7 @@ var activeTableTab = "activeTableTab";
 <pre>void&nbsp;onShowActionRequest(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                          <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.Selection.html" title="class in org.mozilla.geckoview">GeckoSession.SelectionActionDelegate.Selection</a>&nbsp;selection,
                          <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;actions,
-                         <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;response)</pre>
+                         <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;response)</pre>
 <div class="block">Selection actions are available. Selection actions become available when the
  user selects some content in the document or editor. Inside an editor,
  selection actions can also become available when the user explicitly requests
@@ -548,7 +548,7 @@ var activeTableTab = "activeTableTab";
  object back through the response parameter, which may be used multiple times to
  perform multiple actions at once.
 
- Once a <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onHideAction-org.mozilla.geckoview.GeckoSession-int-"><code>onHideAction(org.mozilla.geckoview.GeckoSession, int)</code></a> call (with particular reasons) or another <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoSession.Response-"><code>onShowActionRequest(org.mozilla.geckoview.GeckoSession, org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection, java.lang.String[], org.mozilla.geckoview.GeckoSession.Response&lt;java.lang.String&gt;)</code></a> call is received, any previously received actions are no
+ Once a <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onHideAction-org.mozilla.geckoview.GeckoSession-int-"><code>onHideAction(org.mozilla.geckoview.GeckoSession, int)</code></a> call (with particular reasons) or another <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onShowActionRequest-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection-java.lang.String:A-org.mozilla.geckoview.GeckoResponse-"><code>onShowActionRequest(org.mozilla.geckoview.GeckoSession, org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.Selection, java.lang.String[], org.mozilla.geckoview.GeckoResponse&lt;java.lang.String&gt;)</code></a> call is received, any previously received actions are no
  longer unavailable.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

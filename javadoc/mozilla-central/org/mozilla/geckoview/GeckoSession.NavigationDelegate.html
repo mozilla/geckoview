@@ -183,10 +183,10 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onLoadRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-org.mozilla.geckoview.GeckoSession.Response-">onLoadRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onLoadRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-org.mozilla.geckoview.GeckoResponse-">onLoadRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
              int&nbsp;target,
-             <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="https://d.android.com/reference/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;response)</code>
+             <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="https://d.android.com/reference/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;response)</code>
 <div class="block">A request to open an URI.</div>
 </td>
 </tr>
@@ -199,9 +199,9 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onNewSession-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoSession.Response-">onNewSession</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onNewSession-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoResponse-">onNewSession</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-            <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&gt;&nbsp;response)</code>
+            <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&gt;&nbsp;response)</code>
 <div class="block">A request has been made to open a new session.</div>
 </td>
 </tr>
@@ -315,7 +315,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="onLoadRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-org.mozilla.geckoview.GeckoSession.Response-">
+<a name="onLoadRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-org.mozilla.geckoview.GeckoResponse-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -324,7 +324,7 @@ var activeTableTab = "activeTableTab";
 <pre>void&nbsp;onLoadRequest(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
                    int&nbsp;target,
-                   <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="https://d.android.com/reference/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;response)</pre>
+                   <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="https://d.android.com/reference/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;response)</pre>
 <div class="block">A request to open an URI. This is called before each page load to
  allow custom behavior implementation.
  For example, this can be used to override the behavior of
@@ -342,7 +342,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="onNewSession-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoSession.Response-">
+<a name="onNewSession-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.GeckoResponse-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -350,7 +350,7 @@ var activeTableTab = "activeTableTab";
 <h4>onNewSession</h4>
 <pre>void&nbsp;onNewSession(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                   <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                  <a href="../../../org/mozilla/geckoview/GeckoSession.Response.html" title="interface in org.mozilla.geckoview">GeckoSession.Response</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&gt;&nbsp;response)</pre>
+                  <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&gt;&nbsp;response)</pre>
 <div class="block">A request has been made to open a new session. The URI is provided only for
  informational purposes. Do not call GeckoSession.loadUri() here. Additionally, the
  returned GeckoSession must be a newly-created one.</div>
