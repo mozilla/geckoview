@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -209,33 +209,45 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getRemoteDebuggingEnabled--">getRemoteDebuggingEnabled</a></span>()</code>
+<div class="block">Get whether remote debugging support is enabled.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getUseContentProcessHint--">getUseContentProcessHint</a></span>()</code>
 <div class="block">Get the content process hint flag.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getWebFontsEnabled--">getWebFontsEnabled</a></span>()</code>
 <div class="block">Get whether web fonts support is enabled.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#readFromParcel-android.os.Parcel-">readFromParcel</a></span>(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;source)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#setJavaScriptEnabled-boolean-">setJavaScriptEnabled</a></span>(boolean&nbsp;flag)</code>
 <div class="block">Set whether JavaScript support should be enabled.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#setRemoteDebuggingEnabled-boolean-">setRemoteDebuggingEnabled</a></span>(boolean&nbsp;enabled)</code>
+<div class="block">Set whether remote debugging support should be enabled.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#setWebFontsEnabled-boolean-">setWebFontsEnabled</a></span>(boolean&nbsp;flag)</code>
 <div class="block">Set whether support for web fonts should be enabled.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#writeToParcel-android.os.Parcel-int-">writeToParcel</a></span>(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;out,
              int&nbsp;flags)</code>&nbsp;</td>
@@ -347,6 +359,35 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" t
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>flag</code> - A flag determining whether JavaScript should be enabled.</dd>
+</dl>
+</li>
+</ul>
+<a name="getRemoteDebuggingEnabled--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRemoteDebuggingEnabled</h4>
+<pre>public&nbsp;boolean&nbsp;getRemoteDebuggingEnabled()</pre>
+<div class="block">Get whether remote debugging support is enabled.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if remote debugging support is enabled.</dd>
+</dl>
+</li>
+</ul>
+<a name="setRemoteDebuggingEnabled-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRemoteDebuggingEnabled</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a>&nbsp;setRemoteDebuggingEnabled(boolean&nbsp;enabled)</pre>
+<div class="block">Set whether remote debugging support should be enabled.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>enabled</code> - True if remote debugging should be enabled.</dd>
 </dl>
 </li>
 </ul>
