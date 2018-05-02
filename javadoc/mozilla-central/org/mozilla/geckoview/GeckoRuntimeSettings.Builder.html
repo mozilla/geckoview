@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -171,23 +171,35 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#javaCrashReportingEnabled-boolean-">javaCrashReportingEnabled</a></span>(boolean&nbsp;enabled)</code>
+<div class="block">Set whether crash reporting for Java code should be enabled.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#javaScriptEnabled-boolean-">javaScriptEnabled</a></span>(boolean&nbsp;flag)</code>
 <div class="block">Set whether JavaScript support should be enabled.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#nativeCrashReportingEnabled-boolean-">nativeCrashReportingEnabled</a></span>(boolean&nbsp;enabled)</code>
+<div class="block">Set whether crash reporting for native code should be enabled.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#remoteDebuggingEnabled-boolean-">remoteDebuggingEnabled</a></span>(boolean&nbsp;enabled)</code>
 <div class="block">Set whether remote debugging support should be enabled.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#useContentProcessHint-boolean-">useContentProcessHint</a></span>(boolean&nbsp;use)</code>
 <div class="block">Set the content process hint flag.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#webFontsEnabled-boolean-">webFontsEnabled</a></span>(boolean&nbsp;flag)</code>
 <div class="block">Set whether support for web fonts should be enabled.</div>
@@ -267,7 +279,8 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder
 <div class="block">Set the content process hint flag.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>use</code> - If true, this will reload the content process for future use.</dd>
+<dd><code>use</code> - If true, this will reload the content process for future use.
+            Default is false.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>This Builder instance.</dd>
 </dl>
@@ -320,7 +333,8 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder
 <div class="block">Set whether JavaScript support should be enabled.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>flag</code> - A flag determining whether JavaScript should be enabled.</dd>
+<dd><code>flag</code> - A flag determining whether JavaScript should be enabled.
+             Default is true.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>This Builder instance.</dd>
 </dl>
@@ -346,7 +360,7 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder
 <a name="webFontsEnabled-boolean-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>webFontsEnabled</h4>
 <pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
@@ -354,9 +368,50 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder
 <div class="block">Set whether support for web fonts should be enabled.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>flag</code> - A flag determining whether web fonts should be enabled.</dd>
+<dd><code>flag</code> - A flag determining whether web fonts should be enabled.
+             Default is true.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>This Builder instance.</dd>
+</dl>
+</li>
+</ul>
+<a name="nativeCrashReportingEnabled-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nativeCrashReportingEnabled</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a>&nbsp;nativeCrashReportingEnabled(boolean&nbsp;enabled)</pre>
+<div class="block">Set whether crash reporting for native code should be enabled. This will cause
+ a SIGSEGV handler to be installed, and any crash encountered there will be
+ reported to Mozilla.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>enabled</code> - A flag determining whether native crash reporting should be enabled.
+                Defaults to false.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This Builder.</dd>
+</dl>
+</li>
+</ul>
+<a name="javaCrashReportingEnabled-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>javaCrashReportingEnabled</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a>&nbsp;javaCrashReportingEnabled(boolean&nbsp;enabled)</pre>
+<div class="block">Set whether crash reporting for Java code should be enabled. This will cause
+ a default unhandled exception handler to be installed, and any exceptions encountered
+ will automatically reported to Mozilla.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>enabled</code> - A flag determining whether Java crash reporting should be enabled.
+                Defaults to false.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This Builder.</dd>
 </dl>
 </li>
 </ul>
