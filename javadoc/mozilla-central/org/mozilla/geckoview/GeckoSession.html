@@ -435,7 +435,9 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#isOpen--">isOpen</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#isOpen--">isOpen</a></span>()</code>
+<div class="block">Return whether this session is open.</div>
+</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -826,6 +828,14 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <li class="blockList">
 <h4>isOpen</h4>
 <pre>public&nbsp;boolean&nbsp;isOpen()</pre>
+<div class="block">Return whether this session is open.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if session is open.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../org/mozilla/geckoview/GeckoSession.html#open-org.mozilla.geckoview.GeckoRuntime-"><code>open(org.mozilla.geckoview.GeckoRuntime)</code></a>, 
+<a href="../../../org/mozilla/geckoview/GeckoSession.html#close--"><code>close()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="open-org.mozilla.geckoview.GeckoRuntime-">
@@ -838,16 +848,18 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
                  <a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&nbsp;runtime)</pre>
 <div class="block">Opens the session.
 
+ Call this when you are ready to use a GeckoSession instance.
+
  The session is in a 'closed' state when first created. Opening it creates
  the underlying Gecko objects necessary to load a page, etc. Most GeckoSession
  methods only take affect on an open session, and are queued until the session
- is opened here. Opening a session is an asynchronous operation. You can check
- the current state via isOpen().
-
- Call this when you are ready to use a GeckoSession instance.</div>
+ is opened here. Opening a session is an asynchronous operation.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>runtime</code> - The Gecko runtime to attach this session to.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../org/mozilla/geckoview/GeckoSession.html#close--"><code>close()</code></a>, 
+<a href="../../../org/mozilla/geckoview/GeckoSession.html#isOpen--"><code>isOpen()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -863,6 +875,11 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
  This frees the underlying Gecko objects and unloads the current page. The session may be
  reopened later, but page state is not restored. Call this when you are finished using
  a GeckoSession instance.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../org/mozilla/geckoview/GeckoSession.html#open-org.mozilla.geckoview.GeckoRuntime-"><code>open(org.mozilla.geckoview.GeckoRuntime)</code></a>, 
+<a href="../../../org/mozilla/geckoview/GeckoSession.html#isOpen--"><code>isOpen()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getTextInput--">
