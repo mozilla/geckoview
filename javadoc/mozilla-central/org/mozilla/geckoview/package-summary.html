@@ -68,6 +68,10 @@
 <!-- ========= END OF TOP NAVBAR ========= -->
 <div class="header">
 <h1 title="Package" class="title">Package&nbsp;org.mozilla.geckoview</h1>
+<div class="docSummary">
+<div class="block">This package contains the public interfaces for the library.</div>
+</div>
+<p>See:&nbsp;<a href="#package.description">Description</a></p>
 </div>
 <div class="contentContainer">
 <ul class="blockList">
@@ -378,6 +382,48 @@
 </table>
 </li>
 </ul>
+<a name="package.description">
+<!--   -->
+</a>
+<h2 title="Package org.mozilla.geckoview Description">Package org.mozilla.geckoview Description</h2>
+<div class="block">This package contains the public interfaces for the library.
+
+ <ul>
+ <li>
+     <a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview"><code>GeckoRuntime</code></a> is the entry point for starting and initializing
+     Gecko. You can use this to preload Gecko before you need to load a page or to configure features
+     such as crash reporting.
+ </li>
+
+ <li>
+     <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview"><code>GeckoSession</code></a> is where most interesting work happens, such as
+     loading pages. It relies on <a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview"><code>GeckoRuntime</code></a>
+     to talk to Gecko.
+ </li>
+
+ <li>
+     <a href="../../../org/mozilla/geckoview/GeckoView.html" title="class in org.mozilla.geckoview"><code>GeckoView</code></a> is the embeddable <a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view"><code>View</code></a>. This is
+     the most common way of getting a <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview"><code>GeckoSession</code></a> onto the screen.
+ </li>
+ </ul>
+
+ <p>
+ <strong>Permissions</strong>
+ <p>
+ This library does not request any dangerous permissions in the manifest, though it's possible
+ that some web features may require them. For instance, WebRTC video calls would need the
+ <a href="https://d.android.com/reference/android/Manifest.permission.html?is-external=true#CAMERA" title="class or interface in android"><code>Manifest.permission.CAMERA</code></a> and <a href="https://d.android.com/reference/android/Manifest.permission.html?is-external=true#RECORD_AUDIO" title="class or interface in android"><code>Manifest.permission.RECORD_AUDIO</code></a>
+ permissions. Declaring these are at the application's discretion. If you want full web
+ functionality, the following permissions should be declared:
+
+ <ul>
+     <li><a href="https://d.android.com/reference/android/Manifest.permission.html?is-external=true#ACCESS_COARSE_LOCATION" title="class or interface in android"><code>Manifest.permission.ACCESS_COARSE_LOCATION</code></a></li>
+     <li><a href="https://d.android.com/reference/android/Manifest.permission.html?is-external=true#ACCESS_FINE_LOCATION" title="class or interface in android"><code>Manifest.permission.ACCESS_FINE_LOCATION</code></a></li>
+     <li><a href="https://d.android.com/reference/android/Manifest.permission.html?is-external=true#READ_EXTERNAL_STORAGE" title="class or interface in android"><code>Manifest.permission.READ_EXTERNAL_STORAGE</code></a></li>
+     <li><a href="https://d.android.com/reference/android/Manifest.permission.html?is-external=true#WRITE_EXTERNAL_STORAGE" title="class or interface in android"><code>Manifest.permission.WRITE_EXTERNAL_STORAGE</code></a></li>
+     <li><a href="https://d.android.com/reference/android/Manifest.permission.html?is-external=true#CAMERA" title="class or interface in android"><code>Manifest.permission.CAMERA</code></a></li>
+     <li><a href="https://d.android.com/reference/android/Manifest.permission.html?is-external=true#RECORD_AUDIO" title="class or interface in android"><code>Manifest.permission.RECORD_AUDIO</code></a></li>
+ </ul></div>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">
