@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/mozilla/geckoview/GeckoView.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.DatasetType.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/SessionAccessibility.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/RuntimeTelemetry.html" target="_top">Frames</a></li>
@@ -71,14 +71,14 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -115,86 +115,6 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.DatasetType.html" title="annotation in org.mozilla.geckoview">RuntimeTelemetry.DatasetType</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.SnapshotType.html" title="annotation in org.mozilla.geckoview">RuntimeTelemetry.SnapshotType</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#DATASET_BASE">DATASET_BASE</a></span></code>
-<div class="block">The base dataset suitable for release builds.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#DATASET_EXTENDED">DATASET_EXTENDED</a></span></code>
-<div class="block">The extended dataset suitable for pre-release builds.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#SNAPSHOT_ALL">SNAPSHOT_ALL</a></span></code>
-<div class="block">Adds all snapshot types to the response.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#SNAPSHOT_HISTOGRAMS">SNAPSHOT_HISTOGRAMS</a></span></code>
-<div class="block">Adds a "histogram" object entry to the snapshot response.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#SNAPSHOT_KEYED_HISTOGRAMS">SNAPSHOT_KEYED_HISTOGRAMS</a></span></code>
-<div class="block">Adds a "keyedHistogram" object entry to the snapshot response.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#SNAPSHOT_KEYED_SCALARS">SNAPSHOT_KEYED_SCALARS</a></span></code>
-<div class="block">Adds a "keyedScalars" object entry to the snapshot response.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#SNAPSHOT_SCALARS">SNAPSHOT_SCALARS</a></span></code>
-<div class="block">Adds a "scalars" object entry to the snapshot response.</div>
-</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -209,19 +129,9 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#getSnapshots-int-boolean-org.mozilla.geckoview.GeckoResponse-">getSnapshots</a></span>(int&nbsp;dataset,
-            boolean&nbsp;clear,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#getSnapshots-boolean-org.mozilla.geckoview.GeckoResponse-">getSnapshots</a></span>(boolean&nbsp;clear,
             <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;org.mozilla.gecko.util.GeckoBundle&gt;&nbsp;response)</code>
 <div class="block">Retrieve all telemetry snapshots.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#getSnapshots-int-int-boolean-org.mozilla.geckoview.GeckoResponse-">getSnapshots</a></span>(int&nbsp;types,
-            int&nbsp;dataset,
-            boolean&nbsp;clear,
-            <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;org.mozilla.gecko.util.GeckoBundle&gt;&nbsp;response)</code>
-<div class="block">Retrieve the requested telemetry snapshots.</div>
 </td>
 </tr>
 </table>
@@ -240,156 +150,31 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="DATASET_BASE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>DATASET_BASE</h4>
-<pre>public static final&nbsp;int DATASET_BASE</pre>
-<div class="block">The base dataset suitable for release builds.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.geckoview.RuntimeTelemetry.DATASET_BASE">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="DATASET_EXTENDED">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>DATASET_EXTENDED</h4>
-<pre>public static final&nbsp;int DATASET_EXTENDED</pre>
-<div class="block">The extended dataset suitable for pre-release builds.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.geckoview.RuntimeTelemetry.DATASET_EXTENDED">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="SNAPSHOT_HISTOGRAMS">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>SNAPSHOT_HISTOGRAMS</h4>
-<pre>public static final&nbsp;int SNAPSHOT_HISTOGRAMS</pre>
-<div class="block">Adds a "histogram" object entry to the snapshot response.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.geckoview.RuntimeTelemetry.SNAPSHOT_HISTOGRAMS">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="SNAPSHOT_KEYED_HISTOGRAMS">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>SNAPSHOT_KEYED_HISTOGRAMS</h4>
-<pre>public static final&nbsp;int SNAPSHOT_KEYED_HISTOGRAMS</pre>
-<div class="block">Adds a "keyedHistogram" object entry to the snapshot response.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.geckoview.RuntimeTelemetry.SNAPSHOT_KEYED_HISTOGRAMS">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="SNAPSHOT_SCALARS">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>SNAPSHOT_SCALARS</h4>
-<pre>public static final&nbsp;int SNAPSHOT_SCALARS</pre>
-<div class="block">Adds a "scalars" object entry to the snapshot response.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.geckoview.RuntimeTelemetry.SNAPSHOT_SCALARS">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="SNAPSHOT_KEYED_SCALARS">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>SNAPSHOT_KEYED_SCALARS</h4>
-<pre>public static final&nbsp;int SNAPSHOT_KEYED_SCALARS</pre>
-<div class="block">Adds a "keyedScalars" object entry to the snapshot response.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.geckoview.RuntimeTelemetry.SNAPSHOT_KEYED_SCALARS">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="SNAPSHOT_ALL">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>SNAPSHOT_ALL</h4>
-<pre>public static final&nbsp;int SNAPSHOT_ALL</pre>
-<div class="block">Adds all snapshot types to the response.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.geckoview.RuntimeTelemetry.SNAPSHOT_ALL">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getSnapshots-int-boolean-org.mozilla.geckoview.GeckoResponse-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getSnapshots</h4>
-<pre>public&nbsp;void&nbsp;getSnapshots(int&nbsp;dataset,
-                         boolean&nbsp;clear,
-                         <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                         <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;org.mozilla.gecko.util.GeckoBundle&gt;&nbsp;response)</pre>
-<div class="block">Retrieve all telemetry snapshots.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>dataset</code> - The dataset type to retreive.
-                One of <a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#DATASET_BASE"><code>DATASET_*</code></a> flags.</dd>
-<dd><code>clear</code> - Whether the retrieved snapshots should be cleared.</dd>
-<dd><code>response</code> - Used to return the async response.</dd>
-</dl>
-</li>
-</ul>
-<a name="getSnapshots-int-int-boolean-org.mozilla.geckoview.GeckoResponse-">
+<a name="getSnapshots-boolean-org.mozilla.geckoview.GeckoResponse-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getSnapshots</h4>
-<pre>public&nbsp;void&nbsp;getSnapshots(int&nbsp;types,
-                         int&nbsp;dataset,
-                         boolean&nbsp;clear,
+<pre>public&nbsp;void&nbsp;getSnapshots(boolean&nbsp;clear,
                          <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
                          <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;org.mozilla.gecko.util.GeckoBundle&gt;&nbsp;response)</pre>
-<div class="block">Retrieve the requested telemetry snapshots.</div>
+<div class="block">Retrieve all telemetry snapshots.
+ The response bundle will contain following snapshots:
+ <ul>
+ <li>histograms</li>
+ <li>keyedHistograms</li>
+ <li>scalars</li>
+ <li>keyedScalars</li>
+ </ul></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>types</code> - The requested snapshot types.
-              One or more of <a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#SNAPSHOT_HISTOGRAMS"><code>SNAPSHOT_*</code></a> flags.</dd>
-<dd><code>dataset</code> - The dataset type to retreive.
-                One of <a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#DATASET_BASE"><code>DATASET_*</code></a> flags.</dd>
 <dd><code>clear</code> - Whether the retrieved snapshots should be cleared.</dd>
 <dd><code>response</code> - Used to return the async response.</dd>
 </dl>
@@ -422,7 +207,7 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/mozilla/geckoview/GeckoView.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.DatasetType.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/SessionAccessibility.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/RuntimeTelemetry.html" target="_top">Frames</a></li>
@@ -446,14 +231,14 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
