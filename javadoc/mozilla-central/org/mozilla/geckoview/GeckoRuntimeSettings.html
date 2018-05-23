@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -137,6 +137,14 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <div class="block">Settings builder used to construct the settings object.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.CookieBehavior.html" title="annotation in org.mozilla.geckoview">GeckoRuntimeSettings.CookieBehavior</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.CookieLifetime.html" title="annotation in org.mozilla.geckoview">GeckoRuntimeSettings.CookieLifetime</a></span></code>&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="nested.classes.inherited.from.class.android.os.Parcelable">
@@ -160,6 +168,50 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_ACCEPT_ALL">COOKIE_ACCEPT_ALL</a></span></code>
+<div class="block">Accept first-party and third-party cookies and site data.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_ACCEPT_FIRST_PARTY">COOKIE_ACCEPT_FIRST_PARTY</a></span></code>
+<div class="block">Accept only first-party cookies and site data to block cookies which are
+ not associated with the domain of the visited site.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_ACCEPT_NONE">COOKIE_ACCEPT_NONE</a></span></code>
+<div class="block">Do not store any cookies and site data.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_ACCEPT_VISITED">COOKIE_ACCEPT_VISITED</a></span></code>
+<div class="block">Accept first-party and third-party cookies and site data only from
+ sites previously visited in a first-party context.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_LIFETIME_DAYS">COOKIE_LIFETIME_DAYS</a></span></code>
+<div class="block">Limit cookie lifetime to N days.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_LIFETIME_NORMAL">COOKIE_LIFETIME_NORMAL</a></span></code>
+<div class="block">Accept default cookie lifetime.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_LIFETIME_RUNTIME">COOKIE_LIFETIME_RUNTIME</a></span></code>
+<div class="block">Downgrade cookie lifetime to this runtime's lifetime.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://d.android.com/reference/android/os/Parcelable.Creator.html?is-external=true" title="class or interface in android.os">Parcelable.Creator</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#CREATOR">CREATOR</a></span></code>&nbsp;</td>
 </tr>
@@ -196,76 +248,112 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getCookieBehavior--">getCookieBehavior</a></span>()</code>
+<div class="block">Get the assigned cookie storage behavior.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getCookieLifetime--">getCookieLifetime</a></span>()</code>
+<div class="block">Get the assigned cookie lifetime.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getCookieLifetimeDays--">getCookieLifetimeDays</a></span>()</code>
+<div class="block">Get the enforced lifetime expiration days.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://d.android.com/reference/android/os/Bundle.html?is-external=true" title="class or interface in android.os">Bundle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getExtras--">getExtras</a></span>()</code>
 <div class="block">Get the custom Gecko intent extras.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getJavaCrashReportingEnabled--">getJavaCrashReportingEnabled</a></span>()</code>
 <div class="block">Get whether Java crash reporting is enabled or not.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getJavaScriptEnabled--">getJavaScriptEnabled</a></span>()</code>
 <div class="block">Get whether JavaScript support is enabled.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getNativeCrashReportingEnabled--">getNativeCrashReportingEnabled</a></span>()</code>
 <div class="block">Get whether native crash reporting is enabled or not.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getPauseForDebuggerEnabled--">getPauseForDebuggerEnabled</a></span>()</code>
 <div class="block">Gets whether the pause-for-debugger is enabled or not.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getRemoteDebuggingEnabled--">getRemoteDebuggingEnabled</a></span>()</code>
 <div class="block">Get whether remote debugging support is enabled.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getUseContentProcessHint--">getUseContentProcessHint</a></span>()</code>
 <div class="block">Get the content process hint flag.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getWebFontsEnabled--">getWebFontsEnabled</a></span>()</code>
 <div class="block">Get whether web fonts support is enabled.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#readFromParcel-android.os.Parcel-">readFromParcel</a></span>(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;source)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#setCookieBehavior-int-">setCookieBehavior</a></span>(int&nbsp;behavior)</code>
+<div class="block">Set cookie storage behavior.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#setCookieLifetime-int-">setCookieLifetime</a></span>(int&nbsp;lifetime)</code>
+<div class="block">Set the cookie lifetime.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#setCookieLifetimeDays-int-">setCookieLifetimeDays</a></span>(int&nbsp;days)</code>
+<div class="block">Set the expiration days for <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_LIFETIME_DAYS"><code>COOKIE_LIFETIME_DAYS</code></a>.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#setJavaScriptEnabled-boolean-">setJavaScriptEnabled</a></span>(boolean&nbsp;flag)</code>
 <div class="block">Set whether JavaScript support should be enabled.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#setRemoteDebuggingEnabled-boolean-">setRemoteDebuggingEnabled</a></span>(boolean&nbsp;enabled)</code>
 <div class="block">Set whether remote debugging support should be enabled.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#setWebFontsEnabled-boolean-">setWebFontsEnabled</a></span>(boolean&nbsp;flag)</code>
 <div class="block">Set whether support for web fonts should be enabled.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#writeToParcel-android.os.Parcel-int-">writeToParcel</a></span>(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;out,
              int&nbsp;flags)</code>&nbsp;</td>
@@ -292,6 +380,107 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="COOKIE_ACCEPT_ALL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>COOKIE_ACCEPT_ALL</h4>
+<pre>public static final&nbsp;int COOKIE_ACCEPT_ALL</pre>
+<div class="block">Accept first-party and third-party cookies and site data.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntimeSettings.COOKIE_ACCEPT_ALL">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="COOKIE_ACCEPT_FIRST_PARTY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>COOKIE_ACCEPT_FIRST_PARTY</h4>
+<pre>public static final&nbsp;int COOKIE_ACCEPT_FIRST_PARTY</pre>
+<div class="block">Accept only first-party cookies and site data to block cookies which are
+ not associated with the domain of the visited site.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntimeSettings.COOKIE_ACCEPT_FIRST_PARTY">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="COOKIE_ACCEPT_NONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>COOKIE_ACCEPT_NONE</h4>
+<pre>public static final&nbsp;int COOKIE_ACCEPT_NONE</pre>
+<div class="block">Do not store any cookies and site data.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntimeSettings.COOKIE_ACCEPT_NONE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="COOKIE_ACCEPT_VISITED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>COOKIE_ACCEPT_VISITED</h4>
+<pre>public static final&nbsp;int COOKIE_ACCEPT_VISITED</pre>
+<div class="block">Accept first-party and third-party cookies and site data only from
+ sites previously visited in a first-party context.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntimeSettings.COOKIE_ACCEPT_VISITED">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="COOKIE_LIFETIME_NORMAL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>COOKIE_LIFETIME_NORMAL</h4>
+<pre>public static final&nbsp;int COOKIE_LIFETIME_NORMAL</pre>
+<div class="block">Accept default cookie lifetime.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntimeSettings.COOKIE_LIFETIME_NORMAL">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="COOKIE_LIFETIME_RUNTIME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>COOKIE_LIFETIME_RUNTIME</h4>
+<pre>public static final&nbsp;int COOKIE_LIFETIME_RUNTIME</pre>
+<div class="block">Downgrade cookie lifetime to this runtime's lifetime.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntimeSettings.COOKIE_LIFETIME_RUNTIME">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="COOKIE_LIFETIME_DAYS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>COOKIE_LIFETIME_DAYS</h4>
+<pre>public static final&nbsp;int COOKIE_LIFETIME_DAYS</pre>
+<div class="block">Limit cookie lifetime to N days.
+ Defaults to 90 days.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntimeSettings.COOKIE_LIFETIME_DAYS">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
 <a name="CREATOR">
 <!--   -->
 </a>
@@ -483,6 +672,105 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" t
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if the pause is enabled.</dd>
+</dl>
+</li>
+</ul>
+<a name="getCookieBehavior--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCookieBehavior</h4>
+<pre>public&nbsp;int&nbsp;getCookieBehavior()</pre>
+<div class="block">Get the assigned cookie storage behavior.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The assigned behavior, as one of <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_ACCEPT_ALL"><code>COOKIE_ACCEPT_*</code></a> flags.</dd>
+</dl>
+</li>
+</ul>
+<a name="setCookieBehavior-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCookieBehavior</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a>&nbsp;setCookieBehavior(int&nbsp;behavior)</pre>
+<div class="block">Set cookie storage behavior.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>behavior</code> - The storage behavior that should be applied.
+                 Use one of the <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_ACCEPT_ALL"><code>COOKIE_ACCEPT_*</code></a> flags.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This GeckoRuntimeSettings instance.</dd>
+</dl>
+</li>
+</ul>
+<a name="getCookieLifetime--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCookieLifetime</h4>
+<pre>public&nbsp;int&nbsp;getCookieLifetime()</pre>
+<div class="block">Get the assigned cookie lifetime.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The assigned lifetime, as one of <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_LIFETIME_NORMAL"><code>COOKIE_LIFETIME_*</code></a> flags.</dd>
+</dl>
+</li>
+</ul>
+<a name="getCookieLifetimeDays--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCookieLifetimeDays</h4>
+<pre>public&nbsp;int&nbsp;getCookieLifetimeDays()</pre>
+<div class="block">Get the enforced lifetime expiration days.
+
+ Note: This is only enforced for <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_LIFETIME_DAYS"><code>COOKIE_LIFETIME_DAYS</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The enforced expiration days.</dd>
+</dl>
+</li>
+</ul>
+<a name="setCookieLifetime-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCookieLifetime</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a>&nbsp;setCookieLifetime(int&nbsp;lifetime)</pre>
+<div class="block">Set the cookie lifetime.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>lifetime</code> - The enforced cookie lifetime.
+                 Use one of the <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_LIFETIME_NORMAL"><code>COOKIE_LIFETIME_*</code></a> flags.
+                 Use <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#setCookieLifetimeDays-int-"><code>setCookieLifetimeDays(int)</code></a> to set expiration
+                 days for <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_LIFETIME_DAYS"><code>COOKIE_LIFETIME_DAYS</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This GeckoRuntimeSettings instance.</dd>
+</dl>
+</li>
+</ul>
+<a name="setCookieLifetimeDays-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCookieLifetimeDays</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a>&nbsp;setCookieLifetimeDays(int&nbsp;days)</pre>
+<div class="block">Set the expiration days for <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_LIFETIME_DAYS"><code>COOKIE_LIFETIME_DAYS</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>days</code> - Limit lifetime to N days. Only enforced for <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_LIFETIME_DAYS"><code>COOKIE_LIFETIME_DAYS</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This GeckoRuntimeSettings instance.</dd>
 </dl>
 </li>
 </ul>
