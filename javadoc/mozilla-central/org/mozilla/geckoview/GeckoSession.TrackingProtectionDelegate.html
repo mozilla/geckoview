@@ -144,19 +144,43 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_AD">CATEGORY_AD</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_AD">CATEGORY_AD</a></span></code>
+<div class="block">Block advertisement trackers.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_ANALYTIC">CATEGORY_ANALYTIC</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_ALL">CATEGORY_ALL</a></span></code>
+<div class="block">Block all known trackers.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_CONTENT">CATEGORY_CONTENT</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_ANALYTIC">CATEGORY_ANALYTIC</a></span></code>
+<div class="block">Block analytics trackers.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_SOCIAL">CATEGORY_SOCIAL</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_CONTENT">CATEGORY_CONTENT</a></span></code>
+<div class="block">Block content trackers.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_NONE">CATEGORY_NONE</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_SOCIAL">CATEGORY_SOCIAL</a></span></code>
+<div class="block">Block social trackers.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_TEST">CATEGORY_TEST</a></span></code>
+<div class="block">Block Gecko test trackers (used for tests).</div>
+</td>
 </tr>
 </table>
 </li>
@@ -196,6 +220,19 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="CATEGORY_NONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CATEGORY_NONE</h4>
+<pre>static final&nbsp;int CATEGORY_NONE</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TrackingProtectionDelegate.CATEGORY_NONE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
 <a name="CATEGORY_AD">
 <!--   -->
 </a>
@@ -203,6 +240,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>CATEGORY_AD</h4>
 <pre>static final&nbsp;int CATEGORY_AD</pre>
+<div class="block">Block advertisement trackers.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TrackingProtectionDelegate.CATEGORY_AD">Constant Field Values</a></dd>
@@ -216,6 +254,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>CATEGORY_ANALYTIC</h4>
 <pre>static final&nbsp;int CATEGORY_ANALYTIC</pre>
+<div class="block">Block analytics trackers.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TrackingProtectionDelegate.CATEGORY_ANALYTIC">Constant Field Values</a></dd>
@@ -229,6 +268,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>CATEGORY_SOCIAL</h4>
 <pre>static final&nbsp;int CATEGORY_SOCIAL</pre>
+<div class="block">Block social trackers.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TrackingProtectionDelegate.CATEGORY_SOCIAL">Constant Field Values</a></dd>
@@ -238,13 +278,42 @@ var activeTableTab = "activeTableTab";
 <a name="CATEGORY_CONTENT">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>CATEGORY_CONTENT</h4>
 <pre>static final&nbsp;int CATEGORY_CONTENT</pre>
+<div class="block">Block content trackers.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TrackingProtectionDelegate.CATEGORY_CONTENT">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="CATEGORY_TEST">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CATEGORY_TEST</h4>
+<pre>static final&nbsp;int CATEGORY_TEST</pre>
+<div class="block">Block Gecko test trackers (used for tests).</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TrackingProtectionDelegate.CATEGORY_TEST">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="CATEGORY_ALL">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>CATEGORY_ALL</h4>
+<pre>static final&nbsp;int CATEGORY_ALL</pre>
+<div class="block">Block all known trackers.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TrackingProtectionDelegate.CATEGORY_ALL">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -265,14 +334,15 @@ var activeTableTab = "activeTableTab";
 <pre>void&nbsp;onTrackerBlocked(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                       <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
                       int&nbsp;categories)</pre>
-<div class="block">A tracking element has been blocked from loading.</div>
+<div class="block">A tracking element has been blocked from loading.
+ Set blocked tracker categories via GeckoRuntimeSettings and enable
+ tracking protection via GeckoSessionSettings.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>session</code> - The GeckoSession that initiated the callback.</dd>
 <dd><code>uri</code> - The URI of the blocked element.</dd>
 <dd><code>categories</code> - The tracker categories of the blocked element.
-                   One or more of the <a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_AD"><code>CATEGORY_AD</code></a>
-                   flags.</dd>
+                   One or more of the <a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_AD"><code>CATEGORY_*</code></a> flags.</dd>
 </dl>
 </li>
 </ul>

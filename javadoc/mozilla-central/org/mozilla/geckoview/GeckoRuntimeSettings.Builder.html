@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -219,11 +219,17 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#trackingProtectionCategories-int-">trackingProtectionCategories</a></span>(int&nbsp;categories)</code>
+<div class="block">Set tracking protection blocking categories.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#useContentProcessHint-boolean-">useContentProcessHint</a></span>(boolean&nbsp;use)</code>
 <div class="block">Set the content process hint flag.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#webFontsEnabled-boolean-">webFontsEnabled</a></span>(boolean&nbsp;flag)</code>
 <div class="block">Set whether support for web fonts should be enabled.</div>
@@ -499,7 +505,7 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder
 <a name="cookieLifetimeDays-int-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>cookieLifetimeDays</h4>
 <pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
@@ -510,6 +516,25 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder
 <dd><code>days</code> - Limit lifetime to N days. Only enforced for <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#COOKIE_LIFETIME_DAYS"><code>GeckoRuntimeSettings.COOKIE_LIFETIME_DAYS</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The Builder instance.</dd>
+</dl>
+</li>
+</ul>
+<a name="trackingProtectionCategories-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>trackingProtectionCategories</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a>&nbsp;trackingProtectionCategories(int&nbsp;categories)</pre>
+<div class="block">Set tracking protection blocking categories.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>categories</code> - The categories of trackers that should be blocked.
+                   Use one or more of the
+                   <a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.html#CATEGORY_AD"><code>TrackingProtectionDelegate.CATEGORY_*</code></a> flags.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This Builder instance.</dd>
 </dl>
 </li>
 </ul>
