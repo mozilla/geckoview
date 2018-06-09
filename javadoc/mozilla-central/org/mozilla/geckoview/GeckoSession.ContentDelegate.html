@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -190,26 +190,32 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onCrash-org.mozilla.geckoview.GeckoSession-">onCrash</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</code>
+<div class="block">The content process hosting this GeckoSession has crashed.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onExternalResponse-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.WebResponseInfo-">onExternalResponse</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                   <a href="../../../org/mozilla/geckoview/GeckoSession.WebResponseInfo.html" title="class in org.mozilla.geckoview">GeckoSession.WebResponseInfo</a>&nbsp;response)</code>
 <div class="block">This is fired when there is a response that cannot be handled
  by Gecko (e.g., a download).</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onFocusRequest-org.mozilla.geckoview.GeckoSession-">onFocusRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</code>
 <div class="block">A page has requested focus.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onFullScreen-org.mozilla.geckoview.GeckoSession-boolean-">onFullScreen</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
             boolean&nbsp;fullScreen)</code>
 <div class="block">A page has entered or exited full screen mode.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onTitleChange-org.mozilla.geckoview.GeckoSession-java.lang.String-">onTitleChange</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title)</code>
@@ -388,7 +394,7 @@ var activeTableTab = "activeTableTab";
 <a name="onExternalResponse-org.mozilla.geckoview.GeckoSession-org.mozilla.geckoview.GeckoSession.WebResponseInfo-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>onExternalResponse</h4>
 <pre>void&nbsp;onExternalResponse(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
@@ -399,6 +405,24 @@ var activeTableTab = "activeTableTab";
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>session</code> - the GeckoSession that received the external response.</dd>
 <dd><code>response</code> - the WebResponseInfo for the external response</dd>
+</dl>
+</li>
+</ul>
+<a name="onCrash-org.mozilla.geckoview.GeckoSession-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onCrash</h4>
+<pre>void&nbsp;onCrash(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</pre>
+<div class="block">The content process hosting this GeckoSession has crashed. The
+ GeckoSession is now closed and unusable. You may call
+ <a href="../../../org/mozilla/geckoview/GeckoSession.html#open-org.mozilla.geckoview.GeckoRuntime-"><code>GeckoSession.open(GeckoRuntime)</code></a> to recover the session, but no state
+ is preserved. Most applications will want to call
+ <a href="../../../org/mozilla/geckoview/GeckoSession.html#loadUri-android.net.Uri-"><code>GeckoSession.loadUri(Uri)</code></a> or <a href="../../../org/mozilla/geckoview/GeckoSession.html#restoreState-org.mozilla.geckoview.GeckoSession.SessionState-"><code>GeckoSession.restoreState(SessionState)</code></a> at this point.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>session</code> - The GeckoSession that crashed.</dd>
 </dl>
 </li>
 </ul>

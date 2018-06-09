@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -238,32 +238,38 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="https://d.android.com/reference/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#getProfileDir--">getProfileDir</a></span>()</code>
+<div class="block">Get the profile directory for this runtime.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#getSettings--">getSettings</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html" title="class in org.mozilla.geckoview">RuntimeTelemetry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#getTelemetry--">getTelemetry</a></span>()</code>
 <div class="block">Return the telemetry object for this runtime.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#readFromParcel-android.os.Parcel-">readFromParcel</a></span>(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;source)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#setDelegate-org.mozilla.geckoview.GeckoRuntime.Delegate-">setDelegate</a></span>(<a href="../../../org/mozilla/geckoview/GeckoRuntime.Delegate.html" title="interface in org.mozilla.geckoview">GeckoRuntime.Delegate</a>&nbsp;delegate)</code>
 <div class="block">Set a delegate for receiving callbacks relevant to to this GeckoRuntime.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Shutdown the runtime.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#writeToParcel-android.os.Parcel-int-">writeToParcel</a></span>(<a href="https://d.android.com/reference/android/os/Parcel.html?is-external=true" title="class or interface in android.os">Parcel</a>&nbsp;out,
              int&nbsp;flags)</code>&nbsp;</td>
@@ -470,6 +476,17 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntime.Delegate.html" 
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The telemetry object.</dd>
 </dl>
+</li>
+</ul>
+<a name="getProfileDir--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProfileDir</h4>
+<pre>public&nbsp;<a href="https://d.android.com/reference/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;getProfileDir()</pre>
+<div class="block">Get the profile directory for this runtime. This is where Gecko stores
+ internal data.</div>
 </li>
 </ul>
 <a name="describeContents--">
