@@ -530,8 +530,8 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </td>
 </tr>
 <tr id="i34" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#saveState-org.mozilla.geckoview.GeckoResponse-">saveState</a></span>(<a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.SessionState.html" title="class in org.mozilla.geckoview">GeckoSession.SessionState</a>&gt;&nbsp;response)</code>
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.SessionState.html" title="class in org.mozilla.geckoview">GeckoSession.SessionState</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.html#saveState--">saveState</a></span>()</code>
 <div class="block">Save the current browsing session state of this GeckoSession.</div>
 </td>
 </tr>
@@ -1189,21 +1189,21 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/SessionAccessibility.html" t
 </dl>
 </li>
 </ul>
-<a name="saveState-org.mozilla.geckoview.GeckoResponse-">
+<a name="saveState--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>saveState</h4>
-<pre>public&nbsp;void&nbsp;saveState(<a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.SessionState.html" title="class in org.mozilla.geckoview">GeckoSession.SessionState</a>&gt;&nbsp;response)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoSession.SessionState.html" title="class in org.mozilla.geckoview">GeckoSession.SessionState</a>&gt;&nbsp;saveState()</pre>
 <div class="block">Save the current browsing session state of this GeckoSession. This session state
  includes the history, scroll position, zoom, and any form data that has been entered,
  but does not include information pertaining to the GeckoSession itself (for example,
  this does not include settings on the GeckoSession).</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>response</code> - This is a response which will be called with the state once it has been
-                 saved. Can be null if we fail to save the state for any reason.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> containing the <a href="../../../org/mozilla/geckoview/GeckoSession.SessionState.html" title="class in org.mozilla.geckoview"><code>GeckoSession.SessionState</code></a></dd>
 </dl>
 </li>
 </ul>
