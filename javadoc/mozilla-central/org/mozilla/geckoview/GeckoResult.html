@@ -292,7 +292,7 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#GeckoResult-org.mozilla.geckoview.GeckoResult-">GeckoResult</a></span>(<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="type parameter in GeckoResult">T</a>&gt;&nbsp;from)</code>
-<div class="block">Construct a result from another result.</div>
+<div class="block">This constructs a result that is chained to the specified result.</div>
 </td>
 </tr>
 </table>
@@ -402,7 +402,7 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <li class="blockList">
 <h4>GeckoResult</h4>
 <pre>public&nbsp;GeckoResult(<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="type parameter in GeckoResult">T</a>&gt;&nbsp;from)</pre>
-<div class="block">Construct a result from another result. Listeners are not copied.</div>
+<div class="block">This constructs a result that is chained to the specified result.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>from</code> - The <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> to copy.</dd>
@@ -540,8 +540,10 @@ public&nbsp;&lt;U&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.h
                                         <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
                                         <a href="../../../org/mozilla/geckoview/GeckoResult.OnExceptionListener.html" title="interface in org.mozilla.geckoview">GeckoResult.OnExceptionListener</a>&lt;U&gt;&nbsp;exceptionListener)</pre>
 <div class="block">Adds listeners to be called when the <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> is completed either with
- a value or <a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>. Listeners will be invoked on the main thread. If the
- result is already complete when this method is called, listeners will be invoked in
+ a value or <a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>. Listeners will be invoked on the thread where the
+ <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> was created, which must have a <a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os"><code>Looper</code></a> installed.
+
+ If the result is already complete when this method is called, listeners will be invoked in
  a future <a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os"><code>Looper</code></a> iteration.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
