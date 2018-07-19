@@ -190,62 +190,67 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#ACTION_HIDE">ACTION_HIDE</a></span></code>
+<div class="block">Hide selection actions and cause <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onHideAction-org.mozilla.geckoview.GeckoSession-int-"><code>onHideAction(org.mozilla.geckoview.GeckoSession, int)</code></a> to be called.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#ACTION_PASTE">ACTION_PASTE</a></span></code>
 <div class="block">Replace the selected content with the clipboard content.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#ACTION_SELECT_ALL">ACTION_SELECT_ALL</a></span></code>
 <div class="block">Select the entire content of the document or editor.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#ACTION_UNSELECT">ACTION_UNSELECT</a></span></code>
 <div class="block">Clear the current selection.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#FLAG_IS_COLLAPSED">FLAG_IS_COLLAPSED</a></span></code>
 <div class="block">The selection is collapsed at a single position.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#FLAG_IS_EDITABLE">FLAG_IS_EDITABLE</a></span></code>
 <div class="block">The selection is inside editable content such as an input element or
  contentEditable node.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#FLAG_IS_PASSWORD">FLAG_IS_PASSWORD</a></span></code>
 <div class="block">The selection is inside a password field.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#HIDE_REASON_ACTIVE_SCROLL">HIDE_REASON_ACTIVE_SCROLL</a></span></code>
 <div class="block">Actions are no longer available due to the user actively scrolling the page.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#HIDE_REASON_ACTIVE_SELECTION">HIDE_REASON_ACTIVE_SELECTION</a></span></code>
 <div class="block">Actions are no longer available due to the user actively changing the
  selection.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#HIDE_REASON_INVISIBLE_SELECTION">HIDE_REASON_INVISIBLE_SELECTION</a></span></code>
-<div class="block">Actions are no longer available due to the user moving the selection becoming
- out of view.</div>
+<div class="block">Actions are no longer available due to the user moving the selection out of view.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#HIDE_REASON_NO_SELECTION">HIDE_REASON_NO_SELECTION</a></span></code>
 <div class="block">Actions are no longer available due to the user clearing the selection.</div>
@@ -338,6 +343,20 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.FLAG_IS_PASSWORD">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="ACTION_HIDE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ACTION_HIDE</h4>
+<pre>static final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> ACTION_HIDE</pre>
+<div class="block">Hide selection actions and cause <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#onHideAction-org.mozilla.geckoview.GeckoSession-int-"><code>onHideAction(org.mozilla.geckoview.GeckoSession, int)</code></a> to be called.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.ACTION_HIDE">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -478,9 +497,8 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>HIDE_REASON_INVISIBLE_SELECTION</h4>
 <pre>static final&nbsp;int HIDE_REASON_INVISIBLE_SELECTION</pre>
-<div class="block">Actions are no longer available due to the user moving the selection becoming
- out of view. Previous actions are still available after a callback with this
- reason.</div>
+<div class="block">Actions are no longer available due to the user moving the selection out of view.
+ Previous actions are still available after a callback with this reason.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.SelectionActionDelegate.HIDE_REASON_INVISIBLE_SELECTION">Constant Field Values</a></dd>
@@ -555,7 +573,7 @@ var activeTableTab = "activeTableTab";
 <dd><code>session</code> - The GeckoSession that initiated the callback.</dd>
 <dd><code>selection</code> - Current selection attributes.</dd>
 <dd><code>actions</code> - Array of built-in actions available; possible values
- come from the <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#ACTION_CUT"><code>ACTION_*</code></a> constants.</dd>
+ come from the <a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.html#ACTION_HIDE"><code>ACTION_*</code></a> constants.</dd>
 <dd><code>response</code> - Callback object for performing built-in actions. For example,
  <code>response.respond(actions[0])</code> performs the first action. May be used
  multiple times to perform multiple actions at once.</dd>
