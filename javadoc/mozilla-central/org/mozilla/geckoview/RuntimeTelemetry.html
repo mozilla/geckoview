@@ -128,9 +128,8 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#getSnapshots-boolean-org.mozilla.geckoview.GeckoResponse-">getSnapshots</a></span>(boolean&nbsp;clear,
-            <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;org.mozilla.gecko.util.GeckoBundle&gt;&nbsp;response)</code>
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;org.mozilla.gecko.util.GeckoBundle&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html#getSnapshots-boolean-">getSnapshots</a></span>(boolean&nbsp;clear)</code>
 <div class="block">Retrieve all telemetry snapshots.</div>
 </td>
 </tr>
@@ -156,15 +155,14 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getSnapshots-boolean-org.mozilla.geckoview.GeckoResponse-">
+<a name="getSnapshots-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getSnapshots</h4>
-<pre>public&nbsp;void&nbsp;getSnapshots(boolean&nbsp;clear,
-                         <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                         <a href="../../../org/mozilla/geckoview/GeckoResponse.html" title="interface in org.mozilla.geckoview">GeckoResponse</a>&lt;org.mozilla.gecko.util.GeckoBundle&gt;&nbsp;response)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;org.mozilla.gecko.util.GeckoBundle&gt;&nbsp;getSnapshots(boolean&nbsp;clear)</pre>
 <div class="block">Retrieve all telemetry snapshots.
  The response bundle will contain following snapshots:
  <ul>
@@ -176,7 +174,8 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>clear</code> - Whether the retrieved snapshots should be cleared.</dd>
-<dd><code>response</code> - Used to return the async response.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> with the GeckoBundle snapshot results.</dd>
 </dl>
 </li>
 </ul>
