@@ -166,11 +166,17 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#PERMISSION_AUTOPLAY_MEDIA">PERMISSION_AUTOPLAY_MEDIA</a></span></code>
+<div class="block">Permission for allowing auto-playing media.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#PERMISSION_DESKTOP_NOTIFICATION">PERMISSION_DESKTOP_NOTIFICATION</a></span></code>
 <div class="block">Permission for using the notifications API.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.html#PERMISSION_GEOLOCATION">PERMISSION_GEOLOCATION</a></span></code>
 <div class="block">Permission for using the geolocation API.</div>
@@ -253,7 +259,7 @@ var activeTableTab = "activeTableTab";
 <a name="PERMISSION_DESKTOP_NOTIFICATION">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>PERMISSION_DESKTOP_NOTIFICATION</h4>
 <pre>static final&nbsp;int PERMISSION_DESKTOP_NOTIFICATION</pre>
@@ -262,6 +268,20 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.PermissionDelegate.PERMISSION_DESKTOP_NOTIFICATION">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="PERMISSION_AUTOPLAY_MEDIA">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PERMISSION_AUTOPLAY_MEDIA</h4>
+<pre>static final&nbsp;int PERMISSION_AUTOPLAY_MEDIA</pre>
+<div class="block">Permission for allowing auto-playing media.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.PermissionDelegate.PERMISSION_AUTOPLAY_MEDIA">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -313,7 +333,8 @@ var activeTableTab = "activeTableTab";
 <dd><code>uri</code> - The URI of the content requesting the permission.</dd>
 <dd><code>type</code> - The type of the requested permission; possible values are,
              PERMISSION_GEOLOCATION
-             PERMISSION_DESKTOP_NOTIFICATION</dd>
+             PERMISSION_DESKTOP_NOTIFICATION
+             PERMISSION_AUTOPLAY_MEDIA</dd>
 <dd><code>access</code> - Not used.</dd>
 <dd><code>callback</code> - Callback interface.</dd>
 </dl>
