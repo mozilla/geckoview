@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/mozilla/geckoview/GeckoSession.SessionState.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.RestartReason.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.AutoFillNotification.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/GeckoSession.TextInputDelegate.html" target="_top">Frames</a></li>
@@ -126,6 +126,10 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.AutoFillNotification.html" title="annotation in org.mozilla.geckoview">GeckoSession.TextInputDelegate.AutoFillNotification</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.RestartReason.html" title="annotation in org.mozilla.geckoview">GeckoSession.TextInputDelegate.RestartReason</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -142,6 +146,54 @@ var activeTableTab = "activeTableTab";
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#AUTO_FILL_NOTIFY_CANCELED">AUTO_FILL_NOTIFY_CANCELED</a></span></code>
+<div class="block">An auto-fill session has been canceled, usually as a result of unloading a page.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#AUTO_FILL_NOTIFY_COMMITTED">AUTO_FILL_NOTIFY_COMMITTED</a></span></code>
+<div class="block">An auto-fill session has been committed, usually as a result of submitting a form.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#AUTO_FILL_NOTIFY_STARTED">AUTO_FILL_NOTIFY_STARTED</a></span></code>
+<div class="block">An auto-fill session has started, usually as a result of loading a page.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#AUTO_FILL_NOTIFY_VIEW_ADDED">AUTO_FILL_NOTIFY_VIEW_ADDED</a></span></code>
+<div class="block">A view within the auto-fill session has been added.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#AUTO_FILL_NOTIFY_VIEW_ENTERED">AUTO_FILL_NOTIFY_VIEW_ENTERED</a></span></code>
+<div class="block">A view within the auto-fill session has gained focus.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#AUTO_FILL_NOTIFY_VIEW_EXITED">AUTO_FILL_NOTIFY_VIEW_EXITED</a></span></code>
+<div class="block">A view within the auto-fill session has lost focus.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#AUTO_FILL_NOTIFY_VIEW_REMOVED">AUTO_FILL_NOTIFY_VIEW_REMOVED</a></span></code>
+<div class="block">A view within the auto-fill session has been removed.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#AUTO_FILL_NOTIFY_VIEW_UPDATED">AUTO_FILL_NOTIFY_VIEW_UPDATED</a></span></code>
+<div class="block">A view within the auto-fill session has been updated (e.g.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
@@ -184,19 +236,27 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#notifyAutoFill-org.mozilla.geckoview.GeckoSession-int-int-">notifyAutoFill</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+              int&nbsp;notification,
+              int&nbsp;virtualId)</code>
+<div class="block">Notify that an auto-fill event has occurred.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#restartInput-org.mozilla.geckoview.GeckoSession-int-">restartInput</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
             int&nbsp;reason)</code>
 <div class="block">Reset the input method, and discard any existing states such as the current composition
  or current autocompletion.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#showSoftInput-org.mozilla.geckoview.GeckoSession-">showSoftInput</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</code>
 <div class="block">Display the soft input.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#updateCursorAnchorInfo-org.mozilla.geckoview.GeckoSession-android.view.inputmethod.CursorAnchorInfo-">updateCursorAnchorInfo</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                       <a href="https://d.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html?is-external=true" title="class or interface in android.view.inputmethod">CursorAnchorInfo</a>&nbsp;info)</code>
@@ -204,7 +264,7 @@ var activeTableTab = "activeTableTab";
  <a href="https://d.android.com/reference/android/view/inputmethod/InputConnection.html?is-external=true#requestCursorUpdates-int-" title="class or interface in android.view.inputmethod"><code>InputConnection.requestCursorUpdates(int)</code></a>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#updateExtractedText-org.mozilla.geckoview.GeckoSession-android.view.inputmethod.ExtractedTextRequest-android.view.inputmethod.ExtractedText-">updateExtractedText</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                    <a href="https://d.android.com/reference/android/view/inputmethod/ExtractedTextRequest.html?is-external=true" title="class or interface in android.view.inputmethod">ExtractedTextRequest</a>&nbsp;request,
@@ -213,7 +273,7 @@ var activeTableTab = "activeTableTab";
  <a href="https://d.android.com/reference/android/view/inputmethod/InputConnection.html?is-external=true#getExtractedText-android.view.inputmethod.ExtractedTextRequest-int-" title="class or interface in android.view.inputmethod"><code>InputConnection.getExtractedText(android.view.inputmethod.ExtractedTextRequest, int)</code></a>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#updateSelection-org.mozilla.geckoview.GeckoSession-int-int-int-int-">updateSelection</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
                int&nbsp;selStart,
@@ -269,7 +329,7 @@ var activeTableTab = "activeTableTab";
 <a name="RESTART_REASON_CONTENT_CHANGE">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>RESTART_REASON_CONTENT_CHANGE</h4>
 <pre>static final&nbsp;int RESTART_REASON_CONTENT_CHANGE</pre>
@@ -279,6 +339,118 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TextInputDelegate.RESTART_REASON_CONTENT_CHANGE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="AUTO_FILL_NOTIFY_STARTED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AUTO_FILL_NOTIFY_STARTED</h4>
+<pre>static final&nbsp;int AUTO_FILL_NOTIFY_STARTED</pre>
+<div class="block">An auto-fill session has started, usually as a result of loading a page.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TextInputDelegate.AUTO_FILL_NOTIFY_STARTED">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="AUTO_FILL_NOTIFY_COMMITTED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AUTO_FILL_NOTIFY_COMMITTED</h4>
+<pre>static final&nbsp;int AUTO_FILL_NOTIFY_COMMITTED</pre>
+<div class="block">An auto-fill session has been committed, usually as a result of submitting a form.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TextInputDelegate.AUTO_FILL_NOTIFY_COMMITTED">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="AUTO_FILL_NOTIFY_CANCELED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AUTO_FILL_NOTIFY_CANCELED</h4>
+<pre>static final&nbsp;int AUTO_FILL_NOTIFY_CANCELED</pre>
+<div class="block">An auto-fill session has been canceled, usually as a result of unloading a page.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TextInputDelegate.AUTO_FILL_NOTIFY_CANCELED">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="AUTO_FILL_NOTIFY_VIEW_ADDED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AUTO_FILL_NOTIFY_VIEW_ADDED</h4>
+<pre>static final&nbsp;int AUTO_FILL_NOTIFY_VIEW_ADDED</pre>
+<div class="block">A view within the auto-fill session has been added.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TextInputDelegate.AUTO_FILL_NOTIFY_VIEW_ADDED">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="AUTO_FILL_NOTIFY_VIEW_REMOVED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AUTO_FILL_NOTIFY_VIEW_REMOVED</h4>
+<pre>static final&nbsp;int AUTO_FILL_NOTIFY_VIEW_REMOVED</pre>
+<div class="block">A view within the auto-fill session has been removed.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TextInputDelegate.AUTO_FILL_NOTIFY_VIEW_REMOVED">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="AUTO_FILL_NOTIFY_VIEW_UPDATED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AUTO_FILL_NOTIFY_VIEW_UPDATED</h4>
+<pre>static final&nbsp;int AUTO_FILL_NOTIFY_VIEW_UPDATED</pre>
+<div class="block">A view within the auto-fill session has been updated (e.g. change in state).</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TextInputDelegate.AUTO_FILL_NOTIFY_VIEW_UPDATED">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="AUTO_FILL_NOTIFY_VIEW_ENTERED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AUTO_FILL_NOTIFY_VIEW_ENTERED</h4>
+<pre>static final&nbsp;int AUTO_FILL_NOTIFY_VIEW_ENTERED</pre>
+<div class="block">A view within the auto-fill session has gained focus.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TextInputDelegate.AUTO_FILL_NOTIFY_VIEW_ENTERED">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="AUTO_FILL_NOTIFY_VIEW_EXITED">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AUTO_FILL_NOTIFY_VIEW_EXITED</h4>
+<pre>static final&nbsp;int AUTO_FILL_NOTIFY_VIEW_EXITED</pre>
+<div class="block">A view within the auto-fill session has lost focus.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoSession.TextInputDelegate.AUTO_FILL_NOTIFY_VIEW_EXITED">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -399,7 +571,7 @@ var activeTableTab = "activeTableTab";
 <a name="updateCursorAnchorInfo-org.mozilla.geckoview.GeckoSession-android.view.inputmethod.CursorAnchorInfo-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>updateCursorAnchorInfo</h4>
 <pre>void&nbsp;updateCursorAnchorInfo(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
@@ -413,6 +585,29 @@ var activeTableTab = "activeTableTab";
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>session</code> - Session instance.</dd>
 <dd><code>info</code> - Cursor-anchor information.</dd>
+</dl>
+</li>
+</ul>
+<a name="notifyAutoFill-org.mozilla.geckoview.GeckoSession-int-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>notifyAutoFill</h4>
+<pre>void&nbsp;notifyAutoFill(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                    <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                    int&nbsp;notification,
+                    int&nbsp;virtualId)</pre>
+<div class="block">Notify that an auto-fill event has occurred. The default implementation forwards the
+ notification to the system <a href="https://d.android.com/reference/android/view/autofill/AutofillManager.html?is-external=true" title="class or interface in android.view.autofill"><code>AutofillManager</code></a>. This method is
+ only called on Android 6.0 and above, and it is called in viewless mode as well.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>session</code> - Session instance.</dd>
+<dd><code>notification</code> - Notification type as one of the <a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html#AUTO_FILL_NOTIFY_STARTED"><code>AUTO_FILL_NOTIFY_*</code></a> constants.</dd>
+<dd><code>virtualId</code> - Virtual ID of the target, or <a href="https://d.android.com/reference/android/view/View.html?is-external=true#NO_ID" title="class or interface in android.view"><code>View.NO_ID</code></a> if not
+                  applicable. The ID matches one of the virtual IDs provided by <a href="../../../org/mozilla/geckoview/SessionTextInput.html#onProvideAutofillVirtualStructure-android.view.ViewStructure-int-"><code>SessionTextInput.onProvideAutofillVirtualStructure(android.view.ViewStructure, int)</code></a> and can be used
+                  with <a href="../../../org/mozilla/geckoview/SessionTextInput.html#autofill-android.util.SparseArray-"><code>SessionTextInput.autofill(android.util.SparseArray&lt;java.lang.CharSequence&gt;)</code></a>.</dd>
 </dl>
 </li>
 </ul>
@@ -443,7 +638,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/mozilla/geckoview/GeckoSession.SessionState.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.RestartReason.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.AutoFillNotification.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/mozilla/geckoview/GeckoSession.TextInputDelegate.html" target="_top">Frames</a></li>
