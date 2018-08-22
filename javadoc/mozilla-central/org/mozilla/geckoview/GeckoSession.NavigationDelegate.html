@@ -332,7 +332,7 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onLoadError-org.mozilla.geckoview.GeckoSession-java.lang.String-int-int-">onLoadError</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
            <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
            int&nbsp;category,
@@ -979,16 +979,18 @@ var activeTableTab = "activeTableTab";
 <ul class="blockListLast">
 <li class="blockList">
 <h4>onLoadError</h4>
-<pre>void&nbsp;onLoadError(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                 <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                 int&nbsp;category,
-                 int&nbsp;error)</pre>
+<pre><a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;onLoadError(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                                <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                                int&nbsp;category,
+                                int&nbsp;error)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>session</code> - The GeckoSession that initiated the callback.</dd>
 <dd><code>uri</code> - The URI that failed to load.</dd>
 <dd><code>category</code> - The error category.</dd>
 <dd><code>error</code> - The error type.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A URI to display as an error. Returning null will halt the load entirely.</dd>
 </dl>
 </li>
 </ul>
