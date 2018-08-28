@@ -104,7 +104,7 @@
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">GeckoSession.WebResponseInfo</span>
+<pre>public static class <span class="typeNameLabel">GeckoSession.WebResponseInfo</span>
 extends <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block">WebResponseInfo contains information about a single web response.</div>
 </li>
@@ -185,7 +185,8 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <ul class="blockList">
 <li class="blockList">
 <h4>uri</h4>
-<pre>public final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> uri</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> uri</pre>
 <div class="block">The URI of the response. Cannot be null.</div>
 </li>
 </ul>
@@ -195,7 +196,8 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <ul class="blockList">
 <li class="blockList">
 <h4>contentType</h4>
-<pre>public final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> contentType</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+public final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> contentType</pre>
 <div class="block">The content type (mime type) of the response. May be null.</div>
 </li>
 </ul>
@@ -205,7 +207,8 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <ul class="blockList">
 <li class="blockList">
 <h4>contentLength</h4>
-<pre>public final&nbsp;long contentLength</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+public final&nbsp;long contentLength</pre>
 <div class="block">The content length of the response. May be 0 if unknokwn.</div>
 </li>
 </ul>
@@ -215,7 +218,8 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <ul class="blockListLast">
 <li class="blockList">
 <h4>filename</h4>
-<pre>public final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> filename</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+public final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> filename</pre>
 <div class="block">The filename obtained from the content disposition, if any.
  May be null.</div>
 </li>
