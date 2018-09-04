@@ -42,7 +42,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../help-doc.html">Help</a></li>
 </ul>
-<div class="aboutLanguage">GeckoView 63.0a1 API</div>
+<div class="aboutLanguage">GeckoView 64.0a1 API</div>
 </div>
 <div class="subNav">
 <ul class="navList">
@@ -278,7 +278,7 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getCrashReportingServiceJobId--">getCrashReportingServiceJobId</a></span>()</code>
-<div class="block">Get the Job Id used on Oreo and later devices to manage crash reporting in background.</div>
+<div class="block">Get the Job ID used on Oreo and later devices to manage crash reporting in background.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
@@ -740,7 +740,11 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" t
 <li class="blockList">
 <h4>getCrashReportingServiceJobId</h4>
 <pre>public&nbsp;int&nbsp;getCrashReportingServiceJobId()</pre>
-<div class="block">Get the Job Id used on Oreo and later devices to manage crash reporting in background.</div>
+<div class="block">Get the Job ID used on Oreo and later devices to manage crash reporting in background.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Crash reporting service Job ID</dd>
+</dl>
 </li>
 </ul>
 <a name="getPauseForDebuggerEnabled--">
@@ -944,8 +948,8 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" t
 public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a>&nbsp;setBlockMalware(boolean&nbsp;enabled)</pre>
 <div class="block">Set whether or not known malware sites should be blocked.
 
- Note: For each blocked site, <code>NavigationDelegate#onLoadError</code>
- with error category <code>NavigationDelegate#ERROR_CATEGORY_SAFEBROWSING</code>
+ Note: For each blocked site, <a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onLoadError-org.mozilla.geckoview.GeckoSession-java.lang.String-int-int-"><code>GeckoSession.NavigationDelegate.onLoadError(org.mozilla.geckoview.GeckoSession, java.lang.String, int, int)</code></a>
+ with error category <a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#ERROR_CATEGORY_SAFEBROWSING"><code>GeckoSession.NavigationDelegate.ERROR_CATEGORY_SAFEBROWSING</code></a>
  is called.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -979,8 +983,8 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" t
 public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a>&nbsp;setBlockPhishing(boolean&nbsp;enabled)</pre>
 <div class="block">Set whether or not known phishing sites should be blocked.
 
- Note: For each blocked site, <code>NavigationDelegate#onLoadError</code>
- with error category <code>NavigationDelegate#ERROR_CATEGORY_SAFEBROWSING</code>
+ Note: For each blocked site, <a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onLoadError-org.mozilla.geckoview.GeckoSession-java.lang.String-int-int-"><code>GeckoSession.NavigationDelegate.onLoadError(org.mozilla.geckoview.GeckoSession, java.lang.String, int, int)</code></a>
+ with error category <a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#ERROR_CATEGORY_SAFEBROWSING"><code>GeckoSession.NavigationDelegate.ERROR_CATEGORY_SAFEBROWSING</code></a>
  is called.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1062,7 +1066,7 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" t
 <li><a href="../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../help-doc.html">Help</a></li>
 </ul>
-<div class="aboutLanguage">GeckoView 63.0a1 API</div>
+<div class="aboutLanguage">GeckoView 64.0a1 API</div>
 </div>
 <div class="subNav">
 <ul class="navList">
