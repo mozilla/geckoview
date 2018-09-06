@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":9,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -327,26 +327,26 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#equals-java.lang.Object-">equals</a></span>(<a href="https://d.android.com/reference/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>&lt;U&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;U&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#exceptionally-org.mozilla.geckoview.GeckoResult.OnExceptionListener-">exceptionally</a></span>(<a href="../../../org/mozilla/geckoview/GeckoResult.OnExceptionListener.html" title="interface in org.mozilla.geckoview">GeckoResult.OnExceptionListener</a>&lt;U&gt;&nbsp;exceptionListener)</code>
+<div class="block">Convenience method for <a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-org.mozilla.geckoview.GeckoResult.OnExceptionListener-"><code>then(OnValueListener, OnExceptionListener)</code></a>.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#fromException-java.lang.Throwable-">fromException</a></span>(<a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;error)</code>
 <div class="block">Construct a result that is completed with the specified <a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static &lt;U&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;U&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#fromValue-U-">fromValue</a></span>(U&nbsp;value)</code>
 <div class="block">Construct a result that is completed with the specified value.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>&lt;U&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;U&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnExceptionListener-">then</a></span>(<a href="../../../org/mozilla/geckoview/GeckoResult.OnExceptionListener.html" title="interface in org.mozilla.geckoview">GeckoResult.OnExceptionListener</a>&lt;U&gt;&nbsp;exceptionListener)</code>
-<div class="block">Convenience method for <a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-org.mozilla.geckoview.GeckoResult.OnExceptionListener-"><code>then(OnValueListener, OnExceptionListener)</code></a>.</div>
-</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>&lt;U&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;U&gt;</code></td>
@@ -507,15 +507,15 @@ public&nbsp;&lt;U&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.h
 </dl>
 </li>
 </ul>
-<a name="then-org.mozilla.geckoview.GeckoResult.OnExceptionListener-">
+<a name="exceptionally-org.mozilla.geckoview.GeckoResult.OnExceptionListener-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>then</h4>
+<h4>exceptionally</h4>
 <pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-public&nbsp;&lt;U&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;U&gt;&nbsp;then(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                                        <a href="../../../org/mozilla/geckoview/GeckoResult.OnExceptionListener.html" title="interface in org.mozilla.geckoview">GeckoResult.OnExceptionListener</a>&lt;U&gt;&nbsp;exceptionListener)</pre>
+public&nbsp;&lt;U&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;U&gt;&nbsp;exceptionally(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                                 <a href="../../../org/mozilla/geckoview/GeckoResult.OnExceptionListener.html" title="interface in org.mozilla.geckoview">GeckoResult.OnExceptionListener</a>&lt;U&gt;&nbsp;exceptionListener)</pre>
 <div class="block">Convenience method for <a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-org.mozilla.geckoview.GeckoResult.OnExceptionListener-"><code>then(OnValueListener, OnExceptionListener)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
