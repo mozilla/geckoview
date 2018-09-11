@@ -158,12 +158,38 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED">ACTION_CRASHED</a></span></code>
+<div class="block">Intent action sent to the crash handler when a crash is encountered.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://d.android.com/reference/android/os/Parcelable.Creator.html?is-external=true" title="class or interface in android.os">Parcelable.Creator</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#CREATOR">CREATOR</a></span></code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#EXTRA_CRASH_FATAL">EXTRA_CRASH_FATAL</a></span></code>
+<div class="block">This is a key for extra data sent with <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED"><code>ACTION_CRASHED</code></a>.</div>
+</td>
+</tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#PREF_CRASH_REPORTING_JOB_ID">PREF_CRASH_REPORTING_JOB_ID</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#EXTRA_EXTRAS_PATH">EXTRA_EXTRAS_PATH</a></span></code>
+<div class="block">This is a key for extra data sent with <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED"><code>ACTION_CRASHED</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#EXTRA_MINIDUMP_PATH">EXTRA_MINIDUMP_PATH</a></span></code>
+<div class="block">This is a key for extra data sent with <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED"><code>ACTION_CRASHED</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntime.html#EXTRA_MINIDUMP_SUCCESS">EXTRA_MINIDUMP_SUCCESS</a></span></code>
+<div class="block">This is a key for extra data sent with <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED"><code>ACTION_CRASHED</code></a>.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -312,16 +338,95 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="PREF_CRASH_REPORTING_JOB_ID">
+<a name="ACTION_CRASHED">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>PREF_CRASH_REPORTING_JOB_ID</h4>
-<pre>public static final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> PREF_CRASH_REPORTING_JOB_ID</pre>
+<h4>ACTION_CRASHED</h4>
+<pre>public static final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> ACTION_CRASHED</pre>
+<div class="block">Intent action sent to the crash handler when a crash is encountered.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntime.PREF_CRASH_REPORTING_JOB_ID">Constant Field Values</a></dd>
+<dd><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#crashHandler-java.lang.Class-"><code>GeckoRuntimeSettings.Builder.crashHandler(Class)</code></a>, 
+<a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntime.ACTION_CRASHED">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="EXTRA_MINIDUMP_PATH">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EXTRA_MINIDUMP_PATH</h4>
+<pre>public static final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> EXTRA_MINIDUMP_PATH</pre>
+<div class="block">This is a key for extra data sent with <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED"><code>ACTION_CRASHED</code></a>. It refers
+ to a String with the path to a Breakpad minidump file containing information about
+ the crash. Several crash reporters are able to ingest this in a
+ crash report, including <a href="https://sentry.io">Sentry</a>
+ and Mozilla's <a href="https://wiki.mozilla.org/Socorro">Socorro</a>.
+ <br><br>
+ Be aware, the minidump can contain personally identifiable information.
+ Ensure you are obeying all applicable laws and policies before sending
+ this to a remote server.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#crashHandler-java.lang.Class-"><code>GeckoRuntimeSettings.Builder.crashHandler(Class)</code></a>, 
+<a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntime.EXTRA_MINIDUMP_PATH">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="EXTRA_EXTRAS_PATH">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EXTRA_EXTRAS_PATH</h4>
+<pre>public static final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> EXTRA_EXTRAS_PATH</pre>
+<div class="block">This is a key for extra data sent with <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED"><code>ACTION_CRASHED</code></a>. It refers
+ to a string with the path to a file containing extra metadata about the crash. The file
+ contains key-value pairs in the form
+ <pre>Key=Value</pre>
+ Be aware, it may contain sensitive data such
+ as the URI that was loaded at the time of the crash.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntime.EXTRA_EXTRAS_PATH">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="EXTRA_MINIDUMP_SUCCESS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EXTRA_MINIDUMP_SUCCESS</h4>
+<pre>public static final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> EXTRA_MINIDUMP_SUCCESS</pre>
+<div class="block">This is a key for extra data sent with <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED"><code>ACTION_CRASHED</code></a>. The value is
+ a boolean indicating whether or not the crash dump was succcessfully
+ retrieved. If this is false, the dump file referred to in
+ <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#EXTRA_MINIDUMP_PATH"><code>EXTRA_MINIDUMP_PATH</code></a> may be corrupted or incomplete.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntime.EXTRA_MINIDUMP_SUCCESS">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="EXTRA_CRASH_FATAL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EXTRA_CRASH_FATAL</h4>
+<pre>public static final&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> EXTRA_CRASH_FATAL</pre>
+<div class="block">This is a key for extra data sent with <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED"><code>ACTION_CRASHED</code></a>. The value is
+ a boolean indicating whether or not the crash was fatal or not. If true, the
+ main application process was affected by the crash. If false, only an internal
+ process used by Gecko has crashed and the application may be able to recover.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onCrash-org.mozilla.geckoview.GeckoSession-"><code>GeckoSession.ContentDelegate.onCrash(GeckoSession)</code></a>, 
+<a href="../../../constant-values.html#org.mozilla.geckoview.GeckoRuntime.EXTRA_CRASH_FATAL">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>

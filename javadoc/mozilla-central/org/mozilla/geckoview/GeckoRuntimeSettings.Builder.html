@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -195,9 +195,10 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#crashReportingJobId-int-">crashReportingJobId</a></span>(int&nbsp;id)</code>
-<div class="block">On Oreo and later devices we use the JobScheduler for crash reporting in the background.<br>
- This allows for setting the unique Job Id to be used.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#crashHandler-java.lang.Class-">crashHandler</a></span>(<a href="https://d.android.com/reference/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://d.android.com/reference/android/app/Service.html?is-external=true" title="class or interface in android.app">Service</a>&gt;&nbsp;handler)</code>
+<div class="block">When set, the specified <a href="https://d.android.com/reference/android/app/Service.html?is-external=true" title="class or interface in android.app"><code>Service</code></a> will be started by
+ an <a href="https://d.android.com/reference/android/content/Intent.html?is-external=true" title="class or interface in android.content"><code>Intent</code></a> with action <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED"><code>GeckoRuntime.ACTION_CRASHED</code></a> when
+ a crash is encountered.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
@@ -220,54 +221,42 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#javaCrashReportingEnabled-boolean-">javaCrashReportingEnabled</a></span>(boolean&nbsp;enabled)</code>
-<div class="block">Set whether crash reporting for Java code should be enabled.</div>
-</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#javaScriptEnabled-boolean-">javaScriptEnabled</a></span>(boolean&nbsp;flag)</code>
 <div class="block">Set whether JavaScript support should be enabled.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#nativeCrashReportingEnabled-boolean-">nativeCrashReportingEnabled</a></span>(boolean&nbsp;enabled)</code>
-<div class="block">Set whether crash reporting for native code should be enabled.</div>
-</td>
-</tr>
-<tr id="i14" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#pauseForDebugger-boolean-">pauseForDebugger</a></span>(boolean&nbsp;enabled)</code>
 <div class="block">Set whether there should be a pause during startup.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#remoteDebuggingEnabled-boolean-">remoteDebuggingEnabled</a></span>(boolean&nbsp;enabled)</code>
 <div class="block">Set whether remote debugging support should be enabled.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#screenSizeOverride-int-int-">screenSizeOverride</a></span>(int&nbsp;width,
                   int&nbsp;height)</code>
 <div class="block">Set the screen size override.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#trackingProtectionCategories-int-">trackingProtectionCategories</a></span>(int&nbsp;categories)</code>
 <div class="block">Set tracking protection blocking categories.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#useContentProcessHint-boolean-">useContentProcessHint</a></span>(boolean&nbsp;use)</code>
 <div class="block">Set the content process hint flag.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#webFontsEnabled-boolean-">webFontsEnabled</a></span>(boolean&nbsp;flag)</code>
 <div class="block">Set whether support for web fonts should be enabled.</div>
@@ -440,70 +429,6 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder
              Default is true.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>This Builder instance.</dd>
-</dl>
-</li>
-</ul>
-<a name="nativeCrashReportingEnabled-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>nativeCrashReportingEnabled</h4>
-<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a>&nbsp;nativeCrashReportingEnabled(boolean&nbsp;enabled)</pre>
-<div class="block">Set whether crash reporting for native code should be enabled. This will cause
- a SIGSEGV handler to be installed, and any crash encountered there will be
- reported to Mozilla.
-
- <br>If crash reporting is enabled <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#crashReportingJobId-int-"><code>crashReportingJobId(int)</code></a> must also be used.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>enabled</code> - A flag determining whether native crash reporting should be enabled.
-                Defaults to false.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>This Builder.</dd>
-</dl>
-</li>
-</ul>
-<a name="javaCrashReportingEnabled-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>javaCrashReportingEnabled</h4>
-<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a>&nbsp;javaCrashReportingEnabled(boolean&nbsp;enabled)</pre>
-<div class="block">Set whether crash reporting for Java code should be enabled. This will cause
- a default unhandled exception handler to be installed, and any exceptions encountered
- will automatically reported to Mozilla.
-
- <br>If crash reporting is enabled <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#crashReportingJobId-int-"><code>crashReportingJobId(int)</code></a> must also be used.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>enabled</code> - A flag determining whether Java crash reporting should be enabled.
-                Defaults to false.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>This Builder.</dd>
-</dl>
-</li>
-</ul>
-<a name="crashReportingJobId-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>crashReportingJobId</h4>
-<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a>&nbsp;crashReportingJobId(int&nbsp;id)</pre>
-<div class="block">On Oreo and later devices we use the JobScheduler for crash reporting in the background.<br>
- This allows for setting the unique Job Id to be used.
- <a href="https://developer.android.com/reference/android/app/job/JobInfo.Builder#JobInfo.Builder(int,%20android.content.ComponentName)">
-           See why it must be unique</a></div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>id</code> - A unique integer.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>This Builder.</dd>
 </dl>
 </li>
 </ul>
@@ -683,7 +608,7 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder
 <a name="screenSizeOverride-int-int-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>screenSizeOverride</h4>
 <pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
@@ -696,6 +621,50 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder
 <dd><code>height</code> - The screen height value to use for overriding the system default.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The builder instance.</dd>
+</dl>
+</li>
+</ul>
+<a name="crashHandler-java.lang.Class-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>crashHandler</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a>&nbsp;crashHandler(<a href="https://d.android.com/reference/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="https://d.android.com/reference/android/app/Service.html?is-external=true" title="class or interface in android.app">Service</a>&gt;&nbsp;handler)</pre>
+<div class="block">When set, the specified <a href="https://d.android.com/reference/android/app/Service.html?is-external=true" title="class or interface in android.app"><code>Service</code></a> will be started by
+ an <a href="https://d.android.com/reference/android/content/Intent.html?is-external=true" title="class or interface in android.content"><code>Intent</code></a> with action <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED"><code>GeckoRuntime.ACTION_CRASHED</code></a> when
+ a crash is encountered. Crash details can be found in the Intent extras, such as
+ <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#EXTRA_MINIDUMP_PATH"><code>GeckoRuntime.EXTRA_MINIDUMP_PATH</code></a>.
+ <br><br>
+ The crash handler Service must be declared to run in a different process from
+ the <a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview"><code>GeckoRuntime</code></a>. Additionally, the handler will be run as a foreground service,
+ so the normal rules about activating a foreground service apply.
+ <br><br>
+ In practice, you have one of three
+ options once the crash handler is started:
+ <ul>
+ <li>Call <a href="https://d.android.com/reference/android/app/Service.html?is-external=true#startForeground-int-android.app.Notification-" title="class or interface in android.app"><code>Service.startForeground(int, android.app.Notification)</code></a>. You can then
+ take as much time as necessary to report the crash.</li>
+ <li>Start an activity. Unless you also call <a href="https://d.android.com/reference/android/app/Service.html?is-external=true#startForeground-int-android.app.Notification-" title="class or interface in android.app"><code>Service.startForeground(int, android.app.Notification)</code></a>
+ this should be in a different process from the crash handler, since Android will
+ kill the crash handler process as part of the background execution limitations.</li>
+ <li>Schedule work via <a href="https://d.android.com/reference/android/app/job/JobScheduler.html?is-external=true" title="class or interface in android.app.job"><code>JobScheduler</code></a>. This will allow you to
+ do substantial work in the background without execution limits.</li>
+ </ul><br>
+ You can use <a href="../../../org/mozilla/geckoview/CrashReporter.html" title="class in org.mozilla.geckoview"><code>CrashReporter</code></a> to send the report to Mozilla, which provides Mozilla
+ with data needed to fix the crash. Be aware that the minidump may contain
+ personally identifiable information (PII). Consult Mozilla's
+ <a href="https://www.mozilla.org/en-US/privacy/">privacy policy</a> for information
+ on how this data will be handled.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - The class for the crash handler Service.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This builder instance.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://developer.android.com/about/versions/oreo/background">Android Background Execution Limits</a>, 
+<a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED"><code>GeckoRuntime.ACTION_CRASHED</code></a></dd>
 </dl>
 </li>
 </ul>
