@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -227,36 +227,42 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#locale-java.lang.String-">locale</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;languageTag)</code>
+<div class="block">Set the locale.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#pauseForDebugger-boolean-">pauseForDebugger</a></span>(boolean&nbsp;enabled)</code>
 <div class="block">Set whether there should be a pause during startup.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#remoteDebuggingEnabled-boolean-">remoteDebuggingEnabled</a></span>(boolean&nbsp;enabled)</code>
 <div class="block">Set whether remote debugging support should be enabled.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#screenSizeOverride-int-int-">screenSizeOverride</a></span>(int&nbsp;width,
                   int&nbsp;height)</code>
 <div class="block">Set the screen size override.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#trackingProtectionCategories-int-">trackingProtectionCategories</a></span>(int&nbsp;categories)</code>
 <div class="block">Set tracking protection blocking categories.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#useContentProcessHint-boolean-">useContentProcessHint</a></span>(boolean&nbsp;use)</code>
 <div class="block">Set the content process hint flag.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#webFontsEnabled-boolean-">webFontsEnabled</a></span>(boolean&nbsp;flag)</code>
 <div class="block">Set whether support for web fonts should be enabled.</div>
@@ -627,7 +633,7 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder
 <a name="crashHandler-java.lang.Class-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>crashHandler</h4>
 <pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
@@ -665,6 +671,23 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="https://developer.android.com/about/versions/oreo/background">Android Background Execution Limits</a>, 
 <a href="../../../org/mozilla/geckoview/GeckoRuntime.html#ACTION_CRASHED"><code>GeckoRuntime.ACTION_CRASHED</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="locale-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>locale</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a>&nbsp;locale(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;languageTag)</pre>
+<div class="block">Set the locale.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>languageTag</code> - The locale code in Gecko format ("en" or "en-US").</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The builder instance.</dd>
 </dl>
 </li>
 </ul>
