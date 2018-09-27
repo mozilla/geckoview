@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -330,6 +330,14 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="https://d.android.com/reference/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#onPopupRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-">onPopupRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;targetUri)</code>
+<div class="block">Display a popup request prompt; this occurs when content attempts to open
+ a new window in a way that doesn't appear to be the result of user input.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.html#onTextPrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-java.lang.String-java.lang.String-org.mozilla.geckoview.GeckoSession.PromptDelegate.TextCallback-">onTextPrompt</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
@@ -662,7 +670,7 @@ var activeTableTab = "activeTableTab";
 <a name="onFilePrompt-org.mozilla.geckoview.GeckoSession-java.lang.String-int-java.lang.String:A-org.mozilla.geckoview.GeckoSession.PromptDelegate.FileCallback-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>onFilePrompt</h4>
 <pre>void&nbsp;onFilePrompt(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
@@ -680,6 +688,26 @@ var activeTableTab = "activeTableTab";
                   the form "type/subtype", where "type" and/or "subtype" can be
                   "*" to indicate any value.</dd>
 <dd><code>callback</code> - Callback interface.</dd>
+</dl>
+</li>
+</ul>
+<a name="onPopupRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onPopupRequest</h4>
+<pre><a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="https://d.android.com/reference/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;onPopupRequest(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                                    <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;targetUri)</pre>
+<div class="block">Display a popup request prompt; this occurs when content attempts to open
+ a new window in a way that doesn't appear to be the result of user input.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>session</code> - GeckoSession that triggered the prompt</dd>
+<dd><code>targetUri</code> - The target URI for the popup</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> resolving to a Boolean which indicates
+         whether or not the popup should be allowed to open.</dd>
 </dl>
 </li>
 </ul>
