@@ -339,7 +339,7 @@ var activeTableTab = "activeTableTab";
            int&nbsp;error)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="../../../org/mozilla/geckoview/AllowOrDeny.html" title="enum in org.mozilla.geckoview">AllowOrDeny</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="https://d.android.com/reference/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onLoadRequest-org.mozilla.geckoview.GeckoSession-java.lang.String-int-int-">onLoadRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
              int&nbsp;target,
@@ -921,12 +921,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>onLoadRequest</h4>
 <pre><a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
-<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="../../../org/mozilla/geckoview/AllowOrDeny.html" title="enum in org.mozilla.geckoview">AllowOrDeny</a>&gt;&nbsp;onLoadRequest(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                                                 <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                                                 <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                                                 <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                                                 int&nbsp;target,
-                                                 int&nbsp;flags)</pre>
+<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="https://d.android.com/reference/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;onLoadRequest(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                             <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                                             <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                             <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                                             int&nbsp;target,
+                                             int&nbsp;flags)</pre>
 <div class="block">A request to open an URI. This is called before each page load to
  allow custom behavior implementation.
  For example, this can be used to override the behavior of
@@ -941,8 +941,8 @@ var activeTableTab = "activeTableTab";
 <dd><code>flags</code> - The load request flags.
               One or more of <a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#LOAD_REQUEST_IS_USER_TRIGGERED"><code>LOAD_REQUEST_*</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> with a AllowOrDeny value which indicates whether
-         or not the load was handled. If unhandled, Gecko will continue the
+<dd>A <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> with a boolean value which indicates whether or
+         not the load was handled. If unhandled, Gecko will continue the
          load as normal. If handled (true value), Gecko will abandon the load.
          A null return value is interpreted as false (unhandled).</dd>
 </dl>
