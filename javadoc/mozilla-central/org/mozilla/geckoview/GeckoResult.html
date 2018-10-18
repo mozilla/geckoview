@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":9,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -128,8 +128,9 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
  }</pre>
  <p>
  To retrieve the completed value or exception, use one of the <a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-"><code>then(org.mozilla.geckoview.GeckoResult.OnValueListener&lt;T, U&gt;)</code></a> methods to register
- listeners on the result. All listeners are run on the application main thread. For example, to
- retrieve a completed value,<pre>
+ listeners on the result. Listeners are run on the thread where the GeckoResult is created if a
+ <a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os"><code>Looper</code></a> is present. For example,
+ to retrieve a completed value,<pre>
  divide(42, 2).then(new GeckoResult.OnValueListener&lt;Integer, Void&gt;() {
      &#64;Override
      public GeckoResult&lt;Void&gt; onValue(final Integer value) {
@@ -214,6 +215,13 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
          // value == null
      }
  });</pre>
+ <p>
+ If a GeckoResult is created on a thread without a <a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os"><code>Looper</code></a>,
+ <a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-org.mozilla.geckoview.GeckoResult.OnExceptionListener-"><code>then(OnValueListener, OnExceptionListener)</code></a> is unusable (and will throw
+ <a href="https://d.android.com/reference/java/lang/IllegalThreadStateException.html?is-external=true" title="class or interface in java.lang"><code>IllegalThreadStateException</code></a>). In this scenario, the value is only
+ available via <a href="../../../org/mozilla/geckoview/GeckoResult.html#poll-long-"><code>poll(long)</code></a>. Alternatively, you may also chain the GeckoResult to one with a
+ <a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os"><code>Handler</code></a> via <a href="../../../org/mozilla/geckoview/GeckoResult.html#withHandler-android.os.Handler-"><code>withHandler(Handler)</code></a>. You may then use
+ <a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-org.mozilla.geckoview.GeckoResult.OnExceptionListener-"><code>then(OnValueListener, OnExceptionListener)</code></a> on the returned GeckoResult normally.
  <p>
  Any exception thrown by a listener are automatically used to complete the result. At the end of
  every chain, there is an implicit exception listener that rethrows any uncaught and unhandled
@@ -322,6 +330,11 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <div class="block">This constructs a result that is chained to the specified result.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#GeckoResult-android.os.Handler-">GeckoResult</a></span>(<a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os">Handler</a>&nbsp;handler)</code>
+<div class="block">Construct an incomplete GeckoResult.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -372,21 +385,45 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os">Looper</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#getLooper--">getLooper</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoResult.html" title="type parameter in GeckoResult">T</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#poll--">poll</a></span>()</code>
+<div class="block">Return the value of this result, waiting for it to be completed
+ if necessary.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoResult.html" title="type parameter in GeckoResult">T</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#poll-long-">poll</a></span>(long&nbsp;timeoutMillis)</code>
+<div class="block">Return the value of this result, waiting for it to be completed
+ if necessary.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>&lt;U&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;U&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-">then</a></span>(<a href="../../../org/mozilla/geckoview/GeckoResult.OnValueListener.html" title="interface in org.mozilla.geckoview">GeckoResult.OnValueListener</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="type parameter in GeckoResult">T</a>,U&gt;&nbsp;valueListener)</code>
 <div class="block">Convenience method for <a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-org.mozilla.geckoview.GeckoResult.OnExceptionListener-"><code>then(OnValueListener, OnExceptionListener)</code></a>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>&lt;U&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;U&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-org.mozilla.geckoview.GeckoResult.OnExceptionListener-">then</a></span>(<a href="../../../org/mozilla/geckoview/GeckoResult.OnValueListener.html" title="interface in org.mozilla.geckoview">GeckoResult.OnValueListener</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="type parameter in GeckoResult">T</a>,U&gt;&nbsp;valueListener,
     <a href="../../../org/mozilla/geckoview/GeckoResult.OnExceptionListener.html" title="interface in org.mozilla.geckoview">GeckoResult.OnExceptionListener</a>&lt;U&gt;&nbsp;exceptionListener)</code>
 <div class="block">Adds listeners to be called when the <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> is completed either with
  a value or <a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="type parameter in GeckoResult">T</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoResult.html#withHandler-android.os.Handler-">withHandler</a></span>(<a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os">Handler</a>&nbsp;handler)</code>
+<div class="block">Returns a new GeckoResult that will be completed by this instance.</div>
 </td>
 </tr>
 </table>
@@ -448,6 +485,22 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <pre>public&nbsp;GeckoResult()</pre>
 <div class="block">Construct an incomplete GeckoResult. Call <a href="../../../org/mozilla/geckoview/GeckoResult.html#complete-T-"><code>complete(Object)</code></a> or
  <a href="../../../org/mozilla/geckoview/GeckoResult.html#completeExceptionally-java.lang.Throwable-"><code>completeExceptionally(Throwable)</code></a> in order to fulfill the result.</div>
+</li>
+</ul>
+<a name="GeckoResult-android.os.Handler-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GeckoResult</h4>
+<pre>public&nbsp;GeckoResult(<a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os">Handler</a>&nbsp;handler)</pre>
+<div class="block">Construct an incomplete GeckoResult. Call <a href="../../../org/mozilla/geckoview/GeckoResult.html#complete-T-"><code>complete(Object)</code></a> or
+ <a href="../../../org/mozilla/geckoview/GeckoResult.html#completeExceptionally-java.lang.Throwable-"><code>completeExceptionally(Throwable)</code></a> in order to fulfill the result.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - This <a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os"><code>Handler</code></a> will be used for dispatching
+                listeners registered via <a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-org.mozilla.geckoview.GeckoResult.OnExceptionListener-"><code>then(OnValueListener, OnExceptionListener)</code></a>.</dd>
+</dl>
 </li>
 </ul>
 <a name="GeckoResult-org.mozilla.geckoview.GeckoResult-">
@@ -595,8 +648,8 @@ public&nbsp;&lt;U&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.h
                                         <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
                                         <a href="../../../org/mozilla/geckoview/GeckoResult.OnExceptionListener.html" title="interface in org.mozilla.geckoview">GeckoResult.OnExceptionListener</a>&lt;U&gt;&nbsp;exceptionListener)</pre>
 <div class="block">Adds listeners to be called when the <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> is completed either with
- a value or <a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>. Listeners will be invoked on the thread where the
- <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> was created, which must have a <a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os"><code>Looper</code></a> installed.
+ a value or <a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>. Listeners will be invoked on the <a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os"><code>Looper</code></a> returned from
+ <a href="../../../org/mozilla/geckoview/GeckoResult.html#getLooper--"><code>getLooper()</code></a>. If null, this method will throw <a href="https://d.android.com/reference/java/lang/IllegalThreadStateException.html?is-external=true" title="class or interface in java.lang"><code>IllegalThreadStateException</code></a>.
 
  If the result is already complete when this method is called, listeners will be invoked in
  a future <a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os"><code>Looper</code></a> iteration.</div>
@@ -610,6 +663,94 @@ public&nbsp;&lt;U&gt;&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.h
                           <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> is completed with an <a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A new <a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview"><code>GeckoResult</code></a> that the listeners will complete.</dd>
+</dl>
+</li>
+</ul>
+<a name="getLooper--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLooper</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+public&nbsp;<a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os">Looper</a>&nbsp;getLooper()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Get the <a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os"><code>Looper</code></a> that will be used to schedule listeners registered via
+         <a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-org.mozilla.geckoview.GeckoResult.OnExceptionListener-"><code>then(OnValueListener, OnExceptionListener)</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a name="withHandler-android.os.Handler-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withHandler</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="class in org.mozilla.geckoview">GeckoResult</a>&lt;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="type parameter in GeckoResult">T</a>&gt;&nbsp;withHandler(<a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                                           <a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os">Handler</a>&nbsp;handler)</pre>
+<div class="block">Returns a new GeckoResult that will be completed by this instance. Listeners registered
+ via <a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-org.mozilla.geckoview.GeckoResult.OnExceptionListener-"><code>then(OnValueListener, OnExceptionListener)</code></a> will be run on the specified
+ <a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os"><code>Handler</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - A <a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os"><code>Handler</code></a> where listeners will be run. May be null.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new GeckoResult.</dd>
+</dl>
+</li>
+</ul>
+<a name="poll--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>poll</h4>
+<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="type parameter in GeckoResult">T</a>&nbsp;poll()
+       throws <a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a></pre>
+<div class="block">Return the value of this result, waiting for it to be completed
+ if necessary. If the result is completed with an exception
+ it will be rethrown here.
+ <p>
+ You must not call this method if the current thread has a <a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os"><code>Looper</code></a> due to
+ the possibility of a deadlock. If this occurs, <a href="https://d.android.com/reference/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang"><code>IllegalStateException</code></a>
+ is thrown.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The value of this result.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a></code> - The <a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a> contained in this result, if any.</dd>
+<dd><code><a href="https://d.android.com/reference/java/lang/IllegalThreadStateException.html?is-external=true" title="class or interface in java.lang">IllegalThreadStateException</a></code> - if this method is called on a thread that has a <a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os"><code>Looper</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a name="poll-long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>poll</h4>
+<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="type parameter in GeckoResult">T</a>&nbsp;poll(long&nbsp;timeoutMillis)
+       throws <a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a></pre>
+<div class="block">Return the value of this result, waiting for it to be completed
+ if necessary. If the result is completed with an exception
+ it will be rethrown here.
+
+ Caution is advised if the caller is on a thread with a <a href="https://d.android.com/reference/android/os/Looper.html?is-external=true" title="class or interface in android.os"><code>Looper</code></a>, as it's possible to
+ effectively deadlock in cases when the work is being completed on the calling thread. It's
+ preferable to use <a href="../../../org/mozilla/geckoview/GeckoResult.html#then-org.mozilla.geckoview.GeckoResult.OnValueListener-org.mozilla.geckoview.GeckoResult.OnExceptionListener-"><code>then(OnValueListener, OnExceptionListener)</code></a> in such circumstances,
+ but if you must use this method consider a small timeout value.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>timeoutMillis</code> - Number of milliseconds to wait for the result
+                      to complete.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The value of this result.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a></code> - The <a href="https://d.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a> contained in this result, if any.</dd>
+<dd><code><a href="https://d.android.com/reference/java/util/concurrent/TimeoutException.html?is-external=true" title="class or interface in java.util.concurrent">TimeoutException</a></code> - if we wait more than timeoutMillis before the result
+                          is completed.</dd>
 </dl>
 </li>
 </ul>
