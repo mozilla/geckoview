@@ -248,9 +248,10 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <ul class="blockList">
 <li class="blockList">
 <h4>getHandler</h4>
-<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+<pre><a href="https://d.android.com/reference/android/support.annotation.AnyThread.html?is-external=true" title="class or interface in android">@AnyThread</a>
+ <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
 public&nbsp;<a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os">Handler</a>&nbsp;getHandler(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                                   <a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os">Handler</a>&nbsp;defHandler)</pre>
+                                               <a href="https://d.android.com/reference/android/os/Handler.html?is-external=true" title="class or interface in android.os">Handler</a>&nbsp;defHandler)</pre>
 <div class="block">Get a Handler for the background input method thread. In order to use a background
  thread for input method operations on systems prior to Nougat, first override
  <code>View.getHandler()</code> for the View returning the InputConnection instance, and
@@ -278,7 +279,8 @@ public&nbsp;<a href="https://d.android.com/reference/android/os/Handler.html?is-
 <ul class="blockList">
 <li class="blockList">
 <h4>getView</h4>
-<pre><a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+ <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
 public&nbsp;<a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;getView()</pre>
 <div class="block">Get the current <a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view"><code>View</code></a> for text input.</div>
 <dl>
@@ -295,8 +297,9 @@ public&nbsp;<a href="https://d.android.com/reference/android/view/View.html?is-e
 <ul class="blockList">
 <li class="blockList">
 <h4>setView</h4>
-<pre>public&nbsp;void&nbsp;setView(<a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
-                    <a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;void&nbsp;setView(<a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                              <a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view)</pre>
 <div class="block">Set the current <a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view"><code>View</code></a> for text input. The <a href="https://d.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view"><code>View</code></a>
  is used to interact with the system input method manager and to display certain text input
  UI elements. See the <code>SessionTextInput</code> class documentation for information on
@@ -315,9 +318,10 @@ public&nbsp;<a href="https://d.android.com/reference/android/view/View.html?is-e
 <ul class="blockList">
 <li class="blockList">
 <h4>onCreateInputConnection</h4>
-<pre><a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+<pre><a href="https://d.android.com/reference/android/support.annotation.AnyThread.html?is-external=true" title="class or interface in android">@AnyThread</a>
+ <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
 public&nbsp;<a href="https://d.android.com/reference/android/view/inputmethod/InputConnection.html?is-external=true" title="class or interface in android.view.inputmethod">InputConnection</a>&nbsp;onCreateInputConnection(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                                                         <a href="https://d.android.com/reference/android/view/inputmethod/EditorInfo.html?is-external=true" title="class or interface in android.view.inputmethod">EditorInfo</a>&nbsp;attrs)</pre>
+                                                                     <a href="https://d.android.com/reference/android/view/inputmethod/EditorInfo.html?is-external=true" title="class or interface in android.view.inputmethod">EditorInfo</a>&nbsp;attrs)</pre>
 <div class="block">Get an <a href="https://d.android.com/reference/android/view/inputmethod/InputConnection.html?is-external=true" title="class or interface in android.view.inputmethod"><code>InputConnection</code></a> instance. In viewless mode,
  this method still fills out the <a href="https://d.android.com/reference/android/view/inputmethod/EditorInfo.html?is-external=true" title="class or interface in android.view.inputmethod"><code>EditorInfo</code></a> object,
  but the return value will always be null.</div>
@@ -336,9 +340,10 @@ public&nbsp;<a href="https://d.android.com/reference/android/view/inputmethod/In
 <ul class="blockList">
 <li class="blockList">
 <h4>onKeyPreIme</h4>
-<pre>public&nbsp;boolean&nbsp;onKeyPreIme(int&nbsp;keyCode,
-                           <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                           <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;boolean&nbsp;onKeyPreIme(int&nbsp;keyCode,
+                                     <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                     <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
 <div class="block">Process a KeyEvent as a pre-IME event.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -355,9 +360,10 @@ public&nbsp;<a href="https://d.android.com/reference/android/view/inputmethod/In
 <ul class="blockList">
 <li class="blockList">
 <h4>onKeyDown</h4>
-<pre>public&nbsp;boolean&nbsp;onKeyDown(int&nbsp;keyCode,
-                         <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                         <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;boolean&nbsp;onKeyDown(int&nbsp;keyCode,
+                                   <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                   <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
 <div class="block">Process a KeyEvent as a key-down event.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -374,9 +380,10 @@ public&nbsp;<a href="https://d.android.com/reference/android/view/inputmethod/In
 <ul class="blockList">
 <li class="blockList">
 <h4>onKeyUp</h4>
-<pre>public&nbsp;boolean&nbsp;onKeyUp(int&nbsp;keyCode,
-                       <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                       <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;boolean&nbsp;onKeyUp(int&nbsp;keyCode,
+                                 <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                 <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
 <div class="block">Process a KeyEvent as a key-up event.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -393,9 +400,10 @@ public&nbsp;<a href="https://d.android.com/reference/android/view/inputmethod/In
 <ul class="blockList">
 <li class="blockList">
 <h4>onKeyLongPress</h4>
-<pre>public&nbsp;boolean&nbsp;onKeyLongPress(int&nbsp;keyCode,
-                              <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                              <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;boolean&nbsp;onKeyLongPress(int&nbsp;keyCode,
+                                        <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                        <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
 <div class="block">Process a KeyEvent as a long-press event.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -412,10 +420,11 @@ public&nbsp;<a href="https://d.android.com/reference/android/view/inputmethod/In
 <ul class="blockList">
 <li class="blockList">
 <h4>onKeyMultiple</h4>
-<pre>public&nbsp;boolean&nbsp;onKeyMultiple(int&nbsp;keyCode,
-                             int&nbsp;repeatCount,
-                             <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                             <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;boolean&nbsp;onKeyMultiple(int&nbsp;keyCode,
+                                       int&nbsp;repeatCount,
+                                       <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                       <a href="https://d.android.com/reference/android/view/KeyEvent.html?is-external=true" title="class or interface in android.view">KeyEvent</a>&nbsp;event)</pre>
 <div class="block">Process a KeyEvent as a multiple-press event.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -433,8 +442,9 @@ public&nbsp;<a href="https://d.android.com/reference/android/view/inputmethod/In
 <ul class="blockList">
 <li class="blockList">
 <h4>setDelegate</h4>
-<pre>public&nbsp;void&nbsp;setDelegate(<a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
-                        <a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.TextInputDelegate</a>&nbsp;delegate)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;void&nbsp;setDelegate(<a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                                  <a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.TextInputDelegate</a>&nbsp;delegate)</pre>
 <div class="block">Set the current text input delegate.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -448,7 +458,8 @@ public&nbsp;<a href="https://d.android.com/reference/android/view/inputmethod/In
 <ul class="blockList">
 <li class="blockList">
 <h4>getDelegate</h4>
-<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.TextInputDelegate</a>&nbsp;getDelegate()</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.html" title="interface in org.mozilla.geckoview">GeckoSession.TextInputDelegate</a>&nbsp;getDelegate()</pre>
 <div class="block">Get the current text input delegate.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

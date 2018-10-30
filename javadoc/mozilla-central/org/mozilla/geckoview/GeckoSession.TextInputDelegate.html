@@ -468,9 +468,10 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>restartInput</h4>
-<pre>void&nbsp;restartInput(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                  <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                  int&nbsp;reason)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+void&nbsp;restartInput(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                            <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                            int&nbsp;reason)</pre>
 <div class="block">Reset the input method, and discard any existing states such as the current composition
  or current autocompletion. Because the current focused editor may have changed, as
  part of the reset, a custom input method would normally call <a href="../../../org/mozilla/geckoview/SessionTextInput.html#onCreateInputConnection-android.view.inputmethod.EditorInfo-"><code>SessionTextInput.onCreateInputConnection(android.view.inputmethod.EditorInfo)</code></a> to update its knowledge of the focused editor.
@@ -491,8 +492,9 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>showSoftInput</h4>
-<pre>void&nbsp;showSoftInput(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                   <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+void&nbsp;showSoftInput(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                             <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</pre>
 <div class="block">Display the soft input. May be called consecutively, even if the soft input is
  already shown. This method is always called, even in viewless mode.</div>
 <dl>
@@ -509,8 +511,9 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>hideSoftInput</h4>
-<pre>void&nbsp;hideSoftInput(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                   <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+void&nbsp;hideSoftInput(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                             <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</pre>
 <div class="block">Hide the soft input. May be called consecutively, even if the soft input is
  already hidden. This method is always called, even in viewless mode.</div>
 <dl>
@@ -527,12 +530,13 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>updateSelection</h4>
-<pre>void&nbsp;updateSelection(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                     <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                     int&nbsp;selStart,
-                     int&nbsp;selEnd,
-                     int&nbsp;compositionStart,
-                     int&nbsp;compositionEnd)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+void&nbsp;updateSelection(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                               <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                               int&nbsp;selStart,
+                               int&nbsp;selEnd,
+                               int&nbsp;compositionStart,
+                               int&nbsp;compositionEnd)</pre>
 <div class="block">Update the soft input on the current selection. This method is <i>not</i> called
  in viewless mode.</div>
 <dl>
@@ -551,12 +555,13 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>updateExtractedText</h4>
-<pre>void&nbsp;updateExtractedText(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                         <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                         <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                         <a href="https://d.android.com/reference/android/view/inputmethod/ExtractedTextRequest.html?is-external=true" title="class or interface in android.view.inputmethod">ExtractedTextRequest</a>&nbsp;request,
-                         <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                         <a href="https://d.android.com/reference/android/view/inputmethod/ExtractedText.html?is-external=true" title="class or interface in android.view.inputmethod">ExtractedText</a>&nbsp;text)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+void&nbsp;updateExtractedText(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                   <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                                   <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                   <a href="https://d.android.com/reference/android/view/inputmethod/ExtractedTextRequest.html?is-external=true" title="class or interface in android.view.inputmethod">ExtractedTextRequest</a>&nbsp;request,
+                                   <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                   <a href="https://d.android.com/reference/android/view/inputmethod/ExtractedText.html?is-external=true" title="class or interface in android.view.inputmethod">ExtractedText</a>&nbsp;text)</pre>
 <div class="block">Update the soft input on the current extracted text, as requested through
  <a href="https://d.android.com/reference/android/view/inputmethod/InputConnection.html?is-external=true#getExtractedText-android.view.inputmethod.ExtractedTextRequest-int-" title="class or interface in android.view.inputmethod"><code>InputConnection.getExtractedText(android.view.inputmethod.ExtractedTextRequest, int)</code></a>.
  Consequently, this method is <i>not</i> called in viewless mode.</div>
@@ -574,10 +579,11 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>updateCursorAnchorInfo</h4>
-<pre>void&nbsp;updateCursorAnchorInfo(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                            <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                            <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                            <a href="https://d.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html?is-external=true" title="class or interface in android.view.inputmethod">CursorAnchorInfo</a>&nbsp;info)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+void&nbsp;updateCursorAnchorInfo(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                      <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                                      <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                      <a href="https://d.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html?is-external=true" title="class or interface in android.view.inputmethod">CursorAnchorInfo</a>&nbsp;info)</pre>
 <div class="block">Update the cursor-anchor information as requested through
  <a href="https://d.android.com/reference/android/view/inputmethod/InputConnection.html?is-external=true#requestCursorUpdates-int-" title="class or interface in android.view.inputmethod"><code>InputConnection.requestCursorUpdates(int)</code></a>.
  Consequently, this method is <i>not</i> called in viewless mode.</div>
@@ -594,10 +600,11 @@ var activeTableTab = "activeTableTab";
 <ul class="blockListLast">
 <li class="blockList">
 <h4>notifyAutoFill</h4>
-<pre>void&nbsp;notifyAutoFill(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                    <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                    int&nbsp;notification,
-                    int&nbsp;virtualId)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+void&nbsp;notifyAutoFill(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                              <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                              int&nbsp;notification,
+                              int&nbsp;virtualId)</pre>
 <div class="block">Notify that an auto-fill event has occurred. The default implementation forwards the
  notification to the system <a href="https://d.android.com/reference/android/view/autofill/AutofillManager.html?is-external=true" title="class or interface in android.view.autofill"><code>AutofillManager</code></a>. This method is
  only called on Android 6.0 and above, and it is called in viewless mode as well.</div>

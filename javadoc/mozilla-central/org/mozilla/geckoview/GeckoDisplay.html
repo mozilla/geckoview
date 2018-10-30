@@ -221,9 +221,10 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <ul class="blockList">
 <li class="blockList">
 <h4>surfaceChanged</h4>
-<pre>public&nbsp;void&nbsp;surfaceChanged(<a href="https://d.android.com/reference/android/view/Surface.html?is-external=true" title="class or interface in android.view">Surface</a>&nbsp;surface,
-                           int&nbsp;width,
-                           int&nbsp;height)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;void&nbsp;surfaceChanged(<a href="https://d.android.com/reference/android/view/Surface.html?is-external=true" title="class or interface in android.view">Surface</a>&nbsp;surface,
+                                     int&nbsp;width,
+                                     int&nbsp;height)</pre>
 <div class="block">Required callback. The display's Surface has been created or changed. Must be
  called on the application main thread. GeckoSession may block this call to ensure
  the Surface is valid while resuming drawing.</div>
@@ -241,7 +242,8 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <ul class="blockList">
 <li class="blockList">
 <h4>surfaceDestroyed</h4>
-<pre>public&nbsp;void&nbsp;surfaceDestroyed()</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;void&nbsp;surfaceDestroyed()</pre>
 <div class="block">Required callback. The display's Surface has been destroyed. Must be called on the
  application main thread. GeckoSession may block this call to ensure the Surface is
  valid while pausing drawing.</div>
@@ -253,8 +255,9 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <ul class="blockList">
 <li class="blockList">
 <h4>screenOriginChanged</h4>
-<pre>public&nbsp;void&nbsp;screenOriginChanged(int&nbsp;left,
-                                int&nbsp;top)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;void&nbsp;screenOriginChanged(int&nbsp;left,
+                                          int&nbsp;top)</pre>
 <div class="block">Optional callback. The display's coordinates on the screen has changed. Must be
  called on the application main thread.</div>
 <dl>
@@ -270,7 +273,8 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <ul class="blockListLast">
 <li class="blockList">
 <h4>shouldPinOnScreen</h4>
-<pre>public&nbsp;boolean&nbsp;shouldPinOnScreen()</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;boolean&nbsp;shouldPinOnScreen()</pre>
 <div class="block">Return whether the display should be pinned on the screen. When pinned, the display
  should not be moved on the screen due to animation, scrolling, etc. A common reason
  for the display being pinned is when the user is dragging a selection caret inside

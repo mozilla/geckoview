@@ -505,7 +505,8 @@ extends <a href="https://d.android.com/reference/android/widget/FrameLayout.html
 <ul class="blockList">
 <li class="blockList">
 <h4>coverUntilFirstPaint</h4>
-<pre>public&nbsp;void&nbsp;coverUntilFirstPaint(int&nbsp;color)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;void&nbsp;coverUntilFirstPaint(int&nbsp;color)</pre>
 <div class="block">Set a color to cover the display surface while a document is being shown. The color
  is automatically cleared once the new document starts painting. Set to
  Color.TRANSPARENT to undo the cover.</div>
@@ -521,7 +522,8 @@ extends <a href="https://d.android.com/reference/android/widget/FrameLayout.html
 <ul class="blockList">
 <li class="blockList">
 <h4>shouldPinOnScreen</h4>
-<pre>public&nbsp;boolean&nbsp;shouldPinOnScreen()</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;boolean&nbsp;shouldPinOnScreen()</pre>
 <div class="block">Return whether the view should be pinned on the screen. When pinned, the view
  should not be moved on the screen due to animation, scrolling, etc. A common reason
  for the view being pinned is when the user is dragging a selection caret inside
@@ -539,7 +541,8 @@ extends <a href="https://d.android.com/reference/android/widget/FrameLayout.html
 <ul class="blockList">
 <li class="blockList">
 <h4>releaseSession</h4>
-<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;releaseSession()</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;releaseSession()</pre>
 </li>
 </ul>
 <a name="setSession-org.mozilla.geckoview.GeckoSession-">
@@ -548,8 +551,9 @@ extends <a href="https://d.android.com/reference/android/widget/FrameLayout.html
 <ul class="blockList">
 <li class="blockList">
 <h4>setSession</h4>
-<pre>public&nbsp;void&nbsp;setSession(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                       <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;void&nbsp;setSession(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                 <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</pre>
 <div class="block">Attach a session to this view. The session should be opened before
  attaching.</div>
 <dl>
@@ -564,10 +568,11 @@ extends <a href="https://d.android.com/reference/android/widget/FrameLayout.html
 <ul class="blockList">
 <li class="blockList">
 <h4>setSession</h4>
-<pre>public&nbsp;void&nbsp;setSession(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                       <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
-                       <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
-                       <a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&nbsp;runtime)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;void&nbsp;setSession(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                 <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
+                                 <a href="https://d.android.com/reference/android/support.annotation.Nullable.html?is-external=true" title="class or interface in android">@Nullable</a>
+                                 <a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&nbsp;runtime)</pre>
 <div class="block">Attach a session to this view. The session should be opened before
  attaching or a runtime needs to be provided for automatic opening.</div>
 <dl>
@@ -601,7 +606,8 @@ extends <a href="https://d.android.com/reference/android/widget/FrameLayout.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getPanZoomController</h4>
-<pre>public&nbsp;org.mozilla.gecko.gfx.PanZoomController&nbsp;getPanZoomController()</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;org.mozilla.gecko.gfx.PanZoomController&nbsp;getPanZoomController()</pre>
 </li>
 </ul>
 <a name="getDynamicToolbarAnimator--">
@@ -610,7 +616,8 @@ extends <a href="https://d.android.com/reference/android/widget/FrameLayout.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getDynamicToolbarAnimator</h4>
-<pre>public&nbsp;org.mozilla.gecko.gfx.DynamicToolbarAnimator&nbsp;getDynamicToolbarAnimator()</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;org.mozilla.gecko.gfx.DynamicToolbarAnimator&nbsp;getDynamicToolbarAnimator()</pre>
 </li>
 </ul>
 <a name="onAttachedToWindow--">

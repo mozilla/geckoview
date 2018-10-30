@@ -1049,8 +1049,9 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="cla
 <ul class="blockList">
 <li class="blockList">
 <h4>open</h4>
-<pre>public&nbsp;void&nbsp;open(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                 <a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&nbsp;runtime)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;void&nbsp;open(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                           <a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&nbsp;runtime)</pre>
 <div class="block">Opens the session.
 
  Call this when you are ready to use a GeckoSession instance.
@@ -1074,7 +1075,8 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="cla
 <ul class="blockList">
 <li class="blockList">
 <h4>close</h4>
-<pre>public&nbsp;void&nbsp;close()</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;void&nbsp;close()</pre>
 <div class="block">Closes the session.
 
  This frees the underlying Gecko objects and unloads the current page. The session may be
@@ -1093,7 +1095,8 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="cla
 <ul class="blockList">
 <li class="blockList">
 <h4>getTextInput</h4>
-<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+<pre><a href="https://d.android.com/reference/android/support.annotation.AnyThread.html?is-external=true" title="class or interface in android">@AnyThread</a>
+ <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
 public&nbsp;<a href="../../../org/mozilla/geckoview/SessionTextInput.html" title="class in org.mozilla.geckoview">SessionTextInput</a>&nbsp;getTextInput()</pre>
 <div class="block">Get the SessionTextInput instance for this session. May be called on any thread.</div>
 <dl>
@@ -1108,7 +1111,8 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/SessionTextInput.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>getAccessibility</h4>
-<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+ <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
 public&nbsp;<a href="../../../org/mozilla/geckoview/SessionAccessibility.html" title="class in org.mozilla.geckoview">SessionAccessibility</a>&nbsp;getAccessibility()</pre>
 <div class="block">Get the SessionAccessibility instance for this session.</div>
 <dl>
@@ -1430,7 +1434,8 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoResult.html" title="cla
 <ul class="blockList">
 <li class="blockList">
 <h4>acquireDisplay</h4>
-<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+ <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
 public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoDisplay.html" title="class in org.mozilla.geckoview">GeckoDisplay</a>&nbsp;acquireDisplay()</pre>
 <div class="block">Acquire the GeckoDisplay instance for providing the session with a drawing Surface.
  Be sure to call <a href="../../../org/mozilla/geckoview/GeckoDisplay.html#surfaceChanged-android.view.Surface-int-int-"><code>GeckoDisplay.surfaceChanged(Surface, int, int)</code></a> on the
@@ -1449,8 +1454,9 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoDisplay.html" title="cl
 <ul class="blockList">
 <li class="blockList">
 <h4>releaseDisplay</h4>
-<pre>public&nbsp;void&nbsp;releaseDisplay(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                           <a href="../../../org/mozilla/geckoview/GeckoDisplay.html" title="class in org.mozilla.geckoview">GeckoDisplay</a>&nbsp;display)</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;void&nbsp;releaseDisplay(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                     <a href="../../../org/mozilla/geckoview/GeckoDisplay.html" title="class in org.mozilla.geckoview">GeckoDisplay</a>&nbsp;display)</pre>
 <div class="block">Release an acquired GeckoDisplay instance. Be sure to call <a href="../../../org/mozilla/geckoview/GeckoDisplay.html#surfaceDestroyed--"><code>GeckoDisplay.surfaceDestroyed()</code></a> before releasing the display if it still has a
  valid Surface.</div>
 <dl>

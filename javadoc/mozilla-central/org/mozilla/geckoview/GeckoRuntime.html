@@ -470,9 +470,10 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 <ul class="blockList">
 <li class="blockList">
 <h4>getDefault</h4>
-<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+ <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
 public static&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&nbsp;getDefault(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                                               <a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context)</pre>
+                                                          <a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context)</pre>
 <div class="block">Get the default runtime for the given context.
  This will create and initialize the runtime with the default settings.
 
@@ -507,9 +508,10 @@ public static&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntime.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
-<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+ <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
 public static&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&nbsp;create(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                                           <a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context)</pre>
+                                                      <a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context)</pre>
 <div class="block">Create a new runtime with default settings and attach it to the given
  context.
 
@@ -530,11 +532,12 @@ public static&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntime.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
-<pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+ <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
 public static&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntime.html" title="class in org.mozilla.geckoview">GeckoRuntime</a>&nbsp;create(<a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                                           <a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context,
-                                           <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-                                           <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a>&nbsp;settings)</pre>
+                                                      <a href="https://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context,
+                                                      <a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
+                                                      <a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings</a>&nbsp;settings)</pre>
 <div class="block">Create a new runtime with the given settings and attach it to the given
  context.
 
@@ -604,7 +607,8 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntime.Delegate.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>getTelemetry</h4>
-<pre>public&nbsp;<a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html" title="class in org.mozilla.geckoview">RuntimeTelemetry</a>&nbsp;getTelemetry()</pre>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;<a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html" title="class in org.mozilla.geckoview">RuntimeTelemetry</a>&nbsp;getTelemetry()</pre>
 <div class="block">Return the telemetry object for this runtime.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
