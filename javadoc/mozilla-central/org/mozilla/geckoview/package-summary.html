@@ -324,27 +324,70 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoWebExecutor.html" title="class in org.mozilla.geckoview">GeckoWebExecutor</a></td>
+<td class="colLast">
+<div class="block">GeckoWebExecutor is responsible for fetching a <a href="../../../org/mozilla/geckoview/WebRequest.html" title="class in org.mozilla.geckoview"><code>WebRequest</code></a> and delivering
+ a <a href="../../../org/mozilla/geckoview/WebResponse.html" title="class in org.mozilla.geckoview"><code>WebResponse</code></a> to the caller via <a href="../../../org/mozilla/geckoview/GeckoWebExecutor.html#fetch-org.mozilla.geckoview.WebRequest-"><code>GeckoWebExecutor.fetch(WebRequest)</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/RuntimeTelemetry.html" title="class in org.mozilla.geckoview">RuntimeTelemetry</a></td>
 <td class="colLast">
 <div class="block">The telemetry API gives access to telemetry data of the Gecko runtime.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/SessionAccessibility.html" title="class in org.mozilla.geckoview">SessionAccessibility</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/SessionFinder.html" title="class in org.mozilla.geckoview">SessionFinder</a></td>
 <td class="colLast">
 <div class="block"><code>SessionFinder</code> instances returned by <a href="../../../org/mozilla/geckoview/GeckoSession.html#getFinder--"><code>GeckoSession.getFinder()</code></a> performs
  find-in-page operations.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/SessionTextInput.html" title="class in org.mozilla.geckoview">SessionTextInput</a></td>
 <td class="colLast">
 <div class="block"><code>SessionTextInput</code> handles text input for <code>GeckoSession</code> through key events or input
  methods.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/WebMessage.html" title="class in org.mozilla.geckoview">WebMessage</a></td>
+<td class="colLast">
+<div class="block">This is an abstract base class for HTTP request and response types.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/WebMessage.Builder.html" title="class in org.mozilla.geckoview">WebMessage.Builder</a></td>
+<td class="colLast">
+<div class="block">This is a Builder used by subclasses of <a href="../../../org/mozilla/geckoview/WebMessage.html" title="class in org.mozilla.geckoview"><code>WebMessage</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/WebRequest.html" title="class in org.mozilla.geckoview">WebRequest</a></td>
+<td class="colLast">
+<div class="block">WebRequest represents an HTTP[S] request.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/WebRequest.Builder.html" title="class in org.mozilla.geckoview">WebRequest.Builder</a></td>
+<td class="colLast">
+<div class="block">Builder offers a convenient way for constructing <a href="../../../org/mozilla/geckoview/WebRequest.html" title="class in org.mozilla.geckoview"><code>WebRequest</code></a> instances.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/WebResponse.html" title="class in org.mozilla.geckoview">WebResponse</a></td>
+<td class="colLast">
+<div class="block">WebResponse represents an HTTP[S] response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/WebResponse.Builder.html" title="class in org.mozilla.geckoview">WebResponse.Builder</a></td>
+<td class="colLast">
+<div class="block">Builder offers a convenient way to create WebResponse instances.</div>
 </td>
 </tr>
 </tbody>
@@ -379,6 +422,13 @@
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoResult.UncaughtException.html" title="class in org.mozilla.geckoview">GeckoResult.UncaughtException</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/WebRequestError.html" title="class in org.mozilla.geckoview">WebRequestError</a></td>
+<td class="colLast">
+<div class="block">WebRequestError is simply a container for error codes and categories used by
+ <a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.html#onLoadError-org.mozilla.geckoview.GeckoSession-java.lang.String-org.mozilla.geckoview.WebRequestError-"><code>GeckoSession.NavigationDelegate.onLoadError(GeckoSession, String, WebRequestError)</code></a>.</div>
+</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -395,51 +445,63 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.LoadError.html" title="annotation in org.mozilla.geckoview">GeckoSession.NavigationDelegate.LoadError</a></td>
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.LoadRequestFlags.html" title="annotation in org.mozilla.geckoview">GeckoSession.NavigationDelegate.LoadRequestFlags</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.LoadErrorCategory.html" title="annotation in org.mozilla.geckoview">GeckoSession.NavigationDelegate.LoadErrorCategory</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.NavigationDelegate.TargetWindow.html" title="annotation in org.mozilla.geckoview">GeckoSession.NavigationDelegate.TargetWindow</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.PermissionDelegate.Permission.html" title="annotation in org.mozilla.geckoview">GeckoSession.PermissionDelegate.Permission</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.DatetimeType.html" title="annotation in org.mozilla.geckoview">GeckoSession.PromptDelegate.DatetimeType</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.PromptDelegate.FileType.html" title="annotation in org.mozilla.geckoview">GeckoSession.PromptDelegate.FileType</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.Action.html" title="annotation in org.mozilla.geckoview">GeckoSession.SelectionActionDelegate.Action</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.Flag.html" title="annotation in org.mozilla.geckoview">GeckoSession.SelectionActionDelegate.Flag</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.SelectionActionDelegate.HideReason.html" title="annotation in org.mozilla.geckoview">GeckoSession.SelectionActionDelegate.HideReason</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.AutoFillNotification.html" title="annotation in org.mozilla.geckoview">GeckoSession.TextInputDelegate.AutoFillNotification</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.TextInputDelegate.RestartReason.html" title="annotation in org.mozilla.geckoview">GeckoSession.TextInputDelegate.RestartReason</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.Category.html" title="annotation in org.mozilla.geckoview">GeckoSession.TrackingProtectionDelegate.Category</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/GeckoWebExecutor.FetchFlags.html" title="annotation in org.mozilla.geckoview">GeckoWebExecutor.FetchFlags</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/WebRequest.CacheMode.html" title="annotation in org.mozilla.geckoview">WebRequest.CacheMode</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/WebRequestError.Error.html" title="annotation in org.mozilla.geckoview">WebRequestError.Error</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/mozilla/geckoview/WebRequestError.ErrorCategory.html" title="annotation in org.mozilla.geckoview">WebRequestError.ErrorCategory</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>

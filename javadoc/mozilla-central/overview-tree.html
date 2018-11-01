@@ -96,6 +96,7 @@
 <li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSession.WebResponseInfo.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">GeckoSession.WebResponseInfo</span></a></li>
 <li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSessionSettings.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">GeckoSessionSettings</span></a> (implements android.os.<a href="https://d.android.com/reference/android/os/Parcelable.html?is-external=true" title="class or interface in android.os">Parcelable</a>)</li>
 <li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSessionSettings.Key.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">GeckoSessionSettings.Key</span></a>&lt;T&gt;</li>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoWebExecutor.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">GeckoWebExecutor</span></a></li>
 <li type="circle">org.mozilla.gecko.gfx.LayerSession
 <ul>
 <li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">GeckoSession</span></a> (implements android.os.<a href="https://d.android.com/reference/android/os/Parcelable.html?is-external=true" title="class or interface in android.os">Parcelable</a>)</li>
@@ -114,6 +115,7 @@
 <li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoResult.UncaughtException.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">GeckoResult.UncaughtException</span></a></li>
 </ul>
 </li>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/WebRequestError.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">WebRequestError</span></a></li>
 </ul>
 </li>
 </ul>
@@ -129,6 +131,18 @@
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/WebMessage.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">WebMessage</span></a>
+<ul>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/WebRequest.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">WebRequest</span></a></li>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/WebResponse.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">WebResponse</span></a></li>
+</ul>
+</li>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/WebMessage.Builder.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">WebMessage.Builder</span></a>
+<ul>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/WebRequest.Builder.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">WebRequest.Builder</span></a></li>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/WebResponse.Builder.html" title="class in org.mozilla.geckoview"><span class="typeNameLink">WebResponse.Builder</span></a></li>
 </ul>
 </li>
 </ul>
@@ -164,8 +178,7 @@
 <h2 title="Annotation Type Hierarchy">Annotation Type Hierarchy</h2>
 <ul>
 <li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSession.ContentDelegate.ElementType.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">GeckoSession.ContentDelegate.ElementType</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
-<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSession.NavigationDelegate.LoadError.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">GeckoSession.NavigationDelegate.LoadError</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
-<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSession.NavigationDelegate.LoadErrorCategory.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">GeckoSession.NavigationDelegate.LoadErrorCategory</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSession.NavigationDelegate.LoadRequestFlags.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">GeckoSession.NavigationDelegate.LoadRequestFlags</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSession.NavigationDelegate.TargetWindow.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">GeckoSession.NavigationDelegate.TargetWindow</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSession.PermissionDelegate.Permission.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">GeckoSession.PermissionDelegate.Permission</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSession.PromptDelegate.DatetimeType.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">GeckoSession.PromptDelegate.DatetimeType</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
@@ -176,6 +189,10 @@
 <li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSession.TextInputDelegate.AutoFillNotification.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">GeckoSession.TextInputDelegate.AutoFillNotification</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSession.TextInputDelegate.RestartReason.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">GeckoSession.TextInputDelegate.RestartReason</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 <li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoSession.TrackingProtectionDelegate.Category.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">GeckoSession.TrackingProtectionDelegate.Category</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/GeckoWebExecutor.FetchFlags.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">GeckoWebExecutor.FetchFlags</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/WebRequest.CacheMode.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">WebRequest.CacheMode</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/WebRequestError.Error.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">WebRequestError.Error</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
+<li type="circle">org.mozilla.geckoview.<a href="org/mozilla/geckoview/WebRequestError.ErrorCategory.html" title="annotation in org.mozilla.geckoview"><span class="typeNameLink">WebRequestError.ErrorCategory</span></a> (implements java.lang.annotation.<a href="https://d.android.com/reference/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>)</li>
 </ul>
 <h2 title="Enum Hierarchy">Enum Hierarchy</h2>
 <ul>
