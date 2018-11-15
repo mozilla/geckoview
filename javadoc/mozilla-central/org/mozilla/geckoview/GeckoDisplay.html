@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -110,8 +110,8 @@ var activeTableTab = "activeTableTab";
 extends <a href="https://d.android.com/reference/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block">Applications use a GeckoDisplay instance to provide <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview"><code>GeckoSession</code></a> with a <a href="https://d.android.com/reference/android/view/Surface.html?is-external=true" title="class or interface in android.view"><code>Surface</code></a> for
  displaying content. To ensure drawing only happens on a valid <a href="https://d.android.com/reference/android/view/Surface.html?is-external=true" title="class or interface in android.view"><code>Surface</code></a>, <a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview"><code>GeckoSession</code></a>
- will only use the provided <a href="https://d.android.com/reference/android/view/Surface.html?is-external=true" title="class or interface in android.view"><code>Surface</code></a> after <a href="../../../org/mozilla/geckoview/GeckoDisplay.html#surfaceChanged-android.view.Surface-int-int-"><code>surfaceChanged(Surface, int, int)</code></a> is
- called and before <a href="../../../org/mozilla/geckoview/GeckoDisplay.html#surfaceDestroyed--"><code>surfaceDestroyed()</code></a> returns.</div>
+ will only use the provided <a href="https://d.android.com/reference/android/view/Surface.html?is-external=true" title="class or interface in android.view"><code>Surface</code></a> after <a href="../../../org/mozilla/geckoview/GeckoDisplay.html#surfaceChanged-android.view.Surface-int-int-"><code>surfaceChanged(Surface, int, int)</code></a> or
+ <a href="../../../org/mozilla/geckoview/GeckoDisplay.html#surfaceChanged-android.view.Surface-int-int-int-int-"><code>surfaceChanged(Surface, int, int, int, int)</code></a> is called and before <a href="../../../org/mozilla/geckoview/GeckoDisplay.html#surfaceDestroyed--"><code>surfaceDestroyed()</code></a> returns.</div>
 </li>
 </ul>
 </div>
@@ -153,7 +153,7 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoDisplay.html#screenOriginChanged-int-int-">screenOriginChanged</a></span>(int&nbsp;left,
                    int&nbsp;top)</code>
-<div class="block">Optional callback.</div>
+<div class="block">Update the position of the surface on the screen.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -167,13 +167,23 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoDisplay.html#surfaceChanged-android.view.Surface-int-int-">surfaceChanged</a></span>(<a href="https://d.android.com/reference/android/view/Surface.html?is-external=true" title="class or interface in android.view">Surface</a>&nbsp;surface,
               int&nbsp;width,
               int&nbsp;height)</code>
-<div class="block">Required callback.</div>
+<div class="block">Sets a surface for the compositor render a surface.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoDisplay.html#surfaceChanged-android.view.Surface-int-int-int-int-">surfaceChanged</a></span>(<a href="https://d.android.com/reference/android/view/Surface.html?is-external=true" title="class or interface in android.view">Surface</a>&nbsp;surface,
+              int&nbsp;left,
+              int&nbsp;top,
+              int&nbsp;width,
+              int&nbsp;height)</code>
+<div class="block">Sets a surface for the compositor render a surface.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoDisplay.html#surfaceDestroyed--">surfaceDestroyed</a></span>()</code>
-<div class="block">Required callback.</div>
+<div class="block">Removes the current surface registered with the compositor.</div>
 </td>
 </tr>
 </table>
@@ -225,14 +235,46 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 public&nbsp;void&nbsp;surfaceChanged(<a href="https://d.android.com/reference/android/view/Surface.html?is-external=true" title="class or interface in android.view">Surface</a>&nbsp;surface,
                                      int&nbsp;width,
                                      int&nbsp;height)</pre>
-<div class="block">Required callback. The display's Surface has been created or changed. Must be
+<div class="block">Sets a surface for the compositor render a surface.
+
+ Required call. The display's Surface has been created or changed. Must be
  called on the application main thread. GeckoSession may block this call to ensure
  the Surface is valid while resuming drawing.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>surface</code> - The new Surface.</dd>
-<dd><code>width</code> - New width of the Surface.</dd>
-<dd><code>height</code> - New height of the Surface.</dd>
+<dd><code>width</code> - New width of the Surface. Can not be negative.</dd>
+<dd><code>height</code> - New height of the Surface. Can not be negative.</dd>
+</dl>
+</li>
+</ul>
+<a name="surfaceChanged-android.view.Surface-int-int-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>surfaceChanged</h4>
+<pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
+public&nbsp;void&nbsp;surfaceChanged(<a href="https://d.android.com/reference/android/view/Surface.html?is-external=true" title="class or interface in android.view">Surface</a>&nbsp;surface,
+                                     int&nbsp;left,
+                                     int&nbsp;top,
+                                     int&nbsp;width,
+                                     int&nbsp;height)</pre>
+<div class="block">Sets a surface for the compositor render a surface.
+
+ Required call. The display's Surface has been created or changed. Must be
+ called on the application main thread. GeckoSession may block this call to ensure
+ the Surface is valid while resuming drawing. The origin of the content window
+ (0, 0) is the top left corner of the screen.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>surface</code> - The new Surface.</dd>
+<dd><code>left</code> - The compositor origin offset in the X axis. Can not be negative.</dd>
+<dd><code>top</code> - The compositor origin offset in the Y axis. Can not be negative.</dd>
+<dd><code>width</code> - New width of the Surface. Can not be negative.</dd>
+<dd><code>height</code> - New height of the Surface. Can not be negative.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://d.android.com/reference/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if left or top are negative.</dd>
 </dl>
 </li>
 </ul>
@@ -244,7 +286,9 @@ public&nbsp;void&nbsp;surfaceChanged(<a href="https://d.android.com/reference/an
 <h4>surfaceDestroyed</h4>
 <pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
 public&nbsp;void&nbsp;surfaceDestroyed()</pre>
-<div class="block">Required callback. The display's Surface has been destroyed. Must be called on the
+<div class="block">Removes the current surface registered with the compositor.
+
+ Required call. The display's Surface has been destroyed. Must be called on the
  application main thread. GeckoSession may block this call to ensure the Surface is
  valid while pausing drawing.</div>
 </li>
@@ -258,7 +302,9 @@ public&nbsp;void&nbsp;surfaceDestroyed()</pre>
 <pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
 public&nbsp;void&nbsp;screenOriginChanged(int&nbsp;left,
                                           int&nbsp;top)</pre>
-<div class="block">Optional callback. The display's coordinates on the screen has changed. Must be
+<div class="block">Update the position of the surface on the screen.
+
+ Optional call. The display's coordinates on the screen has changed. Must be
  called on the application main thread.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -275,10 +321,11 @@ public&nbsp;void&nbsp;screenOriginChanged(int&nbsp;left,
 <h4>shouldPinOnScreen</h4>
 <pre><a href="https://d.android.com/reference/android/support.annotation.UiThread.html?is-external=true" title="class or interface in android">@UiThread</a>
 public&nbsp;boolean&nbsp;shouldPinOnScreen()</pre>
-<div class="block">Return whether the display should be pinned on the screen. When pinned, the display
- should not be moved on the screen due to animation, scrolling, etc. A common reason
- for the display being pinned is when the user is dragging a selection caret inside
- the display; normal user interaction would be disrupted in that case if the display
+<div class="block">Return whether the display should be pinned on the screen.
+
+ When pinned, the display should not be moved on the screen due to animation, scrolling, etc.
+ A common reason for the display being pinned is when the user is dragging a selection caret
+ inside the display; normal user interaction would be disrupted in that case if the display
  was moved on screen.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
