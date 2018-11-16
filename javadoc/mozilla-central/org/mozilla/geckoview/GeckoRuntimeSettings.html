@@ -306,8 +306,10 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getLocale--">getLocale</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#getLocales--">getLocales</a></span>()</code>
+<div class="block">Gets the list of requested locales.</div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -393,7 +395,7 @@ implements <a href="https://d.android.com/reference/android/os/Parcelable.html?i
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#setLocale-java.lang.String-">setLocale</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;languageTag)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html#setLocales-java.lang.String:A-">setLocales</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;requestedLocales)</code>
 <div class="block">Set the locale.</div>
 </td>
 </tr>
@@ -791,30 +793,31 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.html" t
 </dl>
 </li>
 </ul>
-<a name="getLocale--">
+<a name="getLocales--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getLocale</h4>
-<pre>public&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLocale()</pre>
+<h4>getLocales</h4>
+<pre>public&nbsp;<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;getLocales()</pre>
+<div class="block">Gets the list of requested locales.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The locale code in Gecko format ("en" or "en-US").</dd>
+<dd>A list of locale codes in Gecko format ("en" or "en-US").</dd>
 </dl>
 </li>
 </ul>
-<a name="setLocale-java.lang.String-">
+<a name="setLocales-java.lang.String:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setLocale</h4>
-<pre>public&nbsp;void&nbsp;setLocale(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;languageTag)</pre>
+<h4>setLocales</h4>
+<pre>public&nbsp;void&nbsp;setLocales(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;requestedLocales)</pre>
 <div class="block">Set the locale.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>languageTag</code> - The locale code in Gecko format ("en-US").</dd>
+<dd><code>requestedLocales</code> - An ordered list of locales in Gecko format ("en-US").</dd>
 </dl>
 </li>
 </ul>

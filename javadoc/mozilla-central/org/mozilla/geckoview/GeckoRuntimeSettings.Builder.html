@@ -227,7 +227,7 @@ extends <a href="https://d.android.com/reference/java/lang/Object.html?is-extern
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#locale-java.lang.String-">locale</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;languageTag)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#locales-java.lang.String:A-">locales</a></span>(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;requestedLocales)</code>
 <div class="block">Set the locale.</div>
 </td>
 </tr>
@@ -701,18 +701,18 @@ public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder
 </dl>
 </li>
 </ul>
-<a name="locale-java.lang.String-">
+<a name="locales-java.lang.String:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>locale</h4>
+<h4>locales</h4>
 <pre><a href="https://d.android.com/reference/android/support.annotation.NonNull.html?is-external=true" title="class or interface in android">@NonNull</a>
-public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a>&nbsp;locale(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;languageTag)</pre>
+public&nbsp;<a href="../../../org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html" title="class in org.mozilla.geckoview">GeckoRuntimeSettings.Builder</a>&nbsp;locales(<a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;requestedLocales)</pre>
 <div class="block">Set the locale.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>languageTag</code> - The locale code in Gecko format ("en" or "en-US").</dd>
+<dd><code>requestedLocales</code> - List of locale codes in Gecko format ("en" or "en-US").</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The builder instance.</dd>
 </dl>
