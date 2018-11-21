@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":18,"i5":6,"i6":6,"i7":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -166,7 +166,7 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -203,19 +203,25 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onFirstComposite-org.mozilla.geckoview.GeckoSession-">onFirstComposite</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</code>
+<div class="block">Notification that the first content composition has occurred.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onFocusRequest-org.mozilla.geckoview.GeckoSession-">onFocusRequest</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</code>
 <div class="block">A page has requested focus.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onFullScreen-org.mozilla.geckoview.GeckoSession-boolean-">onFullScreen</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
             boolean&nbsp;fullScreen)</code>
 <div class="block">A page has entered or exited full screen mode.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/GeckoSession.ContentDelegate.html#onTitleChange-org.mozilla.geckoview.GeckoSession-java.lang.String-">onTitleChange</a></span>(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session,
              <a href="https://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title)</code>
@@ -411,7 +417,7 @@ var activeTableTab = "activeTableTab";
 <a name="onCrash-org.mozilla.geckoview.GeckoSession-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>onCrash</h4>
 <pre>void&nbsp;onCrash(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</pre>
@@ -423,6 +429,22 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>session</code> - The GeckoSession that crashed.</dd>
+</dl>
+</li>
+</ul>
+<a name="onFirstComposite-org.mozilla.geckoview.GeckoSession-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onFirstComposite</h4>
+<pre>default&nbsp;void&nbsp;onFirstComposite(<a href="../../../org/mozilla/geckoview/GeckoSession.html" title="class in org.mozilla.geckoview">GeckoSession</a>&nbsp;session)</pre>
+<div class="block">Notification that the first content composition has occurred.
+ This callback is invoked for the first content composite after either
+ a start or a restart of the compositor.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>session</code> - The GeckoSession that had a first paint event.</dd>
 </dl>
 </li>
 </ul>
