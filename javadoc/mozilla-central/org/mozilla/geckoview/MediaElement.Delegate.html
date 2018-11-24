@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18,"i6":18,"i7":18,"i8":18};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],16:["t5","Default Methods"]};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -117,69 +117,69 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/MediaElement.Delegate.html#onError-org.mozilla.geckoview.MediaElement-int-">onError</a></span>(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
        int&nbsp;errorCode)</code>
 <div class="block">An error has occurred.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/MediaElement.Delegate.html#onFullscreenChange-org.mozilla.geckoview.MediaElement-boolean-">onFullscreenChange</a></span>(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
                   boolean&nbsp;fullscreen)</code>
 <div class="block">A media element has entered or exited fullscreen mode.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/MediaElement.Delegate.html#onLoadProgress-org.mozilla.geckoview.MediaElement-org.mozilla.geckoview.MediaElement.LoadProgressInfo-">onLoadProgress</a></span>(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
               <a href="../../../org/mozilla/geckoview/MediaElement.LoadProgressInfo.html" title="class in org.mozilla.geckoview">MediaElement.LoadProgressInfo</a>&nbsp;progressInfo)</code>
 <div class="block">Indicates that a loading operation is in progress for the media.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/MediaElement.Delegate.html#onMetadataChange-org.mozilla.geckoview.MediaElement-org.mozilla.geckoview.MediaElement.Metadata-">onMetadataChange</a></span>(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
                 <a href="../../../org/mozilla/geckoview/MediaElement.Metadata.html" title="class in org.mozilla.geckoview">MediaElement.Metadata</a>&nbsp;metaData)</code>
 <div class="block">The media metadata has loaded or changed.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/MediaElement.Delegate.html#onPlaybackRateChange-org.mozilla.geckoview.MediaElement-double-">onPlaybackRateChange</a></span>(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
                     double&nbsp;rate)</code>
 <div class="block">The media playback speed has changed.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/MediaElement.Delegate.html#onPlaybackStateChange-org.mozilla.geckoview.MediaElement-int-">onPlaybackStateChange</a></span>(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
                      int&nbsp;mediaState)</code>
 <div class="block">The media playback state has changed.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/MediaElement.Delegate.html#onReadyStateChange-org.mozilla.geckoview.MediaElement-int-">onReadyStateChange</a></span>(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
                   int&nbsp;readyState)</code>
 <div class="block">The readiness state of the media has changed.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/MediaElement.Delegate.html#onTimeChange-org.mozilla.geckoview.MediaElement-double-">onTimeChange</a></span>(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
             double&nbsp;time)</code>
 <div class="block">The current playback time has changed.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/mozilla/geckoview/MediaElement.Delegate.html#onVolumeChange-org.mozilla.geckoview.MediaElement-double-boolean-">onVolumeChange</a></span>(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
               double&nbsp;volume,
               boolean&nbsp;muted)</code>
@@ -207,8 +207,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>onPlaybackStateChange</h4>
-<pre>default&nbsp;void&nbsp;onPlaybackStateChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
-                                   int&nbsp;mediaState)</pre>
+<pre>void&nbsp;onPlaybackStateChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
+                           int&nbsp;mediaState)</pre>
 <div class="block">The media playback state has changed.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -224,8 +224,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>onReadyStateChange</h4>
-<pre>default&nbsp;void&nbsp;onReadyStateChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
-                                int&nbsp;readyState)</pre>
+<pre>void&nbsp;onReadyStateChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
+                        int&nbsp;readyState)</pre>
 <div class="block">The readiness state of the media has changed.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -241,8 +241,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>onMetadataChange</h4>
-<pre>default&nbsp;void&nbsp;onMetadataChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
-                              <a href="../../../org/mozilla/geckoview/MediaElement.Metadata.html" title="class in org.mozilla.geckoview">MediaElement.Metadata</a>&nbsp;metaData)</pre>
+<pre>void&nbsp;onMetadataChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
+                      <a href="../../../org/mozilla/geckoview/MediaElement.Metadata.html" title="class in org.mozilla.geckoview">MediaElement.Metadata</a>&nbsp;metaData)</pre>
 <div class="block">The media metadata has loaded or changed.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -257,8 +257,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>onLoadProgress</h4>
-<pre>default&nbsp;void&nbsp;onLoadProgress(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
-                            <a href="../../../org/mozilla/geckoview/MediaElement.LoadProgressInfo.html" title="class in org.mozilla.geckoview">MediaElement.LoadProgressInfo</a>&nbsp;progressInfo)</pre>
+<pre>void&nbsp;onLoadProgress(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
+                    <a href="../../../org/mozilla/geckoview/MediaElement.LoadProgressInfo.html" title="class in org.mozilla.geckoview">MediaElement.LoadProgressInfo</a>&nbsp;progressInfo)</pre>
 <div class="block">Indicates that a loading operation is in progress for the media.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -273,9 +273,9 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>onVolumeChange</h4>
-<pre>default&nbsp;void&nbsp;onVolumeChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
-                            double&nbsp;volume,
-                            boolean&nbsp;muted)</pre>
+<pre>void&nbsp;onVolumeChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
+                    double&nbsp;volume,
+                    boolean&nbsp;muted)</pre>
 <div class="block">The media audio volume has changed.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -291,8 +291,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>onTimeChange</h4>
-<pre>default&nbsp;void&nbsp;onTimeChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
-                          double&nbsp;time)</pre>
+<pre>void&nbsp;onTimeChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
+                  double&nbsp;time)</pre>
 <div class="block">The current playback time has changed. This event is usually dispatched every 250ms.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -307,8 +307,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>onPlaybackRateChange</h4>
-<pre>default&nbsp;void&nbsp;onPlaybackRateChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
-                                  double&nbsp;rate)</pre>
+<pre>void&nbsp;onPlaybackRateChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
+                          double&nbsp;rate)</pre>
 <div class="block">The media playback speed has changed.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -323,8 +323,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>onFullscreenChange</h4>
-<pre>default&nbsp;void&nbsp;onFullscreenChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
-                                boolean&nbsp;fullscreen)</pre>
+<pre>void&nbsp;onFullscreenChange(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
+                        boolean&nbsp;fullscreen)</pre>
 <div class="block">A media element has entered or exited fullscreen mode.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -339,8 +339,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockListLast">
 <li class="blockList">
 <h4>onError</h4>
-<pre>default&nbsp;void&nbsp;onError(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
-                     int&nbsp;errorCode)</pre>
+<pre>void&nbsp;onError(<a href="../../../org/mozilla/geckoview/MediaElement.html" title="class in org.mozilla.geckoview">MediaElement</a>&nbsp;mediaElement,
+             int&nbsp;errorCode)</pre>
 <div class="block">An error has occurred.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
