@@ -28,7 +28,7 @@ Level 3: Core access. You will need this level to commit to any of the core repo
 
 If you wish to apply for commit access, please follow the guide found in the [Mozilla Commit Access Policy](https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/).
 
-If you do not have access and still want to submit your fix, you can create a patch and attach it directly to the Bugzilla ticket.
+If you do not have access and still want to submit your fix, you can create a patch and attach it directly to the Bugzilla ticket. We do not recommend this method, though, and strongly encourage contributors to apply for commit access.
 
 ### Attaching a patch in Bugzilla
 
@@ -69,25 +69,7 @@ To commit anything to the repository, you will need to set up Arcanist and Phabr
 #### Install Arcanist (Github version)
 
 * Ensure PHP is installed
-* Install Arcanist 
-
-```bash
-mkdir somewhere/
-cd somewhere/
-git clone https://github.com/phacility/libphutil.git
-git clone https://github.com/phacility/arcanist.git
-```
-* Add Arcanist to your path
-
-```bash
-$ export PATH="$PATH:/somewhere/arcanist/bin/" >> ~/.bash_profile
-```
-* Install Arcanist credentials
-
-```bash
-cd gecko
-arc install-certificate
-```
+* [Install Arcanist](https://secure.phabricator.com/book/phabricator/article/arcanist_quick_start/) 
 
 #### Set up Phabricator
 
