@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+    <script type="text/javascript" src="../../../../script.js"></script>
+  </head>
+  <body>
+    <!-- ========= START OF TOP NAVBAR ======= -->
+    <div class="topNav" style="float: initial">
+        <a name="navbar.top"></a>
+        <div class="skipNav">
+            <a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a>
+        </div>
+        <a name="navbar.top.firstrow"></a>
+        <ul class="navList" title="Navigation">
+            <li><a href="../package-summary.html">Package</a></li>
+            <li class="navBarCell1Rev">Changelog</li>
+            <li><a href="../package-tree.html">Tree</a></li>
+            <li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+            <li><a href="../../../../help-doc.html">Help</a></li>
+        </ul>
+        <div class="aboutLanguage">GeckoView API</div></div>
+        <div class="subNav" style="float: initial">
+            <ul class="navList" id="allclasses_navbar_top">
+                <li><a href="../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+            </ul>
+        <script type="text/javascript"><!--
+          allClassesLink = document.getElementById("allclasses_navbar_top");
+          if(window==top) {
+            allClassesLink.style.display = "block";
+          }
+          else {
+            allClassesLink.style.display = "none";
+          }
+          //-->
+        </script>
+        <a name="skip.navbar.top"></a>
+    </div>
+    <!-- ========= END OF TOP NAVBAR ========= -->
+    <div class="container-lg px-3 my-5 markdown-body">
+      {{ content }}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
