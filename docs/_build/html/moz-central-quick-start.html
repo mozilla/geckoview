@@ -1,0 +1,204 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title># Firefox Developer Git Quick Start Guide &#8212; GeckoView 66 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="# Submitting a patch to Firefox using Git." href="contributing-to-mc.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="firefox-developer-git-quick-start-guide">
+<h1># Firefox Developer Git Quick Start Guide<a class="headerlink" href="#firefox-developer-git-quick-start-guide" title="Permalink to this headline">¶</a></h1>
+<p>Getting setup to as a first time Mozilla contributor is hard. There are plenty of guides out there to help you get started as a contributor, but many of the new contributor guides out of date often more current ones are aimed at more experienced contributors. If you want to review these guides, you can find several linked to from [Contributing to the Mozilla code base](<a class="reference external" href="https://developer.mozilla.org/docs/Mozilla/Developer_guide/Introduction">https://developer.mozilla.org/docs/Mozilla/Developer_guide/Introduction</a>) on [MDN](<a class="reference external" href="https://developer.mozilla.org/">https://developer.mozilla.org/</a>).</p>
+<p>This guide will take you through setting up as a contributor to <cite>mozilla-central</cite>, the Firefox main repository, as a git user.</p>
+<p>## Setup</p>
+<p>The first thing you will need is to install Mercurial as this is the VCS that <cite>mozilla-central</cite> uses.</p>
+<p>### Mac</p>
+<p>#### Homebrew</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew install mercurial
+</pre></div>
+</div>
+<p>#### macports</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo port install mercurial
+</pre></div>
+</div>
+<p>### Linux</p>
+<p>#### apt</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install mercurial
+</pre></div>
+</div>
+<p>Alternatively you can install [Mercurial directly](<a class="reference external" href="https://www.mercurial-scm.org/wiki/Download">https://www.mercurial-scm.org/wiki/Download</a>).</p>
+<p>Check that you have successfully installed Mercurial by running:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">hg</span> <span class="pre">--version</span>
+<span class="pre">`</span></code></p>
+<p>If you are an experienced git user and are unfamiliar with Mercurial, you may want to install <cite>git-cinnabar</cite>. Cinnabar is a git remote helper that allows you to interact with Mercurial repos using git semantics.</p>
+<p>## git-cinnabar</p>
+<p>There is a Homebrew install option for <cite>git-cinnabar</cite>, but this did not work for me, nor did the installer option. Using these tools, when I tried to clone the Mercurial repo it hung and did not complete. I had to do a manual install before I could use <cite>git-cinnabar</cite> successfully to download a Mercurial repo. If you would like to try either of these option, however, here they are:</p>
+<p>### Mac
+#### Homebrew</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">brew</span> <span class="pre">install</span> <span class="pre">git-cinnabar</span>
+<span class="pre">`</span></code></p>
+<p>### All Platforms
+#### Installer</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">git</span> <span class="pre">cinnabar</span> <span class="pre">download</span>
+<span class="pre">`</span></code></p>
+<p>#### Manual installation</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/glandium/git-cinnabar.git</span> <span class="pre">&amp;&amp;</span> <span class="pre">cd</span> <span class="pre">git-cinnabar</span>
+<span class="pre">make</span>
+<span class="pre">export</span> <span class="pre">PATH=&quot;$PATH:/somewhere/git-cinnabar/&quot;</span>
+<span class="pre">echo</span> <span class="pre">PATH=&quot;$PATH:/somewhere/git-cinnabar/&quot;</span> <span class="pre">&gt;&gt;</span> <span class="pre">~/.bash_profile</span>
+<span class="pre">export</span> <span class="pre">PATH=&quot;$PATH:/somewhere/git-cinnabar/git-core/bin-wrappers&quot;</span>
+<span class="pre">echo</span> <span class="pre">PATH=&quot;$PATH:/somewhere/git-cinnabar/git-core/bin-wrappers&quot;</span> <span class="pre">&gt;&gt;</span> <span class="pre">~/.bash_profile</span>
+<span class="pre">`</span></code></p>
+<p><cite>git-cinnabar</cite>’s creator, [glandium](<a class="reference external" href="https://glandium.org/">https://glandium.org/</a>), has written a number of posts about setting up for Firefox Development with git. This [post](<a class="reference external" href="https://glandium.org/blog/?page_id=3438">https://glandium.org/blog/?page_id=3438</a>) is the one that has formed the basis for this walkthrough.</p>
+<p>In synopsis:</p>
+<ul class="simple">
+<li>initialize an empty git repository</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">git</span> <span class="pre">init</span> <span class="pre">gecko</span> <span class="pre">&amp;&amp;</span> <span class="pre">cd</span> <span class="pre">gecko</span>
+<span class="pre">`</span></code></p>
+<ul class="simple">
+<li>Configure git:</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">git</span> <span class="pre">config</span> <span class="pre">fetch.prune</span> <span class="pre">true</span>
+<span class="pre">git</span> <span class="pre">config</span> <span class="pre">push.default</span> <span class="pre">upstream</span>
+<span class="pre">`</span></code></p>
+<ul class="simple">
+<li>Add remotes for your repositories. There are several to choose from, <cite>central</cite>, <cite>inbound</cite>, <cite>beta</cite>, <cite>release</cite> etc. but in reality, if you plan on using Phabricator, which is Firefox’s preferred patch submission system, you only need to set up <cite>central</cite>. It might be advisable to have access to <cite>inbound</cite> however, if you want to work on a version of Firefox that is queued for release. This guide will be focussed on Phabricator.</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">central</span> <span class="pre">hg::https://hg.mozilla.org/mozilla-central</span> <span class="pre">-t</span> <span class="pre">branches/default/tip</span>
+<span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">inbound</span> <span class="pre">hg::https://hg.mozilla.org/integration/mozilla-inbound</span> <span class="pre">-t</span> <span class="pre">branches/default/tip</span>
+<span class="pre">git</span> <span class="pre">remote</span> <span class="pre">set-url</span> <span class="pre">--push</span> <span class="pre">central</span> <span class="pre">hg::ssh://hg.mozilla.org/mozilla-central</span>
+<span class="pre">git</span> <span class="pre">remote</span> <span class="pre">set-url</span> <span class="pre">--push</span> <span class="pre">inbound</span> <span class="pre">hg::ssh://hg.mozilla.org/integration/mozilla-inbound</span>
+<span class="pre">`</span></code></p>
+<ul class="simple">
+<li>Expose the branch tip to get quick access with some easy names.</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">git</span> <span class="pre">config</span> <span class="pre">remote.central.fetch</span> <span class="pre">+refs/heads/branches/default/tip:refs/remotes/central/default</span>
+<span class="pre">git</span> <span class="pre">config</span> <span class="pre">remote.inbound.fetch</span> <span class="pre">+refs/heads/branches/default/tip:refs/remotes/inbound/default</span>
+<span class="pre">`</span></code></p>
+<ul class="simple">
+<li>Setup a remote for the try server. The try server is an easy way to test a patch without actually checking the patch into the core repository. Your code will go through the same tests as a <cite>mozilla-central</cite> push, and you’ll be able to download builds if you wish.</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">try</span> <span class="pre">hg::https://hg.mozilla.org/try</span>
+<span class="pre">git</span> <span class="pre">config</span> <span class="pre">remote.try.skipDefaultUpdate</span> <span class="pre">true</span>
+<span class="pre">git</span> <span class="pre">remote</span> <span class="pre">set-url</span> <span class="pre">--push</span> <span class="pre">try</span> <span class="pre">hg::ssh://hg.mozilla.org/try</span>
+<span class="pre">git</span> <span class="pre">config</span> <span class="pre">remote.try.push</span> <span class="pre">+HEAD:refs/heads/branches/default/tip</span>
+<span class="pre">`</span></code></p>
+<ul class="simple">
+<li>Now update all the remotes. This performs a <cite>git fetch</cite> on all the remotes. Mozilla Central is a _large_ repository. Be prepared for this to take a very long time.</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">git</span> <span class="pre">remote</span> <span class="pre">update</span>
+<span class="pre">`</span></code></p>
+<p>All that’s left to do now is pick a bug to fix and [submit a patch](ContributingToMC.md).</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">GeckoView</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="geckoview-quick-start.html"># GeckoView Contributor Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing-to-mc.html"># Submitting a patch to Firefox using Git.</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"># Firefox Developer Git Quick Start Guide</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="contributing-to-mc.html" title="previous chapter"># Submitting a patch to Firefox using Git.</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Mozilla.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/moz-central-quick-start.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
