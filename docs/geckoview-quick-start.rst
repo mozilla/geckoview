@@ -1,13 +1,14 @@
 
 =========================================
-# GeckoView Contributor Quick Start Guide
+GeckoView Contributor Quick Start Guide
 =========================================
 
 This is a guide for developers who want to contribute to the GeckoView project. If you want to get started using GeckoView in your app then you should refer to the [wiki](https://wiki.mozilla.org/Mobile/GeckoView#Get_Started).
 
 You may also be interested in how to get up and running with [Firefox For Android(https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Build_Instructions/Simple_Firefox_for_Android_build).
 
-## Get set up with Mozilla Central
+==========================================
+# Get set up with Mozilla Central
 
 The GeckoView codebase is part of the main Firefox tree and can be found in `mozilla-central`. You will need to get set up as a contributor to Firefox in order to contribute to GeckoView. To get set up with `mozilla-central`, follow the [Quick Start Guide for Git Users](MozCentralQuickStart.md), or the [Contributing to the Mozilla code base](https://developer.mozilla.org/docs/Mozilla/Developer_guide/Introduction) guide on [MDN](https://developer.mozilla.org/) for Mercurial users.
 
@@ -63,7 +64,8 @@ In order to pick up the configuration changes we just made we need to build from
   ./mach build
   ./mach package
 
-## Build Using Android Studio
+==========================================
+# Build Using Android Studio
 
 * Install [Android Studio](https://developer.android.com/studio/install).
 * Disable Instant Run. This is because Fennec and the Geckoview Example app cannot deploy with Instant Run on.
@@ -90,7 +92,8 @@ In order to pick up the configuration changes we just made we need to build from
 
 Now you're set up and ready to go.
 
-## Performing a bug fix
+==========================================
+# Performing a bug fix
 
 One you have got GeckoView building and running, you will want to start contributing. There is a general guide to [Performing a Bug Fix for Git Developers](ContributingToMC.md) for you to follow. To contribute to GeckoView specifically, you will need the following additional information.
 
@@ -110,11 +113,13 @@ If you don't know who to tag for a review in the Phabricator submission message,
   * In the presented box, add `geckoview-reviewers`. Selecting this group as the reviewer will notify all the members of the GeckoView team there is a patch to review.
   * Click `Submit` to submit the reviewer change request.
 
-## Include GeckoView as a dependency
+==========================================
+# Include GeckoView as a dependency
 
 If you want to include a development version of GeckoView as a dependency inside another app, you must link to a local copy. There are two ways of doing this, publishing GeckoView to a local Maven repository (recommended), or linking to a local archive/
 
-### Public to a local repository
+==========================================
+* Public to a local repository
 
 Publish GeckoView to your local maven by running
 
@@ -146,7 +151,8 @@ Publish GeckoView to your local maven by running
     //..
   }
 
-### Archive GeckoView
+==========================================
+* Archive GeckoView
 
 .. code-block:: bash
 

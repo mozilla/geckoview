@@ -1,11 +1,12 @@
 
 ==========================================
-# Submitting a patch to Firefox using Git.
+Submitting a patch to Firefox using Git.
 ==========================================
 
 This guide will take you through submitting and updating a patch to `mozilla-central` as a git user. You need to already be [set up to use git to contribute to `mozilla-central`](MozCentralQuickStart.md).
 
-## Performing a bug fix
+==========================================
+# Performing a bug fix
 
 All of the open bugs for issues in Firefox can be found in [Bugzilla](https://bugzilla.mozilla.org). If you know the component that you wish to contribute to you can use Bugzilla to search for issues in that project. If you are unsure which component you are interested in, you can search the [Good First Bugs](https://bugzilla.mozilla.org/buglist.cgi?quicksearch=good-first-bug) list to find something you want to work on. 
 
@@ -55,7 +56,8 @@ git format-patch -[number of commits] --stdout > bugxxxxxxx-ddmmyyyy.patch
   * Add any comments that you want to make about the patch in the `Comments` box. This is where I would add the kind of message I would add to the description of a PR in Github.
   * Submit the form.
 
-### Submitting to `try` with Level 1 commit access.
+==================================================
+* Submitting to `try` with Level 1 commit access.
 
 If you only have Level 1 access, you will still need to attach your patch to the Bugzilla bug, but you can test it on the try server first.
 
@@ -65,16 +67,20 @@ If you only have Level 1 access, you will still need to attach your patch to the
 ```bash
 git push try
 ```
-### Submitting a patch via Phabricator. 
+
+==========================================
+* Submitting a patch via Phabricator. 
 
 To commit anything to the repository, you will need to set up Arcanist and Phabricator. If you are using `git-cinnabar` then you will need to use git enabled versions of these tools.
 
-#### Install Arcanist (Github version)
+==========================================
+= Install Arcanist (Github version)
 
 * Ensure PHP is installed
 * [Install Arcanist](https://secure.phabricator.com/book/phabricator/article/arcanist_quick_start/) 
 
-#### Set up Phabricator
+==========================================
+= Set up Phabricator
 
 * In a browser, visit Mozilla's Phabricator instance at https://phabricator.services.mozilla.com/.
 * Click "Log In" at the top of the page
@@ -92,7 +98,8 @@ To commit anything to the repository, you will need to set up Arcanist and Phabr
   <Screenshot Needed>
 * You now have a Phabricator account and can submit and review patches.
 
-#### Using Arcanist to submit a patch
+==========================================
+= Using Arcanist to submit a patch
 
 * Ensure you are on the branch where you have commits that you want to submit.
 
@@ -116,7 +123,8 @@ arc diff
 
 You may have noticed when using Arcanist that it wraps all of your carefully curated Github commits into a single patch. If you have made many commits that are self contained and pass all the tests then you may wish to submit a patch for each commit. This will make it easier to review. The way to do this is via `moz-phab`. `moz-phab` required Arcanist so you do have to have that installed first.
 
-#### Installing `moz-phab`
+==========================================
+= Installing `moz-phab`
 
 
 N.B. If each individual patch does not compile and pass tests you will not be able to land each patch individually. In this case, please use Arcanist.
@@ -129,7 +137,8 @@ export PATH="$PATH:/somewhere/moz-phab/bin/"
 echo PATH="$PATH:/somewhere/moz-phab/bin/" >> ~/.bash_profile
 ```
 
-#### Submitting a patch using `moz-phab`.
+==========================================
+= Submitting a patch using `moz-phab`.
 
 * Ensure you are on the branch where you have commits that you want to submit.
 
@@ -148,7 +157,8 @@ moz-phab submit [start_rev] [end_rev]
 ```
 * You will recieve a Phabricator link for each commit in the set.
 
-### Updating a patch
+==========================================
+* Updating a patch
 
 * Often you will need to make amendments to a patch after it has been submitted to address review comments. To do this, add your commits to the base branch of your fix as normal. 
 

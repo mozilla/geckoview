@@ -1,33 +1,39 @@
 
 =========================================
-# Firefox Developer Git Quick Start Guide
+Firefox Developer Git Quick Start Guide
 =========================================
 
 Getting setup to as a first time Mozilla contributor is hard. There are plenty of guides out there to help you get started as a contributor, but many of the new contributor guides out of date often more current ones are aimed at more experienced contributors. If you want to review these guides, you can find several linked to from [Contributing to the Mozilla code base](https://developer.mozilla.org/docs/Mozilla/Developer_guide/Introduction) on [MDN](https://developer.mozilla.org/).
 
 This guide will take you through setting up as a contributor to `mozilla-central`, the Firefox main repository, as a git user.
 
-## Setup
+==========================================
+# Setup
 
 The first thing you will need is to install Mercurial as this is the VCS that `mozilla-central` uses. 
 
-### Mac
+==========================================
+* Mac
 
-#### Homebrew
+==========================================
+= Homebrew
 
 .. code-block:: bash
 
 	brew install mercurial
 
-#### macports
+==========================================
+= macports
 
 .. code-block:: bash
 
 	sudo port install mercurial
 
-### Linux
+==========================================
+* Linux
 
-#### apt
+==========================================
+= apt
 
 .. code-block:: bash
 
@@ -43,25 +49,31 @@ hg --version
 
 If you are an experienced git user and are unfamiliar with Mercurial, you may want to install `git-cinnabar`. Cinnabar is a git remote helper that allows you to interact with Mercurial repos using git semantics.
 
-## git-cinnabar
+==========================================
+# git-cinnabar
 
 There is a Homebrew install option for `git-cinnabar`, but this did not work for me, nor did the installer option. Using these tools, when I tried to clone the Mercurial repo it hung and did not complete. I had to do a manual install before I could use `git-cinnabar` successfully to download a Mercurial repo. If you would like to try either of these option, however, here they are:
 
-### Mac
+==========================================
+* Mac
 #### Homebrew
 
 ```bash
 brew install git-cinnabar
 ```
 
-### All Platforms
-#### Installer
+==========================================
+* All Platforms
+
+==========================================
+= Installer
 
 ```bash
 git cinnabar download
 ```
 
-#### Manual installation
+==========================================
+= Manual installation
 
 ```bash
 git clone https://github.com/glandium/git-cinnabar.git && cd git-cinnabar
