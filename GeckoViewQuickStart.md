@@ -3,7 +3,7 @@
 
 This is a guide for developers who want to contribute to the GeckoView project. If you want to get started using GeckoView in your app then you should refer to the [wiki](https://wiki.mozilla.org/Mobile/GeckoView#Get_Started).
 
-You may also be interested in how to get up and running with [Firefox For Android(https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Build_Instructions/Simple_Firefox_for_Android_build).
+You may also be interested in how to get up and running with [Firefox For Android](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Build_Instructions/Simple_Firefox_for_Android_build).
 
 ## Get set up with Mozilla Central
 
@@ -169,3 +169,8 @@ dependencies {
     // ...
 }
 ```
+
+
+## Next Steps
+
+- Get started with [Native Debugging](NativeDebugging.md)
