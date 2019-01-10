@@ -113,4 +113,4 @@ git config remote.try.push +HEAD:refs/heads/branches/default/tip
 git remote update
 ```
 
-All that's left to do now is pick a bug to fix and [submit a patch](ContributingToMC.md).
+All that's left to do now is pick a bug to fix and [submit a patch](contributing-to-mc.md).
