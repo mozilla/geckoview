@@ -7,7 +7,7 @@ You may also be interested in how to get up and running with [Firefox For Androi
 
 ## Get set up with Mozilla Central
 
-The GeckoView codebase is part of the main Firefox tree and can be found in `mozilla-central`. You will need to get set up as a contributor to Firefox in order to contribute to GeckoView. To get set up with `mozilla-central`, follow the [Quick Start Guide for Git Users](MozCentralQuickStart.md), or the [Contributing to the Mozilla code base](https://developer.mozilla.org/docs/Mozilla/Developer_guide/Introduction) guide on [MDN](https://developer.mozilla.org/) for Mercurial users.
+The GeckoView codebase is part of the main Firefox tree and can be found in `mozilla-central`. You will need to get set up as a contributor to Firefox in order to contribute to GeckoView. To get set up with `mozilla-central`, follow the [Quick Start Guide for Git Users](mc-quick-start.md), or the [Contributing to the Mozilla code base](https://developer.mozilla.org/docs/Mozilla/Developer_guide/Introduction) guide on [MDN](https://developer.mozilla.org/) for Mercurial users.
 
 Once you have a copy of `mozilla-central`, you will need to build GeckoView.
 
@@ -63,7 +63,7 @@ In order to pick up the configuration changes we just made we need to build from
   * Select Android Studio > Preferences from the menu bar
   * Navigate to Build, Execution, Deployment > Instant Run.
   * Uncheck the box that reads `Enable Instant Run to hot swap code/resource changes on deploy`.
-  ![alt text](assets/DisableInstantRun.png "Disable Instant Run")
+  ![alt text](../_assets/DisableInstantRun.png "Disable Instant Run")
 * Choose File->Open from the toolbar
 * Navigate to <path to gecko>/mobile/android/geckoview and click "Open"
 * Click yes if it asks if you want to use the gradle wrapper.
@@ -74,13 +74,13 @@ In order to pick up the configuration changes we just made we need to build from
   * geckoview_example is an example browser built using GeckoView.
   * omnijar contains the parts of Gecko and GeckoView that are not written in Java or Kotlin
   * thirdparty contains third party code that Fennec and GeckoView use.
-  ![alt text](assets/GeckoViewStructure.png "GeckoView Structure")
+  ![alt text](../_assets/GeckoViewStructure.png "GeckoView Structure")
 
 Now you're set up and ready to go.
 
 ## Performing a bug fix
 
-One you have got GeckoView building and running, you will want to start contributing. There is a general guide to [Performing a Bug Fix for Git Developers](ContributingToMC.md) for you to follow. To contribute to GeckoView specifically, you will need the following additional information.
+One you have got GeckoView building and running, you will want to start contributing. There is a general guide to [Performing a Bug Fix for Git Developers](contributing-to-mc.md) for you to follow. To contribute to GeckoView specifically, you will need the following additional information.
 
 It is advisable to run your tests before submitting your patch. You can do this using Mozilla's `try` server. To submit a GeckoView patch to `try` before submitting it for review, type:
 ```
@@ -137,7 +137,7 @@ repositories {
 ./mach android archive-geckoview
 ```
 
-This should create a file named geckoview-*.aar in your build output folder (MOZ_OBJDIR):
+This should create a file named `geckoview-*.aar` in your build output folder (`MOZ_OBJDIR`):
 
 ```bash
 ls <your-output-directory>/gradle/build/mobile/android/geckoview/outputs/aar
@@ -173,4 +173,4 @@ dependencies {
 
 ## Next Steps
 
-- Get started with [Native Debugging](NativeDebugging.md)
+- Get started with [Native Debugging](native-debugging.md)

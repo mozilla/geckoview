@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# Welcome to GeckoView
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+## Tutorials
 
-## Commands
+* [GeckoView Contributor Quick Start Guide](tutorials/geckoview-quick-start.md)
+* [Mozilla Central Quick Start Guide](tutorials/mc-quick-start.md)
+* [Mozilla Central Contributor Guide](tutorials/contributing-to-mc.md)
+* [Guide to Native Debugging in Android Studio](tutorials/native-debugging.md)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+## API Documentation
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* [Changelog](javadoc/mozilla-central/org/mozilla/geckoview/doc-files/CHANGELOG.md)
+* [API](javadoc/mozilla-central/index.html)

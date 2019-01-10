@@ -1,7 +1,7 @@
 
 # Submitting a patch to Firefox using Git.
 
-This guide will take you through submitting and updating a patch to `mozilla-central` as a git user. You need to already be [set up to use git to contribute to `mozilla-central`](MozCentralQuickStart.md).
+This guide will take you through submitting and updating a patch to `mozilla-central` as a git user. You need to already be [set up to use git to contribute to `mozilla-central`](mc-quick-start.md).
 
 ## Performing a bug fix
 
@@ -76,13 +76,13 @@ To commit anything to the repository, you will need to set up Arcanist and Phabr
 * In a browser, visit Mozilla's Phabricator instance at https://phabricator.services.mozilla.com/.
 * Click "Log In" at the top of the page
 
-  ![alt text](assets/LogInPhab.png "Log in to Phabricator")
+  ![alt text](../_assets/LogInPhab.png "Log in to Phabricator")
 * Click the "Log In or Register" button on the next page. This will take you to Bugzilla to log in or register a new account.
 
-  ![alt text](assets/LogInOrRegister.png "Log in or register a Phabiricator account")
+  ![alt text](../_assets/LogInOrRegister.png "Log in or register a Phabiricator account")
 * Sign in with your Bugzilla credentials, or create a new account.
 
-  ![alt text](assets/LogInBugzilla.png "Log in with Bugzilla")
+  ![alt text](../_assets/LogInBugzilla.png "Log in with Bugzilla")
 * You will be redirected back to Phabricator, where you will have to create a new Phabricator account.
   <Screenshot Needed>
 * Fill in/amend any fields on the form and click "Register Account".
