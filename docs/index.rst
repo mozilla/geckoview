@@ -3,16 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to GeckoView's documentation!
+Welcome to GeckoView
 =====================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   geckoview-quick-start
-   contributing-to-mc
-   moz-central-quick-start
+   tutorials/geckoview-quick-start
+   tutorials/contributing-to-mc
+   tutorials/moz-central-quick-start
 
 
 
@@ -21,5 +21,4 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
