@@ -9,5 +9,5 @@ nav:
       - 'Mozilla Central Contributor Guide' : 'tutorials/contributing-to-mc.md'
       - 'Guide to Native Debugging in Android Studio' : 'tutorials/native-debugging.md'
     - API Documentation: 
-      - 'Changelog' : javadoc/mozilla-central/org/mozilla/geckoview/doc-files/CHANGELOG.md
-      - 'API' : /javadoc/mozilla-central/index.html
+      - 'Changelog' : 'javadoc/mozilla-central/org/mozilla/geckoview/doc-files/CHANGELOG.md'
+      - 'API' : '/javadoc/mozilla-central/index.html'
