@@ -90,22 +90,14 @@ If the patch that you want to submit changes the public API for GeckoView, you m
 ./mach android api-lint
 ```
 
-The output of this command will inform you if any changes you have made break the existing API. Review the changes and, if they are correct, update your api.txt to conform to your changed by running:
+The output of this command will inform you if any changes you have made break the existing API. Review the changes and follow the instructions it provides.
 
-```bash
-./gradlew apiUpdateFileWithGeckoBinariesDebug
-```
-
-After updating the API documentation, rerun `mach android api-lint`. This will then provide you with a changelog hash number. Open `mobile/android/geckoview/src/main/java/org/mozilla/geckoview/doc-files/CHANGELOG.md` and make the following changes.
-
-1. Under the heading for the next release version, add a new entry for the changes that you are making to the API, along with links to any relevant files. i.e.
+If the linter asks you to update the changelog, please ensure that you follow the correct format for changelog entries. Under the heading for the next release version, add a new entry for the changes that you are making to the API, along with links to any relevant files. i.e.
 
   ```
   - Added methods for each setting in [`GeckoSessionSettings`][66.3] 
   [66.3]: ../GeckoSessionSettings.html
   ```
-
-2. Copy and paste the changelog hash from the api-lint output against the `[api-version]` entry at the bottom of the file.
 
 ### Submitting to the `try` server
 
