@@ -15,7 +15,7 @@ git remote update
 ```
 * Create a new feature branch tracking either Central or Inbound.
 
-```
+```bash
 git checkout -b bugxxxxxxx [inbound|central]/default
 ```
 * Work on your bug, checking into git according to your preferred workflow. _Try to ensure that each individual commit compiles and passes all of the tests for your component. This will make it easier to land if you use `moz-phab` to submit (details later in this post)._
@@ -29,6 +29,14 @@ Level 3: Core access. You will need this level to commit to any of the core repo
 If you wish to apply for commit access, please follow the guide found in the [Mozilla Commit Access Policy](https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/).
 
 If you do not have access and still want to submit your fix, you can create a patch and attach it directly to the Bugzilla ticket. We do not recommend this method, though, and strongly encourage contributors to apply for commit access.
+
+### Submitting a patch that touches C/C++
+
+If your patch makes changes to any C or C++ code and your editor does not have `clang-format` support, you should run the clang-format linter before submitting your patch to ensure that your code is properly formatted.
+
+```bash
+mach clang-format -p path/to/file.cpp
+```
 
 ### Attaching a patch in Bugzilla
 
