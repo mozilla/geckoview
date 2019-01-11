@@ -82,12 +82,41 @@ Now you're set up and ready to go.
 
 One you have got GeckoView building and running, you will want to start contributing. There is a general guide to [Performing a Bug Fix for Git Developers](contributing-to-mc.md) for you to follow. To contribute to GeckoView specifically, you will need the following additional information.
 
-It is advisable to run your tests before submitting your patch. You can do this using Mozilla's `try` server. To submit a GeckoView patch to `try` before submitting it for review, type:
+### Updating the changelog and API documentation
+
+If the patch that you want to submit changes the public API for GeckoView, you must ensure that the API documentation is kept up to date. To check whether your patch has altered the API, run the following command.
+
+```bash
+./mach android api-lint
 ```
+
+The output of this command will inform you if any changes you have made break the existing API. Review the changes and, if they are correct, update your api.txt to conform to your changed by running:
+
+```bash
+./gradlew apiUpdateFileWithGeckoBinariesDebug
+```
+
+After updating the API documentation, rerun `mach android api-lint`. This will then provide you with a changelog hash number. Open `mobile/android/geckoview/src/main/java/org/mozilla/geckoview/doc-files/CHANGELOG.md` and make the following changes.
+
+1. Under the heading for the next release version, add a new entry for the changes that you are making to the API, along with links to any relevant files. i.e.
+
+  ```
+  - Added methods for each setting in [`GeckoSessionSettings`][66.3] 
+  [66.3]: ../GeckoSessionSettings.html
+  ```
+
+2. Copy and paste the changelog hash from the api-lint output against the `[api-version]` entry at the bottom of the file.
+
+### Submitting to the `try` server
+
+It is advisable to run your tests before submitting your patch. You can do this using Mozilla's `try` server. To submit a GeckoView patch to `try` before submitting it for review, type:
+```bash
 ./mach try fuzzy -q "android"
 ```
 
 This will run all of the Android test suite. If your patch passes on `try` you can be (fairly) confident that it will land successfully after review.
+
+### Tagging a reviewer
 
 When submitting a patch to Phabricator, if you know who you want to review your patch, put their Phabricator handle against the `reviewers` field. 
 
@@ -100,7 +129,7 @@ If you don't know who to tag for a review in the Phabricator submission message,
 
 If you want to include a development version of GeckoView as a dependency inside another app, you must link to a local copy. There are two ways of doing this, publishing GeckoView to a local Maven repository (recommended), or linking to a local archive/
 
-### Public to a local repository
+### Publish to a local repository
 
 Publish GeckoView to your local maven by running
 
