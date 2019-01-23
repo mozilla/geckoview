@@ -1,4 +1,6 @@
-
+---
+layout: default
+---
 # GeckoView Contributor Quick Start Guide
 
 This is a guide for developers who want to contribute to the GeckoView project. If you want to get started using GeckoView in your app then you should refer to the [wiki](https://wiki.mozilla.org/Mobile/GeckoView#Get_Started).

@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # GeckoView
 
 ## Get Started with GeckoView
