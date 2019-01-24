@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Home
+nav_order: 1
 ---
-# GeckoView
-
 ## Get Started with GeckoView
 
 * [GeckoView Quick Start Guide](https://wiki.mozilla.org/Mobile/GeckoView#Get_Started)

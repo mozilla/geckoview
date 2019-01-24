@@ -1,6 +1,14 @@
 ---
 layout: default
+title: GeckoView Contributor Guide
+nav_order: 3
 ---
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 # GeckoView Contributor Quick Start Guide
 
 This is a guide for developers who want to contribute to the GeckoView project. If you want to get started using GeckoView in your app then you should refer to the [wiki](https://wiki.mozilla.org/Mobile/GeckoView#Get_Started).
@@ -65,7 +73,8 @@ In order to pick up the configuration changes we just made we need to build from
   * Select Android Studio > Preferences from the menu bar
   * Navigate to Build, Execution, Deployment > Instant Run.
   * Uncheck the box that reads `Enable Instant Run to hot swap code/resource changes on deploy`.
-  ![alt text](assets/DisableInstantRun.png "Disable Instant Run")
+  
+  ![alt text]({{ site.url }}/assets/DisableInstantRun.png "Disable Instant Run")
 * Choose File->Open from the toolbar
 * Navigate to <path to gecko>/mobile/android/geckoview and click "Open"
 * Click yes if it asks if you want to use the gradle wrapper.
@@ -76,7 +85,8 @@ In order to pick up the configuration changes we just made we need to build from
   * geckoview_example is an example browser built using GeckoView.
   * omnijar contains the parts of Gecko and GeckoView that are not written in Java or Kotlin
   * thirdparty contains third party code that Fennec and GeckoView use.
-  ![alt text](assets/GeckoViewStructure.png "GeckoView Structure")
+
+  ![alt text]({{ site.url }}/assets/GeckoViewStructure.png "GeckoView Structure")
 
 Now you're set up and ready to go.
 
