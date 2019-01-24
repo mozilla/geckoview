@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Debugging Native Code
+nav_order: 4
 ---
 # Debugging Native Code in Android Studio.
 If you want to work on the C++ code that powers GeckoView, you will need to be able to perform native debugging inside Android Studio. This article will guide you through how to do that. 

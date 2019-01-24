@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Mozilla Central Quick Start
+nav_order: 5
 ---
 # Firefox Developer Git Quick Start Guide
 
