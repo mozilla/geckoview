@@ -3,6 +3,12 @@ layout: default
 title: Mozilla Central Quick Start
 nav_order: 5
 ---
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 # Firefox Developer Git Quick Start Guide
 
 Getting setup to as a first time Mozilla contributor is hard. There are plenty of guides out there to help you get started as a contributor, but many of the new contributor guides out of date often more current ones are aimed at more experienced contributors. If you want to review these guides, you can find several linked to from [Contributing to the Mozilla code base](https://developer.mozilla.org/docs/Mozilla/Developer_guide/Introduction) on [MDN](https://developer.mozilla.org/).
