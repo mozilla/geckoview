@@ -1,5 +1,3 @@
-# GeckoView
-
 ## Get Started with GeckoView
 
 * [GeckoView Quick Start Guide](https://wiki.mozilla.org/Mobile/GeckoView#Get_Started)

@@ -1,7 +1,8 @@
 ---
-layout: geckoview
+layout: default
 title: API Changelog
 description: GeckoView API Changelog.
+nav_exclude: true
 ---
 
 <h1> GeckoView API Changelog. </h1>
