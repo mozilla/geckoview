@@ -1,3 +1,13 @@
+---
+layout: default
+title: Mozilla Central Quick Start
+nav_order: 5
+---
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 # Firefox Developer Git Quick Start Guide
 
