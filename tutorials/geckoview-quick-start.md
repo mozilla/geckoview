@@ -17,7 +17,7 @@ You may also be interested in how to get up and running with [Firefox For Androi
 
 ## Get set up with Mozilla Central
 
-The GeckoView codebase is part of the main Firefox tree and can be found in `mozilla-central`. You will need to get set up as a contributor to Firefox in order to contribute to GeckoView. To get set up with `mozilla-central`, follow the [Quick Start Guide for Git Users](mc-quick-start.md), or the [Contributing to the Mozilla code base](https://developer.mozilla.org/docs/Mozilla/Developer_guide/Introduction) guide on [MDN](https://developer.mozilla.org/) for Mercurial users.
+The GeckoView codebase is part of the main Firefox tree and can be found in `mozilla-central`. You will need to get set up as a contributor to Firefox in order to contribute to GeckoView. To get set up with `mozilla-central`, follow the [Quick Start Guide for Git Users](mc-quick-start), or the [Contributing to the Mozilla code base](https://developer.mozilla.org/docs/Mozilla/Developer_guide/Introduction) guide on [MDN](https://developer.mozilla.org/) for Mercurial users.
 
 Once you have a copy of `mozilla-central`, you will need to build GeckoView.
 
@@ -92,7 +92,7 @@ Now you're set up and ready to go.
 
 ## Performing a bug fix
 
-One you have got GeckoView building and running, you will want to start contributing. There is a general guide to [Performing a Bug Fix for Git Developers](contributing-to-mc.md) for you to follow. To contribute to GeckoView specifically, you will need the following additional information.
+One you have got GeckoView building and running, you will want to start contributing. There is a general guide to [Performing a Bug Fix for Git Developers](contributing-to-mc) for you to follow. To contribute to GeckoView specifically, you will need the following additional information.
 
 ### Updating the changelog and API documentation
 
@@ -206,4 +206,4 @@ dependencies {
 
 ## Next Steps
 
-- Get started with [Native Debugging](native-debugging.md)
+- Get started with [Native Debugging](native-debugging)
