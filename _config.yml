@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mozilla.github.io/geckoview" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: geckoview
 github_username:  mozilla
+tags: [GeckoView,Gecko,mozilla,android,WebView,web,browser,toolkit,open source,privacy,online,security,mobile]
 
 # Build settings
 markdown: kramdown

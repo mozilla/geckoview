@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Get Started with GeckoView
-nav_order: 2
+nav_order: 2 
+summary: How to use GeckoView in your Android app.
+tags: [GeckoView,Gecko,mozilla,android,WebView,mobile,mozilla-central,setup,quick start]
 ---
 
 _Building a browser? Check out [Android Components](https://mozilla-mobile.github.io/android-components/), our collection of ready-to-use support libraries!_
