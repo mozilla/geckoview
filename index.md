@@ -6,11 +6,12 @@ summary: GeckoView, a webview from Mozilla specifically designed for Android bro
 tags: [GeckoView,Gecko,mozilla,android,WebView,mobile,mozilla-central]
 ---
 
-While Android offers a built-in WebView, it's not intended for building browsers, and many advanced Web APIs are disabled. Android's WebView is also a moving target: it's impossible know exactly which engine (and what version of that engine) will power a WebView on client devices.
+Android offers a built-in WebView, which applications can hook into in order to display web pages within the context of their app. However, Android's WebView is not intended for building browsers, as many advanced Web APIs are disabled. Furthermore, it is also a moving target: it's impossible to know exactly which engine (and what version of that engine) will power a WebView on client devices. 
 
-In contrast, GeckoView is:
+That is where GeckoView comes in. GeckoView is:
 
-- **Full-Featured**: GeckoView is designed to expose the entire power of the Web to applications, including being suitable for building web browsers.
+- **Full-Featured**: GeckoView is designed to expose the entire power of the Web to applications, and all that through a straightforward API.
+- **Suited for apps and browsers**: GeckoView is particularly suited for building mobile browsers, but it can be embedded as a web engine component in any kind of app.
 - **Self-Contained**: Because GeckoView is a standalone library that you bundle with your application, you can be confident that the code you test is the code that will actually run.
 - **Standards Compliant**: Like Firefox, GeckoView offers excellent support for modern Web standards.
 
