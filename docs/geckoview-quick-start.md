@@ -40,7 +40,7 @@ repositories {
 
 **3. Configure build flavors**
 
-_Note: Until we resolve [Bug 1485045](https://bugzilla.mozilla.org/show_bug.cgi?id=1485045), you must configure a separate build variant for each CPU architecture.__
+_Note: Until we resolve [Bug 1508976](https://bugzilla.mozilla.org/show_bug.cgi?id=1508976), you must configure a separate build variant for each CPU architecture.__
 
 ```groovy
 android {
