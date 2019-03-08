@@ -1,6 +1,7 @@
 ## Get Started with GeckoView
 
 * [GeckoView Quick Start Guide][1]
+* [Interacting with Web content and WebExtension][7]
 
 
 ## API Documentation
@@ -26,3 +27,4 @@ You can read more about GeckoView on the [wiki](https://wiki.mozilla.org/Mobile/
 [4]:tutorials/mc-quick-start.md
 [5]:tutorials/contributing-to-mc.md
 [6]:tutorials/native-debugging.md
+[7]:docs/web-extensions.md

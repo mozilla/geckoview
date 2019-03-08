@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url "https://maven.mozilla.org/maven2/"
+        }
+        google()
+        jcenter()
+        
+    }
+}
+
+ext {
+    geckoviewChannel = "nightly"
+    geckoviewVersion = "68.0.20190424095359"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
