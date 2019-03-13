@@ -39,7 +39,7 @@ Once the build is complete, don't forget to package, otherwise Android Studio wi
 
 ```bash
 ./mach build
-./mach package.
+./mach package
 ```
 ## Set up lldb to find your symbols
 Edit your `~/.lldbinit` file (or create one if one does not already exist) and add the following lines. 
@@ -57,7 +57,7 @@ settings append target.exec-search-paths <PATH>/objdir-android-opt/mozglue/build
 
 1. Edit the configuration that you want to debug by clicking `Run -> Edit Configurations...` and selecting the correct configuration from the options on the left hand side of the resulting window.
 2. Select the `Debugger` tab.
-3. Select `Native` or `Dual` from the `Debug type` select box. Native will only allow for debugging native code, whereas Dual will allow debugging of both native and Java code in the same session.
+3. Select `Dual` from the `Debug type` select box. Dual will allow debugging of both native and Java code in the same session.  It is possible to use `Native`, but it will only allow for debugging native code, and it's frequently necessary to break in the Java code that configures Gecko and child processes in order to attach debuggers at the correct times.
 4. Under `Symbol Directories`, add a new path pointing to `<PATH>/objdir-android-opt/toolkit/library`, the same path that you entered into your `.lldbinit` file.
 5. Select `Apply` and `OK` to close the window.
 
@@ -72,3 +72,45 @@ settings append target.exec-search-paths <PATH>/objdir-android-opt/mozglue/build
 b <file>.cpp:<line number>
 ```
 5. Once your breakpoints have been set, click the continue execution button to move beyond the `ElfLoader` breakpoint and your newly set native breakpoints should be hit. Debug as usual.
+
+## Attaching debuggers to content and other child processes
+
+Internally, GeckoView has a multi-process architecture.  The main Gecko process lives in the main Android process, but content rendering and some other functions live in child processes.  This balances load, ensures certain critical security properties, and allows GeckoView to recover if content processes become unresponsive or crash.  However, it's generally delicate to debug child processes because they come and go.
+
+The general approach is to make the Java code in the child process that you want to debug wait for a Java debugger at startup, and then to connect such a Java debugger manually from the Android Studio UI.
+
+[Bug 1522318](https://bugzilla.mozilla.org/show_bug.cgi?id=1522318) added environment variables that makes GeckoView wait for Java debuggers to attach, making this debug process more developer-friendly.  See [Configuring GeckoView for Automation](automation) for instructions on how to set environment variables that configure GeckoView's runtime environment.
+
+### Making processes wait for a Java debugger
+
+The following environment variable makes the main (Gecko) process wait for a Java debugger to connect:
+
+```shell
+MOZ_DEBUG_WAIT_FOR_JAVA_DEBUGGER=1
+```
+
+This is a superset of Android Studio's built-in debugging support so it's not particularly useful (unless you want to attach a different jdwp debugger).
+
+The following environment variable makes every child process wait for a Java debugger to connect:
+
+```shell
+MOZ_DEBUG_CHILD_WAIT_FOR_JAVA_DEBUGGER=
+```
+
+Set `MOZ_DEBUG_CHILD_WAIT_FOR_JAVA_DEBUGGER=suffix` in the environment to make child processes with an Android process name ending with `suffix` wait for a Java debugger to connect.  For example, the following environment variable makes every child content process wait for a Java debugger to connect:
+
+```shell
+MOZ_DEBUG_CHILD_WAIT_FOR_JAVA_DEBUGGER=:tab
+```
+
+### Attaching a Java debugger to a waiting child process
+
+This is standard: follow the [Android Studio instructions](https://developer.android.com/studio/debug/index.html#attach-debugger).  You must attach a Java debugger, so you almost certainly want to attach a `Dual` debugger and you definitely can't attach only a `Native` debugger.
+
+Determining the correct process to attach to is a little tricky because the mapping from process ID (pid) to process name is not always clear.  Gecko content child processes are suffixed `:tab` at this time.
+
+If you attach `Dual` debuggers to both the main process and a content child process, you will have four (4!) debug tabs to manage in Android Studio, which is awkward.  Android Studio doesn't appear to configure attached debuggers in the same way that it configures debuggers connecting to launched Run Configurations, so you may need to manually configure search paths -- i.e., you may need to invoke the contents of your `lldbinit` file in the appropriate `lldb` console by hand, using an invocation like `command source /absolute/path/to/topobjdir/lldbinit`.
+
+Android Studio also doesn't appear to support targeting breakpoints from the UI (say, from clicking in a gutter) to specific debug tabs, so you may also need to set breakpoints in the appropriate `lldb` console by hand.
+
+Managing more debug tabs may require different approaches.
