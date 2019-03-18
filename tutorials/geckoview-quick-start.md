@@ -54,6 +54,9 @@ ac_add_options --with-java-bin-path="/Library/Java/Home/bin"
 ac_add_options --with-android-sdk="$HOME/.mozbuild/<your-sdk>"
 ac_add_options --with-android-ndk="$HOME/.mozbuild/android-ndk-r17b"
 
+ac_add_options --enable-linker=lld
+export CC="$HOME/.mozbuild/clang/bin/clang"
+export CXX="$HOME/.mozbuild/clang/bin/clang++"
 ```
 * Configure your build.
 
