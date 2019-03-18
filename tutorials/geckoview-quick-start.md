@@ -54,7 +54,11 @@ ac_add_options --with-java-bin-path="/Library/Java/Home/bin"
 ac_add_options --with-android-sdk="$HOME/.mozbuild/<your-sdk>"
 ac_add_options --with-android-ndk="$HOME/.mozbuild/android-ndk-r17b"
 
+# With the following compiler toolchain:
+CC="~/.mozbuild/clang/bin/clang"
+CXX="~/.mozbuild/clang/bin/clang++"
 ```
+
 * Configure your build.
 
 ```bash
