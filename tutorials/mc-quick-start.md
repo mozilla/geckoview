@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mozilla Central Quick Start
-nav_order: 5
+nav_order: 6
 summary: Guide to setting up as a Git contributor to mozilla-central.
 tags: [GeckoView,Gecko,mozilla,android,WebView,mobile,mozilla-central,setup,compiling,mercurial,git-cinnabar]
 ---
