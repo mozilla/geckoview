@@ -29,7 +29,8 @@ In contrast, GeckoView is:
 * [GeckoView Contributor Quick Start Guide][3]
 * [Mozilla Central Quick Start Guide][4]
 * [Mozilla Central Contributor Guide][5]
-* [Guide to Native Debugging in Android Studio][6]
+* [Guide to Configuring GeckoView for Automation][6]
+* [Guide to Native Debugging in Android Studio][7]
 
 
 ## More information
@@ -40,4 +41,5 @@ You can read more about GeckoView on the [wiki](https://wiki.mozilla.org/Mobile/
 [3]:tutorials/geckoview-quick-start
 [4]:tutorials/mc-quick-start
 [5]:tutorials/contributing-to-mc
-[6]:tutorials/native-debugging
+[6]:tutorials/automation
+[7]:tutorials/native-debugging
