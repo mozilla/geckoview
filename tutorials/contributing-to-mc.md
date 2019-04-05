@@ -32,15 +32,13 @@ git checkout -b bugxxxxxxx [inbound|central]/default
 ```
 * Work on your bug, checking into git according to your preferred workflow. _Try to ensure that each individual commit compiles and passes all of the tests for your component. This will make it easier to land if you use `moz-phab` to submit (details later in this post)._
 
-You must have Mozilla commit access in order to submit your fix directly to the Firefox repository. There are three levels of commit access that give increasing levels of access to the repositories.
+It may be helpful to have Mozilla commit access, at least level 1. There are three levels of commit access that give increasing levels of access to the repositories.
 
 Level 1: Try/User access. You will need this level of access commit to the try server. 
 Level 2: General access. This will give you full commit access to any mercurial or SVN repository not requiring level 3 access.
-Level 3: Core access. You will need this level to commit to any of the core repositories (Firefox/Thunderbird/Fennec).
+Level 3: Core access. You will need this level to commit directly to any of the core repositories (Firefox/Thunderbird/Fennec).
 
 If you wish to apply for commit access, please follow the guide found in the [Mozilla Commit Access Policy](https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/).
-
-If you do not have access and still want to submit your fix, you can create a patch and attach it directly to the Bugzilla ticket. We do not recommend this method, though, and strongly encourage contributors to apply for commit access.
 
 ### Submitting a patch that touches C/C++
 
@@ -50,38 +48,14 @@ If your patch makes changes to any C or C++ code and your editor does not have `
 mach clang-format -p path/to/file.cpp
 ```
 
-### Attaching a patch in Bugzilla
-
-* Create a patch from your commits.
-
-```bash
-git format-patch -[number of commits to include]
-```
-This will create a patch for each commit. If you want to roll your commits into a single patch, you can use the following command.
-
-```bash
-git format-patch -[number of commits] --stdout > bugxxxxxxx-ddmmyyyy.patch
-```
-* Visit your bug in Bugzilla
-  * Click on the `Attach File` link
-  * Drag or your patch file into the `File` box.
-  * Add a brief description of the patch (this is especially useful if you are submitting multiple patches)
-  * Check the `patch` checkbox to indicate that this is a patch.
-  * Select the `?` from the `review` checkbox. 
-  * Add the bugzilla handle for the person you want to review in the associated text box that will appear. If you do not know who should review the patch, select an option from the `Suggested Reviewers` drop down.
-  * Add any comments that you want to make about the patch in the `Comments` box. This is where I would add the kind of message I would add to the description of a PR in Github.
-  * Submit the form.
+Note that `./mach bootstrap` will offer to set up a commit hook that will automatically do this for you.
 
 ### Submitting to `try` with Level 1 commit access.
 
-If you only have Level 1 access, you will still need to attach your patch to the Bugzilla bug, but you can test it on the try server first.
+If you only have Level 1 access, you will still need to submit your patch through phabricator, but you can test it on the try server first.
 
-* Create a commit using the [try syntax](https://wiki.mozilla.org/ReleaseEngineering/TryChooser)
-* Push to the try server
+* Use `./mach try fuzzy` to select jobs to run and push to try.
 
-```bash
-git push try
-```
 ### Submitting a patch via Phabricator. 
 
 To commit anything to the repository, you will need to set up Arcanist and Phabricator. If you are using `git-cinnabar` then you will need to use git enabled versions of these tools.
