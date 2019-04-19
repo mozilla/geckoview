@@ -34,7 +34,9 @@ In contrast, GeckoView is:
 
 
 ## More information
-You can read more about GeckoView on the [wiki](https://wiki.mozilla.org/Mobile/GeckoView).
+* [GeckoView Wiki](https://wiki.mozilla.org/Mobile/GeckoView)
+* [GeckoView Source Code](https://searchfox.org/mozilla-central/source/mobile/android/geckoview)
+* [This Site on GitHub](https://github.com/mozilla/geckoview/)
 
 [1]:docs/geckoview-quick-start
 [2]:javadoc/mozilla-central/org/mozilla/geckoview/doc-files/CHANGELOG
