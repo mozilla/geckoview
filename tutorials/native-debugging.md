@@ -17,11 +17,10 @@ If you want to work on the C++ code that powers GeckoView, you will need to be a
 If you need to get set up with GeckoView for the first time, follow the [Quick Start Guide](geckoview-quick-start).
 
 ## Perform a debug build of Gecko.
-1. Edit your `mozconfig` file and add the following lines. These will ensure that the build is performed generating debug symbols.
+1. Edit your `mozconfig` file and add the following lines. These will ensure that the build includes debug checks and symbols.
 
 ```
 ac_add_options --enable-debug
-ac_add_options --enable-debug-symbols
 ac_add_options --with-android-ndk="<path>/.mozbuild/android-ndk-r17b"
 ```
 2. Ensure that the following lines are commented out in your `mozconfig` if present. `./mach configure` will not allow artifact builds to be enabled when generating a debug build.
