@@ -153,7 +153,7 @@ $ tree ~/.m2/repository/org/mozilla/geckoview
 ```gradle
 dependencies {
     // ...
-    armImplementation "geckoview-nightly-armeabi-v7a-65.0.20181128102620"    
+    armImplementation "org.mozilla.geckoview:geckoview-nightly-armeabi-v7a:65.0.20181128102620"
     // ...
 }
 
