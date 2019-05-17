@@ -78,7 +78,7 @@ In order to pick up the configuration changes we just made we need to build from
   
   ![alt text]({{ site.url }}/assets/DisableInstantRun.png "Disable Instant Run")
 * Choose File->Open from the toolbar
-* Navigate to <path to gecko>/mobile/android/geckoview and click "Open"
+* Navigate to the root of your `mozilla-central` source directory and click "Open"
 * Click yes if it asks if you want to use the gradle wrapper.
 * Wait for the project to index and gradle to sync. Once synced, the workspace will reconfigure to display the different projects.
   * annotations contains custom annotations used inside GeckoView and Fennec.
