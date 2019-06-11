@@ -6,6 +6,8 @@ summary: GeckoView, a webview from Mozilla specifically designed for Android bro
 tags: [GeckoView,Gecko,mozilla,android,WebView,mobile,mozilla-central]
 ---
 
+# Welcome to GeckoView
+
 While Android offers a built-in WebView, it's not intended for building browsers, and many advanced Web APIs are disabled. Android's WebView is also a moving target: it's impossible know exactly which engine (and what version of that engine) will power a WebView on client devices.
 
 In contrast, GeckoView is:
@@ -14,34 +16,27 @@ In contrast, GeckoView is:
 - **Self-Contained**: Because GeckoView is a standalone library that you bundle with your application, you can be confident that the code you test is the code that will actually run.
 - **Standards Compliant**: Like Firefox, GeckoView offers excellent support for modern Web standards.
 
-## Get Started with GeckoView
+## Using GeckoView
 
-* [GeckoView Quick Start Guide][1]
-
+* [Quick Start Guide][1]
+* [Usage Documentation][7]
 
 ## API Documentation
 
 * [Changelog][2]
-* [API](javadoc/mozilla-central/index.html)
-
-## Get Started as a Contributor
-
-* [GeckoView Contributor Quick Start Guide][3]
-* [Mozilla Central Quick Start Guide][4]
-* [Mozilla Central Contributor Guide][5]
-* [Guide to Configuring GeckoView for Automation][6]
-* [Guide to Native Debugging in Android Studio][7]
-
+* [API][3]
 
 ## More information
-* [GeckoView Wiki](https://wiki.mozilla.org/Mobile/GeckoView)
-* [GeckoView Source Code](https://searchfox.org/mozilla-central/source/mobile/android/geckoview)
-* [This Site on GitHub](https://github.com/mozilla/geckoview/)
+* [GeckoView Wiki][4]
+* [GeckoView Source Code][5]
+* [Raise a bug on GeckoView code][8]
+* [Raise a documentation bug][6]
 
-[1]:docs/geckoview-quick-start
+[1]:consumer/docs/geckoview-quick-start
 [2]:javadoc/mozilla-central/org/mozilla/geckoview/doc-files/CHANGELOG
-[3]:tutorials/geckoview-quick-start
-[4]:tutorials/mc-quick-start
-[5]:tutorials/contributing-to-mc
-[6]:tutorials/automation
-[7]:tutorials/native-debugging
+[3]:javadoc/mozilla-central/index.html
+[4]:https://wiki.mozilla.org/Mobile/GeckoView
+[5]:https://searchfox.org/mozilla-central/source/mobile/android/geckoview
+[6]:https://github.com/mozilla/geckoview/issues
+[7]:consumer/docs/index
+[8]: https://bugzilla.mozilla.org/enter_bug.cgi?product=GeckoView

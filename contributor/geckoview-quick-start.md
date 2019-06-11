@@ -1,9 +1,10 @@
 ---
 layout: default
 title: GeckoView Contributor Guide
-nav_order: 3
 summary: Guide to setting up as a contributor to GeckoView.
 tags: [GeckoView,Gecko,mozilla,android,WebView,mobile,mozilla-central,setup,get started,compile,build,deploy,bug fix,submit,patch,arcanist,arc,moz-phab,phabricator]
+nav_exclude: true
+exclude: true
 ---
 ## Table of contents
 {: .no_toc .text-delta }

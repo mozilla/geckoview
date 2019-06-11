@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Mozilla Central Contributor Guide
-nav_order: 7
 summary: Guide to setting up as a contributor to mozilla-central.
 tags: [GeckoView,Gecko,mozilla,android,WebView,mobile,mozilla-central,bug fix,submit,patch,arcanist,arc,moz-phab,phabricator]
+nav_exclude: true
+exclude: true
 ---
 ## Table of contents
 {: .no_toc .text-delta }

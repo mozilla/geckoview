@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Interacting with Web content
-nav_order: 3
 summary: How to interact with Web content and register WebExtensions in GeckoView.
+nav_exclude: true
+exclude: true
 ---
 # Interacting with Web content and WebExtensions
 

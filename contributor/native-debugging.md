@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Debugging Native Code
-nav_order: 5
 summary: How to set up native debugging for GeckoView using Android Studio.
 tags: [GeckoView,Gecko,mozilla,android,WebView,mobile,debugging,native,android studio]
+nav_exclude: true
+exclude: true
 ---
 ## Table of contents
 {: .no_toc .text-delta }

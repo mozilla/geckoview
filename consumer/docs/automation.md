@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Configuring GeckoView for Automation
-nav_order: 4
 summary: How to set environment variables, Gecko arguments, and Gecko preferences for automation and debugging.
 tags: [GeckoView,Gecko,mozilla,android,WebView,mobile,debugging,automation,config,configuration,environment,variables,arguments,preferences]
+nav_exclude: true
+exclude: true
 ---
 ## Table of contents
 {: .no_toc .text-delta }
