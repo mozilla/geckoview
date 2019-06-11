@@ -39,23 +39,8 @@ If you are on a mac, you will need to have the Xcode build tools installed. You 
 ```
 * Choose option `4. Firefox for Android` for GeckoView development. This will give you a version of Gecko configured for Android that has not bundled the native code into embedded libraries so you can amend the code.
 * Say Y to all configuration options
-* Once `mach bootstrap` is complete it will tell you to copy and paste some configuration into your `mozconfig` file. The `mozconfig` file can be found in the root of your `gecko` repo - or create a file called `mozconfig` if it does not exist. Check that the correct value is associated with the `--target` argument as this may not correctly match your setup. Your `mozconfig` should read something like this:
+* Once `mach bootstrap` is complete it will tell you to copy and paste some configuration into your `mozconfig` file. The `mozconfig` file can be found in the root of your `gecko` repo - or create a file called `mozconfig` if it does not exist. Check that the correct value is associated with the `--target` argument as this may not correctly match your setup. Copy the file contents from the `mach bootstrap` output into your file and save in the root directory of your project.
 
-```bash
-mk_add_options MOZ_OBJDIR=../objdir-android-opt
-
-# Build Firefox for Android:
-ac_add_options --enable-application=mobile/android
-ac_add_options --target=<your target architecture>
-
-# With the following java and javac:
-ac_add_options --with-java-bin-path="/Library/Java/Home/bin"
-
-# With the following Android SDK and NDK:
-ac_add_options --with-android-sdk="$HOME/.mozbuild/<your-sdk>"
-ac_add_options --with-android-ndk="$HOME/.mozbuild/android-ndk-r17b"
-
-```
 * Configure your build.
 
 ```bash
