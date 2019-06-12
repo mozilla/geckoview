@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GeckoView Contributor Documentation
+title: Contributing to GeckoView
 nav_order: 4
 ---
 

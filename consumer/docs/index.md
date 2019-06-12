@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GeckoView Usage Documentation
+title: Using GeckoView
 nav_order: 3
 ---
 
