@@ -307,24 +307,24 @@ public boolean onKeyLongPress(int keyCode, KeyEvent event) {
 
 This allows bidirectional communication between the app and the WebExtension.
 
-[1]: ../javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.MessageDelegate.html#onConnect-org.mozilla.geckoview.WebExtension.Port-
-[3]: ../javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.html
+[1]: {{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.MessageDelegate.html#onConnect-org.mozilla.geckoview.WebExtension.Port-
+[3]: {{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.html
 [6]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/Port
-[7]: ../javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.Port.html
+[7]: {{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.Port.html
 [8]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions
 [9]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts
 [10]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#Background_scripts
 [11]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Native_messaging#Exchanging_messages
 [12]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/sendNativeMessage
 [13]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/connectNative
-[14]: ../javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.html#setMessageDelegate-org.mozilla.geckoview.WebExtension.MessageDelegate-java.lang.String-
-[15]: ../javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.html#WebExtension-java.lang.String-java.lang.String-long-
+[14]: {{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.html#setMessageDelegate-org.mozilla.geckoview.WebExtension.MessageDelegate-java.lang.String-
+[15]: {{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.html#WebExtension-java.lang.String-java.lang.String-long-
 [16]: ../javadoc/mozilla-central/org/mozilla/geckoview/GeckoSession.html#setMessageDelegate-org.mozilla.geckoview.WebExtension.MessageDelegate-java.lang.String-
 [17]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions
-[18]: ../javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.MessageDelegate.html
+[18]: {{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.MessageDelegate.html
 [19]: https://developer.mozilla.org/en-US/docs/Web/Manifest
 [20]: https://github.com/mozilla/geckoview/tree/gh-pages/examples/extensions/MessagingExample/
 [21]: https://github.com/mozilla/geckoview/tree/gh-pages/examples/extensions/PortMessagingExample/
-[22]: ../javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.Flags.html#ALLOW_CONTENT_MESSAGING
+[22]: {{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.Flags.html#ALLOW_CONTENT_MESSAGING
 [23]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json
-[24]: ../javadoc/mozilla-central/org/mozilla/geckoview/GeckoRuntime.html
+[24]: {{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/GeckoRuntime.html
