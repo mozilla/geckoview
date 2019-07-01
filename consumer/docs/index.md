@@ -12,6 +12,8 @@ We are working on providing detailed usage documentation for all of GeckoView's 
 Get GeckoView up and running inside your application.
 - [Interacting with Web Content](web-extensions):
 Writing Web Extensions, running content scripts and interacting with Javascript running in a web page.
+- [Working with Site Permissions](permissions):
+Handling and responding to requests from websites for permissions, such as geolocation, storage, media etc.
 - [Configuring GeckoView for Automation](automation):
 Get GeckoView set up on your automation system.
 
