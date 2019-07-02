@@ -8,7 +8,7 @@ tags: [GeckoView,Gecko,mozilla,android,WebView,mobile,permissions,site,media,gra
 ---
 # Working with Site Permissions
 
-When a website wants to access to a users device, it will send out a permissions request. This document will explain how to use GeckoView to receive those requests, and respond to them by granting or denying those permissions.
+When a website wants to access certain services on a user's device, it will send out a permissions request. This document will explain how to use GeckoView to receive those requests, and respond to them by granting or denying those permissions.
 
 ## The Permission Delegate
 
