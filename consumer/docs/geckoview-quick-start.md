@@ -25,7 +25,7 @@ _Like Firefox, GeckoView has three release channels: Stable, Beta, and Nightly. 
 ```groovy
 ext {
     geckoviewChannel = "nightly"
-    geckoviewVersion = "64.0.20180927100037"
+    geckoviewVersion = "70.0.20190712095934"
 }
 ```
 
@@ -38,28 +38,14 @@ repositories {
 }
 ```
 
-**3. Configure build flavors**
+**3. Java 8 required support** 
 
-_Note: Until we resolve [Bug 1508976](https://bugzilla.mozilla.org/show_bug.cgi?id=1508976), you must configure a separate build variant for each CPU architecture.__
+As GeckoView uses some Java 8 APIs, it requires these compatibility flags:
 
 ```groovy
-android {
-    // ...
-
-    // Note: compileOptions is only required for minSdkVersion < 24
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-
-    flavorDimensions "abi"
-
-    productFlavors {
-        x86     { dimension "abi" }
-        x86_64  { dimension "abi" }
-        arm     { dimension "abi" }
-        aarch64 { dimension "abi" }
-    }
+compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
 }
 ```
 
@@ -68,11 +54,7 @@ android {
 ```groovy
 dependencies {
     // ...
-
-    x86Implementation     "org.mozilla.geckoview:geckoview-${geckoviewChannel}-x86:${geckoviewVersion}"
-    x86_64Implementation  "org.mozilla.geckoview:geckoview-${geckoviewChannel}-x86_64:${geckoviewVersion}"
-    armImplementation     "org.mozilla.geckoview:geckoview-${geckoviewChannel}-armeabi-v7a:${geckoviewVersion}"
-    aarch64Implementation "org.mozilla.geckoview:geckoview-${geckoviewChannel}-arm64-v8a:${geckoviewVersion}"
+  implementation "org.mozilla.geckoview:geckoview-${geckoviewChannel}:${geckoviewVersion}"   
 }
 ```
 
