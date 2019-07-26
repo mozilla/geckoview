@@ -28,14 +28,13 @@ You can read more about GeckoView on the [wiki](https://wiki.mozilla.org/Mobile/
 
 
 [1]:https://geckoview.dev/consumer/docs/geckoview-quick-start
-[2]:https://mozilla.github.io/geckoview/javadoc/mozilla-central/org/mozilla/geckoview/doc-files/CHANGELOG
-[3]:https://mozilla.github.io/geckoview/contributor/geckoview-quick-start
-[4]:https://mozilla.github.io/geckoview/contributor/mc-quick-start
-[5]:https://mozilla.github.io/geckoview/contributor/contributing-to-mc
-[6]:https://mozilla.github.io/geckoview/contributor/native-debugging
-[7]:https://mozilla.github.io/geckoview/consumer/docs/web-extensions
+[2]:https://geckoview.dev/javadoc/mozilla-central/org/mozilla/geckoview/doc-files/CHANGELOG
+[3]:https://geckoview.dev/contributor/geckoview-quick-start
+[4]:https://geckoview.dev/contributor/mc-quick-start
+[5]:https://geckoview.dev/contributor/contributing-to-mc
+[6]:https://geckoview.dev/contributor/native-debugging
+[7]:https://geckoview.dev/consumer/docs/web-extensions
 [8]:https://geckoview.dev
 [9]:https://searchfox.org/mozilla-central/source/mobile/android/geckoview
 [10]:https://github.com/mozilla/geckoview/issues
-[11]:https://bugzilla.mozilla.org/enter_bug.cgi?product=GeckoView
-[12]:https://mozilla.github.io/geckoview/javadoc/mozilla-central/index.html
+[11]: https://bugzilla.mozilla.org/enter_bug.cgi?product=GeckoView
