@@ -37,4 +37,5 @@ You can read more about GeckoView on the [wiki](https://wiki.mozilla.org/Mobile/
 [8]:https://geckoview.dev
 [9]:https://searchfox.org/mozilla-central/source/mobile/android/geckoview
 [10]:https://github.com/mozilla/geckoview/issues
-[11]: https://bugzilla.mozilla.org/enter_bug.cgi?product=GeckoView
+[11]:https://bugzilla.mozilla.org/enter_bug.cgi?product=GeckoView
+[12:https://mozilla.github.io/geckoview/javadoc/mozilla-central/index.html
