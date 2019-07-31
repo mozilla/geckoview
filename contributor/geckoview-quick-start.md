@@ -119,7 +119,7 @@ If you don't know who to tag for a review in the Phabricator submission message,
 
 ## Include GeckoView as a dependency
 
-If you want to include a development version of GeckoView as a dependency inside another app, you must link to a local copy. There are two ways of doing this, publishing GeckoView to a local Maven repository (recommended), or linking to a local archive/
+If you want to include a development version of GeckoView as a dependency inside another app, you must link to a local copy. There are two ways of doing this, publishing GeckoView to a local Maven repository (recommended), or linking to a local archive.
 
 ### Publish to a local repository
 
@@ -134,12 +134,12 @@ Publish GeckoView to your local maven by running
 ```bash
 $ tree ~/.m2/repository/org/mozilla/geckoview
 ```
-* Make a note of the name of your artifact. Update your gradle file to point to the dependency and link to your local repository.
+* Make a note of the name of your artifact. Update your `build.gradle` file to point to the dependency and link to your local repository.
 
 ```gradle
 dependencies {
     // ...
-    armImplementation "org.mozilla.geckoview:geckoview-nightly-armeabi-v7a:65.0.20181128102620"
+    implementation "org.mozilla.geckoview:geckoview-default:70.0.20190729181900"
     // ...
 }
 
@@ -165,7 +165,7 @@ ls <your-output-directory>/gradle/build/mobile/android/geckoview/outputs/aar
 geckoview-official-withGeckoBinaries-noMinApi-release.aar
 ```
 
-Then all you need to do is point to the AAR in your gradle file.
+Then all you need to do is point to the AAR in your `build.gradle` file.
 
 ```gradle
 repositories {
@@ -179,13 +179,11 @@ repositories {
 // ...
 dependencies {
     // ...
-
-    // armImplementation "org.mozilla:geckoview-nightly-armeabi-v7a:60.0a1"
-    armImplementation (
+    implementation (
             name: 'geckoview-official-withGeckoBinaries-noMinApi-release',
             ext: 'aar'
     )
-    x86Implementation "org.mozilla:geckoview-nightly-x86:60.0a1"
+    implementation "org.mozilla:geckoview-default:70.0"
     
     // ...
 }
