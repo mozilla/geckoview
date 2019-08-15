@@ -10,10 +10,9 @@ tags: [GeckoView,Gecko,mozilla,android,WebView,web,browser,toolkit,open source,p
 
 # Build settings
 markdown: kramdown
-remote_theme: pmarsceill/just-the-docs
+remote_theme: pmarsceill/just-the-docs@aa0d8f1d400b051c090b04b3e530c2848afb585c
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
 search_enabled: true
-
