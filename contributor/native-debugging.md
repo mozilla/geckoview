@@ -50,7 +50,7 @@ The remaining lines tell LLDB where to go to find the symbols for debugging.
 
 ```bash
 settings set target.inline-breakpoint-strategy always
-settings append target.exec-search-paths <PATH>/objdir-android-opt/toolkit/library
+settings append target.exec-search-paths <PATH>/objdir-android-opt/toolkit/library/build
 settings append target.exec-search-paths <PATH>/objdir-android-opt/mozglue/build
 ```
 # Set up Android Studio to perform native debugging.
@@ -58,7 +58,7 @@ settings append target.exec-search-paths <PATH>/objdir-android-opt/mozglue/build
 1. Edit the configuration that you want to debug by clicking `Run -> Edit Configurations...` and selecting the correct configuration from the options on the left hand side of the resulting window.
 2. Select the `Debugger` tab.
 3. Select `Dual` from the `Debug type` select box. Dual will allow debugging of both native and Java code in the same session.  It is possible to use `Native`, but it will only allow for debugging native code, and it's frequently necessary to break in the Java code that configures Gecko and child processes in order to attach debuggers at the correct times.
-4. Under `Symbol Directories`, add a new path pointing to `<PATH>/objdir-android-opt/toolkit/library`, the same path that you entered into your `.lldbinit` file.
+4. Under `Symbol Directories`, add a new path pointing to `<PATH>/objdir-android-opt/toolkit/library/build`, the same path that you entered into your `.lldbinit` file.
 5. Select `Apply` and `OK` to close the window.
 
 # Debug Native code in Android Studio
