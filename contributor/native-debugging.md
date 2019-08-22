@@ -79,7 +79,7 @@ Internally, GeckoView has a multi-process architecture.  The main Gecko process 
 
 The general approach is to make the Java code in the child process that you want to debug wait for a Java debugger at startup, and then to connect such a Java debugger manually from the Android Studio UI.
 
-[Bug 1522318](https://bugzilla.mozilla.org/show_bug.cgi?id=1522318) added environment variables that makes GeckoView wait for Java debuggers to attach, making this debug process more developer-friendly.  See [Configuring GeckoView for Automation](automation) for instructions on how to set environment variables that configure GeckoView's runtime environment.
+[Bug 1522318](https://bugzilla.mozilla.org/show_bug.cgi?id=1522318) added environment variables that makes GeckoView wait for Java debuggers to attach, making this debug process more developer-friendly.  See [Configuring GeckoView for Automation](../consumer/docs/automation) for instructions on how to set environment variables that configure GeckoView's runtime environment.
 
 ### Making processes wait for a Java debugger
 
