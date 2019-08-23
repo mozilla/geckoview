@@ -34,12 +34,10 @@ ac_add_options --with-android-ndk="<path>/.mozbuild/android-ndk-r17b"
 ```bash
 ./mach clobber
 ```
-4. Build as usual. Because this is a debug build, and because you have clobbered your `MOZ_OBJDIR`, this will take a long time. Subsequent builds will be incremental and take less time, so go make yourself a cup of your favourite beverage. 
-Once the build is complete, don't forget to package, otherwise Android Studio will not pick up your changes and symbols.
+4. Build as usual. Because this is a debug build, and because you have clobbered your `MOZ_OBJDIR`, this will take a long time. Subsequent builds will be incremental and take less time, so go make yourself a cup of your favourite beverage.
 
 ```bash
 ./mach build
-./mach package
 ```
 ## Set up lldb to find your symbols
 Edit your `~/.lldbinit` file (or create one if one does not already exist) and add the following lines. 
