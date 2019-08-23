@@ -41,19 +41,14 @@ If you are on a mac, you will need to have the Xcode build tools installed. You 
 * Say Y to all configuration options
 * Once `mach bootstrap` is complete it will tell you to copy and paste some configuration into your `mozconfig` file. The `mozconfig` file can be found in the root of your `gecko` repo - or create a file called `mozconfig` if it does not exist. Check that the correct value is associated with the `--target` argument as this may not correctly match your setup. Copy the file contents from the `mach bootstrap` output into your file and save in the root directory of your project.
 
-* Configure your build.
-
-```bash
-./mach configure
-```
 ## Build from the command line
 
-In order to pick up the configuration changes we just made we need to build from the command line and package the app.
+In order to pick up the configuration changes we just made we need to build from the command line.  This will update generated sources, compile native code, and produce GeckoView AARs and example and test APKs.
 
 ```bash
 ./mach build
-./mach package
 ```
+
 ## Build Using Android Studio
 
 * Install [Android Studio](https://developer.android.com/studio/install).
@@ -77,6 +72,8 @@ In order to pick up the configuration changes we just made we need to build from
   ![alt text]({{ site.url }}/assets/GeckoViewStructure.png "GeckoView Structure")
 
 Now you're set up and ready to go.
+
+**Important: at this time, building from Android Studio or directly from Gradle does not (re-)compile native code, including C++ and Rust.** This means you will need to run `mach build` yourself to pick up changes to native code.  [Bug 1509539](https://bugzilla.mozilla.org/show_bug.cgi?id=1509539) tracks making Android Studio and Gradle do this automatically.
 
 ## Performing a bug fix
 
@@ -119,76 +116,48 @@ If you don't know who to tag for a review in the Phabricator submission message,
 
 ## Include GeckoView as a dependency
 
-If you want to include a development version of GeckoView as a dependency inside another app, you must link to a local copy. There are two ways of doing this, publishing GeckoView to a local Maven repository (recommended), or linking to a local archive.
+If you want to include a development version of GeckoView as a dependency inside another app, you must link to a local copy. There are several ways to achieve this, but the preferred way is to use Gradle's *dependency substitution* mechanism, for which there is first-class support in `mozilla-central` and a pattern throughout Mozilla's GeckoView-consuming ecosystem.
 
-### Publish to a local repository
+The good news is that `mach build` produces everything you need, so that after the configuration below, you should find that the following commands rebuild your local GeckoView and then consume your local version in the downstream project.
 
-Publish GeckoView to your local maven by running
-
-```bash
-./gradlew geckoview:publishWithGeckoBinariesDebugPublicationToMavenLocal
+```sh
+cd /path/to/mozilla-central && ./mach build
+cd /path/to/project && ./gradlew assembleDebug
 ```
 
-* The binary will have been published to a repo found in `~/.m2`. Run the following command to figure out the name of the artifcat:
+**Be sure that your `mozconfig` specifies the correct `--target` argument for your target device.** Many projects use "ABI splitting" to include only the target device's native code libraries in APKs deployed to the device.  On x86-64 and aarch64 devices, this can result in GeckoView failing to find any libraries, because valid x86 and ARM libraries were not included in a deployed APK.  Avoid this by setting `--target` to the exact ABI that your device supports.
 
-```bash
-$ tree ~/.m2/repository/org/mozilla/geckoview
+### Dependency substiting your local GeckoView into a Mozilla project
+
+Most GeckoView-consuming projects produced by Mozilla support dependency substitution via `local.properties`.  These projects include:
+  * [Fenix](https://github.com/mozilla-mobile/fenix)
+  * [reference-browser](https://github.com/mozilla-mobile/reference-browser)
+  * [android-components](https://github.com/mozilla-mobile/android-components)
+  * [Firefox Reality](https://github.com/MozillaReality/FirefoxReality)
+Simply edit (or create) the file `local.properties` in the project root and include a line like:
+```properties
+dependencySubstitutions.geckoviewTopsrcdir=/path/to/mozilla-central
 ```
-* Make a note of the name of your artifact. Update your `build.gradle` file to point to the dependency and link to your local repository.
-
-```gradle
-dependencies {
-    // ...
-    implementation "org.mozilla.geckoview:geckoview-default:70.0.20190729181900"
-    // ...
-}
-
-// ...
-
-repositories {
-  //...
-  mavenLocal()
-  //..
-}
+The default object directory -- the one that a plain `mach build` discovers -- will be used.  You can optionally specify a particular object directory with an additional line like:
+```properties
+dependencySubstitutions.geckoviewTopobjdir=/path/to/object-directory
 ```
 
-### Archive GeckoView
+With these lines, the GeckoView-consuming project should use the GeckoView AAR produced by `mach build` in your local `mozilla-central`.
 
-```bash
-./mach android archive-geckoview
+**Remember to remove the lines in `local.properties` when you want to return to using the published GeckoView builds!**
+
+### Dependency substituting your local GeckoView into a non-Mozilla project
+
+In projects that don't have first-class support for dependency substitution already, you can do the substitution yourself.  See the documentation in [substitue-local-geckoview.gradle](https://hg.mozilla.org/mozilla-central/file/tip/substitute-local-geckoview.gradle), but roughly: in each Gradle project that consumes GeckoView, i.e., in each `build.gradle` with a `dependencies { ... 'org.mozilla.geckoview:geckoview-...' }` block, include lines like:
+
+```groovy
+ext.topsrcdir = "/path/to/mozilla-central"
+ext.topobjdir = "/path/to/object-directory" // Optional.
+apply from: "${topsrcdir}/substitute-local-geckoview.gradle"
 ```
 
-This should create a file named geckoview-*.aar in your build output folder (MOZ_OBJDIR):
-
-```bash
-ls <your-output-directory>/gradle/build/mobile/android/geckoview/outputs/aar
-geckoview-official-withGeckoBinaries-noMinApi-release.aar
-```
-
-Then all you need to do is point to the AAR in your `build.gradle` file.
-
-```gradle
-repositories {
-    // ...
-
-    flatDir(
-        name: 'localBuild',
-        dirs: '<absolute path to AAR>'
-    )
-}
-// ...
-dependencies {
-    // ...
-    implementation (
-            name: 'geckoview-official-withGeckoBinaries-noMinApi-release',
-            ext: 'aar'
-    )
-    implementation "org.mozilla:geckoview-default:70.0"
-    
-    // ...
-}
-```
-
+**Remember to remove the lines from all `build.gradle` files when you want to return to using the published GeckoView builds!**
 
 ## Next Steps
 
