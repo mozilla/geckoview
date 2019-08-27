@@ -16,7 +16,7 @@ exclude: true
 
 GeckoView and the underlying Gecko engine have many, many options, switches, and toggles "under the hood".  Automation (and to a lesser extent, debugging) can require configuring the Gecko engine to allow (or disallow) specific actions or features.
 
-Some such actions and features are controlled by the [`GeckoRuntimeSettings`](../javadoc/mozilla-central/org/mozilla/geckoview/GeckoRuntimeSettings.html) instance you configure in your consuming project.  For example, remote debugging web content via the Firefox Developer Tools is configured by [`GeckoRuntimeSettings.Builder#remoteDebuggingEnabled`](../javadoc/mozilla-central/org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#remoteDebuggingEnabled-boolean-)
+Some such actions and features are controlled by the [`GeckoRuntimeSettings`]({{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/GeckoRuntimeSettings.html) instance you configure in your consuming project.  For example, remote debugging web content via the Firefox Developer Tools is configured by [`GeckoRuntimeSettings.Builder#remoteDebuggingEnabled`]({{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#remoteDebuggingEnabled-boolean-)
 
 Not all actions and features have GeckoView API interfaces.  Generally, actions and features that do not have GeckoView API interfaces are not intended for broad usage.  Configuration for these types of things is controlled by:
 - environment variables in GeckoView's runtime environment
@@ -91,7 +91,7 @@ adb shell am clear-debug-app
 
 #### Enabling reading configuration from a file unconditionally
 
-Some applications (for example, web browsers) may want to allow configuration for automation unconditionally, i.e., even when the application is not debuggable, like release builds that have `android:debuggable="false"`.  In such cases, you can use [`GeckoRuntimeSettings.Builder#configFilePath`](../javadoc/mozilla-central/org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#configFilePath-java.lang.String-) to force GeckoView to read configuration from the given file path, like:
+Some applications (for example, web browsers) may want to allow configuration for automation unconditionally, i.e., even when the application is not debuggable, like release builds that have `android:debuggable="false"`.  In such cases, you can use [`GeckoRuntimeSettings.Builder#configFilePath`]({{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#configFilePath-java.lang.String-) to force GeckoView to read configuration from the given file path, like:
 
 ```java
 new GeckoRuntimeSettings.Builder()
@@ -101,7 +101,7 @@ new GeckoRuntimeSettings.Builder()
 
 #### Disabling reading configuration from a file entirely
 
-To force GeckoView to never read configuration from a file, even when the embedding application is debuggable, invoke [`GeckoRuntimeSettings.Builder#configFilePath`](../javadoc/mozilla-central/org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#configFilePath-java.lang.String-)` with an empty path, like:
+To force GeckoView to never read configuration from a file, even when the embedding application is debuggable, invoke [`GeckoRuntimeSettings.Builder#configFilePath`]({{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/GeckoRuntimeSettings.Builder.html#configFilePath-java.lang.String-)` with an empty path, like:
 
 ```java
 new GeckoRuntimeSettings.Builder()
