@@ -11,6 +11,22 @@ exclude: true
 
 # GeckoView API Changelog.
 
+⚠️  breaking change
+
+## v71
+- Added [`onBooleanScalar`][71.1], [`onLongScalar`][71.2],
+  [`onStringScalar`][71.3] to [`RuntimeTelemetry.Delegate`][70.12] to support
+  scalars in streaming telemetry. ⚠️  As part of this change,
+  `onTelemetryReceived` has been renamed to [`onHistogram`][71.4], and
+  [`Metric`][71.5] now takes a type parameter.
+  ([bug 1576730]({{bugzilla}}1576730))
+
+[71.1]: {{javadoc_uri}}/RuntimeTelemetry.Delegate.html#onBooleanScalar-org.mozilla.geckoview.RuntimeTelemetry.Metric-
+[71.2]: {{javadoc_uri}}/RuntimeTelemetry.Delegate.html#onLongScalar-org.mozilla.geckoview.RuntimeTelemetry.Metric-
+[71.3]: {{javadoc_uri}}/RuntimeTelemetry.Delegate.html#onStringScalar-org.mozilla.geckoview.RuntimeTelemetry.Metric-
+[71.4]: {{javadoc_uri}}/RuntimeTelemetry.Delegate.html#onHistogram-org.mozilla.geckoview.RuntimeTelemetry.Metric-
+[71.5]: {{javadoc_uri}}/RuntimeTelemetry.Metric.html
+
 ## v70
 - Added API for session context assignment
   [`GeckoSessionSettings.Builder.contextId`][70.1] and deletion of data related
@@ -56,6 +72,8 @@ exclude: true
   ([bug 1565782]({{bugzilla}}1565782))
 - Added onSlowScript to [`ContentDelegate`][70.23] which allows handling of slow and hung scripts.
   ([bug 1621094]({{bugzilla}}1621094))
+- Added support for Web Push via [`WebPushController`][70.24], [`WebPushDelegate`][70.25], and
+  [`WebPushSubscription`][70.26].
 
 [70.1]: {{javadoc_uri}}/GeckoSessionSettings.Builder.html#contextId-java.lang.String-
 [70.2]: {{javadoc_uri}}/StorageController.html#clearDataForSessionContext-java.lang.String-
@@ -80,6 +98,9 @@ exclude: true
 [70.21]: {{javadoc_uri}}/WebExtensionController.TabDelegate.html#onCloseTab-org.mozilla.geckoview.WebExtension-org.mozilla.geckoview.GeckoSession-
 [70.22]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/remove
 [70.23]: {{javadoc_uri}}/GeckoSession.ContentDelegate.html
+[70.24]: {{javadoc_uri}}/WebPushController.html
+[70.25]: {{javadoc_uri}}/WebPushDelegate.html
+[70.26]: {{javadoc_uri}}/WebPushSubscription.html
 
 ## v69
 - Modified behavior of ['setAutomaticFontSizeAdjustment'][69.1] so that it no 
@@ -323,4 +344,4 @@ exclude: true
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport-android.content.Context-android.os.Bundle-java.lang.String-
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 4199a7a889674d4402926366a7f4fb2f93de5c46
+[api-version]: 0a0ac56ba2b8204077f874e49f4976a12051a18e
