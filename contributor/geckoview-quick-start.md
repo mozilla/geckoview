@@ -79,6 +79,21 @@ Now you're set up and ready to go.
 
 One you have got GeckoView building and running, you will want to start contributing. There is a general guide to [Performing a Bug Fix for Git Developers](contributing-to-mc) for you to follow. To contribute to GeckoView specifically, you will need the following additional information.
 
+### Running tests locally
+
+To ensure that your patch does not break existing functionality in GeckoView, you can run the junit test suite with the following command
+
+```
+./mach geckoview-junit
+```
+
+This command also allows you to run individual tests or test classes, e.g.
+
+```
+./mach geckoview-junit org.mozilla.geckoview.test.NavigationDelegateTest
+./mach geckoview-junit org.mozilla.geckoview.test.NavigationDelegateTest#loadUnknownHost
+```
+
 ### Updating the changelog and API documentation
 
 If the patch that you want to submit changes the public API for GeckoView, you must ensure that the API documentation is kept up to date. To check whether your patch has altered the API, run the following command.
