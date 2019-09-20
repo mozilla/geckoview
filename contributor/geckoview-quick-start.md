@@ -84,17 +84,22 @@ One you have got GeckoView building and running, you will want to start contribu
 If the patch that you want to submit changes the public API for GeckoView, you must ensure that the API documentation is kept up to date. To check whether your patch has altered the API, run the following command.
 
 ```bash
-./mach android api-lint
+./mach lint --linter android-api-lint
 ```
 
 The output of this command will inform you if any changes you have made break the existing API. Review the changes and follow the instructions it provides.
 
-If the linter asks you to update the changelog, please ensure that you follow the correct format for changelog entries. Under the heading for the next release version, add a new entry for the changes that you are making to the API, along with links to any relevant files. i.e.
+If the linter asks you to update the changelog, please ensure that you follow the correct format for changelog entries. Under the heading for the next release version, add a new entry for the changes that you are making to the API, along with links to any relevant files, and bug number e.g.
 
-  ```
-  - Added methods for each setting in [`GeckoSessionSettings`][66.3] 
-  [66.3]: ../GeckoSessionSettings.html
-  ```
+{% raw %}
+```
+- Added [`GeckoRuntimeSettings.Builder#aboutConfigEnabled`][71.12] to control whether or
+  not `about:config` should be available.
+  ([bug 1540065]({{bugzilla}}1540065))
+
+[71.12]: {{javadoc_uri}}/GeckoRuntimeSettings.Builder.html#aboutConfigEnabled-boolean-
+```
+{% endraw %}
 
 ### Submitting to the `try` server
 
