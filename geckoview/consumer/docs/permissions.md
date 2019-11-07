@@ -57,7 +57,7 @@ public class GeckoViewActivity extends AppCompatActivity {
 
 ### Android Permissions
 
-Android permissions are requested whenever a site wants access to a device's navigation or input capabilities.
+Android permissions are requested whenever a site wants access to a device's navigation or input capabilites.
 
 The user will often need to grant these Android permissions to the app alongside granting the Content or Media site permissions.
 

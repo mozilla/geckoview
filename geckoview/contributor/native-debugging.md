@@ -61,7 +61,7 @@ settings append target.exec-search-paths <PATH>/objdir-android-opt/mozglue/build
 
 # Debug Native code in Android Studio
 
-1. The first time you are running a debug session for your app, it's best to start from a completely clean build. Click `Build -> Rebuild Project` to clean and rebuild. You can also choose to remove any existing builds from your emulator to be completely sure, but this may not be necessary.
+1. The first time you are running a debug session for your app, it's best to start from a completely clean build. Click `Build -> Rebuild Project` to clean and rebuild. You can also choose to remove any existing builds from your emulator to be completely sure, but this may not be neccessary.
 2. If using Android Studio visual breakpoints, set your breakpoints in your native code. 
 3. Run the app in debug mode as usual.
 4. When debugging Fennec or geckoview_example, you will almost immediately hit a breakpoint in `ElfLoader.cpp`. This is expected. If you are not using Android Studio visual breakpoints, you can set your breakpoints here using the lldb console that is available now this breakpoint has been hit. To set a breakpoint, select the app tab (if running Dual, there will also be an `<app> java` tab) from the debug window, and then select the `lldb` console tab. Type the following into the console:
