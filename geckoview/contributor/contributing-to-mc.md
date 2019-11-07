@@ -97,7 +97,7 @@ git checkout "your-branch-with-commits"
 arc diff
 ```
 
-* If you have any uncommited files, Arcanist will ask if you want to commit them.
+* If you have any uncommitted files, Arcanist will ask if you want to commit them.
 * If you have any files in the path not added to git Arcanist will ask if you want to ignore them. 
 * After formatting your patch, Arcanist will open a nano/emacs file for you to enter the commit details. If you have many individual git commits in your arcanist diff then the first line of the first commit message will become the patch title, and the rest of the commit, plus the messages for the other commits in the patch will form the summary.
 * Ensure you have entered the bug number against the `Bug #` field.
@@ -138,7 +138,7 @@ git log
 ```bash
 moz-phab submit [start_rev] [end_rev]
 ```
-* You will recieve a Phabricator link for each commit in the set.
+* You will receive a Phabricator link for each commit in the set.
 
 ### Updating a patch
 

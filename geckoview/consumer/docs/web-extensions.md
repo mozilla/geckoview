@@ -323,8 +323,8 @@ This allows bidirectional communication between the app and the WebExtension.
 [17]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions
 [18]: {{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.MessageDelegate.html
 [19]: https://developer.mozilla.org/en-US/docs/Web/Manifest
-[20]: https://github.com/mozilla/geckoview/tree/gh-pages/examples/extensions/MessagingExample/
-[21]: https://github.com/mozilla/geckoview/tree/gh-pages/examples/extensions/PortMessagingExample/
+[20]: https://searchfox.org/mozilla-central/source/mobile/android/examples/extensions/messaging_example/
+[21]: https://searchfox.org/mozilla-central/source/mobile/android/examples/extensions/port_messaging_example/
 [22]: {{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/WebExtension.Flags.html#ALLOW_CONTENT_MESSAGING
 [23]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json
 [24]: {{ site.url }}{{ site.baseurl }}/javadoc/mozilla-central/org/mozilla/geckoview/GeckoRuntime.html
