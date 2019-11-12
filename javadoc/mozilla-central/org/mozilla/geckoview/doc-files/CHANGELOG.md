@@ -17,8 +17,12 @@ exclude: true
 - Added [`GeckoSession.NavigationDelegate.LoadRequest#hasUserGesture`][72.1]. This indicates
   if a load was requested while a user gesture was active (e.g., a tap).
   ([bug 1555337]({{bugzilla}}1555337))
+- ⚠️  Refactored `AutofillElement` and `AutofillSupport` into the
+  [`Autofill`][72.2] API.
+  ([bug 1591462]({{bugzilla}}1591462))
 
 [72.1]: {{javadoc_uri}}/GeckoSession.NavigationDelegate.LoadRequest#hasUserGesture-
+[72.2]: {{javadoc_uri}}/Autofill.html
 
 ## v71
 - Added a content blocking flag for blocked social cookies to [`ContentBlocking`][70.17].
@@ -414,4 +418,4 @@ exclude: true
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport-android.content.Context-android.os.Bundle-java.lang.String-
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: c01c3629db0185ce919b026400328804d27985a6
+[api-version]: df2caa160412647457546a27c33e2dd6d016cc28
