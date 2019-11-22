@@ -98,7 +98,7 @@ git config fetch.prune true
 git config push.default upstream
 ```
 
-* Add remotes for your repositories. There are several to choose from, `central`, `inbound`, `beta`, `release` etc. but in reality, if you plan on using Phabricator, which is Firefox's preferred patch submission system, you only need to set up `central`. It might be advisable to have access to `inbound` however, if you want to work on a version of Firefox that is queued for release. This guide will be focussed on Phabricator.
+* Add remotes for your repositories. There are several to choose from, `central`, `inbound`, `beta`, `release` etc. but in reality, if you plan on using Phabricator, which is Firefox's preferred patch submission system, you only need to set up `central`. It might be advisable to have access to `inbound` however, if you want to work on a version of Firefox that is queued for release. This guide will be focused on Phabricator.
 
 ```bash
 git remote add central hg::https://hg.mozilla.org/mozilla-central -t branches/default/tip
