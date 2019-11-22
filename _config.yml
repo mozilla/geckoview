@@ -1,7 +1,7 @@
 title: GeckoView
 email: etoop@mozilla.com
 description:
-  The privacy focussed WebView you've been looking for.
+  The privacy focused WebView you've been looking for.
 baseurl: "/geckoview" # the subpath of your site, e.g. /blog
 url: "https://mozilla.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: geckoview
@@ -16,5 +16,3 @@ plugins:
   - jekyll-seo-tag
 
 search_enabled: true
-
-source: ./geckoview
