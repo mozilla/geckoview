@@ -17,9 +17,25 @@ exclude: true
 - Added [`WebExtensionController.enable`][74.1] and [`disable`][74.2] to
   enable and disable extensions.
   ([bug 1599585]({{bugzilla}}1599585))
+- ⚠️ Added ['GeckoSession.ProgressDelegate.SecurityInformation#certificate'][74.3], which is the
+  full server certificate in use, if any. The other certificate-related fields were removed.
+  ([bug 1508730]({{bugzilla}}1508730))
+- Added ['WebResponse#isSecure'][74.4], which indicates whether or not the response was
+  delivered over a secure connection.
+  ([bug 1508730]({{bugzilla}}1508730))
+- Added ['WebResponse#certificate'][74.5], which is the server certificate used for the
+  response, if any.
+  ([bug 1508730]({{bugzilla}}1508730))
+- Added ['WebRequestError#certificate'][74.6], which is the server certificate used in the
+  failed request, if any.
+  ([bug 1508730]({{bugzilla}}1508730))
 
 [74.1]: {{javadoc_uri}}/WebExtensionController.html#enable-org.mozilla.geckoview.WebExtension-int-
 [74.2]: {{javadoc_uri}}/WebExtensionController.html#disable-org.mozilla.geckoview.WebExtension-int-
+[74.3]: {{javadoc_uri}}/GeckoSession.ProgressDelegate.SecurityInformation.html#certificate
+[74.4]: {{javadoc_uri}}/WebResponse.html#isSecure
+[74.5]: {{javadoc_uri}}/WebResponse.html#certificate
+[74.6]: {{javadoc_uri}}/WebRequestError.html#certificate
 
 ## v73
 - Added [`WebExtensionController.install`][73.1] and [`uninstall`][73.2] to
@@ -530,4 +546,4 @@ exclude: true
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport-android.content.Context-android.os.Bundle-java.lang.String-
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 45f21fe6c3c30f903b65a573540901e8f45affca
+[api-version]: 2434a7ef025c83277375987321b4182ed75ab948
