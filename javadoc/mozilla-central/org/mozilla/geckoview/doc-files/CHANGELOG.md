@@ -11,7 +11,15 @@ exclude: true
 
 # GeckoView API Changelog.
 
-⚠️  breaking change
+⚠️  breaking change and deprecation notices
+
+## v78
+- Added [`WebExtensionController.installBuiltIn`][78.1] that allows installing an
+  extension that is bundled with the APK. This method is meant as a replacement
+  for [`GeckoRuntime.registerWebExtension`][67.15], ⚠️ which is now deprecated
+  and will be removed in GeckoView 81.
+
+[78.1]: {{javadoc_uri}}/WebExtensionController.html#installBuiltIn-java.lang.String-
 
 ## v77
 - Added [`GeckoRuntime.appendAppNotesToCrashReport`][77.1] For adding app notes to the crash report.
@@ -675,4 +683,4 @@ exclude: true
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport-android.content.Context-android.os.Bundle-java.lang.String-
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 562c75192093098207d596f83a159dcb9df2d3e6
+[api-version]: b4568ed7ee3ee43aa741a01cb4571379d0399299
