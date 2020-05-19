@@ -22,10 +22,11 @@ That is where GeckoView comes in. GeckoView is:
 
 ## API Documentation
 
-* [Changelog](https://mozilla.github.io/geckoview/javadoc/mozilla-central/org/mozilla/geckoview/doc-files/CHANGELOG)
-* [API](https://firefox-source-docs.mozilla.org/index.html)
+* [Changelog](javadoc/mozilla-central/org/mozilla/geckoview/doc-files/CHANGELOG)
+* [API](javadoc/mozilla-central/index.html)
 
 ## More information
+* Talk to us on [Riot](https://chat.mozilla.org/#/room/#geckoview:mozilla.org)
 * [GeckoView Wiki][1]
 * [GeckoView Source Code][2]
 * [Raise a bug on GeckoView code][3]
