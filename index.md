@@ -26,7 +26,7 @@ That is where GeckoView comes in. GeckoView is:
 * [API](javadoc/mozilla-central/index.html)
 
 ## More information
-* Talk to us on [Riot](https://chat.mozilla.org/#/room/#geckoview:mozilla.org)
+* Talk to us on [Matrix](https://chat.mozilla.org/#/room/#geckoview:mozilla.org)
 * [GeckoView Wiki][1]
 * [GeckoView Source Code][2]
 * [Raise a bug on GeckoView code][3]
