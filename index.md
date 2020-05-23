@@ -17,8 +17,8 @@ That is where GeckoView comes in. GeckoView is:
 
 ## Using GeckoView
 
-* [Quick Start Guide](https://firefox-source-docs.mozilla.org/mobile/android/geckoview/consumer/docs/geckoview-quick-start.html)
-* [Usage Documentation](https://firefox-source-docs.mozilla.org/mobile/android/geckoview/consumer/docs/index.html)
+* [Quick Start Guide](https://firefox-source-docs.mozilla.org/mobile/android/geckoview/consumer/geckoview-quick-start.html)
+* [Usage Documentation](https://firefox-source-docs.mozilla.org/mobile/android/geckoview/consumer/index.html)
 
 ## API Documentation
 
