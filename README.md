@@ -27,13 +27,13 @@ If you have a GeckoView bug that you want to raise, please do so on our [Bugzill
 You can read more about GeckoView on the [wiki](https://wiki.mozilla.org/Mobile/GeckoView).
 
 
-[1]:https://geckoview.dev/consumer/docs/geckoview-quick-start
+[1]:https://firefox-source-docs.mozilla.org/mobile/android/geckoview/consumer/geckoview-quick-start.html
 [2]:https://geckoview.dev/javadoc/mozilla-central/org/mozilla/geckoview/doc-files/CHANGELOG
-[3]:https://geckoview.dev/contributor/geckoview-quick-start
-[4]:https://geckoview.dev/contributor/mc-quick-start
-[5]:https://geckoview.dev/contributor/contributing-to-mc
-[6]:https://geckoview.dev/contributor/native-debugging
-[7]:https://geckoview.dev/consumer/docs/web-extensions
+[3]:https://firefox-source-docs.mozilla.org/mobile/android/geckoview/contributor/geckoview-quick-start.html
+[4]:https://firefox-source-docs.mozilla.org/mobile/android/geckoview/contributor/mc-quick-start.html
+[5]:https://firefox-source-docs.mozilla.org/mobile/android/geckoview/contributor/contributing-to-mc.html
+[6]:https://firefox-source-docs.mozilla.org/mobile/android/geckoview/contributor/native-debugging.html
+[7]:https://firefox-source-docs.mozilla.org/mobile/android/geckoview/consumer/web-extensions.html
 [8]:https://geckoview.dev
 [9]:https://searchfox.org/mozilla-central/source/mobile/android/geckoview
 [10]:https://github.com/mozilla/geckoview/issues
