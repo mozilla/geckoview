@@ -23,12 +23,14 @@ exclude: true
 - ⚠️ [`GeckoPreferenceController`][140.1] is now annotated with `@ExperimentalGeckoViewApi`.
 - Added `setAllowListBaselineTrackingProtection`, `getAllowListBaselineTrackingProtection`, `setAllowListConvenienceTrackingProtection`, `setAllowListConvenienceTrackingProtection` to [`ContentBlocking.Settings`][142.5].
   ([bug 1970649]({{bugzilla}}1970649))
+- Added support for data collection permissions to [`WebExtensionController.onUpdatePrompt`][142.6] ([bug 1974742]({{bugzilla}}1974742))
 
-[142.1]: {{javadoc_uri}}/WebExtensionController.html#onOptionalPrompt
+[142.1]: {{javadoc_uri}}/WebExtensionController.PromptDelegate.html#onOptionalPrompt(org.mozilla.geckoview.WebExtension,java.lang.String[],java.lang.String[],java.lang.String[])
 [142.2]: {{javadoc_uri}}/ContentBlocking.html
 [142.3]: {{javadoc_uri}}/WebExtension.html
 [142.4]: {{javadoc_uri}}/ExperimentalGeckoViewApi.html
 [142.5]: {{javadoc_uri}}/ContentBlocking.html
+[142.6]: {{javadoc_uri}}/WebExtensionController.PromptDelegate.html#onUpdatePrompt(org.mozilla.geckoview.WebExtension,java.lang.String[],java.lang.String[],java.lang.String[])
 
 ## v141
 - Changed the methods in [`ProfilerController`][141.1] to static.
@@ -1796,4 +1798,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 61228c0f040006275463b39eb178628a35cd728c
+[api-version]: f97051e0321472fb865c7f70a56e579387b407e5
