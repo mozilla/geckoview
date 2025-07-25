@@ -13,6 +13,11 @@ exclude: true
 
 ⚠️  breaking change and deprecation notices
 
+## v143
+- Added an option to set multiple preferences on [`GeckoPreferenceController`][140.1] as [`checkStateAndSetGeckoPrefs`][143.1].
+
+[143.1]: {{javadoc_uri}}/GeckoPreferenceController.html#setGeckoPrefs(java.util.List)
+
 ## v142
 - Added support for data collection permissions to [`WebExtensionController.onOptionalPrompt`][142.1] ([bug 1964999]({{bugzilla}}1964999))
 - ⚠️ Removed deprecated functions that were scheduled for removal in GeckoView 142. ([bug 1963053]({{bugzilla}}1963053))
@@ -1798,4 +1803,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 21836a1acad9b070527a3cf83e9eb7d1066777f0
+[api-version]: d648eeb724018b748f1a3d911f0e38408983f01a
