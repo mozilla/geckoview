@@ -15,8 +15,10 @@ exclude: true
 
 ## v143
 - Added an option to set multiple preferences on [`GeckoPreferenceController`][140.1] as [`checkStateAndSetGeckoPrefs`][143.1].
+- Added [`WebNotification.origin`][143.2] that shows the origin of the notification. ([bug 1976269]({{bugzilla}}1976269))
 
 [143.1]: {{javadoc_uri}}/GeckoPreferenceController.html#setGeckoPrefs(java.util.List)
+[143.2]: {{javadoc_uri}}/WebNotification.html#origin
 
 ## v142
 - Added support for data collection permissions to [`WebExtensionController.onOptionalPrompt`][142.1] ([bug 1964999]({{bugzilla}}1964999))
@@ -1803,4 +1805,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: d648eeb724018b748f1a3d911f0e38408983f01a
+[api-version]: 8c09851793015cc778fa17daeef90bbb5952bc0f
