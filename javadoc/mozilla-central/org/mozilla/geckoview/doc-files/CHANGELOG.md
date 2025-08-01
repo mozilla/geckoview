@@ -16,6 +16,7 @@ exclude: true
 ## v143
 - Added an option to set multiple preferences on [`GeckoPreferenceController`][140.1] as [`checkStateAndSetGeckoPrefs`][143.1].
 - Added [`WebNotification.origin`][143.2] that shows the origin of the notification. ([bug 1976269]({{bugzilla}}1976269))
+- ⚠️ Removed deprecated functions that were scheduled for removal in GeckoView 143. Includes deprecations to versions of `onInstallPromptRequest`, `removeOptionalPermissions`, `addOptionalPermissions`, `PermissionPromptResponse()`, and `CertificateRequest()`. ([bug 1980176]({{bugzilla}}1980176))
 
 [143.1]: {{javadoc_uri}}/GeckoPreferenceController.html#setGeckoPrefs(java.util.List)
 [143.2]: {{javadoc_uri}}/WebNotification.html#origin
@@ -1805,4 +1806,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 8c09851793015cc778fa17daeef90bbb5952bc0f
+[api-version]: 33e9af3eb74a1dd27d099ad08fb02b4595351095
