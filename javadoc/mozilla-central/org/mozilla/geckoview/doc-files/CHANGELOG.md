@@ -16,12 +16,14 @@ exclude: true
 ## v144
 - Added [`GeckoSession.flushSessionState()`][144.1] to immediately notify the registered [`GeckoSession.ProgressDelegate`][144.2] and [`GeckoSession.HistoryDelegate`][144.3] of the current session state.
 - Added [`GeckoRuntimeSettings.getIsolatedProcessEnabled`][144.4] and [`GeckoRuntimeSettings.Builder.isolatedProcessEnabled`][144.5] to control whether content service runs on isolated process or not.
+- Added [`ContentBlocking.GOOGLE_SAFE_BROWSING_V5_PROVIDER`][144.6] for the configuration of the SafeBrowsing V5 provider
 
 [144.1]: {{javadoc_uri}}/GeckoSession.html#flushSessionState()
 [144.2]: {{javadoc_uri}}/GeckoSession.ProgressDelegate.html
 [144.3]: {{javadoc_uri}}/GeckoSession.HistoryDelegate.html
 [144.4]: {{javadoc_uri}}/GeckoRuntimeSettings.html#getIsolatedProcessEnabled
 [144.5]: {{javadoc_uri}}/GeckoRuntimeSettings.Builder.html#isolatedProcessEnabled(boolean)
+[144.6]: {{javadoc_uri}}/ContentBlocking.SafeBrowsingProvider.html
 
 ## v143
 - Added an option to set multiple preferences on [`GeckoPreferenceController`][140.1] as [`checkStateAndSetGeckoPrefs`][143.1].
@@ -1823,4 +1825,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: c0f005a162433f241db004dc64ad8c0ba2417129
+[api-version]: 7e7096bbfe4ade17e9467746ccdb909e2dbe37f8
