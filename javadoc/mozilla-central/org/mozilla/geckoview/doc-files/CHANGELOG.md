@@ -20,6 +20,7 @@ exclude: true
 - ⚠️ Removed deprecated `onOptionalPrompt` function signature. ([bug 1972510]({{bugzilla}}1972510))
 - ⚠️ Removed deprecated `onUpdatePrompt` function signature. ([bug 1974744]({{bugzilla}}1974744))
 - Added [`RequiresApi`][144.7] annotations to APIs.
+- Added `appLinkLaunchType` to [`GeckoSession.Loader`][144.8] to set the launch type of the app session for the load.([bug 1982622]({{bugzilla}}1982622))
 
 [144.1]: {{javadoc_uri}}/GeckoSession.html#flushSessionState()
 [144.2]: {{javadoc_uri}}/GeckoSession.ProgressDelegate.html
@@ -28,6 +29,7 @@ exclude: true
 [144.5]: {{javadoc_uri}}/GeckoRuntimeSettings.Builder.html#isolatedProcessEnabled(boolean)
 [144.6]: {{javadoc_uri}}/ContentBlocking.SafeBrowsingProvider.html
 [144.7]: https://developer.android.com/reference/androidx/annotation/RequiresApi
+[144.8]: {{javadoc_uri}}/GeckoSession.Loader.html#appLinkLaunchType(int)
 
 ## v143
 - Added an option to set multiple preferences on [`GeckoPreferenceController`][140.1] as [`checkStateAndSetGeckoPrefs`][143.1].
@@ -1829,4 +1831,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: a65be4cb5d4141092fe8845b560ab94d164005d9
+[api-version]: 187798664518b31b6162985a09711e1fe9a58c95
