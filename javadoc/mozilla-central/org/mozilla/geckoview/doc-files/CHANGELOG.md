@@ -13,6 +13,11 @@ exclude: true
 
 ⚠️  breaking change and deprecation notices
 
+## v145
+- Added [`WebNotification.show`][145.1]. Implementations of `WebNotificationDelegate.onShowNotification` should now call either `show` when the notification is successfully opened, or `dismiss` if it failed.
+
+[145.1]: {{javadoc_uri}}/WebNotification.html#show
+
 ## v144
 - Added [`GeckoSession.flushSessionState()`][144.1] to immediately notify the registered [`GeckoSession.ProgressDelegate`][144.2] and [`GeckoSession.HistoryDelegate`][144.3] of the current session state.
 - Added [`GeckoRuntimeSettings.getIsolatedProcessEnabled`][144.4] and [`GeckoRuntimeSettings.Builder.isolatedProcessEnabled`][144.5] to control whether content service runs on isolated process or not.
@@ -1833,4 +1838,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 04d98a6fde27208879a043d92b188e6ddaf4210a
+[api-version]: 7688eae06f3f585d981c93bd1cabe99120ba19b5
