@@ -15,8 +15,12 @@ exclude: true
 
 ## v145
 - Added [`WebNotification.show`][145.1]. Implementations of `WebNotificationDelegate.onShowNotification` should now call either `show` when the notification is successfully opened, or `dismiss` if it failed.
+- Added [`WebExtension.InvalidMetaDataException`][145.2]. ([bug 1981496]({{bugzilla}}1981496))
+- Added [`GeckoSession.PromptDelegate.RedirectPrompt`][145.3] to display a prompt when a third-party redirect is blocked.
 
 [145.1]: {{javadoc_uri}}/WebNotification.html#show
+[145.2]: {{javadoc_uri}}/WebExtension.InvalidMetaDataException.html
+[145.3]: {{javadoc_uri}}/GeckoSession.PromptDelegate.RedirectPrompt.html
 
 ## v144
 - Added [`GeckoSession.flushSessionState()`][144.1] to immediately notify the registered [`GeckoSession.ProgressDelegate`][144.2] and [`GeckoSession.HistoryDelegate`][144.3] of the current session state.
@@ -26,7 +30,6 @@ exclude: true
 - ⚠️ Removed deprecated `onUpdatePrompt` function signature. ([bug 1974744]({{bugzilla}}1974744))
 - Added [`RequiresApi`][144.7] annotations to APIs.
 - Added `appLinkLaunchType` to [`GeckoSession.Loader`][144.8] to set the launch type of the app session for the load.([bug 1982622]({{bugzilla}}1982622))
-- Added [`GeckoSession.PromptDelegate.RedirectPrompt`][144.9] to display a prompt when a third-party redirect is blocked.
 
 [144.1]: {{javadoc_uri}}/GeckoSession.html#flushSessionState()
 [144.2]: {{javadoc_uri}}/GeckoSession.ProgressDelegate.html
@@ -36,7 +39,6 @@ exclude: true
 [144.6]: {{javadoc_uri}}/ContentBlocking.SafeBrowsingProvider.html
 [144.7]: https://developer.android.com/reference/androidx/annotation/RequiresApi
 [144.8]: {{javadoc_uri}}/GeckoSession.Loader.html#appLinkLaunchType(int)
-[144.9]: {{javadoc_uri}}/GeckoSession.PromptDelegate.RedirectPrompt.html
 
 ## v143
 - Added an option to set multiple preferences on [`GeckoPreferenceController`][140.1] as [`checkStateAndSetGeckoPrefs`][143.1].
@@ -1838,4 +1840,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 7688eae06f3f585d981c93bd1cabe99120ba19b5
+[api-version]: d618af14d4ebf592db8cfafdf5e89e2bf6616d7a
