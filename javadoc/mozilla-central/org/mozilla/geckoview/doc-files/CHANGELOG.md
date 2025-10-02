@@ -17,10 +17,12 @@ exclude: true
 - Added [`WebNotification.show`][145.1]. Implementations of `WebNotificationDelegate.onShowNotification` should now call either `show` when the notification is successfully opened, or `dismiss` if it failed.
 - Added [`WebExtension.InvalidMetaDataException`][145.2]. ([bug 1981496]({{bugzilla}}1981496))
 - Added [`GeckoSession.PromptDelegate.RedirectPrompt`][145.3] to display a prompt when a third-party redirect is blocked.
+- Added support for controlling `security.pki.crlite_channel` via [`GeckoRuntimeSettings.setCrliteChannel`][145.4]
 
 [145.1]: {{javadoc_uri}}/WebNotification.html#show
 [145.2]: {{javadoc_uri}}/WebExtension.InvalidMetaDataException.html
 [145.3]: {{javadoc_uri}}/GeckoSession.PromptDelegate.RedirectPrompt.html
+[145.4]: {{javadoc_uri}}/GeckoRuntimeSettings.html#setCrliteChannel
 
 ## v144
 - Added [`GeckoSession.flushSessionState()`][144.1] to immediately notify the registered [`GeckoSession.ProgressDelegate`][144.2] and [`GeckoSession.HistoryDelegate`][144.3] of the current session state.
@@ -1840,4 +1842,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: d618af14d4ebf592db8cfafdf5e89e2bf6616d7a
+[api-version]: a15af3b5439f5bed524e92e4c59c52d139d435a8
