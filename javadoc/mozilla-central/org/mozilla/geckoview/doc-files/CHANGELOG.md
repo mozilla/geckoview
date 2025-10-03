@@ -18,11 +18,13 @@ exclude: true
 - Added [`WebExtension.InvalidMetaDataException`][145.2]. ([bug 1981496]({{bugzilla}}1981496))
 - Added [`GeckoSession.PromptDelegate.RedirectPrompt`][145.3] to display a prompt when a third-party redirect is blocked.
 - Added support for controlling `security.pki.crlite_channel` via [`GeckoRuntimeSettings.setCrliteChannel`][145.4]
+- Changed certificate transparency information in TLS connections to now be required by default. This can be controlled by the [`GeckoRuntimeSettings.setCertificateTransparencyMode`][145.5] API.
 
 [145.1]: {{javadoc_uri}}/WebNotification.html#show
 [145.2]: {{javadoc_uri}}/WebExtension.InvalidMetaDataException.html
 [145.3]: {{javadoc_uri}}/GeckoSession.PromptDelegate.RedirectPrompt.html
 [145.4]: {{javadoc_uri}}/GeckoRuntimeSettings.html#setCrliteChannel
+[145.5]: {{javadoc_uri}}/GeckoRuntimeSettings.html#setCertificateTransparencyMode
 
 ## v144
 - Added [`GeckoSession.flushSessionState()`][144.1] to immediately notify the registered [`GeckoSession.ProgressDelegate`][144.2] and [`GeckoSession.HistoryDelegate`][144.3] of the current session state.
