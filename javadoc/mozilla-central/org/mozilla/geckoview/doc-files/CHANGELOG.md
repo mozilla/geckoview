@@ -34,6 +34,7 @@ exclude: true
 - ⚠️ Removed deprecated `onUpdatePrompt` function signature. ([bug 1974744]({{bugzilla}}1974744))
 - Added [`RequiresApi`][144.7] annotations to APIs.
 - Added `appLinkLaunchType` to [`GeckoSession.Loader`][144.8] to set the launch type of the app session for the load.([bug 1982622]({{bugzilla}}1982622))
+- ⭐ Support for [`16 KB page sizes`][144.9] is now available.
 
 [144.1]: {{javadoc_uri}}/GeckoSession.html#flushSessionState()
 [144.2]: {{javadoc_uri}}/GeckoSession.ProgressDelegate.html
@@ -43,6 +44,7 @@ exclude: true
 [144.6]: {{javadoc_uri}}/ContentBlocking.SafeBrowsingProvider.html
 [144.7]: https://developer.android.com/reference/androidx/annotation/RequiresApi
 [144.8]: {{javadoc_uri}}/GeckoSession.Loader.html#appLinkLaunchType(int)
+[144.9]: https://developer.android.com/guide/practices/page-sizes
 
 ## v143
 - Added an option to set multiple preferences on [`GeckoPreferenceController`][140.1] as [`checkStateAndSetGeckoPrefs`][143.1].
