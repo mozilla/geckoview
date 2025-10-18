@@ -15,6 +15,7 @@ exclude: true
 
 ## v146
 - Added `getSafeBrowsingV5Enabled` and `setSafeBrowsingV5Enabled` to [`ContentBlocking.Settings`][146.1] to control whether to use the SafeBrowsing V5 protocol to access the Google SafeBrowsing service.
+- Added [`Autocomplete.AddressStructure`][146.2] API used to retrieve the structure of an address for a given country.
 
 [146.1]: {{javadoc_uri}}/ContentBlocking.html
 
@@ -1851,4 +1852,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 934d10cc9408a3ac9eed888409108ac06b540280
+[api-version]: dcffdbd2bcd2bf198da5645acf5fb0908beac9f7
