@@ -16,8 +16,12 @@ exclude: true
 ## v146
 - Added `getSafeBrowsingV5Enabled` and `setSafeBrowsingV5Enabled` to [`ContentBlocking.Settings`][146.1] to control whether to use the SafeBrowsing V5 protocol to access the Google SafeBrowsing service.
 - Added [`Autocomplete.AddressStructure`][146.2] API used to retrieve the structure of an address for a given country.
+- Added [`GeckoRuntimeSettings.getAppZygoteProcessEnabled`][146.3] and [`GeckoRuntimeSettings.Builder.appZygoteProcessEnabled`][146.4] to control whether content service runs using App Zygote preloading or not.
 
 [146.1]: {{javadoc_uri}}/ContentBlocking.html
+[146.2]: {{javadoc_uri}}/Autocomplete.AddressStructure.html
+[146.3]: {{javadoc_uri}}/GeckoRuntimeSettings.html#getAppZygoteProcessEnabled
+[146.4]: {{javadoc_uri}}/GeckoRuntimeSettings.Builder.html#appZygoteProcessEnabled(boolean)
 
 ## v145
 - Added [`WebNotification.show`][145.1]. Implementations of `WebNotificationDelegate.onShowNotification` should now call either `show` when the notification is successfully opened, or `dismiss` if it failed.
@@ -33,7 +37,6 @@ exclude: true
 [145.5]: {{javadoc_uri}}/GeckoRuntimeSettings.html#setCertificateTransparencyMode
 
 ## v144
-- Added [`GeckoSession.flushSessionState()`][144.1] to immediately notify the registered [`GeckoSession.ProgressDelegate`][144.2] and [`GeckoSession.HistoryDelegate`][144.3] of the current session state.
 - Added [`GeckoRuntimeSettings.getIsolatedProcessEnabled`][144.4] and [`GeckoRuntimeSettings.Builder.isolatedProcessEnabled`][144.5] to control whether content service runs on isolated process or not.
 - Added [`ContentBlocking.GOOGLE_SAFE_BROWSING_V5_PROVIDER`][144.6] for the configuration of the SafeBrowsing V5 provider
 - ⚠️ Removed deprecated `onOptionalPrompt` function signature. ([bug 1972510]({{bugzilla}}1972510))
@@ -1852,4 +1855,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: dcffdbd2bcd2bf198da5645acf5fb0908beac9f7
+[api-version]: bfecdf1c171f62dba8161757bdb91d3345b9283c
