@@ -13,6 +13,28 @@ exclude: true
 
 ⚠️  breaking change and deprecation notices
 
+## v147
+- Changed Local Network / Device Access APIs in `GeckoRuntimeSettings` & `GeckoRuntimeSettings.Builder` for more granularity
+    - Added new APIs in `GeckoRuntimeSettings`
+        - [`setLnaEnabled`][147.1] & [`getLnaEnabled`][147.2]
+        - [`setLnaBlockTrackers`][147.3] & [`getLnaBlockTrackers`][147.4]
+        - [`setLnaBlocking`][147.5] & [`getLnaBlocking`][147.6]
+    - Added corresponding APIs in `GeckoRuntimeSettings.Builder`
+        - [`setLnaEnabled`][147.7]
+        - [`setLnaBlockTrackers`][147.8]
+        - [`setLnaBlocking`][147.9]
+    - ⚠️ Deprecated `GeckoRuntimeSettings.Builder.setLnaBlockingEnabled`, `GeckoRuntimeSettings.setLnaBlockingEnabled` and `GeckoRuntimeSettings.getLnaBlockingEnabled` APIs.
+
+[147.1]: {{javadoc_uri}}/GeckoRuntimeSettings.html#setLnaEnabled(boolean)
+[147.2]: {{javadoc_uri}}/GeckoRuntimeSettings.html#getLnaEnabled
+[147.3]: {{javadoc_uri}}/GeckoRuntimeSettings.html#setLnaBlockTrackers(boolean)
+[147.4]: {{javadoc_uri}}/GeckoRuntimeSettings.html#getLnaBlockTrackers
+[147.5]: {{javadoc_uri}}/GeckoRuntimeSettings.html#setLnaBlocking(boolean)
+[147.6]: {{javadoc_uri}}/GeckoRuntimeSettings.html#getLnaBlocking
+[147.7]: {{javadoc_uri}}/GeckoRuntimeSettings.Builder.html#setLnaEnabled(boolean)
+[147.8]: {{javadoc_uri}}/GeckoRuntimeSettings.Builder.html#setLnaBlockTrackers(boolean)
+[147.9]: {{javadoc_uri}}/GeckoRuntimeSettings.Builder.html#setLnaBlocking(boolean)
+
 ## v146
 - Added `getSafeBrowsingV5Enabled` and `setSafeBrowsingV5Enabled` to [`ContentBlocking.Settings`][146.1] to control whether to use the SafeBrowsing V5 protocol to access the Google SafeBrowsing service.
 - Added [`Autocomplete.AddressStructure`][146.2] API used to retrieve the structure of an address for a given country.
@@ -1855,4 +1877,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 0b8df0addbfebea852867d9ded1548f2b365839d
+[api-version]: 1ec5960c50a5a9f6d11f0444d96ad04478fd9857
