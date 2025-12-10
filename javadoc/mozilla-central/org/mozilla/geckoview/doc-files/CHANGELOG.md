@@ -16,6 +16,7 @@ exclude: true
 ## v148
 - Introduce the harmful-addon URL-Classifier feature
         - [`HARMFULADDON`][148.1]
+- ⚠️ Remove deprecated `GeckoRuntimeSettings.Builder.setLnaBlockingEnabled`, `GeckoRuntimeSettings.setLnaBlockingEnabled` and `GeckoRuntimeSettings.getLnaBlockingEnabled` APIs. Alternatives were introduced in v147.
 
 [148.1]: {{javadoc_uri}}/ContentBlocking.SafeBrowsing.html#HARMFULADDON
 
@@ -1883,4 +1884,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 06cc6fd405532b3517d633ecee744d74223c6bc2
+[api-version]: d32e6e204686a16db974861a7ce2ed06bc8147fc
