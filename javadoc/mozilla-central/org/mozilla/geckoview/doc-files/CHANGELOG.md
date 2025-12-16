@@ -17,8 +17,16 @@ exclude: true
 - Introduce the harmful-addon URL-Classifier feature
         - [`HARMFULADDON`][148.1]
 - ⚠️ Remove deprecated `GeckoRuntimeSettings.Builder.setLnaBlockingEnabled`, `GeckoRuntimeSettings.setLnaBlockingEnabled` and `GeckoRuntimeSettings.getLnaBlockingEnabled` APIs. Alternatives were introduced in v147.
+- Added [`linkText`][148.2] to [`ContentDelegate.ContextElement`][65.21] and a new [`constructor`][148.3] to [`ContentDelegate.ContextElement`][65.21]
+- ⚠️ Deprecated [`ContentDelegate.ContextElement`][148.4] constructor.
+- ⚠️ Deprecated [`ContentDelegate.ContextElement.textContent`][148.5].
+- ⚠️ Removed superfluous constructor overload for [`ContentDelegate.ContextElement`]
 
 [148.1]: {{javadoc_uri}}/ContentBlocking.SafeBrowsing.html#HARMFULADDON
+[148.2]: {{javadoc_uri}}/GeckoSession.ContentDelegate.ContextElement.html#linkText
+[148.3]: {{javadoc_uri}}/GeckoSession.ContentDelegate.ContextElement.html#<init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[148.4]: {{javadoc_uri}}/GeckoSession.ContentDelegate.ContextElement.html#<init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[148.5]: {{javadoc_uri}}/GeckoSession.ContentDelegate.ContextElement.html#textContent
 
 ## v147
 - Changed Local Network / Device Access APIs in `GeckoRuntimeSettings` & `GeckoRuntimeSettings.Builder` for more granularity
@@ -1884,4 +1892,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: d32e6e204686a16db974861a7ce2ed06bc8147fc
+[api-version]: c3ca86b7e2f375d68aa9ce29504debdb17c6500f
