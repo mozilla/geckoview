@@ -1865,6 +1865,7 @@ to allow adding gecko profiler markers.
   [`GeckoSession.FinderResult`][65.23] to non-final class.
 - Update [`CrashReporter#sendCrashReport`][65.24] to return the crash ID as a
   [`GeckoResult<String>`][65.25].
+- Add FirefoxRelay field-detection hinting to Autocomplete interface
 
 [65.1]: {{javadoc_uri}}/CompositorController.html
 [65.2]: {{javadoc_uri}}/DynamicToolbarAnimator.html
@@ -1892,4 +1893,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: c3ca86b7e2f375d68aa9ce29504debdb17c6500f
+[api-version]: bb231fff6f1ce8c6f1f10cc89c95439d5ca46b74
