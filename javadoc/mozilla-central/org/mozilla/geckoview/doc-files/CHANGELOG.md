@@ -13,6 +13,12 @@ exclude: true
 
 ⚠️  breaking change and deprecation notices
 
+## v149
+- Introduce the Firefox Relay APIs in `GeckoRuntimeSettings`.
+  - See also the annotation [`GeckoRuntimeSettings.FirefoxRelayMode`][149.1].
+
+[149.1]: {{javadoc_uri}}/GeckoRuntimeSettings.FirefoxRelayMode.html
+
 ## v148
 - Introduce the harmful-addon URL-Classifier feature
         - [`HARMFULADDON`][148.1]
@@ -1893,4 +1899,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: bb231fff6f1ce8c6f1f10cc89c95439d5ca46b74
+[api-version]: 4ce5cbde5dd0d1215a375e247bc1a1f9530ea972
