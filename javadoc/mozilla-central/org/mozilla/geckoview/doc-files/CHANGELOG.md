@@ -17,10 +17,14 @@ exclude: true
 - Introduce the Firefox Relay APIs in `GeckoRuntimeSettings`.
   - See also the annotation [`GeckoRuntimeSettings.FirefoxRelayMode`][149.1].
 - Added experimental [`PageExtractionController`][149.2] and [`SessionPageExtractor`][149.3] for extracting the text content of a page
+- Added [`processBackPressed`][149.4] to handle [`CloseWatcher`][149.5].
+  ([bug 1966467]({{bugzilla}}1966467))
 
 [149.1]: {{javadoc_uri}}/GeckoRuntimeSettings.FirefoxRelayMode.html
 [149.2]: {{javadoc_uri}}/PageExtractionController.html
 [149.3]: {{javadoc_uri}}/PageExtractionController.SessionPageExtractor.html
+[149.4]: {{javadoc_uri}}/GeckoSession.html#processBackPressed()
+[149.5]: https://developer.mozilla.org/en-US/docs/Web/API/CloseWatcher
 
 ## v148
 - Introduce the harmful-addon URL-Classifier feature
@@ -1902,4 +1906,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 89cad30ba5722f262c87dd364e3a03b665320c55
+[api-version]: cfec2faccb39750a72444521ebae9277703b5974
