@@ -13,6 +13,11 @@ exclude: true
 
 ⚠️  breaking change and deprecation notices
 
+## v150
+- Added [`GeckoSession.qwacStatus`][150.1] API.
+
+[150.1]: {{javadoc_uri}}/GeckoSession.html#qwacStatus()
+
 ## v149
 - Introduce the Firefox Relay APIs in `GeckoRuntimeSettings`.
   - See also the annotation [`GeckoRuntimeSettings.FirefoxRelayMode`][149.1].
@@ -1909,4 +1914,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: b5b4a479d32c07f76d70de08a9280ece977cb606
+[api-version]: 8d64b01d3b204fefe275967a3631bccd02b4a8ad
