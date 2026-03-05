@@ -14,6 +14,7 @@ exclude: true
 ⚠️  breaking change and deprecation notices
 
 ## v150
+- Added support for `COOKIES_PARTITIONED_TRACKER` in the tracking protection blocking log. ([bug 2020898 ]({{bugzilla}}2020898))
 - Added [`GeckoSession.qwacStatus`][150.1] API.
 
 [150.1]: {{javadoc_uri}}/GeckoSession.html#qwacStatus()
@@ -1914,4 +1915,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 8d64b01d3b204fefe275967a3631bccd02b4a8ad
+[api-version]: 6619e212e2316886cc4aaa1d7175580780d8235a
