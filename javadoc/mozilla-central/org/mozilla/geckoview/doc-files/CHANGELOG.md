@@ -16,8 +16,11 @@ exclude: true
 ## v150
 - Added support for `COOKIES_PARTITIONED_TRACKER` in the tracking protection blocking log. ([bug 2020898 ]({{bugzilla}}2020898))
 - Added [`GeckoSession.qwacStatus`][150.1] API.
+- Added [`GeckoRuntime.warmUp`][150.2] method.
+- ⚠️ Creating a GeckoRuntime will no longer eagerly start a child process. You can manually "preallocate" them by calling `GeckoRuntime.warmUp`.
 
 [150.1]: {{javadoc_uri}}/GeckoSession.html#qwacStatus()
+[150.2]: {{javadoc_uri}}/GeckoRuntime.html#warmUp
 
 ## v149
 - Introduce the Firefox Relay APIs in `GeckoRuntimeSettings`.
@@ -1915,4 +1918,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 6619e212e2316886cc4aaa1d7175580780d8235a
+[api-version]: db340825ad3ac6c08c735d5ee48cd0e3b2c64a67
