@@ -18,9 +18,11 @@ exclude: true
 - Added [`GeckoSession.qwacStatus`][150.1] API.
 - Added [`GeckoRuntime.warmUp`][150.2] method.
 - ⚠️ Creating a GeckoRuntime will no longer eagerly start a child process. You can manually "preallocate" them by calling `GeckoRuntime.warmUp`.
+- Added experimental [`AIFeaturesController`][150.3] for coordinating GeckoView AI feature state.
 
 [150.1]: {{javadoc_uri}}/GeckoSession.html#qwacStatus()
 [150.2]: {{javadoc_uri}}/GeckoRuntime.html#warmUp
+[150.3]: {{javadoc_uri}}/AIFeaturesController.html
 
 ## v149
 - Introduce the Firefox Relay APIs in `GeckoRuntimeSettings`.
@@ -1918,4 +1920,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: db340825ad3ac6c08c735d5ee48cd0e3b2c64a67
+[api-version]: 90430ec692108105086d829a726121a4c86c2ba6
