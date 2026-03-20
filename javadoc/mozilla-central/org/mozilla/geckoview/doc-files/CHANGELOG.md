@@ -20,12 +20,16 @@ exclude: true
 - ⚠️ Creating a GeckoRuntime will no longer eagerly start a child process. You can manually "preallocate" them by calling `GeckoRuntime.warmUp`.
 - Added experimental [`AIFeaturesController`][150.3] for coordinating GeckoView AI feature state.
 - ⚠️ Deprecated [`GeckoRuntimeSettings.getDisableShip`][150.4] and [`GeckoRuntimeSettings.Builder.disableShip`][150.5].
+- Added [`PageMetadata`][150.6] to `PageExtractionController` and [`getPageMetadata`][150.7] to [`SessionPageExtractor`][149.3] for retrieving structured metadata about the current page.
+    ([bug 2020508]({{bugzilla}}2020508))
 
 [150.1]: {{javadoc_uri}}/GeckoSession.html#qwacStatus()
 [150.2]: {{javadoc_uri}}/GeckoRuntime.html#warmUp
 [150.3]: {{javadoc_uri}}/AIFeaturesController.html
 [150.4]: {{javadoc_uri}}/GeckoRuntimeSettings.html#getDisableShip()
 [150.5]: {{javadoc_uri}}/GeckoRuntimeSettings.Builder.html#disableShip(boolean)
+[150.6]: {{javadoc_uri}}/PageExtractionController.PageMetadata.html
+[150.7]: {{javadoc_uri}}/PageExtractionController.SessionPageExtractor.html#getPageMetadata()
 
 ## v149
 - Introduce the Firefox Relay APIs in `GeckoRuntimeSettings`.
@@ -1923,4 +1927,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 7dc94227dabeebc8f3dde151a497559761add11d
+[api-version]: e6b61ff3aade33dd664b0669bb8b0f80d4908bbe
