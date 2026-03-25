@@ -13,6 +13,9 @@ exclude: true
 
 ⚠️  breaking change and deprecation notices
 
+## v151
+- Added `isBlocked` to `AIFeature` on [`AIFeaturesController`][150.3].
+
 ## v150
 - Added support for `COOKIES_PARTITIONED_TRACKER` in the tracking protection blocking log. ([bug 2020898 ]({{bugzilla}}2020898))
 - Added [`GeckoSession.qwacStatus`][150.1] API.
@@ -1929,4 +1932,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 1eb1333cb780bbbb8cb75bb7c7cb15cd2672bad0
+[api-version]: 2dcf13db77e4cbb8f3a4eb7c5b930b0351cf359c
