@@ -15,6 +15,11 @@ exclude: true
 
 ## v151
 - Added `isBlocked` to `AIFeature` on [`AIFeaturesController`][150.3].
+- ⚠️ Remove deprecated `ContentDelegate.ContextElement` constructor.
+- ⚠️ Removed deprecated `ContentDelegate.ContextElement.textContent`.
+- ⚠️ Renamed `RuntimeAIFeatures.resetFeature` to [`RuntimeAIFeatures.makeFeatureAvailable`][151.1] in [`AIFeaturesController`][150.3] and `disable` to `block` to align with updated toolkit API naming.
+
+[151.1]: {{javadoc_uri}}/AIFeaturesController.RuntimeAIFeatures.html#makeFeatureAvailable(java.lang.String)
 
 ## v150
 - Added support for `COOKIES_PARTITIONED_TRACKER` in the tracking protection blocking log. ([bug 2020898 ]({{bugzilla}}2020898))
@@ -1932,4 +1937,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 2dcf13db77e4cbb8f3a4eb7c5b930b0351cf359c
+[api-version]: 3d6ecd8425c92f92eaf9f894fdb6ac3ca7aef11e
