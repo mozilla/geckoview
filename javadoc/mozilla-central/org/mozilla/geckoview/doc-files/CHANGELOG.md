@@ -13,6 +13,11 @@ exclude: true
 
 ⚠️  breaking change and deprecation notices
 
+## v152
+- Added [`WebExtensionController.INSTALLATION_METHOD_RTAMO`][152.1], which should be used when a `WebExtension` is installed for the RTAMO feature. ([bug 2029607]({{bugzilla}}2029607))
+
+[152.1]: {{javadoc_uri}}/WebExtensionController.html#INSTALLATION_METHOD_RTAMO
+
 ## v151
 - Added `isBlocked` to `AIFeature` on [`AIFeaturesController`][150.3].
 - ⚠️ Remove deprecated `ContentDelegate.ContextElement` constructor.
@@ -1951,4 +1956,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 9c4a2021556c8a4adff79e726c8cefd41735cc47
+[api-version]: 03295331dea5330011e40695ad057eee2d9e6001
