@@ -15,8 +15,13 @@ exclude: true
 
 ## v152
 - Added [`WebExtensionController.INSTALLATION_METHOD_RTAMO`][152.1], which should be used when a `WebExtension` is installed for the RTAMO feature. ([bug 2029607]({{bugzilla}}2029607))
+- Added [`IPProtectionController.AuthProvider`][152.2], [`setAuthProvider`][152.3] / [`getAuthProvider`][152.4], and [`notifySignInStateChanged`][152.5] so embedders can supply Guardian authentication tokens to the IP Protection service. ([bug 2020725]({{bugzilla}}2020725))
 
 [152.1]: {{javadoc_uri}}/WebExtensionController.html#INSTALLATION_METHOD_RTAMO
+[152.2]: {{javadoc_uri}}/IPProtectionController.AuthProvider.html
+[152.3]: {{javadoc_uri}}/IPProtectionController.html#setAuthProvider(org.mozilla.geckoview.IPProtectionController.AuthProvider)
+[152.4]: {{javadoc_uri}}/IPProtectionController.html#getAuthProvider()
+[152.5]: {{javadoc_uri}}/IPProtectionController.html#notifySignInStateChanged(boolean)
 
 ## v151
 - Added `isBlocked` to `AIFeature` on [`AIFeaturesController`][150.3].
@@ -1958,4 +1963,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 03295331dea5330011e40695ad057eee2d9e6001
+[api-version]: 6cd3fdf77d853eea41e524a645d6c1cb73a67152
