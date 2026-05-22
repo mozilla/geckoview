@@ -13,6 +13,13 @@ exclude: true
 
 ⚠️  breaking change and deprecation notices
 
+## v153
+- Added [`SourceType`][153.1] annotation to [`ScrollPositionUpdate.source`][153.2]
+  ([bug 1994860]({{bugzilla}}1994860))
+
+[153.1]: {{javadoc_uri}}/GeckoSession.ScrollPositionUpdate.SourceType.html
+[153.2]: {{javadoc_uri}}/GeckoSession.ScrollPositionUpdate.html#source
+
 ## v152
 - Added [`WebExtensionController.INSTALLATION_METHOD_RTAMO`][152.1], which should be used when a `WebExtension` is installed for the RTAMO feature. ([bug 2029607]({{bugzilla}}2029607))
 - Added [`IPProtectionController.AuthProvider`][152.2], [`setAuthProvider`][152.3] / [`getAuthProvider`][152.4], and [`notifySignInStateChanged`][152.5] so embedders can supply Guardian authentication tokens to the IP Protection service. ([bug 2020725]({{bugzilla}}2020725))
@@ -1976,4 +1983,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: a7c7f294566e80df1f819e7e32e914477018f982
+[api-version]: e6fce8102da31d9f5da5e0cad7f9821bf20c0675
