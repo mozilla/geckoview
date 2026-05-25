@@ -24,10 +24,10 @@ exclude: true
 - Added [`WebExtensionController.INSTALLATION_METHOD_RTAMO`][152.1], which should be used when a `WebExtension` is installed for the RTAMO feature. ([bug 2029607]({{bugzilla}}2029607))
 - Added [`IPProtectionController.AuthProvider`][152.2], [`setAuthProvider`][152.3] / [`getAuthProvider`][152.4], and [`notifySignInStateChanged`][152.5] so embedders can supply Guardian authentication tokens to the IP Protection service. ([bug 2020725]({{bugzilla}}2020725))
 - Added `safeBrowsingGlobalCacheEnabled`, `safeBrowsingRealTimeEnabled`, `safeBrowsingRealTimeSimulationEnabled`, `safeBrowsingRealTimeSimulationHitProbability`, `safeBrowsingRealTimeSimulationCacheTTLSec`, `safeBrowsingRealTimeSimulationNegativeCacheEnabled`, `safeBrowsingRealTimeSimulationNegativeCacheTTLSec` to [`ContentBlocking.Settings.Builder`][152.6] to enable configuring SafeBrowsing V5 Real-Time mode simulation.
-- Added new APIs - [`getTrackingDbEventsByDateRange`][152.2], [`sumAllTrackingDbEvents`][152.3] and [`getTrackingDbEarliestRecordedDate`][152.4] to ContentBlockingController to query Gecko for tracking protection details.
-- Added [`WebAuthnRelatedOriginPrompt`][152.7] and [`onWebAuthnRelatedOriginPrompt`][152.8] to `GeckoSession.PromptDelegate` for confirming WebAuthn related origin requests.
+- Added new APIs - [`getTrackingDbEventsByDateRange`][152.7], [`sumAllTrackingDbEvents`][152.8] and [`getTrackingDbEarliestRecordedDate`][152.9] to ContentBlockingController to query Gecko for tracking protection details.
+- Added [`WebAuthnRelatedOriginPrompt`][152.10] and [`onWebAuthnRelatedOriginPrompt`][152.11] to `GeckoSession.PromptDelegate` for confirming WebAuthn related origin requests.
     ([bug 2010193]({{bugzilla}}2010193))
-- Added [`IPProtectionController.enroll`][152.9] and [`IPProtectionController.EnrollResult`][152.10] to trigger enrollment via the active auth provider. ([bug 2037352]({{bugzilla}}2037352))
+- Added [`IPProtectionController.enroll`][152.12] and [`IPProtectionController.EnrollResult`][152.13] to trigger enrollment via the active auth provider. ([bug 2037352]({{bugzilla}}2037352))
 
 [152.1]: {{javadoc_uri}}/WebExtensionController.html#INSTALLATION_METHOD_RTAMO
 [152.2]: {{javadoc_uri}}/IPProtectionController.AuthProvider.html
@@ -35,13 +35,13 @@ exclude: true
 [152.4]: {{javadoc_uri}}/IPProtectionController.html#getAuthProvider()
 [152.5]: {{javadoc_uri}}/IPProtectionController.html#notifySignInStateChanged(boolean)
 [152.6]: {{javadoc_uri}}/ContentBlocking.Settings.Builder.html
-[152.2]: {{javadoc_uri}}/ContentBlockingController.html#getTrackingDbEventsByDateRange(long,long)
-[152.3]: {{javadoc_uri}}/ContentBlockingController.html#sumAllTrackingDbEvents()
-[152.4]: {{javadoc_uri}}/ContentBlockingController.html#getTrackingDbEarliestRecordedDate()
-[152.7]: {{javadoc_uri}}/GeckoSession.PromptDelegate.WebAuthnRelatedOriginPrompt.html
-[152.8]: {{javadoc_uri}}/GeckoSession.PromptDelegate.html#onWebAuthnRelatedOriginPrompt(org.mozilla.geckoview.GeckoSession,org.mozilla.geckoview.GeckoSession.PromptDelegate.WebAuthnRelatedOriginPrompt)
-[152.9]: {{javadoc_uri}}/IPProtectionController.html#enroll()
-[152.10]: {{javadoc_uri}}/IPProtectionController.EnrollResult.html
+[152.7]: {{javadoc_uri}}/ContentBlockingController.html#getTrackingDbEventsByDateRange(long,long)
+[152.8]: {{javadoc_uri}}/ContentBlockingController.html#sumAllTrackingDbEvents()
+[152.9]: {{javadoc_uri}}/ContentBlockingController.html#getTrackingDbEarliestRecordedDate()
+[152.10]: {{javadoc_uri}}/GeckoSession.PromptDelegate.WebAuthnRelatedOriginPrompt.html
+[152.11]: {{javadoc_uri}}/GeckoSession.PromptDelegate.html#onWebAuthnRelatedOriginPrompt(org.mozilla.geckoview.GeckoSession,org.mozilla.geckoview.GeckoSession.PromptDelegate.WebAuthnRelatedOriginPrompt)
+[152.12]: {{javadoc_uri}}/IPProtectionController.html#enroll()
+[152.13]: {{javadoc_uri}}/IPProtectionController.EnrollResult.html
 
 ## v151
 - Added `isBlocked` to `AIFeature` on [`AIFeaturesController`][150.3].
@@ -49,7 +49,7 @@ exclude: true
 - ⚠️ Removed deprecated `ContentDelegate.ContextElement.textContent`.
 - ⚠️ Renamed `RuntimeAIFeatures.resetFeature` to [`RuntimeAIFeatures.makeFeatureAvailable`][151.1] in [`AIFeaturesController`][150.3] and `disable` to `block` to align with updated toolkit API naming.
 - Added [`ERROR_ENGINE_DEACTIVATED`][151.2] to `TranslationsController.TranslationsException` to indicate that session-level translation operations failed because the translations engine was deactivated by AI controls.
-- Added [`ContentParams`][151.3] to `PageExtractionController`[149.2] and [`getPageContent(ContentParams)`][151.4] to [`SessionPageExtractor`][149.3] for controlling how page text is extracted (e.g. boilerplate removal).
+- Added [`ContentParams`][151.3] to [`PageExtractionController`][149.2] and [`getPageContent(ContentParams)`][151.4] to [`SessionPageExtractor`][149.3] for controlling how page text is extracted (e.g. boilerplate removal).
     ([bug 2015480]({{bugzilla}}2015480))
 - Added [`isReaderable`][151.5] to [`PageMetadata`][150.6] in `PageExtractionController` to indicate whether the page is likely readable by reader mode.
     ([bug 2030001]({{bugzilla}}2030001))
@@ -60,7 +60,6 @@ exclude: true
 [151.2]: {{javadoc_uri}}/TranslationsController.TranslationsException.html#ERROR_ENGINE_DEACTIVATED
 [151.3]: {{javadoc_uri}}/PageExtractionController.GetTextOptions.html
 [151.4]: {{javadoc_uri}}/PageExtractionController.SessionPageExtractor.html#getPageContent(org.mozilla.geckoview.PageExtractionController.ContentParams)
-[151.4]: {{javadoc_uri}}/PageExtractionController.SessionPageExtractor.html#getPageContent(org.mozilla.geckoview.PageExtractionController.GetTextOptionsParams)
 [151.5]: {{javadoc_uri}}/PageExtractionController.PageMetadata.html#isReaderable
 [151.6]: {{javadoc_uri}}/ContentBlocking.Settings.html
 [151.7]: {{javadoc_uri}}/IPProtectionController.html
