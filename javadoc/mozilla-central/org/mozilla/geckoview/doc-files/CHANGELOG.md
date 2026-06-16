@@ -18,6 +18,7 @@ exclude: true
   ([bug 1994860]({{bugzilla}}1994860))
 - Updated the [`PURGED_BOUNCETRACKER`][129.3] value and added new [`REPLACED_FINGERPRINTING_CONTENT`] ContentBlockingController.Event. ([bug 2039485]({{bugzilla}}2039485))
 - Added  [`clearTrackingDb`][153.4] to ContentBlockingController to support clearing all data stored about blocked trackers in previous browsing sessions. ([bug 2042068]({{bugzilla}}2042068))
+- ⚠️ Removed deprecated [`GeckoRuntimeSettings.getDisableShip`] and [`GeckoRuntimeSettings.Builder.disableShip`].
 
 [153.1]: {{javadoc_uri}}/GeckoSession.ScrollPositionUpdate.SourceType.html
 [153.2]: {{javadoc_uri}}/GeckoSession.ScrollPositionUpdate.html#source
@@ -1986,4 +1987,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 8889de999fd9ecf04d0c7ac46b1aa24d79a15c5a
+[api-version]: 668d400dbe2cfd7bcb1f80c7d30af45f06851531
