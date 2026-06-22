@@ -16,17 +16,26 @@ exclude: true
 ## v154
 - Added [`Autofill.Node.getDatalist`][154.1] to expose predefined values by [`datalist`][154.2] elements for input fields.
 - Added experimental [`ContentPermission.notifyShown`][154.3] so embedders can signal that a permission prompt UI has been displayed to the user, enabling per-prompt telemetry on the Gecko side (e.g. for local network access). ([bug 2009145]({{bugzilla}}2009145))
+- Added [`IPProtectionController.refreshUsage`][154.4] to request a refresh of proxy usage information, delivered asynchronously via [`Delegate#onUsageChanged`][154.5].
+  ([bug 2042799]({{bugzilla}}2042799))
+- Added [`IPProtectionController.getCountryList`][154.6] and [`IPProtectionController.Country`][154.7] to request the list of countries available in the proxy serverlist, delivered asynchronously via [`Delegate#onCountryListChanged`][154.8] whenever the list changes.
+- Added [`IPProtectionController.activate(boolean, boolean, String)`][154.9] to activate the proxy with explicit user-action, private-browsing, and country options.
 
 [154.1]: {{javadoc_uri}}/Autofill.Node.html#getDatalist()
 [154.2]: https://developer.mozilla.org/en/docs/Web/HTML/Reference/Elements/datalist
 [154.3]: {{javadoc_uri}}/GeckoSession.PermissionDelegate.ContentPermission.html#notifyShown()
+[154.4]: {{javadoc_uri}}/IPProtectionController.html#refreshUsage()
+[154.5]: {{javadoc_uri}}/IPProtectionController.Delegate.html#onUsageChanged(org.mozilla.geckoview.IPProtectionController.UsageInfo)
+[154.6]: {{javadoc_uri}}/IPProtectionController.html#getCountryList()
+[154.7]: {{javadoc_uri}}/IPProtectionController.Country.html
+[154.8]: {{javadoc_uri}}/IPProtectionController.Delegate.html#onCountryListChanged(java.util.List)
+[154.9]: {{javadoc_uri}}/IPProtectionController.html#activate(boolean,boolean,java.lang.String)
 
 ## v153
 - Added [`SourceType`][153.1] annotation to [`ScrollPositionUpdate.source`][153.2]
   ([bug 1994860]({{bugzilla}}1994860))
 - Updated the [`PURGED_BOUNCETRACKER`][129.3] value and added new [`REPLACED_FINGERPRINTING_CONTENT`] ContentBlockingController.Event. ([bug 2039485]({{bugzilla}}2039485))
 - Added  [`clearTrackingDb`][153.4] to ContentBlockingController to support clearing all data stored about blocked trackers in previous browsing sessions. ([bug 2042068]({{bugzilla}}2042068))
-- ⚠️ Removed deprecated [`GeckoRuntimeSettings.getDisableShip`] and [`GeckoRuntimeSettings.Builder.disableShip`].
 
 [153.1]: {{javadoc_uri}}/GeckoSession.ScrollPositionUpdate.SourceType.html
 [153.2]: {{javadoc_uri}}/GeckoSession.ScrollPositionUpdate.html#source
@@ -1995,4 +2004,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 58ed7a36bb43e5917b515d7f8ff458a2e26a8843
+[api-version]: ac5d70fb9a491e693f6154d7fc7069ddcfbe2701
