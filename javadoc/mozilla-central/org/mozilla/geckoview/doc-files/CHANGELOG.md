@@ -36,11 +36,14 @@ exclude: true
   ([bug 1994860]({{bugzilla}}1994860))
 - Updated the [`PURGED_BOUNCETRACKER`][129.3] value and added new [`REPLACED_FINGERPRINTING_CONTENT`] ContentBlockingController.Event. ([bug 2039485]({{bugzilla}}2039485))
 - Added  [`clearTrackingDb`][153.4] to ContentBlockingController to support clearing all data stored about blocked trackers in previous browsing sessions. ([bug 2042068]({{bugzilla}}2042068))
+- Added [`onAudioSessionTypeChanged`][153.5] to [`MediaSession.Delegate`][153.6] so embedders can request platform audio focus matching the tab's W3C Audio Session type. ([bug 2047296]({{bugzilla}}2047296))
 
 [153.1]: {{javadoc_uri}}/GeckoSession.ScrollPositionUpdate.SourceType.html
 [153.2]: {{javadoc_uri}}/GeckoSession.ScrollPositionUpdate.html#source
 [153.3]: {{javadoc_uri}}/ContentBlockingController.Event.html#REPLACED_FINGERPRINTING_CONTENT
 [153.4]: {{javadoc_uri}}/ContentBlockingController.html#clearTrackingDb()
+[153.5]: {{javadoc_uri}}/MediaSession.Delegate.html#onAudioSessionTypeChanged(org.mozilla.geckoview.GeckoSession,org.mozilla.geckoview.MediaSession,java.lang.String)
+[153.6]: {{javadoc_uri}}/MediaSession.Delegate.html
 
 ## v152
 - Added [`WebExtensionController.INSTALLATION_METHOD_RTAMO`][152.1], which should be used when a `WebExtension` is installed for the RTAMO feature. ([bug 2029607]({{bugzilla}}2029607))
@@ -2004,4 +2007,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: ac5d70fb9a491e693f6154d7fc7069ddcfbe2701
+[api-version]: 6dac40bc656352fb99fab26c0b705d47bdd64ff4
