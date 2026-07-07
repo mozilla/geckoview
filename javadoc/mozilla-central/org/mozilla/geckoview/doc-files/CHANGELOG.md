@@ -20,6 +20,7 @@ exclude: true
   ([bug 2042799]({{bugzilla}}2042799))
 - Added [`IPProtectionController.getCountryList`][154.6] and [`IPProtectionController.Country`][154.7] to request the list of countries available in the proxy serverlist, delivered asynchronously via [`Delegate#onCountryListChanged`][154.8] whenever the list changes.
 - Added [`IPProtectionController.activate(boolean, boolean, String)`][154.9] to activate the proxy with explicit user-action, private-browsing, and country options.
+- ⚠️ Made [`ScrollPositionUpdate`][154.10] immutable: its fields are now `final` and instances are constructed via `ScrollPositionUpdate(float, float, float, int)` instead of the previous no-argument constructor with mutable fields. ([bug 1994863]({{bugzilla}}1994863))
 
 [154.1]: {{javadoc_uri}}/Autofill.Node.html#getDatalist()
 [154.2]: https://developer.mozilla.org/en/docs/Web/HTML/Reference/Elements/datalist
@@ -30,6 +31,7 @@ exclude: true
 [154.7]: {{javadoc_uri}}/IPProtectionController.Country.html
 [154.8]: {{javadoc_uri}}/IPProtectionController.Delegate.html#onCountryListChanged(java.util.List)
 [154.9]: {{javadoc_uri}}/IPProtectionController.html#activate(boolean,boolean,java.lang.String)
+[154.10]: {{javadoc_uri}}/GeckoSession.ScrollPositionUpdate.html
 
 ## v153
 - Added [`SourceType`][153.1] annotation to [`ScrollPositionUpdate.source`][153.2]
@@ -2007,4 +2009,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 6dac40bc656352fb99fab26c0b705d47bdd64ff4
+[api-version]: 53ed15a38d9403c8be2abd2df1e7dd98cdf3aa5f
