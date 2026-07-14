@@ -64,6 +64,7 @@ exclude: true
 - Added [`WebAuthnRelatedOriginPrompt`][152.10] and [`onWebAuthnRelatedOriginPrompt`][152.11] to `GeckoSession.PromptDelegate` for confirming WebAuthn related origin requests.
     ([bug 2010193]({{bugzilla}}2010193))
 - Added [`IPProtectionController.enroll`][152.12] and [`IPProtectionController.EnrollResult`][152.13] to trigger enrollment via the active auth provider. ([bug 2037352]({{bugzilla}}2037352))
+- Added [`IPProtectionController.GpiProvider`][152.14], [`setGpiProvider`][152.15] / [`getGpiProvider`][152.16] so embedders can supply Google Play Integrity tokens to the IP Protection service. ([bug 2037184]({{bugzilla}}2037184))
 
 [152.1]: {{javadoc_uri}}/WebExtensionController.html#INSTALLATION_METHOD_RTAMO
 [152.2]: {{javadoc_uri}}/IPProtectionController.AuthProvider.html
@@ -78,6 +79,9 @@ exclude: true
 [152.11]: {{javadoc_uri}}/GeckoSession.PromptDelegate.html#onWebAuthnRelatedOriginPrompt(org.mozilla.geckoview.GeckoSession,org.mozilla.geckoview.GeckoSession.PromptDelegate.WebAuthnRelatedOriginPrompt)
 [152.12]: {{javadoc_uri}}/IPProtectionController.html#enroll()
 [152.13]: {{javadoc_uri}}/IPProtectionController.EnrollResult.html
+[152.14]: {{javadoc_uri}}/IPProtectionController.GpiProvider.html
+[152.15]: {{javadoc_uri}}/IPProtectionController.html#setGpiProvider(org.mozilla.geckoview.IPProtectionController.GpiProvider)
+[152.16]: {{javadoc_uri}}/IPProtectionController.html#getGpiProvider()
 
 ## v151
 - Added `isBlocked` to `AIFeature` on [`AIFeaturesController`][150.3].
@@ -2018,4 +2022,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 6f0139ff02e6b63b6548b24c75ed3cd6b7f003f9
+[api-version]: 7852d43e8d3683b804f976bf71ae4339afd0f3d7
