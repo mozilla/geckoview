@@ -13,6 +13,10 @@ exclude: true
 
 ⚠️  breaking change and deprecation notices
 
+
+## v155
+- Added [WebRequestError.ERROR_LOCAL_NETWORK_ACCESS_DENIED] to indicate that a load failed because the user denied the local network access permission on Android 17+.
+
 ## v154
 - Added [`Autofill.Node.getDatalist`][154.1] to expose predefined values by [`datalist`][154.2] elements for input fields.
 - Added experimental [`ContentPermission.notifyShown`][154.3] so embedders can signal that a permission prompt UI has been displayed to the user, enabling per-prompt telemetry on the Gecko side (e.g. for local network access). ([bug 2009145]({{bugzilla}}2009145))
@@ -27,6 +31,24 @@ exclude: true
 - Added [`GeckoSession.sendGleanBrokenSiteReport`][154.20] which sends a broken site report using Glean. ([bug 2054543]({{bugzilla}}2054543)).
 - Added [`GeckoSession.HistoryDelegate.hasVisitedHostSince`][154.21] so embedders can report whether a host was visited within a time window, used to derive first-daily-load pageload telemetry. ([bug 2058980]({{bugzilla}}2058980))
 - Added experimental [`GeckoRuntimeSettings.setIpProtectionAuthProvider`][154.22] and [`getIpProtectionAuthProvider`][154.23] to select the IP Protection authentication provider (`"fxa"` or `"gpi"`) on Android. ([bug 2054901]({{bugzilla}}2054901))
+- ⚠️ Removed the Cookie Banner Handling API. The underlying Gecko feature no longer exists and
+  there is no replacement. The following members were removed:
+  `ContentBlocking.CookieBannerMode` and `ContentBlocking.CBCookieBannerMode`;
+  `ContentBlocking.Settings.setCookieBannerMode`, `getCookieBannerMode`,
+  `setCookieBannerModePrivateBrowsing`, `getCookieBannerModePrivateBrowsing`,
+  `setCookieBannerDetectOnlyMode`, `getCookieBannerDetectOnlyMode`,
+  `setCookieBannerGlobalRulesEnabled`, `getCookieBannerGlobalRulesEnabled`,
+  `setCookieBannerGlobalRulesSubFramesEnabled` and
+  `getCookieBannerGlobalRulesSubFramesEnabled`;
+  `ContentBlocking.Settings.Builder.cookieBannerHandlingMode`,
+  `cookieBannerHandlingModePrivateBrowsing`, `cookieBannerHandlingDetectOnlyMode`,
+  `cookieBannerGlobalRulesEnabled` and `cookieBannerGlobalRulesSubFramesEnabled`;
+  `GeckoSession.ContentDelegate.onCookieBannerDetected` and `onCookieBannerHandled`;
+  `GeckoSession.hasCookieBannerRuleForBrowsingContextTree`;
+  `StorageController.setCookieBannerModeForDomain`,
+  `setCookieBannerModeAndPersistInPrivateBrowsingForDomain`,
+  `removeCookieBannerModeForDomain` and `getCookieBannerModeForDomain`.
+  ([bug 2058143]({{bugzilla}}2058143))
 
 [154.1]: {{javadoc_uri}}/Autofill.Node.html#getDatalist()
 [154.2]: https://developer.mozilla.org/en/docs/Web/HTML/Reference/Elements/datalist
@@ -2030,4 +2052,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 9008c2757641d842507f9521cf89fe1496f52e93
+[api-version]: a836faf542c8e3d175a6492a1c0c6f39f639d7c2
