@@ -15,8 +15,19 @@ exclude: true
 
 ## v156
 - Updated [`GeckoSession.saveAsPdf`][156.1] to identify if the currently displayed browser item is a PDF JS page, if so, then save using PDF JS machinery. Otherwise, save the PDF through the Gecko print framework. ([bug 2064162]({{bugzilla}}2064162))
+- ⚠️ Added [`ContentParams.useSimpleText`][156.2] to request plain prose from
+    [`SessionPageExtractor.getPageContent`][156.3] instead of markdown-annotated text. This adds a
+    parameter to the [`ContentParams`][156.4] constructor.
+- ⚠️ Added [`PageMetadata.isGated`][156.5] to report whether a page declares its content to be gated,
+    for example behind a paywall or a registration wall. This adds a parameter to the
+    [`PageMetadata`][156.6] constructor.
 
 [156.1]: {{javadoc_uri}}/GeckoSession.html#saveAsPdf()
+[156.2]: {{javadoc_uri}}/PageExtractionController.ContentParams.html#useSimpleText
+[156.3]: {{javadoc_uri}}/PageExtractionController.SessionPageExtractor.html#getPageContent(org.mozilla.geckoview.PageExtractionController.ContentParams)
+[156.4]: {{javadoc_uri}}/PageExtractionController.ContentParams.html#ContentParams(boolean,boolean)
+[156.5]: {{javadoc_uri}}/PageExtractionController.PageMetadata.html#isGated
+[156.6]: {{javadoc_uri}}/PageExtractionController.PageMetadata.html#PageMetadata(java.lang.String[],int,java.lang.String,boolean,boolean)
 
 ## v155
 - Added [WebRequestError.ERROR_LOCAL_NETWORK_ACCESS_DENIED] to indicate that a load failed because the user denied the local network access permission on Android 17+.
@@ -2062,4 +2073,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 5c2745c5d039441ed4363a985bc4f832f62af800
+[api-version]: 90215a592b27dd13c83e94187e882cecedef6d30
