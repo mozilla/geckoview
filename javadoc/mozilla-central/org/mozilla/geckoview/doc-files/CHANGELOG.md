@@ -18,9 +18,12 @@ exclude: true
     [`PdfViewerController.SessionEditor.addSignature`][157.2] to place a signature on the PDF the
     session is displaying. The PDF viewer side is a stub until bug 2069045.
     ([bug 2069043]({{bugzilla}}2069043))
+- Added [`GeckoView.captureFullPage()`][157.3] and [`GeckoDisplay.captureFullPage`][157.4] to take screenshot of the full web page. Returns a [`GeckoResult`][65.25] that completes to a [`Bitmap`][67.17] containing a full scrollable screenshot of a web page.
 
 [157.1]: {{javadoc_uri}}/GeckoSession.html#getPdfViewerEditor()
 [157.2]: {{javadoc_uri}}/PdfViewerController.SessionEditor.html#addSignature(java.lang.String)
+[157.3]: {{javadoc_uri}}/GeckoView.html#captureFullPage()
+[157.4]: {{javadoc_uri}}/GeckoDisplay.html#capturePixels()
 
 ## v156
 - Updated [`GeckoSession.saveAsPdf`][156.1] to identify if the currently displayed browser item is a PDF JS page, if so, then save using PDF JS machinery. Otherwise, save the PDF through the Gecko print framework. ([bug 2064162]({{bugzilla}}2064162))
@@ -2082,4 +2085,4 @@ to allow adding gecko profiler markers.
 [65.24]: {{javadoc_uri}}/CrashReporter.html#sendCrashReport(android.content.Context,android.os.Bundle,java.lang.String)
 [65.25]: {{javadoc_uri}}/GeckoResult.html
 
-[api-version]: 89e5187777ce1bcb2f8eeaf93a81a5195b61e341
+[api-version]: 55cd455785615eb939cf804b61c033a5f1631a0c
