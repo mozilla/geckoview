@@ -13,6 +13,14 @@ exclude: true
 
 ⚠️  breaking change and deprecation notices
 
+## v160
+- The `content-disposition` header of the [`WebResponse`][65.15] passed to
+    [`ContentDelegate.onExternalResponse`][160.1] now contains a filename validated with the same
+    rules desktop applies when saving a download, instead of the header sent by the server.
+    ([bug 1822968]({{bugzilla}}1822968))
+
+[160.1]: {{javadoc_uri}}/GeckoSession.ContentDelegate.html#onExternalResponse(org.mozilla.geckoview.GeckoSession,org.mozilla.geckoview.WebResponse)
+
 ## v157
 - Added [`GeckoSession.getPdfViewerEditor`][157.1] and
     [`PdfViewerController.SessionEditor.addSignature`][157.2] to place a signature on the PDF the
